@@ -451,20 +451,149 @@ z-index:-1;
 
 }
 
+.menu-toggle{
+    display: block;
+
+    background: none;
+    border: none;
+
+    color: var(--text);
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+    margin-right: 20px; 
+}
+
 /* RESPONSIVO */
 
-@media(max-width:768px){
+@media (max-width: 768px) {
 
-    .social-title h2{
+     header{
 
-        font-size:34px;
+        padding:15px 20px;
+
+        display:grid;
+
+        grid-template-columns:1fr auto auto;
+
+        align-items:center;
+
+    }
+    .menu-toggle{
+
+        display:block;
 
     }
 
+    nav a{
+        font-size: 14px;
+    }
+    nav{
+
+        display:none;
+
+        position:absolute;
+
+        top:80px;
+
+        left:0;
+
+        width:100%;
+
+        background:var(--surface);
+
+        flex-direction:column;
+
+        align-items:center;
+
+        padding:20px 0;
+
+        gap:20px;
+
+        border-top:1px solid rgba(255,255,255,.08);
+
+    }
+    nav.active{
+
+        display:flex;
+
+    }
+
+    .hero{
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+        gap: 40px;
+        padding: 150px 20px 60px;
+    }
+
+    .hero-text{
+        max-width: 100%;
+    }
+
+    .hero h1{
+        font-size: 42px;
+    }
+
+    .hero h2{
+        font-size: 24px;
+    }
+
+    .hero span{
+        font-size: 18px;
+    }
+
+    .hero p{
+        font-size: 16px;
+    }
+
+    .hero-image img{
+        width: 240px;
+        height: 240px;
+    }
+
+    .buttons{
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .btn{
+        width: 100%;
+        text-align: center;
+    }
+
+    section{
+        padding: 80px 20px;
+        min-height: auto;
+    }
+
+    section h2{
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .social-title h2{
+        font-size: 32px;
+    }
+
+    .social-title p{
+        font-size: 15px;
+    }
+
     .social-grid{
+        grid-template-columns: 1fr;
+    }
 
-        grid-template-columns:1fr;
+    .social-card{
+        padding: 25px;
+    }
 
+    footer{
+        padding: 25px;
+        font-size: 14px;
     }
 
 }
