@@ -423,7 +423,6 @@ z-index:-1;
 
 }
 
-/* Barra inferior */
 
 .social-card::after{
 
@@ -465,8 +464,261 @@ z-index:-1;
 
     margin-right: 20px;
 }
-/* RESPONSIVO */
 
+
+.about{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+}
+
+.about-text{
+    flex:2;
+}
+
+.about-text p{
+    margin-bottom:20px;
+    color:var(--text2);
+    line-height:1.8;
+    font-size:18px;
+}
+
+.about-card{
+    flex:1;
+
+    background:var(--surface);
+
+    padding:35px;
+
+    border-radius:20px;
+
+    border:1px solid rgba(123,44,243,.25);
+
+    box-shadow:0 0 30px rgba(123,44,243,.15);
+}
+
+.about-card h3{
+    margin-bottom:20px;
+    color:var(--primary);
+}
+
+.about-card p{
+    margin:15px 0;
+    color:var(--text);
+}
+.experience{
+    text-align:center;
+}
+
+.timeline{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    position:relative;
+
+    margin-top:80px;
+
+    gap:40px;
+
+}
+
+.timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:20px;
+
+    left:8%;
+
+    right:8%;
+
+    height:4px;
+
+    background:linear-gradient(90deg,var(--primary),var(--secondary));
+
+    z-index:0;
+
+}
+
+.timeline-item{
+
+    position:relative;
+
+    z-index:1;
+
+    flex:1;
+
+}
+
+.circle{
+
+    width:40px;
+
+    height:40px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:var(--background);
+
+    border:5px solid var(--primary);
+
+}
+
+.circle.active{
+
+    background:var(--primary);
+
+    box-shadow:0 0 25px var(--primary);
+
+}
+
+.timeline-item h3{
+
+    margin-top:25px;
+
+    font-size:22px;
+
+}
+
+.timeline-item h4{
+
+    color:var(--secondary);
+
+    margin:10px 0;
+
+}
+
+.timeline-item span{
+
+    color:var(--text2);
+
+    font-size:14px;
+
+}
+
+.timeline-item p{
+
+    margin-top:20px;
+
+    color:var(--text2);
+
+    line-height:1.8;
+
+}
+
+.projects-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+
+    gap:35px;
+
+    margin-top:50px;
+
+}
+
+.project-card{
+
+    background:var(--surface);
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    text-decoration:none;
+
+    color:var(--text);
+
+    transition:.35s;
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+.project-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 35px rgba(123,44,243,.25);
+
+}
+
+.project-card img{
+
+    width:70px;
+    height:70px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    display:block;
+
+    margin:25px auto 10px;
+
+    border:3px solid var(--primary);
+
+}
+
+.project-info{
+
+    padding:25px;
+
+}
+
+.project-info h3{
+
+    margin-bottom:15px;
+
+    font-size:24px;
+
+}
+
+.project-info p{
+
+    color:var(--text2);
+
+    line-height:1.7;
+
+    margin-bottom:20px;
+
+}
+
+.techs{
+
+    display:flex;
+
+    gap:10px;
+
+    flex-wrap:wrap;
+
+}
+
+.techs span{
+
+    background:rgba(123,44,243,.15);
+
+    color:var(--primary);
+
+    padding:8px 15px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
 @media (max-width: 768px) {
 
      header{
@@ -595,4 +847,114 @@ z-index:-1;
         font-size: 14px;
     }
 
+
+.timeline{
+
+    flex-direction:column;
+
+    gap:60px;
+
+    align-items:flex-start;
+
+    margin-top:50px;
+
+    padding-left:40px;
+
+}
+
+
+.timeline::before{
+
+    top:0;
+
+    bottom:0;
+
+    left:20px;
+
+    right:auto;
+
+    width:4px;
+
+    height:auto;
+
+}
+
+
+.timeline-item{
+
+    width:100%;
+
+    text-align:left;
+
+}
+
+
+.circle{
+
+    position:absolute;
+
+    left:-40px;
+
+    top:0;
+
+    width:35px;
+
+    height:35px;
+
+}
+
+
+.timeline-item h3{
+
+    margin-top:0;
+
+}
+
+
+.timeline-item p{
+
+    max-width:100%;
+
+}
+.about{
+
+    flex-direction:column;
+
+    gap:40px;
+
+    text-align:center;
+
+}
+
+
+.about-text{
+
+    width:100%;
+
+}
+
+
+.about-text h2{
+
+    text-align:center;
+
+}
+
+
+.about-text p{
+
+    font-size:16px;
+
+}
+
+
+.about-card{
+
+    width:100%;
+
+    padding:25px;
+
+    text-align:left;
+
+}
 }
