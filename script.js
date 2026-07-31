@@ -32,3 +32,45 @@ document.querySelectorAll("#menu a").forEach(link => {
     });
 
 });
+
+const filters = document.querySelectorAll(".filter");
+const cards = document.querySelectorAll(".course-card");
+
+
+filters.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+
+        filters.forEach(btn => {
+            btn.classList.remove("active");
+        });
+
+
+        button.classList.add("active");
+
+
+        const category = button.dataset.filter;
+
+
+        cards.forEach(card => {
+
+
+            if(category === "all" || card.dataset.category === category){
+
+                card.style.display="block";
+
+            }else{
+
+                card.style.display="none";
+
+            }
+
+
+        });
+
+
+    });
+
+
+});
