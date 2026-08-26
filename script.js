@@ -152,3 +152,45 @@ async function carregarComentarios(){
 }
 
 carregarComentarios();
+
+
+const revealGroups = [
+    ".hero-text",
+    ".hero-image",
+    ".about-text",
+    ".about-card",
+    "section > h2",
+    ".timeline-item",
+    ".project-card",
+    ".course-card",
+    ".social-card",
+    ".comment-form"
+];
+
+revealGroups.forEach(selector => {
+
+    document.querySelectorAll(selector).forEach((el, index) => {
+
+        el.classList.add("reveal");
+        el.style.transitionDelay = `${Math.min(index * 0.08, 0.4)}s`;
+
+    });
+
+});
+
+const revealObserver = new IntersectionObserver((entries, observer) => {
+
+    entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+
+        }
+
+    });
+
+}, { threshold: 0.15 });
+
+document.querySelectorAll(".reveal").forEach(el => revealObserver.observe(el));

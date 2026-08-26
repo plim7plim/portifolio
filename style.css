@@ -670,6 +670,16 @@ z-index:-1;
 
 }
 
+.project-card img.logo-fit{
+
+    object-fit:contain;
+
+    background:#ffffff;
+
+    padding:14px;
+
+}
+
 .project-info{
 
     padding:25px;
@@ -1043,6 +1053,34 @@ z-index:-1;
 
 }
 
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(30px);
+
+    transition:opacity .7s ease, transform .7s ease;
+
+}
+
+.reveal.visible{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+@media (prefers-reduced-motion:reduce){
+
+    .reveal{
+        opacity:1;
+        transform:none;
+        transition:none;
+    }
+
+}
 
 @media (max-width:768px){
 
