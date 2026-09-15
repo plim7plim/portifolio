@@ -13,9 +13,9 @@
 <link rel="icon" type="image/png" href="assets/icon.png">
 
 <script>
-  window.va = window.va || function () {
-    (window.vaq = window.vaq || []).push(arguments);
-  };
+    window.va = window.va || function () {
+        (window.vaq = window.vaq || []).push(arguments);
+    };
 </script>
 <script defer src="/_vercel/insights/script.js"></script>
 <body>
@@ -23,7 +23,6 @@
 <div class="background"></div>
 
 <header>
-
     <div class="logo">
         PP
     </div>
@@ -33,30 +32,37 @@
     </button>
 
     <nav id="menu">
-
         <a href="#home">Home</a>
         <a href="#about">Sobre</a>
         <a href="#experience">Experiência</a>
         <a href="#projects">Projetos</a>
         <a href="#cursos">Cursos</a>
+        <a href="#skills">Conhecimentos</a>
         <a href="#socials">Redes</a>
-         <a href="#guestbook">Comentários</a>
-
-
+        <a href="#guestbook">Comentários</a>
     </nav>
 
-    <button id="themeButton">
-        🌙
+    <button id="themeButton" aria-label="Alternar tema">
+        <svg id="iconSun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg id="iconMoon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" hidden>
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
     </button>
-
 </header>
-
 
 <main>
 <section id="home" class="hero">
-
     <div class="hero-text">
-
         <span>Olá!</span>
 
         <h1>Plínio Peixoto</h1>
@@ -68,31 +74,23 @@
         </p>
 
         <div class="buttons">
-
             <a href="#projects" class="btn">
                 Veja meus Projetos
             </a>
 
-            <a href="assets/curriculoFinal.pdf" class="btn secondary">
+            <a href="assets/curriculo.pdf" class="btn secondary">
                 Veja meu Currículo aqui:
             </a>
-
         </div>
-
     </div>
 
     <div class="hero-image">
-
         <img src="assets/eu.jpg" alt="Foto">
-
     </div>
-
 </section>
 
 <section id="about" class="about">
-
     <div class="about-text">
-
         <h2>Sobre Mim</h2>
 
         <p>
@@ -104,14 +102,13 @@
             Atualmente curso <strong>Engenharia de Software</strong> e <strong>Sistemas para Internet</strong>, trabalho como
             <strong>Desenvolvedor Full Stack Jr.</strong>
         </p>
-        <p>
-        Fique à vontade para explorar este projeto!
-        </p>
 
+        <p>
+            Fique à vontade para explorar este projeto!
+        </p>
     </div>
 
     <div class="about-card">
-
         <h3>Resumo</h3>
 
         <p>👨‍💻 Desenvolvedor Full Stack Jr.</p>
@@ -120,19 +117,14 @@
         <p>☕ Java</p>
         <p>☁️ AWS</p>
         <p>💜 Computação em Nuvem</p>
-
     </div>
-
 </section>
 
 <section id="experience" class="experience">
-
     <h2>Minha Jornada</h2>
 
     <div class="timeline">
-
         <div class="timeline-item">
-
             <div class="circle"></div>
 
             <h3>Jovem Aprendiz</h3>
@@ -145,11 +137,9 @@
                 Primeiro contato com o mercado de trabalho,
                 desenvolvendo organização, atendimento e rotinas administrativas.
             </p>
-
         </div>
 
         <div class="timeline-item">
-
             <div class="circle"></div>
 
             <h3>São Salvador Alimentos</h3>
@@ -162,11 +152,9 @@
                 Atuação com emissão de notas fiscais, SAP, controle de cargas
                 e processos logísticos, administrativos e Faturamento
             </p>
-
         </div>
 
         <div class="timeline-item">
-
             <div class="circle active"></div>
 
             <h3>Full Stack - Jr.</h3>
@@ -179,77 +167,64 @@
                 Atuação com refatoração e documentação de código, criação de sites para a empresa
                 e alterações em telas específicas.
             </p>
-
         </div>
-
     </div>
-
 </section>
 
 <section id="projects" class="projects">
-
     <h2>Projetos</h2>
 
     <div class="projects-grid">
-            <a href="https://plim7plim.github.io/portalUEG/"
+        <a href="https://plim7plim.github.io/portalUEG/"
             target="_blank"
             class="project-card">
 
-                <img src="assets/ueg.jpg" alt="Portal UEG">
+            <img src="assets/ueg.jpg" alt="Portal UEG">
 
-                <div class="project-info">
+            <div class="project-info">
+                <h3>Portal UEG</h3>
 
-                    <h3>Portal UEG</h3>
+                <p>
+                    Projeto desenvolvido durante a extensão de Algoritmos e Lógica de Programação,
+                    com o objetivo de criar um portal apresentando todas as extensões do campus,
+                    visando adquirir conhecimento sobre desenvolvimento web.
+                </p>
 
-                    <p>
-                        Projeto desenvolvido durante a extensão de Algoritmos e Lógica de Programação,
-                        com o objetivo de criar um portal apresentando todas as extensões do campus,
-                        visando adquirir conhecimento sobre desenvolvimento web.
-                    </p>
-
-                    <div class="techs">
-                        <span>HTML, CSS e JavaScript</span>
-                        <span>Hospedagem no GitHub Pages</span>
-                    </div>
-
+                <div class="techs">
+                    <span>HTML, CSS e JavaScript</span>
+                    <span>Hospedagem no GitHub Pages</span>
                 </div>
-
-            </a>
+            </div>
+        </a>
 
         <a href="https://github.com/plim7plim/aulasUEG"
-        target="_blank"
-        class="project-card">
+            target="_blank"
+            class="project-card">
 
             <img src="assets/ueg.jpg">
 
             <div class="project-info">
-
                 <h3>Aulas da UEG</h3>
 
                 <p>
-                Repositório com aulas práticas de programação da Faculdade.
+                    Repositório com aulas práticas de programação da Faculdade.
                 </p>
 
                 <div class="techs">
-
                     <span>JavaScript</span>
                     <span>Váriáveis, Funções, Operadores, Vetores</span>
                     <span>Lógica de programação, Pensamento Computacional. </span>
-
                 </div>
-
             </div>
-
         </a>
 
         <a href="https://brillare-joias.vercel.app/"
-        target="_blank"
-        class="project-card">
+            target="_blank"
+            class="project-card">
 
             <img src="assets/brillare.jpg">
 
             <div class="project-info">
-
                 <h3>Brillare Jóias</h3>
 
                 <p>
@@ -264,99 +239,82 @@
                     <span>Arrays e Eventos (OnClick)</span>
                     <span>Hospedagem no Vercel</span>
                 </div>
-
             </div>
-
         </a>
 
         <a href="https://github.com/plim7plim/botIA"
             target="_blank"
             class="project-card">
 
-                <img src="assets/git.png" alt="Bot IA">
+            <img src="assets/git.png" alt="Bot IA">
 
-                <div class="project-info">
+            <div class="project-info">
+                <h3>Bot IA</h3>
 
-                    <h3>Bot IA</h3>
+                <p>
+                    Projeto desenvolvido durante a extensão de Algoritmos e Lógica de Programação.
+                    A aplicação permite que o usuário envie um arquivo PDF e faça perguntas sobre seu
+                    conteúdo. As respostas são geradas por um modelo de IA utilizando uma API REST,
+                    considerando apenas as informações presentes no documento enviado.
+                </p>
 
-                    <p>
-                        Projeto desenvolvido durante a extensão de Algoritmos e Lógica de Programação.
-                        A aplicação permite que o usuário envie um arquivo PDF e faça perguntas sobre seu
-                        conteúdo. As respostas são geradas por um modelo de IA utilizando uma API REST,
-                        considerando apenas as informações presentes no documento enviado.
-                    </p>
-
-                    <div class="techs">
-                        <span>JavaScript</span>
-                        <span>API REST e JSON</span>
-                        <span>Integração com IA</span>
-                    </div>
-
+                <div class="techs">
+                    <span>JavaScript</span>
+                    <span>API REST e JSON</span>
+                    <span>Integração com IA</span>
                 </div>
-
+            </div>
         </a>
 
-
-         <a href="https://plim7plim.github.io/jogo.numero.secreto/"
+        <a href="https://plim7plim.github.io/jogo.numero.secreto/"
             target="_blank"
             class="project-card">
 
-                <img src="assets/git.png">
+            <img src="assets/git.png">
 
-                <div class="project-info">
+            <div class="project-info">
+                <h3>Jogo Do Número Secreto</h3>
 
-                    <h3>Jogo Do Número Secreto</h3>
+                <p>
+                    O Jogo do Número Secreto é um projeto feito no curso de JavaScript da Alura, onde o sistema gera um número aleatório e o jogador tenta adivinhar qual é. A cada tentativa, o jogo avisa se o número é maior ou menor, até que o acerto aconteça. Ele usa funções, listas, comparações e eventos, além de ter um sistema de narração para acessibilidade de pessoas com deficiência
+                </p>
 
-                    <p>
-                       O Jogo do Número Secreto é um projeto feito no curso de JavaScript da Alura, onde o sistema gera um número aleatório e o jogador tenta adivinhar qual é. A cada tentativa, o jogo avisa se o número é maior ou menor, até que o acerto aconteça. Ele usa funções, listas, comparações e eventos, além de ter um sistema de narração para acessibilidade de pessoas com deficiência
-                    </p>
-
-                    <div class="techs">
-                        <span>JavaScript</span>
-                        <span>Eventos</span>
-                        <span>Console</span>
-                    </div>
-
+                <div class="techs">
+                    <span>JavaScript</span>
+                    <span>Eventos</span>
+                    <span>Console</span>
                 </div>
-
+            </div>
         </a>
 
         <a href="https://site-blu.vercel.app/"
             target="_blank"
             class="project-card">
 
-                <img src="assets/logo-blu-azul.png" alt="Site Blu" class="logo-fit">
+            <img src="assets/logo-blu-azul.png" alt="Site Blu" class="logo-fit">
 
-                <div class="project-info">
+            <div class="project-info">
+                <h3>Site Blu</h3>
 
-                    <h3>Site Blu</h3>
+                <p>
+                    Projeto desenvolvido para a Blu Promotora, envolvendo refatoração e documentação
+                    de código, criação de páginas para a empresa e ajustes em telas específicas.
+                </p>
 
-                    <p>
-                        Projeto desenvolvido para a Blu Promotora, envolvendo refatoração e documentação
-                        de código, criação de páginas para a empresa e ajustes em telas específicas.
-                    </p>
-
-                    <div class="techs">
-                        <span>HTML, CSS e JavaScript</span>
-                        <span>Refatoração e Documentação</span>
-                        <span>Hospedagem no Vercel</span>
-                    </div>
-
+                <div class="techs">
+                    <span>HTML, CSS e JavaScript</span>
+                    <span>Refatoração e Documentação</span>
+                    <span>Hospedagem no Vercel</span>
                 </div>
-
+            </div>
         </a>
-
-
     </div>
-
 </section>
 
 <section id="cursos" class="courses">
-
     <h2>Cursos e Formação</h2>
 
     <div class="filter-buttons">
-
         <button class="filter active" data-filter="all">
             Todos
         </button>
@@ -372,238 +330,232 @@
         <button class="filter" data-filter="curso">
             Cursos
         </button>
-
     </div>
 
-
     <div class="courses-grid">
-
-                <div class="course-card" data-category="escolaridade">
-
-            <h3> Engenharia de Software</h3>
+        <div class="course-card" data-category="escolaridade">
+            <h3>Engenharia de Software</h3>
 
             <p>
                 UniCesumar - 6º período
             </p>
 
-            <span>Graduação</span>
-
+            <div class="card-footer">
+                <span>Graduação</span>
+            </div>
         </div>
 
-
-
         <div class="course-card" data-category="escolaridade">
-
             <h3>Sistemas para Internet</h3>
 
             <p>
-                Universidade Estadual de Goiás - UEG | 2º período 
+                Universidade Estadual de Goiás - UEG | 2º período
             </p>
 
-            <span>Tecnólogo</span>
-
+            <div class="card-footer">
+                <span>Tecnólogo</span>
+            </div>
         </div>
 
-
         <div class="course-card" data-category="certificado">
-
             <h3>AWS Cloud Practitioner</h3>
 
             <p>
                 Certificação AWS voltada para fundamentos de computação em nuvem
             </p>
 
-            <span>AWS e serviços fornecidos</span>
-
+            <div class="card-footer">
+                <span>AWS</span>
+            </div>
         </div>
 
-
-
         <div class="course-card" data-category="certificado">
-
-            <h3> CPA-20</h3>
+            <h3>CPA-20</h3>
 
             <p>
                 Certificação financeira pela ANBIMA
             </p>
 
-            <span>ANBIMA</span>
-
+            <div class="card-footer">
+                <span>ANBIMA</span>
+            </div>
         </div>
 
-
-
-
-
-
-
         <div class="course-card" data-category="curso">
-
-            <h3>
-                Fundamentos de Computação em Nuvem
-            </h3>
+            <h3>Fundamentos de Computação em Nuvem</h3>
 
             <p>
                 Conhecimentos em cloud, abordando conceitos e fundamentos de computação em nuvem.
             </p>
 
-            <span>
-                FIAP • 80 horas
-            </span>
+            <div class="card-footer">
+                <span>FIAP • 80 horas</span>
 
-            <a
-                href="assets/cloud.png"
-                target="_blank"
-                class="certificate-btn">
-
-                Confira aqui:
-
-            </a>
-
+                <a href="assets/cloud.png" target="_blank" class="certificate-btn">
+                    Confira aqui
+                </a>
+            </div>
         </div>
 
         <div class="course-card" data-category="curso">
-
-            <h3>
-                Imersão Digital - Trilha de Aprofundamento: DevOps
-            </h3>
+            <h3>Imersão Digital - Trilha de Aprofundamento: DevOps</h3>
 
             <p>
-            Práticas de DevOps envolvendo Linux, automação, Git, CI/CD, Docker,
-            Kubernetes, monitoramento e infraestrutura em nuvem.
+                Práticas de DevOps envolvendo Linux, automação, Git, CI/CD, Docker,
+                Kubernetes, monitoramento e infraestrutura em nuvem.
             </p>
 
-            <span>
-                Alura • 126 horas
-            </span>
+            <div class="card-footer">
+                <span>Alura • 126 horas</span>
 
-            <a 
-                href="assets/certificados/imersao.jpg"
-                target="_blank"
-                class="certificate-btn">
-
-                Confira aqui:
-
-            </a>
-
+                <a href="assets/certificados/imersao.jpg" target="_blank" class="certificate-btn">
+                    Confira aqui
+                </a>
+            </div>
         </div>
 
-
-
         <div class="course-card" data-category="curso">
-
-            <h3>
-            DevOps
-            </h3>
+            <h3>DevOps</h3>
 
             <p>
-            DevOps
-            Linux
-            Rede de computadores
-            SLF4J
-            Docker
-            Kubernetes
-            API REST
+                DevOps, Linux, Rede de computadores, SLF4J, Docker,
+                Kubernetes e API REST.
             </p>
 
-            <span>
-                Alura • 69 horas
-            </span>
+            <div class="card-footer">
+                <span>Alura • 69 horas</span>
 
-            <a 
-                href="assets/certificados/devOps.jpg"
-                target="_blank"
-                class="certificate-btn">
-
-                Confira aqui:
-
-            </a>
-
+                <a href="assets/certificados/devOps.jpg" target="_blank" class="certificate-btn">
+                    Confira aqui
+                </a>
+            </div>
         </div>
 
         <div class="course-card" data-category="curso">
-
-            <h3>
-            Certificações Alura
-            </h3>
+            <h3>Certificações Alura</h3>
 
             <p>
-            Conjunto de cursos concluídos na plataforma Alura, abrangendo formações em
-            DevOps, Linux, Git, Docker, Kubernetes, CI/CD, GitHub Actions e
-            Observabilidade.
+                Conjunto de cursos concluídos na plataforma Alura, abrangendo formações em
+                DevOps, Linux, Git, Docker, Kubernetes, CI/CD, GitHub Actions e
+                Observabilidade.
             </p>
 
-            <span>
-                Alura • 200 horas
-            </span>
+            <div class="card-footer">
+                <span>Alura • 200 horas</span>
 
-            <a 
-                href="assets/certificados/CertificadoAlura.pdf"
-                target="_blank"
-                class="certificate-btn">
-
-                Confira aqui:
-
-            </a>
-
+                <a href="assets/certificados/CertificadoAlura.pdf" target="_blank" class="certificate-btn">
+                    Confira aqui
+                </a>
+            </div>
         </div>
 
-
         <div class="course-card" data-category="curso">
-
-            <h3>
-            BootCamp Back-end ADATECH
-            </h3>
+            <h3>BootCamp Back-end ADATECH</h3>
 
             <p>
-            Bootcamp de desenvolvimento Back-end, com foco em Java, Spring Boot pela Adatech.
+                Bootcamp de desenvolvimento Back-end, com foco em Java, Spring Boot pela Adatech.
             </p>
 
-            <span>
-                Adatech • 19 horas
-            </span>
+            <div class="card-footer">
+                <span>Adatech • 19 horas</span>
 
-            <a 
-                href="assets/certificados/adaTech.jpg"
-                target="_blank"
-                class="certificate-btn">
-
-                Confira aqui:
-
-            </a>
-
+                <a href="assets/certificados/adaTech.jpg" target="_blank" class="certificate-btn">
+                    Confira aqui
+                </a>
+            </div>
         </div>
 
-
         <div class="course-card" data-category="curso">
-
-            <h3>
-            Inglês Britânico 
-            </h3>
+            <h3>Inglês Britânico</h3>
 
             <p>
                 Formação em inglês britânico com foco em comunicação, leitura, escrita e compreensão para o ambiente profissional.
             </p>
 
-            <span>
-                British Council • 216 horas
-            </span>
+            <div class="card-footer">
+                <span>British Council • 216 horas</span>
 
-            <a 
-                href="assets/certificados/inglesBritanico.pdf"
-                target="_blank"
-                class="certificate-btn">
-
-                Confira aqui:
-
-            </a>
-
+                <a href="assets/certificados/inglesBritanico.pdf" target="_blank" class="certificate-btn">
+                    Confira aqui
+                </a>
+            </div>
         </div>
 
+        <div class="course-card" data-category="curso">
+            <h3>AWS Lambda Foundations (Português)</h3>
+
+            <p>
+                Curso sobre fundamentos do AWS Lambda, cobrindo computação serverless,
+                criação e configuração de funções e integração com outros serviços da AWS.
+            </p>
+
+            <div class="card-footer">
+                <span>AWS Training &amp; Certification</span>
+
+                <a href="assets/certificados/awsLambda.jpg" target="_blank" class="certificate-btn">
+                    Confira aqui
+                </a>
+            </div>
+        </div>
+
+        <div class="course-card" data-category="curso">
+            <h3>Claude Platform 101</h3>
+
+            <p>
+                Introdução à plataforma Claude, abordando fundamentos de uso de modelos de IA
+                e boas práticas para integração em aplicações.
+            </p>
+
+            <div class="card-footer">
+                <span>Anthropic</span>
+
+                <a href="assets/certificados/claude.png" target="_blank" class="certificate-btn">
+                    Confira aqui
+                </a>
+            </div>
+        </div>
+
+        <div class="course-card" data-category="curso">
+            <h3>Nano Course: Engenharia de Software</h3>
+
+            <p>
+                Curso rápido sobre fundamentos e práticas de Engenharia de Software.
+            </p>
+
+            <div class="card-footer">
+                <span>FIAP • 100 horas</span>
+
+                <a href="assets/certificados/engDeSoftware.jpg" target="_blank" class="certificate-btn">
+                    Confira aqui
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="skills">
+    <h2>Conhecimentos</h2>
+
+    <p class="skills-subtitle">
+        Uma visão geral das tecnologias e áreas em que venho me desenvolvendo
+    </p>
+
+    <div class="chart-toggle">
+        <button class="chart-btn active" data-chart="pie">
+            Gráfico Pizza
+        </button>
+
+        <button class="chart-btn" data-chart="bar">
+            Gráfico Barra
+        </button>
+    </div>
+
+    <div class="chart-wrapper">
+        <canvas id="skillsChart"></canvas>
+    </div>
 </section>
 
 <section id="socials" class="socials">
-
     <div class="social-title">
         <h2>Vamos nos conectar?</h2>
 
@@ -613,121 +565,92 @@
     </div>
 
     <div class="social-grid">
-
         <a href="https://github.com/plim7plim" target="_blank" class="social-card">
-
             <i class="fa-brands fa-github"></i>
 
             <h3>GitHub</h3>
 
             <span>Projetos e Repositórios</span>
-
         </a>
 
         <a href="https://www.linkedin.com/in/plínio-peixoto" target="_blank" class="social-card">
-
             <i class="fa-brands fa-linkedin"></i>
 
             <h3>LinkedIn</h3>
 
             <span>Vamos nos conectar!</span>
-
         </a>
 
         <a href="https://open.spotify.com/playlist/3Eg3mjjpU07o9WBzjmnBxo?si=f82abf51100644a3"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="social-card">
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-card">
 
-        <i class="fa-brands fa-spotify"></i>
+            <i class="fa-brands fa-spotify"></i>
 
-        <h3>Spotify</h3>
+            <h3>Spotify</h3>
 
-        <span>Minha playlist favorita para programar </span>
-
+            <span>Minha playlist favorita para programar</span>
         </a>
 
         <a href="https://boxd.it/fUPVb" target="_blank" class="social-card">
-
             <i class="fa-solid fa-book-open"></i>
 
             <h3>Letterboxd</h3>
 
             <span>Julgando tudo que eu vejo!</span>
-
         </a>
 
         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=pliniobr33@gmail.com" target="_blank" class="social-card">
             <i class="fa-solid fa-envelope"></i>
+
             <h3>Email</h3>
+
             <span>Entre em contato</span>
         </a>
 
         <a href="https://wa.me/5562998406502" target="_blank" class="social-card">
-
             <i class="fa-brands fa-whatsapp"></i>
 
             <h3>WhatsApp</h3>
 
             <span>Vamos conversar</span>
-
         </a>
 
         <a href="https://discord.gg/B4nHPq5v" target="_blank" class="social-card">
-
             <i class="fa-brands fa-discord"></i>
 
             <h3>Discord</h3>
 
             <span>Bora uma callzinha?</span>
-
         </a>
 
         <a href="https://tracker.gg/valorant/profile/riot/amo%20Laufey%23001/overview?platform=pc&playlist=competitive&season=4f0864e2-40af-28a4-de2c-0e9e64e75f23" target="_blank" class="social-card">
-
             <i class="fa-solid fa-gamepad"></i>
 
             <h3>Valorant</h3>
 
             <span>Confira o melhor platina do Vava</span>
-
         </a>
-
     </div>
-
 </section>
 
-
-
-
-
 <section id="guestbook" class="guestbook">
-
     <h2>Comentários</h2>
 
     <p>Deixe sua opinião sobre meu portfólio !</p>
 
     <div class="comment-form">
+        <input type="text" id="nome" placeholder="Seu nome">
 
-        <input
-            type="text"
-            id="nome"
-            placeholder="Seu nome">
-
-        <textarea
-            id="mensagem"
-            placeholder="Escreva um comentário"></textarea>
+        <textarea id="mensagem" placeholder="Escreva um comentário"></textarea>
 
         <button id="enviar">
-
             Enviar comentário
-
         </button>
-
     </div>
 
     <div id="comentarios"></div>
-
 </section>
 
 </main>
@@ -736,6 +659,7 @@
     Desenvolvido por Plínio Peixoto © 2026
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.5.1/chart.umd.min.js"></script>
 <script type="module" src="script.js"></script>
 
 </body>
