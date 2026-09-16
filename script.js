@@ -28,20 +28,28 @@ const iconMoon = document.getElementById("iconMoon");
 button.addEventListener("click", () => {
     document.body.classList.toggle("light");
     const isLight = document.body.classList.contains("light");
-    iconSun.hidden = isLight;
-    iconMoon.hidden = !isLight;
+    iconSun.setAttribute("aria-hidden", isLight);
+    iconMoon.setAttribute("aria-hidden", !isLight);
 });
 
 const menuToggle = document.getElementById("menuToggle");
+const menuIcon = menuToggle.querySelector("i");
 const menu = document.getElementById("menu");
 
+function setMenuOpen(isOpen) {
+    menu.classList.toggle("active", isOpen);
+    menuToggle.classList.toggle("active", isOpen);
+    menuIcon.classList.toggle("fa-bars", !isOpen);
+    menuIcon.classList.toggle("fa-xmark", isOpen);
+}
+
 menuToggle.addEventListener("click", () => {
-    menu.classList.toggle("active");
+    setMenuOpen(!menu.classList.contains("active"));
 });
 
 document.querySelectorAll("#menu a").forEach(link => {
     link.addEventListener("click", () => {
-        menu.classList.remove("active");
+        setMenuOpen(false);
     });
 });
 
@@ -214,19 +222,26 @@ async function carregarComentarios() {
             </div>
         `;
     });
+
+    container.querySelectorAll(".comentario").forEach((el, index) => {
+        el.classList.add("reveal");
+        el.style.transitionDelay = `${Math.min(index * 0.08, 0.4)}s`;
+        requestAnimationFrame(() => el.classList.add("visible"));
+    });
 }
 
 carregarComentarios();
 
 const revealGroups = [
-    ".hero-text",
-    ".hero-image",
     ".about-text",
     ".about-card",
     "section > h2",
     ".timeline-item",
     ".project-card",
     ".course-card",
+    ".filter-buttons",
+    ".chart-toggle",
+    ".chart-wrapper",
     ".social-card",
     ".comment-form"
 ];
