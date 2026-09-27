@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -18,6 +21,7 @@
     };
 </script>
 <script defer src="/_vercel/insights/script.js"></script>
+</head>
 <body>
 
 <div class="background"></div>
@@ -27,114 +31,217 @@
         PP
     </div>
 
-    <button class="menu-toggle" id="menuToggle">
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" data-i18n-aria="a11y.menu">
         <i class="fa-solid fa-bars"></i>
     </button>
 
     <nav id="menu">
-        <a href="#home">Home</a>
-        <a href="#about">Sobre</a>
-        <a href="#experience">Experiência</a>
-        <a href="#projects">Projetos</a>
-        <a href="#cursos">Cursos</a>
-        <a href="#skills">Conhecimentos</a>
-        <a href="#socials">Redes</a>
-        <a href="#guestbook">Comentários</a>
+        <a href="#home" data-i18n="nav.home">Home</a>
+        <a href="#about" data-i18n="nav.about">Sobre</a>
+        <a href="#experience" data-i18n="nav.experience">Experiência</a>
+        <a href="#projects" data-i18n="nav.projects">Projetos</a>
+        <a href="#cursos" data-i18n="nav.courses">Cursos</a>
+        <a href="#socials" data-i18n="nav.socials">Redes</a>
+        <a href="#guestbook" data-i18n="nav.guestbook">Comentários</a>
     </nav>
 
-    <button id="themeButton" aria-label="Alternar tema">
-        <svg id="iconSun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="5"></circle>
-            <line x1="12" y1="1" x2="12" y2="3"></line>
-            <line x1="12" y1="21" x2="12" y2="23"></line>
-            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-            <line x1="1" y1="12" x2="3" y2="12"></line>
-            <line x1="21" y1="12" x2="23" y2="12"></line>
-            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-        </svg>
-        <svg id="iconMoon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" hidden>
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-        </svg>
-    </button>
+    <div class="header-actions">
+        <div class="lang-switch" role="group" aria-label="Escolher idioma" data-i18n-aria="a11y.language">
+            <button class="lang-btn active" data-lang="pt" aria-pressed="true" aria-label="Português (Brasil)" title="Português (Brasil)">
+                <svg viewBox="0 0 20 14" aria-hidden="true" focusable="false">
+                    <rect width="20" height="14" fill="#009C3B"></rect>
+                    <polygon points="10,1.4 18.6,7 10,12.6 1.4,7" fill="#FFDF00"></polygon>
+                    <circle cx="10" cy="7" r="3.4" fill="#002776"></circle>
+                    <path d="M6.75 6.35 Q10 5.35 13.3 7.55" fill="none" stroke="#FFFFFF" stroke-width="0.6"></path>
+                </svg>
+            </button>
+
+            <button class="lang-btn" data-lang="fr" aria-pressed="false" aria-label="Français" title="Français">
+                <svg viewBox="0 0 3 2" aria-hidden="true" focusable="false">
+                    <rect width="1" height="2" x="0" fill="#002654"></rect>
+                    <rect width="1" height="2" x="1" fill="#FFFFFF"></rect>
+                    <rect width="1" height="2" x="2" fill="#CE1126"></rect>
+                </svg>
+            </button>
+        </div>
+
+        <button id="themeButton" aria-label="Alternar tema" data-i18n-aria="a11y.theme">
+            <svg id="iconSun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg id="iconMoon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" hidden>
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+        </button>
+    </div>
 </header>
 
 <main>
 <section id="home" class="hero">
     <div class="hero-text">
-        <span>Olá!</span>
+        <span data-i18n="hero.greeting">Olá!</span>
 
         <h1>Plínio Peixoto</h1>
 
-        <h2>Desenvolvedor Full Stack Jr.</h2>
+        <h2 data-i18n="hero.role">Desenvolvedor Full Stack Jr.</h2>
 
-        <p>
+        <p data-i18n="hero.tagline">
             Uma simples ideia pode virar algo incrível.
         </p>
 
         <div class="buttons">
-            <a href="#projects" class="btn">
+            <a href="#projects" class="btn" data-i18n="hero.ctaProjects">
                 Veja meus Projetos
             </a>
 
-            <a href="assets/curriculo.pdf" class="btn secondary">
+            <a href="assets/curriculo.pdf" class="btn secondary" data-i18n="hero.ctaCv">
                 Veja meu Currículo aqui:
             </a>
         </div>
     </div>
 
     <div class="hero-image">
-        <img src="assets/eu.png" alt="Foto" class="hero-image-default">
+        <img src="assets/eu.png" alt="Foto" class="hero-image-default" data-i18n-alt="hero.photoAlt">
         <img src="assets/avatar.jpg" alt="Avatar" class="hero-image-hover">
     </div>
 </section>
 
 <section id="about" class="about">
     <div class="about-text">
-        <h2>Sobre Mim</h2>
+        <h2 data-i18n="about.title">Sobre Mim</h2>
 
-        <p>
+        <p data-i18n="about.p1">
             Olá! Me chamo <strong>Plínio Peixoto dos Santos</strong>, tenho 20 anos e sou apaixonado por tecnologia.
             Estudo programação desde os 17 anos e, desde então, venho me dedicando diariamente ao desenvolvimento de software.
         </p>
 
-        <p>
+        <p data-i18n="about.p2">
             Atualmente curso <strong>Engenharia de Software</strong> e <strong>Sistemas para Internet</strong>, trabalho como
             <strong>Desenvolvedor Full Stack Jr.</strong>
         </p>
 
-        <p>
+        <p data-i18n="about.p3">
             Fique à vontade para explorar este projeto!
         </p>
     </div>
 
-    <div class="about-card">
-        <h3>Resumo</h3>
+    <div class="about-card carousel" aria-roledescription="carousel">
+        <div class="carousel-viewport">
+            <div class="carousel-track">
 
-        <p>👨‍💻 Desenvolvedor Full Stack Jr.</p>
-        <p>🎓 Engenharia de Software | Sistemas Para Internet</p>
-        <p>📍 Goiás - Brasil</p>
-        <p>☕ Java</p>
-        <p>☁️ AWS</p>
-        <p>💜 Computação em Nuvem</p>
+                <div class="carousel-slide" aria-roledescription="slide">
+                    <div class="summary-header">
+                        <h3 data-i18n="summary.title">Resumo</h3>
+
+                        <span class="status-badge">
+                            <span class="status-dot"></span>
+                            <span data-i18n="summary.status">Aberto a propostas</span>
+                        </span>
+                    </div>
+
+                    <ul class="summary-list">
+                        <li>
+                            <span class="summary-icon"><i class="fa-solid fa-laptop-code"></i></span>
+                            <div>
+                                <small data-i18n="summary.roleLabel">Cargo</small>
+                                <strong data-i18n="summary.roleValue">Desenvolvedor Full Stack Jr.</strong>
+                            </div>
+                        </li>
+
+                        <li>
+                            <span class="summary-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+                            <div>
+                                <small data-i18n="summary.eduLabel">Formação</small>
+                                <strong data-i18n="summary.edu1">Engenharia de Software</strong>
+                                <strong data-i18n="summary.edu2">Sistemas para Internet</strong>
+                            </div>
+                        </li>
+
+                        <li>
+                            <span class="summary-icon"><i class="fa-solid fa-location-dot"></i></span>
+                            <div>
+                                <small data-i18n="summary.locLabel">Localização</small>
+                                <strong data-i18n="summary.locValue">Goiás, Brasil</strong>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="summary-tags">
+                        <small data-i18n="summary.focusLabel">Foco</small>
+                        <div>
+                            <span class="focus-tag tag-java">
+                                <span class="focus-icon"><i class="fa-brands fa-java"></i></span>
+                                Java
+                            </span>
+                            <span class="focus-tag tag-aws">
+                                <span class="focus-icon"><i class="fa-brands fa-aws"></i></span>
+                                AWS
+                            </span>
+                            <span class="focus-tag tag-cloud">
+                                <span class="focus-icon"><i class="fa-solid fa-cloud"></i></span>
+                                <span data-i18n="summary.tagCloud">Computação em Nuvem</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-slide" aria-roledescription="slide">
+                    <div class="summary-header">
+                        <h3 data-i18n="skills.title">Conhecimentos</h3>
+
+                        <div class="chart-toggle">
+                            <button class="chart-btn active" data-chart="pie" data-i18n="skills.pie">Pizza</button>
+                            <button class="chart-btn" data-chart="bar" data-i18n="skills.bar">Barra</button>
+                        </div>
+                    </div>
+
+                    <div class="chart-wrapper">
+                        <canvas id="skillsChart"></canvas>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="carousel-controls">
+            <button class="carousel-arrow" data-dir="-1" aria-label="Anterior" data-i18n-aria="carousel.prev">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+            <div class="carousel-dots">
+                <button class="carousel-dot active" aria-label="Resumo" data-i18n-aria="summary.title"></button>
+                <button class="carousel-dot" aria-label="Conhecimentos" data-i18n-aria="skills.title"></button>
+            </div>
+
+            <button class="carousel-arrow" data-dir="1" aria-label="Próximo" data-i18n-aria="carousel.next">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
     </div>
 </section>
 
 <section id="experience" class="experience">
-    <h2>Minha Jornada</h2>
+    <h2 data-i18n="experience.title">Minha Jornada</h2>
 
     <div class="timeline">
         <div class="timeline-item">
             <div class="circle"></div>
 
-            <h3>Jovem Aprendiz</h3>
+            <h3 data-i18n="exp1.title">Jovem Aprendiz</h3>
 
             <h4>Sicoob Do Vale</h4>
 
             <span>2023 - 2025</span>
 
-            <p>
+            <p data-i18n="exp1.desc">
                 Primeiro contato com o mercado de trabalho,
                 desenvolvendo organização, atendimento e rotinas administrativas.
             </p>
@@ -145,11 +252,11 @@
 
             <h3>São Salvador Alimentos</h3>
 
-            <h4>Assistente Adiministrativo | Faturamento</h4>
+            <h4 data-i18n="exp2.role">Assistente Administrativo | Faturamento</h4>
 
             <span>2025 - 2026</span>
 
-            <p>
+            <p data-i18n="exp2.desc">
                 Atuação com emissão de notas fiscais, SAP, controle de cargas
                 e processos logísticos, administrativos e Faturamento
             </p>
@@ -162,9 +269,9 @@
 
             <h4>Blu Promotora</h4>
 
-            <span>2026 - Atual</span>
+            <span data-i18n="exp3.period">2026 - Atual</span>
 
-            <p>
+            <p data-i18n="exp3.desc">
                 Atuação com refatoração e documentação de código, criação de sites para a empresa
                 e alterações em telas específicas.
             </p>
@@ -173,7 +280,7 @@
 </section>
 
 <section id="projects" class="projects">
-    <h2>Projetos</h2>
+    <h2 data-i18n="projects.title">Projetos</h2>
 
     <div class="projects-grid">
         <a href="https://plim7plim.github.io/portalUEG/"
@@ -185,15 +292,15 @@
             <div class="project-info">
                 <h3>Portal UEG</h3>
 
-                <p>
+                <p data-i18n="p1.desc">
                     Projeto desenvolvido durante a extensão de Algoritmos e Lógica de Programação,
                     com o objetivo de criar um portal apresentando todas as extensões do campus,
                     visando adquirir conhecimento sobre desenvolvimento web.
                 </p>
 
                 <div class="techs">
-                    <span>HTML, CSS e JavaScript</span>
-                    <span>Hospedagem no GitHub Pages</span>
+                    <span data-i18n="tech.htmlCssJs">HTML, CSS e JavaScript</span>
+                    <span data-i18n="tech.githubPages">Hospedagem no GitHub Pages</span>
                 </div>
             </div>
         </a>
@@ -205,16 +312,16 @@
             <img src="assets/ueg.jpg">
 
             <div class="project-info">
-                <h3>Aulas da UEG</h3>
+                <h3 data-i18n="p2.title">Aulas da UEG</h3>
 
-                <p>
+                <p data-i18n="p2.desc">
                     Repositório com aulas práticas de programação da Faculdade.
                 </p>
 
                 <div class="techs">
                     <span>JavaScript</span>
-                    <span>Váriáveis, Funções, Operadores, Vetores</span>
-                    <span>Lógica de programação, Pensamento Computacional. </span>
+                    <span data-i18n="p2.tech2">Variáveis, Funções, Operadores, Vetores</span>
+                    <span data-i18n="p2.tech3">Lógica de programação, Pensamento Computacional. </span>
                 </div>
             </div>
         </a>
@@ -228,7 +335,7 @@
             <div class="project-info">
                 <h3>Brillare Jóias</h3>
 
-                <p>
+                <p data-i18n="p3.desc">
                     Projeto desenvolvido para colocar os conhecimentos em prática, criando um catálogo
                     online para uma conhecida que trabalha com venda de joias e bijuterias.
                     Durante o desenvolvimento, aprendi conceitos como manipulação de Arrays, eventos
@@ -236,9 +343,9 @@
                 </p>
 
                 <div class="techs">
-                    <span>HTML, CSS e JavaScript</span>
-                    <span>Arrays e Eventos (OnClick)</span>
-                    <span>Hospedagem no Vercel</span>
+                    <span data-i18n="tech.htmlCssJs">HTML, CSS e JavaScript</span>
+                    <span data-i18n="p3.tech2">Arrays e Eventos (OnClick)</span>
+                    <span data-i18n="tech.vercel">Hospedagem no Vercel</span>
                 </div>
             </div>
         </a>
@@ -252,7 +359,7 @@
             <div class="project-info">
                 <h3>Bot IA</h3>
 
-                <p>
+                <p data-i18n="p4.desc">
                     Projeto desenvolvido durante a extensão de Algoritmos e Lógica de Programação.
                     A aplicação permite que o usuário envie um arquivo PDF e faça perguntas sobre seu
                     conteúdo. As respostas são geradas por um modelo de IA utilizando uma API REST,
@@ -261,8 +368,8 @@
 
                 <div class="techs">
                     <span>JavaScript</span>
-                    <span>API REST e JSON</span>
-                    <span>Integração com IA</span>
+                    <span data-i18n="p4.tech2">API REST e JSON</span>
+                    <span data-i18n="p4.tech3">Integração com IA</span>
                 </div>
             </div>
         </a>
@@ -274,15 +381,15 @@
             <img src="assets/git.png">
 
             <div class="project-info">
-                <h3>Jogo Do Número Secreto</h3>
+                <h3 data-i18n="p5.title">Jogo Do Número Secreto</h3>
 
-                <p>
+                <p data-i18n="p5.desc">
                     O Jogo do Número Secreto é um projeto feito no curso de JavaScript da Alura, onde o sistema gera um número aleatório e o jogador tenta adivinhar qual é. A cada tentativa, o jogo avisa se o número é maior ou menor, até que o acerto aconteça. Ele usa funções, listas, comparações e eventos, além de ter um sistema de narração para acessibilidade de pessoas com deficiência
                 </p>
 
                 <div class="techs">
                     <span>JavaScript</span>
-                    <span>Eventos</span>
+                    <span data-i18n="p5.tech2">Eventos</span>
                     <span>Console</span>
                 </div>
             </div>
@@ -297,15 +404,15 @@
             <div class="project-info">
                 <h3>Site Blu</h3>
 
-                <p>
+                <p data-i18n="p6.desc">
                     Projeto desenvolvido para a Blu Promotora, envolvendo refatoração e documentação
                     de código, criação de páginas para a empresa e ajustes em telas específicas.
                 </p>
 
                 <div class="techs">
-                    <span>HTML, CSS e JavaScript</span>
-                    <span>Refatoração e Documentação</span>
-                    <span>Hospedagem no Vercel</span>
+                    <span data-i18n="tech.htmlCssJs">HTML, CSS e JavaScript</span>
+                    <span data-i18n="p6.tech2">Refatoração e Documentação</span>
+                    <span data-i18n="tech.vercel">Hospedagem no Vercel</span>
                 </div>
             </div>
         </a>
@@ -319,16 +426,38 @@
             <div class="project-info">
                 <h3>Mural UEG</h3>
 
-                <p>
+                <p data-i18n="p7.desc">
                     Mural de avisos para turmas do Câmpus Itaberaí da UEG. Professores criam turmas
                     e publicam avisos, enquanto alunos acompanham tudo de forma centralizada, com
                     integração às comunidades no Discord e WhatsApp.
                 </p>
 
                 <div class="techs">
-                    <span>HTML, CSS e JavaScript</span>
+                    <span data-i18n="tech.htmlCssJs">HTML, CSS e JavaScript</span>
                     <span>Supabase</span>
-                    <span>Hospedagem no Vercel</span>
+                    <span data-i18n="tech.vercel">Hospedagem no Vercel</span>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://constancia.plinioportifolio.xyz/"
+            target="_blank"
+            class="project-card">
+
+            <img src="assets/git.png" alt="Metas">
+
+            <div class="project-info">
+                <h3 data-i18n="p8.title">Metas</h3>
+
+                <p data-i18n="p8.desc">
+                    Site simples para controle de metas diárias, ajudando a manter a constância
+                    no dia a dia. Projeto vibe codado, desenvolvido com auxílio de IA.
+                </p>
+
+                <div class="techs">
+                    <span>Vibe Coding</span>
+                    <span data-i18n="p8.tech2">Desenvolvido com IA</span>
+                    <span data-i18n="p8.tech3">Controle de Metas Diárias</span>
                 </div>
             </div>
         </a>
@@ -336,55 +465,55 @@
 </section>
 
 <section id="cursos" class="courses">
-    <h2>Cursos e Formação</h2>
+    <h2 data-i18n="courses.title">Cursos e Formação</h2>
 
     <div class="filter-buttons">
-        <button class="filter active" data-filter="all">
+        <button class="filter active" data-filter="all" data-i18n="filter.all">
             Todos
         </button>
 
-        <button class="filter" data-filter="escolaridade">
+        <button class="filter" data-filter="escolaridade" data-i18n="filter.school">
             Escolaridade
         </button>
 
-        <button class="filter" data-filter="certificado">
+        <button class="filter" data-filter="certificado" data-i18n="filter.certificates">
             Certificados
         </button>
 
-        <button class="filter" data-filter="curso">
+        <button class="filter" data-filter="curso" data-i18n="filter.courses">
             Cursos
         </button>
     </div>
 
     <div class="courses-grid">
         <div class="course-card" data-category="escolaridade">
-            <h3>Engenharia de Software</h3>
+            <h3 data-i18n="c1.title">Engenharia de Software</h3>
 
-            <p>
+            <p data-i18n="c1.desc">
                 UniCesumar - 6º período
             </p>
 
             <div class="card-footer">
-                <span>Graduação</span>
+                <span data-i18n="c1.tag">Graduação</span>
             </div>
         </div>
 
         <div class="course-card" data-category="escolaridade">
-            <h3>Sistemas para Internet</h3>
+            <h3 data-i18n="c2.title">Sistemas para Internet</h3>
 
-            <p>
+            <p data-i18n="c2.desc">
                 Universidade Estadual de Goiás - UEG | 2º período
             </p>
 
             <div class="card-footer">
-                <span>Tecnólogo</span>
+                <span data-i18n="c2.tag">Tecnólogo</span>
             </div>
         </div>
 
         <div class="course-card" data-category="certificado">
             <h3>AWS Cloud Practitioner</h3>
 
-            <p>
+            <p data-i18n="c3.desc">
                 Certificação AWS voltada para fundamentos de computação em nuvem
             </p>
 
@@ -396,7 +525,7 @@
         <div class="course-card" data-category="certificado">
             <h3>CPA-20</h3>
 
-            <p>
+            <p data-i18n="c4.desc">
                 Certificação financeira pela ANBIMA
             </p>
 
@@ -406,33 +535,33 @@
         </div>
 
         <div class="course-card" data-category="curso">
-            <h3>Fundamentos de Computação em Nuvem</h3>
+            <h3 data-i18n="c5.title">Fundamentos de Computação em Nuvem</h3>
 
-            <p>
+            <p data-i18n="c5.desc">
                 Conhecimentos em cloud, abordando conceitos e fundamentos de computação em nuvem.
             </p>
 
             <div class="card-footer">
-                <span>FIAP • 80 horas</span>
+                <span data-i18n="c5.tag">FIAP • 80 horas</span>
 
-                <a href="assets/cloud.png" target="_blank" class="certificate-btn">
+                <a href="assets/cloud.png" target="_blank" class="certificate-btn" data-i18n="course.cta">
                     Confira aqui
                 </a>
             </div>
         </div>
 
         <div class="course-card" data-category="curso">
-            <h3>Imersão Digital - Trilha de Aprofundamento: DevOps</h3>
+            <h3 data-i18n="c6.title">Imersão Digital - Trilha de Aprofundamento: DevOps</h3>
 
-            <p>
+            <p data-i18n="c6.desc">
                 Práticas de DevOps envolvendo Linux, automação, Git, CI/CD, Docker,
                 Kubernetes, monitoramento e infraestrutura em nuvem.
             </p>
 
             <div class="card-footer">
-                <span>Alura • 126 horas</span>
+                <span data-i18n="c6.tag">Alura • 126 horas</span>
 
-                <a href="assets/certificados/imersao.jpg" target="_blank" class="certificate-btn">
+                <a href="assets/certificados/imersao.jpg" target="_blank" class="certificate-btn" data-i18n="course.cta">
                     Confira aqui
                 </a>
             </div>
@@ -441,74 +570,74 @@
         <div class="course-card" data-category="curso">
             <h3>DevOps</h3>
 
-            <p>
+            <p data-i18n="c7.desc">
                 DevOps, Linux, Rede de computadores, SLF4J, Docker,
                 Kubernetes e API REST.
             </p>
 
             <div class="card-footer">
-                <span>Alura • 69 horas</span>
+                <span data-i18n="c7.tag">Alura • 69 horas</span>
 
-                <a href="assets/certificados/devOps.jpg" target="_blank" class="certificate-btn">
+                <a href="assets/certificados/devOps.jpg" target="_blank" class="certificate-btn" data-i18n="course.cta">
                     Confira aqui
                 </a>
             </div>
         </div>
 
         <div class="course-card" data-category="curso">
-            <h3>Certificações Alura</h3>
+            <h3 data-i18n="c8.title">Certificações Alura</h3>
 
-            <p>
+            <p data-i18n="c8.desc">
                 Conjunto de cursos concluídos na plataforma Alura, abrangendo formações em
                 DevOps, Linux, Git, Docker, Kubernetes, CI/CD, GitHub Actions e
                 Observabilidade.
             </p>
 
             <div class="card-footer">
-                <span>Alura • 200 horas</span>
+                <span data-i18n="c8.tag">Alura • 200 horas</span>
 
-                <a href="assets/certificados/CertificadoAlura.pdf" target="_blank" class="certificate-btn">
+                <a href="assets/certificados/CertificadoAlura.pdf" target="_blank" class="certificate-btn" data-i18n="course.cta">
                     Confira aqui
                 </a>
             </div>
         </div>
 
         <div class="course-card" data-category="curso">
-            <h3>BootCamp Back-end ADATECH</h3>
+            <h3 data-i18n="c9.title">BootCamp Back-end ADATECH</h3>
 
-            <p>
+            <p data-i18n="c9.desc">
                 Bootcamp de desenvolvimento Back-end, com foco em Java, Spring Boot pela Adatech.
             </p>
 
             <div class="card-footer">
-                <span>Adatech • 19 horas</span>
+                <span data-i18n="c9.tag">Adatech • 19 horas</span>
 
-                <a href="assets/certificados/adaTech.jpg" target="_blank" class="certificate-btn">
+                <a href="assets/certificados/adaTech.jpg" target="_blank" class="certificate-btn" data-i18n="course.cta">
                     Confira aqui
                 </a>
             </div>
         </div>
 
         <div class="course-card" data-category="curso">
-            <h3>Inglês Britânico</h3>
+            <h3 data-i18n="c10.title">Inglês Britânico</h3>
 
-            <p>
+            <p data-i18n="c10.desc">
                 Formação em inglês britânico com foco em comunicação, leitura, escrita e compreensão para o ambiente profissional.
             </p>
 
             <div class="card-footer">
-                <span>British Council • 216 horas</span>
+                <span data-i18n="c10.tag">British Council • 216 horas</span>
 
-                <a href="assets/certificados/inglesBritanico.pdf" target="_blank" class="certificate-btn">
+                <a href="assets/certificados/inglesBritanico.pdf" target="_blank" class="certificate-btn" data-i18n="course.cta">
                     Confira aqui
                 </a>
             </div>
         </div>
 
         <div class="course-card" data-category="curso">
-            <h3>AWS Lambda Foundations (Português)</h3>
+            <h3 data-i18n="c11.title">AWS Lambda Foundations (Português)</h3>
 
-            <p>
+            <p data-i18n="c11.desc">
                 Curso sobre fundamentos do AWS Lambda, cobrindo computação serverless,
                 criação e configuração de funções e integração com outros serviços da AWS.
             </p>
@@ -516,7 +645,7 @@
             <div class="card-footer">
                 <span>AWS Training &amp; Certification</span>
 
-                <a href="assets/certificados/awsLambda.jpg" target="_blank" class="certificate-btn">
+                <a href="assets/certificados/awsLambda.jpg" target="_blank" class="certificate-btn" data-i18n="course.cta">
                     Confira aqui
                 </a>
             </div>
@@ -525,7 +654,7 @@
         <div class="course-card" data-category="curso">
             <h3>Claude Platform 101</h3>
 
-            <p>
+            <p data-i18n="c12.desc">
                 Introdução à plataforma Claude, abordando fundamentos de uso de modelos de IA
                 e boas práticas para integração em aplicações.
             </p>
@@ -533,23 +662,39 @@
             <div class="card-footer">
                 <span>Anthropic</span>
 
-                <a href="assets/certificados/claude.png" target="_blank" class="certificate-btn">
+                <a href="assets/certificados/claude.png" target="_blank" class="certificate-btn" data-i18n="course.cta">
                     Confira aqui
                 </a>
             </div>
         </div>
 
         <div class="course-card" data-category="curso">
-            <h3>Nano Course: Engenharia de Software</h3>
+            <h3 data-i18n="c13.title">Nano Course: Engenharia de Software</h3>
 
-            <p>
+            <p data-i18n="c13.desc">
                 Curso rápido sobre fundamentos e práticas de Engenharia de Software.
             </p>
 
             <div class="card-footer">
-                <span>FIAP • 100 horas</span>
+                <span data-i18n="c13.tag">FIAP • 100 horas</span>
 
-                <a href="assets/certificados/engDeSoftware.jpg" target="_blank" class="certificate-btn">
+                <a href="assets/certificados/engDeSoftware.jpg" target="_blank" class="certificate-btn" data-i18n="course.cta">
+                    Confira aqui
+                </a>
+            </div>
+        </div>
+
+        <div class="course-card" data-category="curso">
+            <h3 data-i18n="c14.title">Sensibilização para a Segurança Digital</h3>
+
+            <p data-i18n="c14.desc">
+                Curso introdutório sobre conceitos e boas práticas de segurança digital.
+            </p>
+
+            <div class="card-footer">
+                <span>Cisco Networking Academy • IFG</span>
+
+                <a href="assets/certificados/cisco.jpg" target="_blank" class="certificate-btn" data-i18n="course.cta">
                     Confira aqui
                 </a>
             </div>
@@ -557,33 +702,11 @@
     </div>
 </section>
 
-<section id="skills" class="skills">
-    <h2>Conhecimentos</h2>
-
-    <p class="skills-subtitle">
-        Uma visão geral das tecnologias e áreas em que venho me desenvolvendo
-    </p>
-
-    <div class="chart-toggle">
-        <button class="chart-btn active" data-chart="pie">
-            Gráfico Pizza
-        </button>
-
-        <button class="chart-btn" data-chart="bar">
-            Gráfico Barra
-        </button>
-    </div>
-
-    <div class="chart-wrapper">
-        <canvas id="skillsChart"></canvas>
-    </div>
-</section>
-
 <section id="socials" class="socials">
     <div class="social-title">
-        <h2>Vamos nos conectar?</h2>
+        <h2 data-i18n="socials.title">Vamos nos conectar?</h2>
 
-        <p>
+        <p data-i18n="socials.subtitle">
             Conheça meu trabalho, minhas playlists e um pouco mais sobre quem eu sou
         </p>
     </div>
@@ -594,7 +717,7 @@
 
             <h3>GitHub</h3>
 
-            <span>Projetos e Repositórios</span>
+            <span data-i18n="socials.github">Projetos e Repositórios</span>
         </a>
 
         <a href="https://www.linkedin.com/in/plínio-peixoto" target="_blank" class="social-card">
@@ -602,7 +725,7 @@
 
             <h3>LinkedIn</h3>
 
-            <span>Vamos nos conectar!</span>
+            <span data-i18n="socials.linkedin">Vamos nos conectar!</span>
         </a>
 
         <a href="https://open.spotify.com/playlist/3Eg3mjjpU07o9WBzjmnBxo?si=f82abf51100644a3"
@@ -614,7 +737,7 @@
 
             <h3>Spotify</h3>
 
-            <span>Minha playlist favorita para programar</span>
+            <span data-i18n="socials.spotify">Minha playlist favorita para programar</span>
         </a>
 
         <a href="https://boxd.it/fUPVb" target="_blank" class="social-card">
@@ -622,7 +745,7 @@
 
             <h3>Letterboxd</h3>
 
-            <span>Julgando tudo que eu vejo!</span>
+            <span data-i18n="socials.letterboxd">Julgando tudo que eu vejo!</span>
         </a>
 
         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=pliniobr33@gmail.com" target="_blank" class="social-card">
@@ -630,7 +753,7 @@
 
             <h3>Email</h3>
 
-            <span>Entre em contato</span>
+            <span data-i18n="socials.email">Entre em contato</span>
         </a>
 
         <a href="https://wa.me/5562998406502" target="_blank" class="social-card">
@@ -638,7 +761,7 @@
 
             <h3>WhatsApp</h3>
 
-            <span>Vamos conversar</span>
+            <span data-i18n="socials.whatsapp">Vamos conversar</span>
         </a>
 
         <a href="https://discord.gg/B4nHPq5v" target="_blank" class="social-card">
@@ -646,7 +769,7 @@
 
             <h3>Discord</h3>
 
-            <span>Bora uma callzinha?</span>
+            <span data-i18n="socials.discord">Bora uma callzinha?</span>
         </a>
 
         <a href="https://tracker.gg/valorant/profile/riot/amo%20Laufey%23001/overview?platform=pc&playlist=competitive&season=4f0864e2-40af-28a4-de2c-0e9e64e75f23" target="_blank" class="social-card">
@@ -654,22 +777,22 @@
 
             <h3>Valorant</h3>
 
-            <span>Confira o melhor platina do Vava</span>
+            <span data-i18n="socials.valorant">Confira o melhor platina do Vava</span>
         </a>
     </div>
 </section>
 
 <section id="guestbook" class="guestbook">
-    <h2>Comentários</h2>
+    <h2 data-i18n="guestbook.title">Comentários</h2>
 
-    <p>Deixe sua opinião sobre meu portfólio !</p>
+    <p data-i18n="guestbook.subtitle">Deixe sua opinião sobre meu portfólio !</p>
 
     <div class="comment-form">
-        <input type="text" id="nome" placeholder="Seu nome">
+        <input type="text" id="nome" placeholder="Seu nome" data-i18n-placeholder="guestbook.name">
 
-        <textarea id="mensagem" placeholder="Escreva um comentário"></textarea>
+        <textarea id="mensagem" placeholder="Escreva um comentário" data-i18n-placeholder="guestbook.message"></textarea>
 
-        <button id="enviar">
+        <button id="enviar" data-i18n="guestbook.send">
             Enviar comentário
         </button>
     </div>
@@ -679,7 +802,7 @@
 
 </main>
 
-<footer>
+<footer data-i18n="footer.text">
     Desenvolvido por Plínio Peixoto © 2026
 </footer>
 

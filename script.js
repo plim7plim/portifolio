@@ -8,6 +8,9 @@ import {
     orderBy,
     serverTimestamp
 } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-firestore.js";
+import { initI18n, t } from "./i18n.js";
+
+initI18n();
 
 const firebaseConfig = {
     apiKey: "AIzaSyDSfhfv6ZKtkDTJi-bIaFInPQD4tojvKl0",
@@ -73,18 +76,77 @@ filters.forEach(filter => {
     });
 });
 
-const skillsData = {
-    labels: [
-        "JavaScript",
-        "HTML & CSS",
-        "Java & Spring Boot",
-        "AWS & Cloud",
-        "DevOps (Docker, K8s, Linux, CI/CD)",
-        "Banco de Dados",
-        "Inglês"
-    ],
-    values: [85, 85, 65, 70, 60, 55, 80]
-};
+const carousel = document.querySelector(".carousel");
+
+if (carousel) {
+    const viewport = carousel.querySelector(".carousel-viewport");
+    const track = carousel.querySelector(".carousel-track");
+    const slides = carousel.querySelectorAll(".carousel-slide");
+    const dots = carousel.querySelectorAll(".carousel-dot");
+    let currentSlide = 0;
+
+    // O card acompanha a altura do slide visível, sem deixar vão embaixo do menor
+    function updateHeight() {
+        viewport.style.height = `${slides[currentSlide].offsetHeight}px`;
+    }
+
+    new ResizeObserver(updateHeight).observe(track);
+    slides.forEach(slide => new ResizeObserver(updateHeight).observe(slide));
+
+    function goToSlide(index) {
+        currentSlide = (index + slides.length) % slides.length;
+        track.style.transform = `translateX(-${currentSlide * 100}%)`;
+        updateHeight();
+
+        slides.forEach((slide, i) => {
+            // inert tira o slide escondido do Tab e dos leitores de tela
+            slide.inert = i !== currentSlide;
+        });
+
+        dots.forEach((dot, i) => {
+            dot.classList.toggle("active", i === currentSlide);
+            dot.setAttribute("aria-current", i === currentSlide);
+        });
+    }
+
+    carousel.querySelectorAll(".carousel-arrow").forEach(arrow => {
+        arrow.addEventListener("click", () => {
+            goToSlide(currentSlide + Number(arrow.dataset.dir));
+        });
+    });
+
+    dots.forEach((dot, i) => {
+        dot.addEventListener("click", () => goToSlide(i));
+    });
+
+    carousel.addEventListener("keydown", (e) => {
+        if (e.key === "ArrowLeft") goToSlide(currentSlide - 1);
+        if (e.key === "ArrowRight") goToSlide(currentSlide + 1);
+    });
+
+    // Arrastar para o lado no celular
+    let touchStartX = null;
+
+    track.addEventListener("touchstart", (e) => {
+        touchStartX = e.touches[0].clientX;
+    }, { passive: true });
+
+    track.addEventListener("touchend", (e) => {
+        if (touchStartX === null) return;
+
+        const distance = e.changedTouches[0].clientX - touchStartX;
+        touchStartX = null;
+
+        if (Math.abs(distance) > 50) {
+            goToSlide(currentSlide + (distance < 0 ? 1 : -1));
+        }
+    });
+
+    goToSlide(0);
+}
+
+// Os nomes das habilidades ficam no i18n.js (chart.labels), na mesma ordem dos valores
+const skillsValues = [85, 85, 65, 70, 60, 55, 80];
 
 const skillsColors = [
     "#7B2CF3",
@@ -120,10 +182,10 @@ if (skillsCanvas) {
         currentChart = new Chart(skillsCanvas, {
             type,
             data: {
-                labels: skillsData.labels,
+                labels: t("chart.labels"),
                 datasets: [{
-                    label: "Nível de conhecimento",
-                    data: skillsData.values,
+                    label: t("chart.datasetLabel"),
+                    data: skillsValues,
                     backgroundColor: skillsColors,
                     borderColor: type === "bar" ? skillsColors : getSurfaceColor(),
                     borderWidth: type === "bar" ? 0 : 3,
@@ -133,6 +195,8 @@ if (skillsCanvas) {
             },
             options: {
                 responsive: true,
+                // Em telas estreitas a legenda ocupa mais espaço, então a pizza fica mais alta
+                aspectRatio: type === "pie" && window.innerWidth < 600 ? .8 : 1,
                 scales: type === "bar" ? {
                     x: {
                         max: 100,
@@ -176,6 +240,13 @@ if (skillsCanvas) {
             renderChart(currentChart.config.type);
         }
     });
+
+    // Redesenha o gráfico com os rótulos no novo idioma
+    document.addEventListener("i18n:change", () => {
+        if (currentChart) {
+            renderChart(currentChart.config.type);
+        }
+    });
 }
 
 const btn = document.getElementById("enviar");
@@ -185,7 +256,7 @@ btn.addEventListener("click", async () => {
     const mensagem = document.getElementById("mensagem").value.trim();
 
     if (nome === "" || mensagem === "") {
-        alert("Preencha todos os campos.");
+        alert(t("form.fillAll"));
         return;
     }
 
@@ -215,12 +286,18 @@ async function carregarComentarios() {
     snapshot.forEach(doc => {
         const comentario = doc.data();
 
-        container.innerHTML += `
-            <div class="comentario">
-                <h3>${comentario.nome}</h3>
-                <p>${comentario.mensagem}</p>
-            </div>
-        `;
+        // textContent evita que HTML/scripts enviados no comentário sejam executados
+        const div = document.createElement("div");
+        div.className = "comentario";
+
+        const nome = document.createElement("h3");
+        nome.textContent = comentario.nome;
+
+        const mensagem = document.createElement("p");
+        mensagem.textContent = comentario.mensagem;
+
+        div.append(nome, mensagem);
+        container.appendChild(div);
     });
 
     container.querySelectorAll(".comentario").forEach((el, index) => {
@@ -240,8 +317,6 @@ const revealGroups = [
     ".project-card",
     ".course-card",
     ".filter-buttons",
-    ".chart-toggle",
-    ".chart-wrapper",
     ".social-card",
     ".comment-form"
 ];
