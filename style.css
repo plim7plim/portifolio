@@ -1395,3 +1395,19 @@ footer {
         padding: 18px;
     }
 }
+
+/* Project and learning evidence update — October 2026. */
+.section-note { max-width: 850px; margin: 16px auto 28px; text-align: center; color: #aaa; line-height: 1.7; }
+.light .section-note { color: #555; }
+.project-cover { height: 200px; display: grid; place-items: center; background: linear-gradient(135deg, #251344, #172c45); color: #c9a8ff; font-size: 3.5rem; }
+.project-link { display: inline-block; margin-top: 18px; color: #ad7af8; font-size: .85rem; }
+.dio-collection { border-color: #7b2cf3; }
+.skills-evidence { max-width: 900px; margin: 24px auto 0; padding: 20px; border: 1px solid #7b2cf355; border-radius: 16px; line-height: 1.7; }
+.skills-evidence summary { cursor: pointer; font-weight: 600; }
+.skills-evidence ul { padding-left: 22px; margin-top: 20px; }
+.skills-evidence li { margin-bottom: 18px; }
+.skills-evidence p { margin-top: 6px; font-size: .85rem; }
+.skills-evidence a { color: #b88afa; text-decoration: underline; text-underline-offset: 3px; }
+.light .skills-evidence a, .light .project-link { color: #6923c9; }
+.chart-wrapper { position: relative; height: 520px; }
+@media (max-width: 600px) { .chart-wrapper { height: 500px; } .skills-evidence { padding: 16px; } }

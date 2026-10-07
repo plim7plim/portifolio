@@ -74,16 +74,28 @@ filters.forEach(filter => {
 });
 
 const skillsData = {
-    labels: [
-        "JavaScript",
-        "HTML & CSS",
+    "labels": [
+        "JavaScript / HTML & CSS",
         "Java & Spring Boot",
+        "TypeScript & React",
+        "Go & APIs",
         "AWS & Cloud",
-        "DevOps (Docker, K8s, Linux, CI/CD)",
-        "Banco de Dados",
+        "DevOps & Observabilidade",
+        "SQL / NoSQL",
+        "Git & GitHub",
         "Inglês"
     ],
-    values: [85, 85, 65, 70, 60, 55, 80]
+    "values": [
+        8,
+        8,
+        1,
+        1,
+        3,
+        5,
+        5,
+        3,
+        1
+    ]
 };
 
 const skillsColors = [
@@ -93,7 +105,9 @@ const skillsColors = [
     "#F59E0B",
     "#EF4444",
     "#EC4899",
-    "#06B6D4"
+    "#06B6D4",
+    "#A3E635",
+    "#FB923C"
 ];
 
 const skillsCanvas = document.getElementById("skillsChart");
@@ -122,7 +136,7 @@ if (skillsCanvas) {
             data: {
                 labels: skillsData.labels,
                 datasets: [{
-                    label: "Nível de conhecimento",
+                    label: "Projetos e certificados selecionados",
                     data: skillsData.values,
                     backgroundColor: skillsColors,
                     borderColor: type === "bar" ? skillsColors : getSurfaceColor(),
@@ -133,10 +147,11 @@ if (skillsCanvas) {
             },
             options: {
                 responsive: true,
+                maintainAspectRatio: false,
                 scales: type === "bar" ? {
                     x: {
-                        max: 100,
-                        ticks: { color: textColor },
+                        beginAtZero: true,
+                        ticks: { color: textColor, precision: 0 },
                         grid: { color: "rgba(123, 44, 243, .1)" }
                     },
                     y: {
@@ -153,7 +168,7 @@ if (skillsCanvas) {
                     },
                     tooltip: {
                         callbacks: {
-                            label: (ctx) => `${ctx.label}: ${ctx.raw}%`
+                            label: (ctx) => `${ctx.label}: ${ctx.raw} ${ctx.raw === 1 ? "evidência" : "evidências"}`
                         }
                     }
                 }
