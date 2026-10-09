@@ -1,38 +1,21 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
-import {
-    getFirestore,
-    collection,
-    addDoc,
-    getDocs,
-    query,
-    orderBy,
-    serverTimestamp
-} from "https://www.gstatic.com/firebasejs/12.1.0/firebase-firestore.js";
 import { initI18n, t } from "./i18n.js";
 
 initI18n();
 
-const firebaseConfig = {
-    apiKey: "AIzaSyDSfhfv6ZKtkDTJi-bIaFInPQD4tojvKl0",
-    authDomain: "portifolioplinio.firebaseapp.com",
-    projectId: "portifolioplinio",
-    storageBucket: "portifolioplinio.firebasestorage.app",
-    messagingSenderId: "971642836528",
-    appId: "1:971642836528:web:c4c1f6b2dafb2573ddfff5"
-};
-
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
-
 const button = document.getElementById("themeButton");
 const iconSun = document.getElementById("iconSun");
 const iconMoon = document.getElementById("iconMoon");
+
+try { document.body.classList.toggle("light", localStorage.getItem("portfolio-theme") === "light"); } catch {}
+iconSun.setAttribute("aria-hidden", document.body.classList.contains("light"));
+iconMoon.setAttribute("aria-hidden", !document.body.classList.contains("light"));
 
 button.addEventListener("click", () => {
     document.body.classList.toggle("light");
     const isLight = document.body.classList.contains("light");
     iconSun.setAttribute("aria-hidden", isLight);
     iconMoon.setAttribute("aria-hidden", !isLight);
+    try { localStorage.setItem("portfolio-theme", isLight ? "light" : "dark"); } catch {}
 });
 
 const menuToggle = document.getElementById("menuToggle");
@@ -44,10 +27,21 @@ function setMenuOpen(isOpen) {
     menuToggle.classList.toggle("active", isOpen);
     menuIcon.classList.toggle("fa-bars", !isOpen);
     menuIcon.classList.toggle("fa-xmark", isOpen);
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
 }
 
 menuToggle.addEventListener("click", () => {
     setMenuOpen(!menu.classList.contains("active"));
+});
+
+document.addEventListener("keydown", event => {
+    if (event.key === "Escape" && menu.classList.contains("active")) {
+        setMenuOpen(false);
+        menuToggle.focus();
+    }
+});
+document.addEventListener("click", event => {
+    if (!event.target.closest("header")) setMenuOpen(false);
 });
 
 document.querySelectorAll("#menu a").forEach(link => {
@@ -60,9 +54,14 @@ const filters = document.querySelectorAll(".filter");
 const cards = document.querySelectorAll(".course-card");
 
 filters.forEach(filter => {
+    filter.setAttribute("aria-pressed", String(filter.classList.contains("active")));
     filter.addEventListener("click", () => {
-        filters.forEach(btn => btn.classList.remove("active"));
+        filters.forEach(btn => {
+            btn.classList.remove("active");
+            btn.setAttribute("aria-pressed", "false");
+        });
         filter.classList.add("active");
+        filter.setAttribute("aria-pressed", "true");
 
         const category = filter.dataset.filter;
 
@@ -73,6 +72,7 @@ filters.forEach(filter => {
                 card.style.display = "none";
             }
         });
+        document.querySelector(".education-grid").hidden = category !== "all" && category !== "escolaridade";
     });
 });
 
@@ -126,18 +126,22 @@ if (carousel) {
 
     // Arrastar para o lado no celular
     let touchStartX = null;
+    let touchStartY = null;
 
     track.addEventListener("touchstart", (e) => {
         touchStartX = e.touches[0].clientX;
+        touchStartY = e.touches[0].clientY;
     }, { passive: true });
 
     track.addEventListener("touchend", (e) => {
         if (touchStartX === null) return;
 
         const distance = e.changedTouches[0].clientX - touchStartX;
+        const verticalDistance = e.changedTouches[0].clientY - touchStartY;
         touchStartX = null;
+        touchStartY = null;
 
-        if (Math.abs(distance) > 50) {
+        if (Math.abs(distance) > 50 && Math.abs(distance) > Math.abs(verticalDistance)) {
             goToSlide(currentSlide + (distance < 0 ? 1 : -1));
         }
     });
@@ -146,7 +150,57 @@ if (carousel) {
 }
 
 // Os nomes das habilidades ficam no i18n.js (chart.labels), na mesma ordem dos valores
-const skillsValues = [8, 8, 1, 1, 3, 5, 5, 3, 1];
+const skillsEvidence = [
+    [
+        "project-lpPulse",
+        "project-lpTim",
+        "project-portalUEG",
+        "project-brillare2",
+        "project-jogo.numero.secreto",
+        "project-landingPageBlu",
+        "project-appUEG",
+        "project-ueg2",
+        "project-aulasUEG",
+        "project-botIA"
+    ],
+    [
+        "project-grafnaLoki",
+        "evidence-course-3",
+        "evidence-course-4",
+        "evidence-course-7",
+        "evidence-course-13"
+    ],
+    [
+        "project-metasDiarias"
+    ],
+    [
+        "project-projeto_go_alura"
+    ],
+    [
+        "evidence-course-9",
+        "evidence-course-15",
+        "evidence-course-19"
+    ],
+    [
+        "project-grafnaLoki",
+        "evidence-course-10",
+        "evidence-course-11",
+        "evidence-course-12"
+    ],
+    [
+        "project-projeto_go_alura",
+        "project-appUEG",
+        "evidence-course-5"
+    ],
+    [
+        "evidence-course-6",
+        "evidence-course-12"
+    ],
+    [
+        "evidence-course-14"
+    ]
+];
+const skillsValues = skillsEvidence.map(items => items.length);
 
 const skillsColors = [
     "#7B2CF3",
@@ -162,16 +216,16 @@ const skillsColors = [
 
 const skillsCanvas = document.getElementById("skillsChart");
 
-if (skillsCanvas) {
+if (skillsCanvas && typeof Chart !== "undefined") {
     const chartButtons = document.querySelectorAll(".chart-toggle .chart-btn");
     let currentChart = null;
 
     function getTextColor() {
-        return document.body.classList.contains("light") ? "#1B1B1B" : "#ffffff";
+        return getComputedStyle(document.body).getPropertyValue("--text").trim();
     }
 
     function getSurfaceColor() {
-        return document.body.classList.contains("light") ? "#ffffff" : "#161616";
+        return getComputedStyle(document.body).getPropertyValue("--surface").trim();
     }
 
     function renderChart(type) {
@@ -184,8 +238,8 @@ if (skillsCanvas) {
         wrapper.dataset.chartType = type;
         const legend = document.getElementById("skillsLegend");
         legend.replaceChildren();
-        legend.hidden = type === "bar";
-        if (type !== "bar") {
+        legend.hidden = false;
+        {
             t("chart.labels").forEach((label, index) => {
                 const item = document.createElement("li");
                 const dot = document.createElement("span");
@@ -200,6 +254,29 @@ if (skillsCanvas) {
                 legend.append(item);
             });
         }
+
+        const sources = document.getElementById("skillsSources");
+        sources.replaceChildren();
+        skillsEvidence.forEach((ids, index) => {
+            const title = document.createElement("h4");
+            title.textContent = t("chart.labels")[index];
+            const list = document.createElement("ul");
+            ids.forEach(id => {
+                const card = document.getElementById(id);
+                const item = document.createElement("li");
+                const link = document.createElement("a");
+                link.href = `#${id}`;
+                link.textContent = card.querySelector("h3").textContent.trim();
+                link.addEventListener("click", () => {
+                    const disclosure = card.closest("details");
+                    if (disclosure) disclosure.open = true;
+                    if (card.classList.contains("course-card")) document.querySelector('[data-filter="all"]').click();
+                });
+                item.append(link);
+                list.append(item);
+            });
+            sources.append(title, list);
+        });
 
         currentChart = new Chart(skillsCanvas, {
             type,
@@ -259,12 +336,14 @@ if (skillsCanvas) {
         });
     }
 
+    chartButtons.forEach(btn => btn.setAttribute("aria-pressed", String(btn.dataset.chart === "pie")));
     renderChart("pie");
 
     chartButtons.forEach(btn => {
         btn.addEventListener("click", () => {
-            chartButtons.forEach(b => b.classList.remove("active"));
+            chartButtons.forEach(b => { b.classList.remove("active"); b.setAttribute("aria-pressed", "false"); });
             btn.classList.add("active");
+            btn.setAttribute("aria-pressed", "true");
             renderChart(btn.dataset.chart);
         });
     });
@@ -283,65 +362,12 @@ if (skillsCanvas) {
     });
 }
 
-const btn = document.getElementById("enviar");
-
-btn.addEventListener("click", async () => {
-    const nome = document.getElementById("nome").value.trim();
-    const mensagem = document.getElementById("mensagem").value.trim();
-
-    if (nome === "" || mensagem === "") {
-        alert(t("form.fillAll"));
-        return;
-    }
-
-    await addDoc(collection(db, "comentarios"), {
-        nome,
-        mensagem,
-        data: serverTimestamp()
+// Load the existing Firebase integration independently from navigation and charts.
+import("./guestbook.js")
+    .then(({ initGuestbook }) => initGuestbook(t))
+    .catch(() => {
+        document.getElementById("commentStatus").textContent = t("form.loadError");
     });
-
-    document.getElementById("nome").value = "";
-    document.getElementById("mensagem").value = "";
-
-    carregarComentarios();
-});
-
-async function carregarComentarios() {
-    const container = document.getElementById("comentarios");
-    container.innerHTML = "";
-
-    const q = query(
-        collection(db, "comentarios"),
-        orderBy("data", "desc")
-    );
-
-    const snapshot = await getDocs(q);
-
-    snapshot.forEach(doc => {
-        const comentario = doc.data();
-
-        // textContent evita que HTML/scripts enviados no comentário sejam executados
-        const div = document.createElement("div");
-        div.className = "comentario";
-
-        const nome = document.createElement("h3");
-        nome.textContent = comentario.nome;
-
-        const mensagem = document.createElement("p");
-        mensagem.textContent = comentario.mensagem;
-
-        div.append(nome, mensagem);
-        container.appendChild(div);
-    });
-
-    container.querySelectorAll(".comentario").forEach((el, index) => {
-        el.classList.add("reveal");
-        el.style.transitionDelay = `${Math.min(index * 0.08, 0.4)}s`;
-        requestAnimationFrame(() => el.classList.add("visible"));
-    });
-}
-
-carregarComentarios();
 
 const revealGroups = [
     ".about-text",
@@ -372,3 +398,45 @@ const revealObserver = new IntersectionObserver((entries, observer) => {
 }, { threshold: 0.15 });
 
 document.querySelectorAll(".reveal").forEach(el => revealObserver.observe(el));
+
+// Keep long descriptions available without making every project card oversized.
+const descriptionControls = [];
+document.querySelectorAll(".project-info > p").forEach((description, index) => {
+    description.classList.add("is-collapsible");
+    description.id = `project-description-${index}`;
+    const toggle = document.createElement("button");
+    toggle.type = "button";
+    toggle.className = "description-toggle";
+    toggle.setAttribute("aria-controls", description.id);
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.addEventListener("click", () => {
+        const expanded = description.classList.toggle("is-expanded");
+        toggle.setAttribute("aria-expanded", String(expanded));
+        toggle.textContent = t(expanded ? "design.less" : "design.more");
+    });
+    description.after(toggle);
+    descriptionControls.push({ description, toggle });
+});
+function refreshDescriptionControls() {
+    descriptionControls.forEach(({ description, toggle }) => {
+        const expanded = description.classList.contains("is-expanded");
+        toggle.hidden = !expanded && description.scrollHeight <= description.clientHeight + 1;
+        toggle.textContent = t(expanded ? "design.less" : "design.more");
+    });
+}
+document.querySelectorAll(".projects-grid").forEach(grid => new ResizeObserver(refreshDescriptionControls).observe(grid));
+document.querySelectorAll(".other-projects").forEach(details => details.addEventListener("toggle", refreshDescriptionControls));
+document.addEventListener("i18n:change", refreshDescriptionControls);
+document.fonts.ready.then(refreshDescriptionControls);
+
+// Mark the section currently being read, while preserving native anchor navigation.
+const navObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        document.querySelectorAll("#menu a").forEach(link => {
+            if (link.hash === `#${entry.target.id}`) link.setAttribute("aria-current", "location");
+            else link.removeAttribute("aria-current");
+        });
+    });
+}, { rootMargin: "-10% 0px -65% 0px", threshold: 0 });
+document.querySelectorAll("main > section[id]").forEach(section => navObserver.observe(section));
