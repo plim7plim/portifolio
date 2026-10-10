@@ -1,249 +1,438 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Portfólio de Plínio Peixoto, Desenvolvedor Full Stack Jr. Projetos com Java, APIs e aplicações web, experiência profissional e formação.">
-<meta name="theme-color" content="#10091b">
-<link rel="canonical" href="https://portifolio-inky-three-11.vercel.app/">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="pt_BR">
-<meta property="og:title" content="Plínio Peixoto | Desenvolvedor Full Stack Jr.">
-<meta property="og:description" content="Conheça meus projetos, implementações de APIs e aplicações web, experiência e formação.">
-<meta property="og:url" content="https://portifolio-inky-three-11.vercel.app/">
-<meta property="og:image" content="https://portifolio-inky-three-11.vercel.app/assets/social-preview.jpg">
-<meta property="og:image:alt" content="Plínio Peixoto — Desenvolvedor Full Stack Jr.">
-<meta name="twitter:card" content="summary_large_image">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfólio de Plínio Peixoto, Desenvolvedor Full Stack Jr. Projetos com Java, APIs e aplicações web, experiência profissional e formação."
+    />
+    <meta name="theme-color" content="#10091b" />
+    <link rel="canonical" href="https://portifolio-inky-three-11.vercel.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta
+      property="og:title"
+      content="Plínio Peixoto | Desenvolvedor Full Stack Jr."
+    />
+    <meta
+      property="og:description"
+      content="Conheça meus projetos, implementações de APIs e aplicações web, experiência e formação."
+    />
+    <meta
+      property="og:url"
+      content="https://portifolio-inky-three-11.vercel.app/"
+    />
+    <meta
+      property="og:image"
+      content="https://portifolio-inky-three-11.vercel.app/assets/social-preview.jpg"
+    />
+    <meta
+      property="og:image:alt"
+      content="Plínio Peixoto — Desenvolvedor Full Stack Jr."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
 
-<title>Plínio Peixoto | Full Stack Developer</title>
+    <title>Plínio Peixoto | Full Stack Developer</title>
 
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
 
-<link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
 
-<script>
-    window.va = window.va || function () {
-        (window.vaq = window.vaq || []).push(arguments);
-    };
-</script>
-<script defer src="/_vercel/insights/script.js"></script>
-</head>
-<body>
-<a href="#home" class="skip-link" data-i18n="design.skip">Ir para o conteúdo</a>
+    <script>
+      window.va =
+        window.va ||
+        function () {
+          (window.vaq = window.vaq || []).push(arguments);
+        };
+    </script>
+    <script>
+      if (
+        location.hostname !== "localhost" &&
+        location.hostname !== "127.0.0.1"
+      ) {
+        const analytics = document.createElement("script");
+        analytics.defer = true;
+        analytics.src = "/_vercel/insights/script.js";
+        document.head.append(analytics);
+      }
+    </script>
+  </head>
+  <body>
+    <a href="#home" class="skip-link" data-i18n="design.skip"
+      >Ir para o conteúdo</a
+    >
 
-<div class="background"></div>
+    <div class="background"></div>
 
-<header>
-    <div class="logo">
-        PP
-    </div>
+    <header>
+      <div class="logo">PP</div>
 
-    <button class="menu-toggle" id="menuToggle" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu" data-i18n-aria="a11y.menu">
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-controls="menu"
+        aria-expanded="false"
+        aria-label="Abrir menu"
+        data-i18n-aria="a11y.menuOpen"
+      >
         <i class="fa-solid fa-bars"></i>
-    </button>
+      </button>
 
-    <nav id="menu">
+      <nav id="menu">
         <a href="#home" data-i18n="nav.home">Home</a>
         <a href="#about" data-i18n="nav.about">Sobre</a>
         <a href="#experience" data-i18n="nav.experience">Experiência</a>
         <a href="#projects" data-i18n="nav.projects">Projetos</a>
         <a href="#cursos" data-i18n="nav.courses">Cursos</a>
         <a href="#socials" data-i18n="nav.socials">Contato</a>
-        <a href="#guestbook" data-i18n="nav.guestbook">Comentários</a>
-    </nav>
+      </nav>
 
-    <div class="header-actions">
-        <div class="lang-switch" role="group" aria-label="Escolher idioma" data-i18n-aria="a11y.language">
-            <button class="lang-btn active" data-lang="pt" aria-pressed="true" aria-label="Português (Brasil)" title="Português (Brasil)">
-                <svg viewBox="0 0 20 14" aria-hidden="true" focusable="false">
-                    <rect width="20" height="14" fill="#009C3B"></rect>
-                    <polygon points="10,1.4 18.6,7 10,12.6 1.4,7" fill="#FFDF00"></polygon>
-                    <circle cx="10" cy="7" r="3.4" fill="#002776"></circle>
-                    <path d="M6.75 6.35 Q10 5.35 13.3 7.55" fill="none" stroke="#FFFFFF" stroke-width="0.6"></path>
-                </svg>
-            </button>
+      <div class="header-actions">
+        <div
+          class="lang-switch"
+          role="group"
+          aria-label="Escolher idioma"
+          data-i18n-aria="a11y.language"
+        >
+          <button
+            class="lang-btn active"
+            data-lang="pt"
+            aria-pressed="true"
+            aria-label="Português (Brasil)"
+            title="Português (Brasil)"
+          >
+            <svg viewBox="0 0 20 14" aria-hidden="true" focusable="false">
+              <rect width="20" height="14" fill="#009C3B"></rect>
+              <polygon
+                points="10,1.4 18.6,7 10,12.6 1.4,7"
+                fill="#FFDF00"
+              ></polygon>
+              <circle cx="10" cy="7" r="3.4" fill="#002776"></circle>
+              <path
+                d="M6.75 6.35 Q10 5.35 13.3 7.55"
+                fill="none"
+                stroke="#FFFFFF"
+                stroke-width="0.6"
+              ></path>
+            </svg>
+          </button>
 
-            <button class="lang-btn" data-lang="fr" aria-pressed="false" aria-label="Français" title="Français">
-                <svg viewBox="0 0 3 2" aria-hidden="true" focusable="false">
-                    <rect width="1" height="2" x="0" fill="#002654"></rect>
-                    <rect width="1" height="2" x="1" fill="#FFFFFF"></rect>
-                    <rect width="1" height="2" x="2" fill="#CE1126"></rect>
-                </svg>
-            </button>
+          <button
+            class="lang-btn"
+            data-lang="fr"
+            aria-pressed="false"
+            aria-label="Français"
+            title="Français"
+          >
+            <svg viewBox="0 0 3 2" aria-hidden="true" focusable="false">
+              <rect width="1" height="2" x="0" fill="#002654"></rect>
+              <rect width="1" height="2" x="1" fill="#FFFFFF"></rect>
+              <rect width="1" height="2" x="2" fill="#CE1126"></rect>
+            </svg>
+          </button>
         </div>
 
-        <button id="themeButton" aria-label="Alternar tema" data-i18n-aria="a11y.theme">
-            <svg id="iconSun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="5"></circle>
-                <line x1="12" y1="1" x2="12" y2="3"></line>
-                <line x1="12" y1="21" x2="12" y2="23"></line>
-                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                <line x1="1" y1="12" x2="3" y2="12"></line>
-                <line x1="21" y1="12" x2="23" y2="12"></line>
-                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-            </svg>
-            <svg id="iconMoon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" hidden>
-                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-            </svg>
+        <button
+          id="themeButton"
+          aria-label="Alternar tema"
+          data-i18n-aria="a11y.theme"
+        >
+          <svg
+            id="iconSun"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg
+            id="iconMoon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
         </button>
-    </div>
-</header>
+      </div>
+    </header>
 
-<main>
-<section id="home" class="hero">
-    <div class="hero-text">
-        <span data-i18n="hero.greeting">Olá!</span>
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-text">
+          <span data-i18n="hero.greeting">Olá!</span>
 
-        <h1>Plínio <span>Peixoto</span></h1>
+          <h1>Plínio <span>Peixoto</span></h1>
 
-        <h2 data-i18n="hero.role">Desenvolvedor Full Stack Jr.</h2>
+          <h2 data-i18n="hero.role">Desenvolvedor Full Stack Jr.</h2>
 
-        <p data-i18n="hero.tagline">Desenvolvo aplicações web e estudo APIs com Java, observabilidade e computação em nuvem.</p>
+          <p data-i18n="hero.tagline">
+            Desenvolvo aplicações web e estudo APIs com Java, observabilidade e
+            computação em nuvem.
+          </p>
 
-        <div class="buttons">
-            <a href="#projects" class="btn" data-i18n="hero.ctaProjects">
-                Veja meus Projetos
+          <div class="buttons">
+            <a href="#projects" class="btn" data-i18n="hero.ctaProjects"
+              >Ver projetos</a
+            >
+
+            <a
+              href="assets/curriculo.pdf"
+              class="btn secondary"
+              data-i18n="hero.ctaCv"
+            >
+              Ver currículo
             </a>
-
-            <a href="assets/curriculo.pdf" class="btn secondary" data-i18n="hero.ctaCv">
-                Ver currículo
-            </a>
+          </div>
         </div>
-    </div>
 
-    <div class="hero-image">
-        <img src="assets/eu-800.webp" srcset="assets/eu-400.webp 400w, assets/eu-800.webp 800w" sizes="(max-width:760px) 65vw, 430px" width="800" height="600" fetchpriority="high" alt="Retrato de Plínio Peixoto" class="hero-image-default" data-i18n-alt="hero.photoAlt">
-        <img src="assets/avatar.jpg" width="736" height="736" decoding="async" alt="Avatar de Plínio Peixoto" data-i18n-alt="audit.avatar" class="hero-image-hover">
-    </div>
-</section>
+        <div class="hero-image">
+          <img
+            src="assets/eu-800.webp"
+            srcset="assets/eu-400.webp 400w, assets/eu-800.webp 800w"
+            sizes="(max-width:760px) 65vw, 430px"
+            width="800"
+            height="600"
+            fetchpriority="high"
+            alt="Retrato de Plínio Peixoto"
+            class="hero-image-default"
+            data-i18n-alt="hero.photoAlt"
+          />
+          <img
+            src="assets/avatar.jpg"
+            width="736"
+            height="736"
+            decoding="async"
+            alt="Avatar de Plínio Peixoto"
+            data-i18n-alt="audit.avatar"
+            class="hero-image-hover"
+          />
+        </div>
+      </section>
 
-<section id="about" class="about">
-    <div class="about-text">
-        <h2 data-i18n="about.title">Sobre Mim</h2>
+      <section id="about" class="about">
+        <div class="about-text">
+          <h2 data-i18n="about.title">Sobre Mim</h2>
 
-        <p data-i18n="about.p1">
-            Olá! Me chamo <strong>Plínio Peixoto dos Santos</strong>, tenho 20 anos e sou apaixonado por tecnologia.
-            Estudo programação desde os 17 anos e, desde então, venho me dedicando diariamente ao desenvolvimento de software.
-        </p>
+          <p data-i18n="about.p1">
+            Sou <strong>Plínio Peixoto dos Santos</strong> e estudo programação
+            desde os 17 anos. Desenvolvo interfaces web e mantenho projetos de
+            aplicações e APIs disponíveis neste portfólio.
+          </p>
 
-        <p data-i18n="about.p2">
-            Atualmente curso <strong>Engenharia de Software</strong> e <strong>Sistemas para Internet</strong>, trabalho como
+          <p data-i18n="about.p2">
+            Atualmente curso <strong>Engenharia de Software</strong> e
+            <strong>Sistemas para Internet</strong>, trabalho como
             <strong>Desenvolvedor Full Stack Jr.</strong>
-        </p>
+          </p>
 
-        <p data-i18n="about.p3">Atualmente também estudo francês, ampliando minha formação e comunicação.</p>
-    </div>
-
-    <div class="about-card carousel" aria-roledescription="carousel">
-        <div class="carousel-viewport">
-            <div class="carousel-track">
-
-                <div class="carousel-slide" aria-roledescription="slide">
-                    <div class="summary-header">
-                        <h3 data-i18n="summary.title">Resumo</h3>
-
-                        <span class="status-badge">
-                            <span class="status-dot"></span>
-                            <span data-i18n="summary.status">Aberto a propostas</span>
-                        </span>
-                    </div>
-
-                    <ul class="summary-list">
-                        <li>
-                            <span class="summary-icon"><i class="fa-solid fa-laptop-code"></i></span>
-                            <div>
-                                <small data-i18n="summary.roleLabel">Cargo</small>
-                                <strong data-i18n="summary.roleValue">Desenvolvedor Full Stack Jr.</strong>
-                            </div>
-                        </li>
-
-                        <li>
-                            <span class="summary-icon"><i class="fa-solid fa-graduation-cap"></i></span>
-                            <div>
-                                <small data-i18n="summary.eduLabel">Formação</small>
-                                <strong data-i18n="summary.edu1">Engenharia de Software</strong>
-                                <strong data-i18n="summary.edu2">Sistemas para Internet</strong>
-                            </div>
-                        </li>
-
-                        <li>
-                            <span class="summary-icon"><i class="fa-solid fa-location-dot"></i></span>
-                            <div>
-                                <small data-i18n="summary.locLabel">Localização</small>
-                                <strong data-i18n="summary.locValue">Goiás, Brasil</strong>
-                            </div>
-                        </li>
-                    </ul>
-
-                    <div class="summary-tags">
-                        <small data-i18n="summary.focusLabel">Foco</small>
-                        <div>
-                            <span class="focus-tag tag-java">
-                                <span class="focus-icon"><i class="fa-brands fa-java"></i></span>
-                                Java
-                            </span>
-                            <span class="focus-tag tag-aws">
-                                <span class="focus-icon"><i class="fa-brands fa-aws"></i></span>
-                                AWS
-                            </span>
-                            <span class="focus-tag tag-cloud">
-                                <span class="focus-icon"><i class="fa-solid fa-cloud"></i></span>
-                                <span data-i18n="summary.tagCloud">Computação em Nuvem</span>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-slide" aria-roledescription="slide">
-                    <div class="summary-header">
-                        <h3 data-i18n="skills.title">Áreas em prática</h3>
-
-                        <div class="chart-toggle">
-                            <button class="chart-btn active" data-chart="pie" data-i18n="skills.pie">Pizza</button>
-                            <button class="chart-btn" data-chart="bar" data-i18n="skills.bar">Barra</button>
-                        </div>
-                    </div>
-
-                    <p class="chart-method" data-i18n="audit.chart">Contagem de projetos e grupos de cursos selecionados por área. Um item pode aparecer em mais de uma área. Os números não representam nível de domínio, horas de estudo ou quantidade de certificados individuais.</p>
-<div class="chart-wrapper">
-                        <canvas id="skillsChart" role="img" aria-label="Projetos e certificados por área." data-i18n-aria="chart.a11y"></canvas>
-                    </div>
-                    <ul class="chart-legend" id="skillsLegend" aria-label="Áreas e contagens" data-i18n-aria="chart.legend"></ul><details class="evidence-details"><summary data-i18n="audit.sources">Ver itens contabilizados</summary><div id="skillsSources"></div></details>
-                </div>
-
-            </div>
+          <p data-i18n="about.p3">
+            Atualmente também estudo francês, ampliando minha formação e
+            comunicação.
+          </p>
         </div>
 
-        <div class="carousel-controls">
-            <button class="carousel-arrow" data-dir="-1" aria-label="Anterior" data-i18n-aria="carousel.prev">
-                <i class="fa-solid fa-chevron-left"></i>
-            </button>
+        <div class="about-card">
+          <div class="summary-header">
+            <h3 data-i18n="summary.title">Resumo</h3>
 
-            <div class="carousel-dots">
-                <button class="carousel-dot active" aria-label="Resumo" data-i18n-aria="summary.title"></button>
-                <button class="carousel-dot" aria-label="Conhecimentos" data-i18n-aria="skills.title"></button>
+            <span class="status-badge">
+              <span class="status-dot"></span>
+              <span data-i18n="summary.status">Aberto a propostas</span>
+            </span>
+          </div>
+
+          <ul class="summary-list">
+            <li>
+              <span class="summary-icon"
+                ><i class="fa-solid fa-laptop-code"></i
+              ></span>
+              <div>
+                <small data-i18n="summary.roleLabel">Cargo</small>
+                <strong data-i18n="summary.roleValue"
+                  >Desenvolvedor Full Stack Jr.</strong
+                >
+              </div>
+            </li>
+
+            <li>
+              <span class="summary-icon"
+                ><i class="fa-solid fa-graduation-cap"></i
+              ></span>
+              <div>
+                <small data-i18n="summary.eduLabel">Formação</small>
+                <strong data-i18n="summary.edu1">Engenharia de Software</strong>
+                <strong data-i18n="summary.edu2">Sistemas para Internet</strong>
+              </div>
+            </li>
+
+            <li>
+              <span class="summary-icon"
+                ><i class="fa-solid fa-location-dot"></i
+              ></span>
+              <div>
+                <small data-i18n="summary.locLabel">Localização</small>
+                <strong data-i18n="summary.locValue">Goiás, Brasil</strong>
+              </div>
+            </li>
+          </ul>
+
+          <div class="summary-tags">
+            <small data-i18n="summary.focusLabel">Em estudo</small>
+            <div>
+              <span class="focus-tag tag-java">
+                <span class="focus-icon"
+                  ><i class="fa-brands fa-java"></i
+                ></span>
+                Java
+              </span>
+              <span class="focus-tag tag-aws">
+                <span class="focus-icon"><i class="fa-brands fa-aws"></i></span>
+                AWS
+              </span>
+              <span class="focus-tag tag-cloud">
+                <span class="focus-icon"
+                  ><i class="fa-solid fa-cloud"></i
+                ></span>
+                <span data-i18n="summary.tagCloud">Computação em Nuvem</span>
+              </span>
             </div>
-
-            <button class="carousel-arrow" data-dir="1" aria-label="Próximo" data-i18n-aria="carousel.next">
-                <i class="fa-solid fa-chevron-right"></i>
-            </button>
+          </div>
         </div>
-    </div>
-</section>
+        <div class="skills-evidence" aria-labelledby="skillsHeading">
+          <h3 id="skillsHeading" data-i18n="skills.heading">
+            Tecnologias em projetos
+          </h3>
+          <p data-i18n="skills.note">
+            Aplicações verificáveis no código. Cursos e assuntos em estudo estão
+            na formação.
+          </p>
+          <ul class="skills-list">
+            <li>
+              <strong data-i18n="skills.tech.0">HTML, CSS e JavaScript</strong
+              ><a href="#project-appUEG">Mural UEG</a
+              ><span data-i18n="skills.use.0"
+                >Interfaces de turmas, tarefas e materiais.</span
+              >
+            </li>
+            <li>
+              <strong data-i18n="skills.tech.1">Java e Spring Boot</strong
+              ><a href="#project-grafnaLoki" data-i18n="update.7"
+                >Observabilidade com Java</a
+              ><span data-i18n="skills.use.1"
+                >API de cursos organizada em controller, service e
+                repository.</span
+              >
+            </li>
+            <li>
+              <strong data-i18n="skills.tech.2">Logs e métricas</strong
+              ><a href="#project-grafnaLoki" data-i18n="update.7"
+                >Observabilidade com Java</a
+              ><span data-i18n="skills.use.2"
+                >Logback com saída JSON e Loki; integração de métricas com
+                Prometheus.</span
+              >
+            </li>
+            <li>
+              <strong data-i18n="skills.tech.3">PHP e MySQL</strong
+              ><a href="#project-lpPulse">Pulse</a
+              ><span data-i18n="skills.use.3"
+                >API com PDO, sessões, permissões por empresa e proteção
+                CSRF.</span
+              >
+            </li>
+            <li>
+              <strong data-i18n="skills.tech.4">Dados e autenticação</strong
+              ><a href="#project-appUEG">Mural UEG</a
+              ><span data-i18n="skills.use.4"
+                >Supabase para autenticação, persistência e políticas RLS no
+                schema.</span
+              >
+            </li>
+            <li>
+              <strong data-i18n="skills.tech.5">Importação de contatos</strong
+              ><a href="#project-lpPulse">Pulse</a
+              ><span data-i18n="skills.use.5"
+                >Leitura CSV/XLSX, normalização de telefones e remoção de
+                duplicados.</span
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
 
-<section id="experience" class="experience">
-    <h2 data-i18n="experience.title">Minha Jornada</h2>
+      <section id="experience" class="experience">
+        <h2 data-i18n="experience.title">Minha Jornada</h2>
 
-    <div class="timeline">
-        <div class="timeline-item">
+        <div class="timeline">
+          <div class="timeline-item current-experience">
+            <div class="circle active"></div>
+
+            <h3 data-i18n="exp3.role">Full Stack - Jr.</h3>
+
+            <h4>Blu Promotora</h4>
+
+            <span data-i18n="exp3.period">2026 - Atual</span>
+
+            <p data-i18n="exp3.desc">
+              Desenvolvimento e manutenção de interfaces para a Blu Promotora.
+            </p>
+            <ul class="experience-scope">
+              <li data-i18n="audit.work1">
+                Refatoração e documentação de código.
+              </li>
+              <li data-i18n="audit.work2">
+                Criação de páginas web para a empresa.
+              </li>
+              <li data-i18n="audit.work3">
+                Manutenção e ajustes em telas específicas.
+              </li>
+            </ul>
+          </div>
+          <div class="timeline-item">
+            <div class="circle"></div>
+
+            <h3 data-i18n="exp2.role">
+              Assistente Administrativo | Faturamento
+            </h3>
+            <h4>São Salvador Alimentos</h4>
+
+            <span>2025 - 2026</span>
+
+            <p data-i18n="exp2.desc">
+              Emissão de notas fiscais, uso de SAP, controle de cargas e apoio
+              às rotinas de faturamento e logística.
+            </p>
+          </div>
+
+          <div class="timeline-item">
             <div class="circle"></div>
 
             <h3 data-i18n="exp1.title">Jovem Aprendiz</h3>
@@ -253,645 +442,1985 @@
             <span>2023 - 2025</span>
 
             <p data-i18n="exp1.desc">
-                Primeiro contato com o mercado de trabalho,
-                desenvolvendo organização, atendimento e rotinas administrativas.
+              Primeiro contato com o mercado de trabalho, desenvolvendo
+              organização, atendimento e rotinas administrativas.
             </p>
+          </div>
         </div>
+      </section>
 
-        <div class="timeline-item">
-            <div class="circle"></div>
-
-            <h3>São Salvador Alimentos</h3>
-
-            <h4 data-i18n="exp2.role">Assistente Administrativo | Faturamento</h4>
-
-            <span>2025 - 2026</span>
-
-            <p data-i18n="exp2.desc">
-                Atuação com emissão de notas fiscais, SAP, controle de cargas
-                e processos logísticos, administrativos e Faturamento
+      <section id="projects" class="projects">
+        <h2 data-i18n="projects.title">Projetos</h2>
+        <p class="section-note" data-i18n="update.2">
+          Três projetos em destaque para explorar aplicações web, APIs e
+          observabilidade. Os demais trabalhos estão disponíveis abaixo.
+        </p>
+        <div class="projects-grid featured-projects">
+          <article class="project-card" id="project-appUEG">
+            <a
+              class="project-preview"
+              href="https://app-ueg.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Abrir Mural UEG"
+              data-i18n-aria="audit.open.appUEG"
+            >
+              <div class="browser-bar" aria-hidden="true">
+                <i></i><i></i><i></i><span>app-ueg.vercel.app</span>
+              </div>
+              <div class="project-screen">
+                <img
+                  src="assets/projects/mural-ueg.webp"
+                  alt="Prévia da interface de Mural UEG"
+                  data-i18n-alt="audit.preview.appUEG"
+                  width="1365"
+                  height="900"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </a>
+            <p class="preview-caption" data-i18n="preview.caption.appUEG">
+              Prévia do login · telas internas exigem acesso
             </p>
+            <div class="project-info">
+              <span class="project-kind" data-i18n="audit.badge.mural"
+                >Aplicação web</span
+              >
+              <h3>
+                <a
+                  href="https://app-ueg.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Mural UEG</a
+                >
+              </h3>
+
+              <p data-i18n="p7.desc">
+                Aplicação acadêmica com mural de turmas, tarefas e materiais.
+                Frontend estático conectado à autenticação e aos dados do
+                Supabase.
+              </p>
+
+              <div class="techs">
+                <span data-i18n="tech.htmlCssJs">HTML, CSS e JavaScript</span>
+                <span>Supabase</span>
+                <span data-i18n="tech.vercel">Hospedagem no Vercel</span>
+              </div>
+
+              <details class="case-study">
+                <summary data-i18n="audit.case">
+                  Entenda a implementação
+                </summary>
+                <dl>
+                  <dt data-i18n="case.appUEG.0.label">Problema</dt>
+                  <dd data-i18n="case.appUEG.0.body">
+                    Centralizar avisos, tarefas e materiais das turmas da UEG.
+                  </dd>
+                  <dt data-i18n="case.appUEG.1.label">Escopo implementado</dt>
+                  <dd data-i18n="case.appUEG.1.body">
+                    Turmas, mural, tarefas com entrega pessoal e biblioteca por
+                    disciplina, com autenticação via Supabase.
+                  </dd>
+                  <dt data-i18n="case.appUEG.2.label">Decisão técnica</dt>
+                  <dd data-i18n="case.appUEG.2.body">
+                    Frontend estático sem build; o schema SQL define políticas
+                    RLS para acesso aos dados, além das verificações da
+                    interface.
+                  </dd>
+                  <dt data-i18n="case.appUEG.3.label">Como verificar</dt>
+                  <dd data-i18n="case.appUEG.3.body">
+                    Abra o projeto para acessar o login. No repositório, examine
+                    tarefas.html, js/tarefas.js e schema.sql para conferir
+                    telas, persistência e regras declaradas.
+                  </dd>
+                  <dt data-i18n="case.appUEG.4.label">Limitações</dt>
+                  <dd data-i18n="case.appUEG.4.body">
+                    As telas internas exigem autenticação. As políticas do banco
+                    publicado e os fluxos com usuários reais não foram auditados
+                    nesta revisão.
+                  </dd>
+                </dl>
+                <a
+                  href="https://github.com/plim7plim/appUEG/blob/main/README.md"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-i18n="audit.codeEvidence"
+                  >Examinar código e documentação</a
+                >
+              </details>
+              <div class="project-actions">
+                <a
+                  class="project-live"
+                  href="https://app-ueg.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><span data-i18n="design.live">Ver projeto</span
+                  ><i
+                    class="fa-solid fa-arrow-up-right-from-square"
+                    aria-hidden="true"
+                  ></i></a
+                ><a
+                  class="project-link"
+                  href="https://github.com/plim7plim/appUEG"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-brands fa-github" aria-hidden="true"></i>
+                  <span data-i18n="update.repository">Ver repositório</span>
+                  <i
+                    class="fa-solid fa-arrow-up-right-from-square"
+                    aria-hidden="true"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card" id="project-grafnaLoki">
+            <a
+              class="project-preview"
+              href="https://github.com/plim7plim/grafnaLoki"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Abrir Observabilidade com Java"
+              data-i18n-aria="audit.open.grafnaLoki"
+            >
+              <div class="browser-bar" aria-hidden="true">
+                <i></i><i></i><i></i><span>github.com / grafnaLoki</span>
+              </div>
+              <div class="project-screen">
+                <div class="preview-fallback" style="--project-accent: #d6a56b">
+                  <i class="fa-solid fa-chart-line" aria-hidden="true"></i
+                  ><strong>Java / Observabilidade</strong
+                  ><small data-i18n="design.repositoryPreview"
+                    >Projeto de estudo · Explore o código</small
+                  >
+                </div>
+              </div>
+            </a>
+            <p class="preview-caption" data-i18n="preview.caption.grafnaLoki">
+              Evidência disponível: código de logs e métricas
+            </p>
+            <div class="project-info">
+              <span class="project-kind" data-i18n="audit.badge.java"
+                >Estudo de backend</span
+              >
+              <h3>
+                <a
+                  data-i18n="update.7"
+                  href="https://github.com/plim7plim/grafnaLoki"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Observabilidade com Java</a
+                >
+              </h3>
+              <p data-i18n="update.12">
+                Projeto de estudo de uma API de cursos com Spring Boot, logs
+                estruturados para Loki e métricas com Actuator e Prometheus.
+              </p>
+              <div class="techs">
+                <span>Java & Spring Boot</span><span>Loki & Prometheus</span
+                ><span>Docker</span>
+              </div>
+
+              <details class="case-study">
+                <summary data-i18n="audit.case">
+                  Entenda a implementação
+                </summary>
+                <dl>
+                  <dt data-i18n="case.grafnaLoki.0.label">Problema</dt>
+                  <dd data-i18n="case.grafnaLoki.0.body">
+                    Investigar o comportamento de uma API de cursos por meio de
+                    logs e métricas.
+                  </dd>
+                  <dt data-i18n="case.grafnaLoki.1.label">
+                    Escopo implementado
+                  </dt>
+                  <dd data-i18n="case.grafnaLoki.1.body">
+                    Projeto de estudo com Spring Boot, camadas
+                    controller/service/repository, tratamento de erros e
+                    dependências de Actuator e Prometheus.
+                  </dd>
+                  <dt data-i18n="case.grafnaLoki.2.label">Decisão técnica</dt>
+                  <dd data-i18n="case.grafnaLoki.2.body">
+                    Logback separa saída JSON no console e envio ao Loki, com
+                    rótulos de aplicação, host e nível para organizar os
+                    registros.
+                  </dd>
+                  <dt data-i18n="case.grafnaLoki.3.label">Como verificar</dt>
+                  <dd data-i18n="case.grafnaLoki.3.body">
+                    Consulte pom.xml, src/main/resources/logback.xml e
+                    CursoController.java. O arquivo de teste existente verifica
+                    o carregamento do contexto.
+                  </dd>
+                  <dt data-i18n="case.grafnaLoki.4.label">Limitações</dt>
+                  <dd data-i18n="case.grafnaLoki.4.body">
+                    Sem demonstração pública ou captura de métricas verificada.
+                    PostgreSQL e Loki exigem ambiente configurado; o teste de
+                    contexto não cobre todos os endpoints.
+                  </dd>
+                </dl>
+                <a
+                  href="https://github.com/plim7plim/grafnaLoki/blob/main/src/main/resources/logback.xml"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-i18n="audit.codeEvidence"
+                  >Examinar código e documentação</a
+                >
+              </details>
+              <div class="project-actions">
+                <a
+                  class="project-link"
+                  href="https://github.com/plim7plim/grafnaLoki"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-brands fa-github" aria-hidden="true"></i>
+                  <span data-i18n="update.repository">Ver repositório</span>
+                  <i
+                    class="fa-solid fa-arrow-up-right-from-square"
+                    aria-hidden="true"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card" id="project-lpPulse">
+            <a
+              class="project-preview"
+              href="https://github.com/plim7plim/lpPulse"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Abrir Pulse"
+              data-i18n-aria="audit.open.lpPulse"
+            >
+              <div class="browser-bar" aria-hidden="true">
+                <i></i><i></i><i></i><span>github.com / lpPulse</span>
+              </div>
+              <div class="project-screen">
+                <img
+                  src="assets/projects/pulse.webp"
+                  alt="Prévia da interface de Pulse"
+                  data-i18n-alt="audit.preview.lpPulse"
+                  width="1365"
+                  height="900"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </a>
+            <p class="preview-caption" data-i18n="preview.caption.lpPulse">
+              Prévia da landing page · painel documentado no código
+            </p>
+            <div class="project-info">
+              <span class="project-kind" data-i18n="audit.badge.pulse"
+                >Aplicação web · Painel e API</span
+              >
+              <h3>
+                <a
+                  href="https://github.com/plim7plim/lpPulse"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Pulse</a
+                >
+              </h3>
+              <p data-i18n="update.8">
+                Landing page e painel com API PHP/MySQL para clientes, contatos
+                e campanhas SMS. Inclui importação CSV/XLSX e administração.
+              </p>
+              <div class="techs">
+                <span>HTML & CSS</span><span>JavaScript</span
+                ><span>PHP & MySQL</span>
+              </div>
+
+              <details class="case-study">
+                <summary data-i18n="audit.case">
+                  Entenda a implementação
+                </summary>
+                <dl>
+                  <dt data-i18n="case.lpPulse.0.label">Problema</dt>
+                  <dd data-i18n="case.lpPulse.0.body">
+                    Reunir acesso de clientes, contatos, solicitações e
+                    campanhas SMS por empresa.
+                  </dd>
+                  <dt data-i18n="case.lpPulse.1.label">Escopo implementado</dt>
+                  <dd data-i18n="case.lpPulse.1.body">
+                    Landing page, painel de clientes e administração; API
+                    PHP/MySQL, importação CSV/XLSX e integração SMS com a
+                    chipeira.
+                  </dd>
+                  <dt data-i18n="case.lpPulse.2.label">Decisão técnica</dt>
+                  <dd data-i18n="case.lpPulse.2.body">
+                    A API deriva a empresa da sessão e guarda a chave da
+                    integração no servidor. Mutações autenticadas exigem token
+                    CSRF.
+                  </dd>
+                  <dt data-i18n="case.lpPulse.3.label">Como verificar</dt>
+                  <dd data-i18n="case.lpPulse.3.body">
+                    Examine backend/src/PanelApi.php, backend/src/SmsBilling.php
+                    e backend/tests. O teste de importação cobre normalização,
+                    duplicados e arquivos CSV/XLSX.
+                  </dd>
+                  <dt data-i18n="case.lpPulse.4.label">Limitações</dt>
+                  <dd data-i18n="case.lpPulse.4.body">
+                    A execução completa exige PHP e MySQL configurados.
+                    Pagamentos reais dependem do provedor. Nenhum disparo SMS ou
+                    pagamento foi executado nesta revisão.
+                  </dd>
+                </dl>
+                <a
+                  href="https://github.com/plim7plim/lpPulse/tree/main/backend/tests"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-i18n="audit.codeEvidence"
+                  >Examinar código e documentação</a
+                >
+              </details>
+              <div class="project-actions">
+                <a
+                  class="project-link"
+                  href="https://github.com/plim7plim/lpPulse"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-brands fa-github" aria-hidden="true"></i>
+                  <span data-i18n="update.repository">Ver repositório</span>
+                  <i
+                    class="fa-solid fa-arrow-up-right-from-square"
+                    aria-hidden="true"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </article>
         </div>
-
-        <div class="timeline-item">
-            <div class="circle active"></div>
-
-            <h3>Full Stack - Jr.</h3>
-
-            <h4>Blu Promotora</h4>
-
-            <span data-i18n="exp3.period">2026 - Atual</span>
-
-            <p data-i18n="exp3.desc">Desenvolvimento e manutenção de interfaces para a Blu Promotora.</p><ul class="experience-scope"><li data-i18n="audit.work1">Refatoração e documentação de código.</li><li data-i18n="audit.work2">Criação de páginas web para a empresa.</li><li data-i18n="audit.work3">Manutenção e ajustes em telas específicas.</li></ul>
-        </div>
-    </div>
-</section>
-
-<section id="projects" class="projects"><h2 data-i18n="projects.title">Projetos</h2><p class="section-note" data-i18n="update.2">Três projetos em destaque para explorar aplicações web, APIs e observabilidade. Os demais trabalhos estão disponíveis abaixo.</p><div class="projects-grid featured-projects"><article class="project-card" id="project-appUEG"><a class="project-preview" href="https://app-ueg.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Mural UEG" data-i18n-aria="audit.open.appUEG">
-                <div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><span>app-ueg.vercel.app</span></div>
-                <div class="project-screen"><img src="assets/projects/mural-ueg.webp" alt="Prévia da interface de Mural UEG" data-i18n-alt="audit.preview.appUEG" width="1365" height="900" loading="lazy" decoding="async"></div>
-            </a><div class="project-info"><span class="project-kind" data-i18n="audit.badge.mural">Aplicação web</span>
-                <h3><a href="https://app-ueg.vercel.app/" target="_blank" rel="noopener noreferrer">Mural UEG</a></h3>
-
-                <p data-i18n="p7.desc">Aplicação para a comunidade acadêmica da UEG, com turmas, avisos, atividades e materiais por disciplina. HTML, CSS e JavaScript integram autenticação e dados no Supabase.</p>
-
+        <details class="other-projects">
+          <summary data-i18n="audit.otherProjects">
+            Explorar os outros 10 projetos
+          </summary>
+          <div class="projects-grid">
+            <article class="project-card" id="project-projeto_go_alura">
+              <a
+                class="project-preview"
+                href="https://github.com/plim7plim/projeto_go_alura"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Abrir API de alunos em Go"
+                data-i18n-aria="audit.open.projeto_go_alura"
+              >
+                <div class="browser-bar" aria-hidden="true">
+                  <i></i><i></i><i></i
+                  ><span>github.com / projeto_go_alura</span>
+                </div>
+                <div class="project-screen">
+                  <div
+                    class="preview-fallback"
+                    style="--project-accent: #75cbd6"
+                  >
+                    <i class="fa-solid fa-code" aria-hidden="true"></i
+                    ><strong>Go / API de alunos</strong
+                    ><small data-i18n="design.repositoryPreview"
+                      >Projeto de estudo · Explore o código</small
+                    >
+                  </div>
+                </div>
+              </a>
+              <div class="project-info">
+                <span class="project-kind" data-i18n="audit.badge.go"
+                  >Estudo guiado · Alura</span
+                >
+                <h3>
+                  <a
+                    data-i18n="update.6"
+                    href="https://github.com/plim7plim/projeto_go_alura"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >API de alunos em Go</a
+                  >
+                </h3>
+                <p data-i18n="update.11">
+                  Projeto de estudo da Alura com API em Go, framework Gin,
+                  persistência com GORM e PostgreSQL, testes e workflow no
+                  GitHub Actions.
+                </p>
                 <div class="techs">
-                    <span data-i18n="tech.htmlCssJs">HTML, CSS e JavaScript</span>
-                    <span>Supabase</span>
-                    <span data-i18n="tech.vercel">Hospedagem no Vercel</span>
+                  <span>Go & Gin</span><span>PostgreSQL</span
+                  ><span>GitHub Actions</span>
                 </div>
 
-                <details class="case-study"><summary data-i18n="audit.case">Entenda a implementação</summary><dl><dt class="" data-i18n="audit.mural.0.label">Problema</dt><dd class="" data-i18n="audit.mural.0.body">Centralizar avisos, atividades e materiais das turmas em um único ambiente.</dd><dt class="" data-i18n="audit.mural.1.label">Implementação</dt><dd class="" data-i18n="audit.mural.1.body">HTML, CSS e JavaScript com Supabase. O repositório inclui autenticação, turmas, tarefas, materiais e políticas de acesso no banco.</dd><dt class="" data-i18n="audit.mural.2.label">Como verificar</dt><dd class="" data-i18n="audit.mural.2.body">O demo público começa no login. O README descreve os fluxos; schema.sql e js/tarefas.js permitem examinar o modelo de dados e a implementação.</dd></dl><a href="https://github.com/plim7plim/appUEG/blob/main/README.md" target="_blank" rel="noopener noreferrer" data-i18n="audit.codeEvidence">Examinar código e documentação</a></details><div class="project-actions"><a class="project-live" href="https://app-ueg.vercel.app/" target="_blank" rel="noopener noreferrer"><span data-i18n="design.live">Ver projeto</span><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a><a class="project-link" href="https://github.com/plim7plim/appUEG" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> <span data-i18n="update.repository">Ver repositório</span> <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></div>
-</div>
-        </article><article class="project-card" id="project-grafnaLoki"><a class="project-preview" href="https://github.com/plim7plim/grafnaLoki" target="_blank" rel="noopener noreferrer" aria-label="Abrir Observabilidade com Java" data-i18n-aria="audit.open.grafnaLoki">
-                <div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><span>github.com / grafnaLoki</span></div>
-                <div class="project-screen"><div class="preview-fallback" style="--project-accent:#d6a56b"><i class="fa-solid fa-chart-line" aria-hidden="true"></i><strong>Java / Observabilidade</strong><small data-i18n="design.repositoryPreview">Projeto de estudo · Explore o código</small></div></div>
-            </a><div class="project-info"><span class="project-kind" data-i18n="audit.badge.java">Estudo de backend</span>
-                <h3><a data-i18n="update.7" href="https://github.com/plim7plim/grafnaLoki" target="_blank" rel="noopener noreferrer">Observabilidade com Java</a></h3>
-                <p data-i18n="update.12">Projeto de estudo de uma API de cursos com Spring Boot, logs estruturados para Loki e métricas com Actuator e Prometheus.</p>
-                <div class="techs"><span>Java & Spring Boot</span><span>Loki & Prometheus</span><span>Docker</span></div>
+                <details class="case-study">
+                  <summary data-i18n="audit.case">
+                    Entenda a implementação
+                  </summary>
+                  <dl>
+                    <dt class="" data-i18n="audit.go.0.label">Problema</dt>
+                    <dd class="" data-i18n="audit.go.0.body">
+                      Praticar uma API de cadastro e consulta de alunos com
+                      persistência e testes de rotas.
+                    </dd>
+                    <dt class="" data-i18n="audit.go.1.label">Implementação</dt>
+                    <dd class="" data-i18n="audit.go.1.body">
+                      Gin organiza as rotas HTTP e GORM conecta os modelos ao
+                      PostgreSQL. O código inclui operações de consulta, edição
+                      e exclusão.
+                    </dd>
+                    <dt class="" data-i18n="audit.go.2.label">
+                      Como verificar
+                    </dt>
+                    <dd class="" data-i18n="audit.go.2.body">
+                      main_test.go contém testes de handlers com httptest e
+                      testify. O workflow go.yml configura PostgreSQL e executa
+                      os testes no GitHub Actions; o resultado da execução deve
+                      ser consultado no repositório.
+                    </dd>
+                  </dl>
+                  <a
+                    href="https://github.com/plim7plim/projeto_go_alura/blob/main/main_test.go"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-i18n="audit.codeEvidence"
+                    >Examinar código e documentação</a
+                  >
+                </details>
+                <div class="project-actions">
+                  <a
+                    class="project-link"
+                    href="https://github.com/plim7plim/projeto_go_alura"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="fa-brands fa-github" aria-hidden="true"></i>
+                    <span data-i18n="update.repository">Ver repositório</span>
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square"
+                      aria-hidden="true"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+            <article class="project-card" id="project-lpTim">
+              <a
+                class="project-preview"
+                href="https://lptim.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Abrir TIM Ultrafibra"
+                data-i18n-aria="audit.open.lpTim"
+              >
+                <div class="browser-bar" aria-hidden="true">
+                  <i></i><i></i><i></i><span>lptim.vercel.app</span>
+                </div>
+                <div class="project-screen">
+                  <img
+                    src="assets/projects/tim.webp"
+                    alt="Prévia da interface de TIM Ultrafibra"
+                    data-i18n-alt="audit.preview.lpTim"
+                    width="1365"
+                    height="900"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+              </a>
+              <div class="project-info">
+                <h3>
+                  <a
+                    href="https://github.com/plim7plim/lpTim"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >TIM Ultrafibra</a
+                  >
+                </h3>
+                <p data-i18n="update.9">
+                  Landing page de planos de internet, com abas para casa e
+                  empresa, detalhes das ofertas em modais e fluxo de
+                  contratação.
+                </p>
+                <div class="techs">
+                  <span>HTML & CSS</span><span>JavaScript</span
+                  ><span>Vercel</span>
+                </div>
 
-                <details class="case-study"><summary data-i18n="audit.case">Entenda a implementação</summary><dl><dt class="" data-i18n="audit.java.0.label">Problema</dt><dd class="" data-i18n="audit.java.0.body">Explorar como investigar o comportamento de uma API de cursos além das respostas HTTP.</dd><dt class="" data-i18n="audit.java.1.label">Implementação</dt><dd class="" data-i18n="audit.java.1.body">Spring Boot com camadas de controller, service e repository. O projeto reúne Logback/Loki, Actuator e integração de métricas com Prometheus.</dd><dt class="" data-i18n="audit.java.2.label">Como verificar</dt><dd class="" data-i18n="audit.java.2.body">Examine pom.xml, logback.xml e CursoController.java. Há um teste de contexto; a presença dele não equivale a uma suíte completa de testes da API.</dd></dl><a href="https://github.com/plim7plim/grafnaLoki/blob/main/pom.xml" target="_blank" rel="noopener noreferrer" data-i18n="audit.codeEvidence">Examinar código e documentação</a></details><div class="project-actions"><a class="project-link" href="https://github.com/plim7plim/grafnaLoki" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> <span data-i18n="update.repository">Ver repositório</span> <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></div>
-</div>
-        </article><article class="project-card" id="project-projeto_go_alura"><a class="project-preview" href="https://github.com/plim7plim/projeto_go_alura" target="_blank" rel="noopener noreferrer" aria-label="Abrir API de alunos em Go" data-i18n-aria="audit.open.projeto_go_alura">
-                <div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><span>github.com / projeto_go_alura</span></div>
-                <div class="project-screen"><div class="preview-fallback" style="--project-accent:#75cbd6"><i class="fa-solid fa-code" aria-hidden="true"></i><strong>Go / API de alunos</strong><small data-i18n="design.repositoryPreview">Projeto de estudo · Explore o código</small></div></div>
-            </a><div class="project-info"><span class="project-kind" data-i18n="audit.badge.go">Estudo guiado · Alura</span>
-                <h3><a data-i18n="update.6" href="https://github.com/plim7plim/projeto_go_alura" target="_blank" rel="noopener noreferrer">API de alunos em Go</a></h3>
-                <p data-i18n="update.11">Projeto de estudo da Alura com API em Go, framework Gin, persistência com GORM e PostgreSQL, testes e workflow no GitHub Actions.</p>
-                <div class="techs"><span>Go & Gin</span><span>PostgreSQL</span><span>GitHub Actions</span></div>
-
-                <details class="case-study"><summary data-i18n="audit.case">Entenda a implementação</summary><dl><dt class="" data-i18n="audit.go.0.label">Problema</dt><dd class="" data-i18n="audit.go.0.body">Praticar uma API de cadastro e consulta de alunos com persistência e testes de rotas.</dd><dt class="" data-i18n="audit.go.1.label">Implementação</dt><dd class="" data-i18n="audit.go.1.body">Gin organiza as rotas HTTP e GORM conecta os modelos ao PostgreSQL. O código inclui operações de consulta, edição e exclusão.</dd><dt class="" data-i18n="audit.go.2.label">Como verificar</dt><dd class="" data-i18n="audit.go.2.body">main_test.go contém testes de handlers com httptest e testify. O workflow go.yml configura PostgreSQL e executa os testes no GitHub Actions; o resultado da execução deve ser consultado no repositório.</dd></dl><a href="https://github.com/plim7plim/projeto_go_alura/blob/main/main_test.go" target="_blank" rel="noopener noreferrer" data-i18n="audit.codeEvidence">Examinar código e documentação</a></details><div class="project-actions"><a class="project-link" href="https://github.com/plim7plim/projeto_go_alura" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> <span data-i18n="update.repository">Ver repositório</span> <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></div>
-</div>
-        </article></div><details class="other-projects"><summary data-i18n="audit.otherProjects">Explorar os outros 10 projetos</summary><div class="projects-grid"><article class="project-card" id="project-lpPulse"><a class="project-preview" href="https://github.com/plim7plim/lpPulse" target="_blank" rel="noopener noreferrer" aria-label="Abrir Pulse" data-i18n-aria="audit.open.lpPulse">
-                <div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><span>github.com / lpPulse</span></div>
-                <div class="project-screen"><img src="assets/projects/pulse.webp" alt="Prévia da interface de Pulse" data-i18n-alt="audit.preview.lpPulse" width="1365" height="900" loading="lazy" decoding="async"></div>
-            </a><div class="project-info">
-                <h3><a href="https://github.com/plim7plim/lpPulse" target="_blank" rel="noopener noreferrer">Pulse</a></h3>
-                <p data-i18n="update.8">Landing page para uma empresa de campanhas pelo WhatsApp, com contato direto e animação de fundo em canvas.</p>
-                <div class="techs"><span>HTML & CSS</span><span>JavaScript</span><span>Canvas</span></div>
-
-                <div class="project-actions"><a class="project-link" href="https://github.com/plim7plim/lpPulse" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> <span data-i18n="update.repository">Ver repositório</span> <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></div>
-</div>
-        </article><article class="project-card" id="project-lpTim"><a class="project-preview" href="https://lptim.vercel.app" target="_blank" rel="noopener noreferrer" aria-label="Abrir TIM Ultrafibra" data-i18n-aria="audit.open.lpTim">
-                <div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><span>lptim.vercel.app</span></div>
-                <div class="project-screen"><img src="assets/projects/tim.webp" alt="Prévia da interface de TIM Ultrafibra" data-i18n-alt="audit.preview.lpTim" width="1365" height="900" loading="lazy" decoding="async"></div>
-            </a><div class="project-info">
-                <h3><a href="https://github.com/plim7plim/lpTim" target="_blank" rel="noopener noreferrer">TIM Ultrafibra</a></h3>
-                <p data-i18n="update.9">Landing page de planos de internet, com abas para casa e empresa, detalhes das ofertas em modais e fluxo de contratação.</p>
-                <div class="techs"><span>HTML & CSS</span><span>JavaScript</span><span>Vercel</span></div>
-
-                <div class="project-actions"><a class="project-live" href="https://lptim.vercel.app" target="_blank" rel="noopener noreferrer"><span data-i18n="design.live">Ver projeto</span><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a><a class="project-link" href="https://github.com/plim7plim/lpTim" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> <span data-i18n="update.repository">Ver repositório</span> <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></div>
-</div>
-        </article><article class="project-card" id="project-portalUEG"><a class="project-preview" href="https://plim7plim.github.io/portalUEG/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Portal UEG" data-i18n-aria="audit.open.portalUEG">
-                <div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><span>plim7plim.github.io</span></div>
-                <div class="project-screen"><img src="assets/projects/portal-ueg.webp" alt="Prévia da interface de Portal UEG" data-i18n-alt="audit.preview.portalUEG" width="1365" height="900" loading="lazy" decoding="async"></div>
-            </a><div class="project-info">
-                <h3><a href="https://plim7plim.github.io/portalUEG/" target="_blank" rel="noopener noreferrer">Portal UEG</a></h3>
+                <div class="project-actions">
+                  <a
+                    class="project-live"
+                    href="https://lptim.vercel.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><span data-i18n="design.live">Ver projeto</span
+                    ><i
+                      class="fa-solid fa-arrow-up-right-from-square"
+                      aria-hidden="true"
+                    ></i></a
+                  ><a
+                    class="project-link"
+                    href="https://github.com/plim7plim/lpTim"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="fa-brands fa-github" aria-hidden="true"></i>
+                    <span data-i18n="update.repository">Ver repositório</span>
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square"
+                      aria-hidden="true"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+            <article class="project-card" id="project-portalUEG">
+              <a
+                class="project-preview"
+                href="https://plim7plim.github.io/portalUEG/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Abrir Portal UEG"
+                data-i18n-aria="audit.open.portalUEG"
+              >
+                <div class="browser-bar" aria-hidden="true">
+                  <i></i><i></i><i></i><span>plim7plim.github.io</span>
+                </div>
+                <div class="project-screen">
+                  <img
+                    src="assets/projects/portal-ueg.webp"
+                    alt="Prévia da interface de Portal UEG"
+                    data-i18n-alt="audit.preview.portalUEG"
+                    width="1365"
+                    height="900"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+              </a>
+              <div class="project-info">
+                <h3>
+                  <a
+                    href="https://plim7plim.github.io/portalUEG/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Portal UEG</a
+                  >
+                </h3>
 
                 <p data-i18n="p1.desc">
-                    Projeto desenvolvido durante a extensão de Algoritmos e Lógica de Programação,
-                    com o objetivo de criar um portal apresentando todas as extensões do campus,
-                    visando adquirir conhecimento sobre desenvolvimento web.
+                  Projeto desenvolvido durante a extensão de Algoritmos e Lógica
+                  de Programação, com o objetivo de criar um portal apresentando
+                  todas as extensões do campus, visando adquirir conhecimento
+                  sobre desenvolvimento web.
                 </p>
 
                 <div class="techs">
-                    <span data-i18n="tech.htmlCssJs">HTML, CSS e JavaScript</span>
-                    <span data-i18n="tech.githubPages">Hospedagem no GitHub Pages</span>
+                  <span data-i18n="tech.htmlCssJs">HTML, CSS e JavaScript</span>
+                  <span data-i18n="tech.githubPages"
+                    >Hospedagem no GitHub Pages</span
+                  >
                 </div>
 
-                <div class="project-actions"><a class="project-live" href="https://plim7plim.github.io/portalUEG/" target="_blank" rel="noopener noreferrer"><span data-i18n="design.live">Ver projeto</span><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a><a class="project-link" href="https://github.com/plim7plim/portalUEG" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> <span data-i18n="update.repository">Ver repositório</span> <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></div>
-</div>
-        </article><article class="project-card" id="project-brillare2"><a class="project-preview" href="https://brillare-joias.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Brillare Jóias" data-i18n-aria="audit.open.brillare2">
-                <div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><span>brillare-joias.vercel.app</span></div>
-                <div class="project-screen"><img src="assets/projects/brillare.webp" alt="Prévia da interface de Brillare Jóias" data-i18n-alt="audit.preview.brillare2" width="1365" height="900" loading="lazy" decoding="async"></div>
-            </a><div class="project-info">
-                <h3><a href="https://brillare-joias.vercel.app/" target="_blank" rel="noopener noreferrer">Brillare Jóias</a></h3>
+                <div class="project-actions">
+                  <a
+                    class="project-live"
+                    href="https://plim7plim.github.io/portalUEG/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><span data-i18n="design.live">Ver projeto</span
+                    ><i
+                      class="fa-solid fa-arrow-up-right-from-square"
+                      aria-hidden="true"
+                    ></i></a
+                  ><a
+                    class="project-link"
+                    href="https://github.com/plim7plim/portalUEG"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="fa-brands fa-github" aria-hidden="true"></i>
+                    <span data-i18n="update.repository">Ver repositório</span>
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square"
+                      aria-hidden="true"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+            <article class="project-card" id="project-brillare2">
+              <a
+                class="project-preview"
+                href="https://brillare-joias.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Abrir Brillare Jóias"
+                data-i18n-aria="audit.open.brillare2"
+              >
+                <div class="browser-bar" aria-hidden="true">
+                  <i></i><i></i><i></i><span>brillare-joias.vercel.app</span>
+                </div>
+                <div class="project-screen">
+                  <img
+                    src="assets/projects/brillare.webp"
+                    alt="Prévia da interface de Brillare Jóias"
+                    data-i18n-alt="audit.preview.brillare2"
+                    width="1365"
+                    height="900"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+              </a>
+              <div class="project-info">
+                <h3>
+                  <a
+                    href="https://brillare-joias.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Brillare Jóias</a
+                  >
+                </h3>
 
                 <p data-i18n="p3.desc">
-                    Projeto desenvolvido para colocar os conhecimentos em prática, criando um catálogo
-                    online para uma conhecida que trabalha com venda de joias e bijuterias.
-                    Durante o desenvolvimento, aprendi conceitos como manipulação de Arrays, eventos
-                    em JavaScript e realizei a hospedagem da aplicação utilizando a plataforma Vercel.
+                  Projeto desenvolvido para colocar os conhecimentos em prática,
+                  criando um catálogo online para uma conhecida que trabalha com
+                  venda de joias e bijuterias. Durante o desenvolvimento,
+                  aprendi conceitos como manipulação de Arrays, eventos em
+                  JavaScript e realizei a hospedagem da aplicação utilizando a
+                  plataforma Vercel.
                 </p>
 
                 <div class="techs">
-                    <span data-i18n="tech.htmlCssJs">HTML, CSS e JavaScript</span>
-                    <span data-i18n="p3.tech2">Arrays e Eventos (OnClick)</span>
-                    <span data-i18n="tech.vercel">Hospedagem no Vercel</span>
+                  <span data-i18n="tech.htmlCssJs">HTML, CSS e JavaScript</span>
+                  <span data-i18n="p3.tech2">Arrays e Eventos (OnClick)</span>
+                  <span data-i18n="tech.vercel">Hospedagem no Vercel</span>
                 </div>
 
-                <div class="project-actions"><a class="project-live" href="https://brillare-joias.vercel.app/" target="_blank" rel="noopener noreferrer"><span data-i18n="design.live">Ver projeto</span><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a><a class="project-link" href="https://github.com/plim7plim/brillare2" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> <span data-i18n="update.repository">Ver repositório</span> <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></div>
-</div>
-        </article><article class="project-card" id="project-jogo.numero.secreto"><a class="project-preview" href="https://plim7plim.github.io/jogo.numero.secreto/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Jogo Do Número Secreto" data-i18n-aria="audit.open.jogo.numero.secreto">
-                <div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><span>plim7plim.github.io</span></div>
-                <div class="project-screen"><img src="assets/projects/numero-secreto.webp" alt="Prévia da interface de Jogo Do Número Secreto" data-i18n-alt="audit.preview.jogo.numero.secreto" width="1365" height="900" loading="lazy" decoding="async"></div>
-            </a><div class="project-info">
-                <h3><a data-i18n="p5.title" href="https://plim7plim.github.io/jogo.numero.secreto/" target="_blank" rel="noopener noreferrer">Jogo Do Número Secreto</a></h3>
+                <div class="project-actions">
+                  <a
+                    class="project-live"
+                    href="https://brillare-joias.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><span data-i18n="design.live">Ver projeto</span
+                    ><i
+                      class="fa-solid fa-arrow-up-right-from-square"
+                      aria-hidden="true"
+                    ></i></a
+                  ><a
+                    class="project-link"
+                    href="https://github.com/plim7plim/brillare2"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="fa-brands fa-github" aria-hidden="true"></i>
+                    <span data-i18n="update.repository">Ver repositório</span>
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square"
+                      aria-hidden="true"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+            <article class="project-card" id="project-jogo.numero.secreto">
+              <a
+                class="project-preview"
+                href="https://plim7plim.github.io/jogo.numero.secreto/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Abrir Jogo Do Número Secreto"
+                data-i18n-aria="audit.open.jogo.numero.secreto"
+              >
+                <div class="browser-bar" aria-hidden="true">
+                  <i></i><i></i><i></i><span>plim7plim.github.io</span>
+                </div>
+                <div class="project-screen">
+                  <img
+                    src="assets/projects/numero-secreto.webp"
+                    alt="Prévia da interface de Jogo Do Número Secreto"
+                    data-i18n-alt="audit.preview.jogo.numero.secreto"
+                    width="1365"
+                    height="900"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+              </a>
+              <div class="project-info">
+                <h3>
+                  <a
+                    data-i18n="p5.title"
+                    href="https://plim7plim.github.io/jogo.numero.secreto/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Jogo Do Número Secreto</a
+                  >
+                </h3>
 
                 <p data-i18n="p5.desc">
-                    O Jogo do Número Secreto é um projeto feito no curso de JavaScript da Alura, onde o sistema gera um número aleatório e o jogador tenta adivinhar qual é. A cada tentativa, o jogo avisa se o número é maior ou menor, até que o acerto aconteça. Ele usa funções, listas, comparações e eventos, além de ter um sistema de narração para acessibilidade de pessoas com deficiência
+                  O Jogo do Número Secreto é um projeto feito no curso de
+                  JavaScript da Alura, onde o sistema gera um número aleatório e
+                  o jogador tenta adivinhar qual é. A cada tentativa, o jogo
+                  avisa se o número é maior ou menor, até que o acerto aconteça.
+                  Ele usa funções, listas, comparações e eventos, além de ter um
+                  sistema de narração para acessibilidade de pessoas com
+                  deficiência
                 </p>
 
                 <div class="techs">
-                    <span>JavaScript</span>
-                    <span data-i18n="p5.tech2">Eventos</span>
-                    <span>Console</span>
+                  <span>JavaScript</span>
+                  <span data-i18n="p5.tech2">Eventos</span>
+                  <span>Console</span>
                 </div>
 
-                <div class="project-actions"><a class="project-live" href="https://plim7plim.github.io/jogo.numero.secreto/" target="_blank" rel="noopener noreferrer"><span data-i18n="design.live">Ver projeto</span><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a><a class="project-link" href="https://github.com/plim7plim/jogo.numero.secreto" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> <span data-i18n="update.repository">Ver repositório</span> <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></div>
-</div>
-        </article><article class="project-card" id="project-landingPageBlu"><a class="project-preview" href="https://site-blu.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Site Blu" data-i18n-aria="audit.open.landingPageBlu">
-                <div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><span>site-blu.vercel.app</span></div>
-                <div class="project-screen"><img src="assets/projects/blu.webp" alt="Prévia da interface de Site Blu" data-i18n-alt="audit.preview.landingPageBlu" width="1365" height="900" loading="lazy" decoding="async"></div>
-            </a><div class="project-info">
-                <h3><a href="https://site-blu.vercel.app/" target="_blank" rel="noopener noreferrer">Site Blu</a></h3>
+                <div class="project-actions">
+                  <a
+                    class="project-live"
+                    href="https://plim7plim.github.io/jogo.numero.secreto/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><span data-i18n="design.live">Ver projeto</span
+                    ><i
+                      class="fa-solid fa-arrow-up-right-from-square"
+                      aria-hidden="true"
+                    ></i></a
+                  ><a
+                    class="project-link"
+                    href="https://github.com/plim7plim/jogo.numero.secreto"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="fa-brands fa-github" aria-hidden="true"></i>
+                    <span data-i18n="update.repository">Ver repositório</span>
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square"
+                      aria-hidden="true"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+            <article class="project-card" id="project-landingPageBlu">
+              <a
+                class="project-preview"
+                href="https://site-blu.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Abrir Site Blu"
+                data-i18n-aria="audit.open.landingPageBlu"
+              >
+                <div class="browser-bar" aria-hidden="true">
+                  <i></i><i></i><i></i><span>site-blu.vercel.app</span>
+                </div>
+                <div class="project-screen">
+                  <img
+                    src="assets/projects/blu.webp"
+                    alt="Prévia da interface de Site Blu"
+                    data-i18n-alt="audit.preview.landingPageBlu"
+                    width="1365"
+                    height="900"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+              </a>
+              <div class="project-info">
+                <h3>
+                  <a
+                    href="https://site-blu.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Site Blu</a
+                  >
+                </h3>
 
                 <p data-i18n="p6.desc">
-                    Projeto desenvolvido para a Blu Promotora, envolvendo refatoração e documentação
-                    de código, criação de páginas para a empresa e ajustes em telas específicas.
+                  Projeto desenvolvido para a Blu Promotora, envolvendo
+                  refatoração e documentação de código, criação de páginas para
+                  a empresa e ajustes em telas específicas.
                 </p>
 
                 <div class="techs">
-                    <span data-i18n="tech.htmlCssJs">HTML, CSS e JavaScript</span>
-                    <span data-i18n="p6.tech2">Refatoração e Documentação</span>
-                    <span data-i18n="tech.vercel">Hospedagem no Vercel</span>
+                  <span data-i18n="tech.htmlCssJs">HTML, CSS e JavaScript</span>
+                  <span data-i18n="p6.tech2">Refatoração e Documentação</span>
+                  <span data-i18n="tech.vercel">Hospedagem no Vercel</span>
                 </div>
 
-                <div class="project-actions"><a class="project-live" href="https://site-blu.vercel.app/" target="_blank" rel="noopener noreferrer"><span data-i18n="design.live">Ver projeto</span><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a><a class="project-link" href="https://github.com/plim7plim/landingPageBlu" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> <span data-i18n="update.repository">Ver repositório</span> <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></div>
-</div>
-        </article><article class="project-card" id="project-ueg2"><a class="project-preview" href="https://github.com/plim7plim/ueg2" target="_blank" rel="noopener noreferrer" aria-label="Abrir Práticas de programação UEG" data-i18n-aria="audit.open.ueg2">
-                <div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><span>github.com / ueg2</span></div>
-                <div class="project-screen"><div class="preview-fallback" style="--project-accent:#619de3"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i><strong>UEG / Práticas</strong><small data-i18n="design.repositoryPreview">Projeto de estudo · Explore o código</small></div></div>
-            </a><div class="project-info">
-                <h3><a data-i18n="update.5" href="https://github.com/plim7plim/ueg2" target="_blank" rel="noopener noreferrer">Práticas de programação UEG</a></h3>
-                <p data-i18n="update.10">Exercícios acadêmicos com calculadora, cálculo de IMC e modelagem de pacientes e funcionários com classes e diagramas UML.</p>
-                <div class="techs"><span>JavaScript</span><span data-i18n="update.13">Orientação a objetos</span><span>UML</span></div>
+                <div class="project-actions">
+                  <a
+                    class="project-live"
+                    href="https://site-blu.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><span data-i18n="design.live">Ver projeto</span
+                    ><i
+                      class="fa-solid fa-arrow-up-right-from-square"
+                      aria-hidden="true"
+                    ></i></a
+                  ><a
+                    class="project-link"
+                    href="https://github.com/plim7plim/landingPageBlu"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="fa-brands fa-github" aria-hidden="true"></i>
+                    <span data-i18n="update.repository">Ver repositório</span>
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square"
+                      aria-hidden="true"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+            <article class="project-card" id="project-ueg2">
+              <a
+                class="project-preview"
+                href="https://github.com/plim7plim/ueg2"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Abrir Práticas de programação UEG"
+                data-i18n-aria="audit.open.ueg2"
+              >
+                <div class="browser-bar" aria-hidden="true">
+                  <i></i><i></i><i></i><span>github.com / ueg2</span>
+                </div>
+                <div class="project-screen">
+                  <div
+                    class="preview-fallback"
+                    style="--project-accent: #619de3"
+                  >
+                    <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i
+                    ><strong>UEG / Práticas</strong
+                    ><small data-i18n="design.repositoryPreview"
+                      >Projeto de estudo · Explore o código</small
+                    >
+                  </div>
+                </div>
+              </a>
+              <div class="project-info">
+                <h3>
+                  <a
+                    data-i18n="update.5"
+                    href="https://github.com/plim7plim/ueg2"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Práticas de programação UEG</a
+                  >
+                </h3>
+                <p data-i18n="update.10">
+                  Exercícios acadêmicos com calculadora, cálculo de IMC e
+                  modelagem de pacientes e funcionários com classes e diagramas
+                  UML.
+                </p>
+                <div class="techs">
+                  <span>JavaScript</span
+                  ><span data-i18n="update.13">Orientação a objetos</span
+                  ><span>UML</span>
+                </div>
 
-                <div class="project-actions"><a class="project-link" href="https://github.com/plim7plim/ueg2" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> <span data-i18n="update.repository">Ver repositório</span> <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></div>
-</div>
-        </article><article class="project-card" id="project-aulasUEG"><a class="project-preview" href="https://github.com/plim7plim/aulasUEG" target="_blank" rel="noopener noreferrer" aria-label="Abrir Aulas da UEG" data-i18n-aria="audit.open.aulasUEG">
-                <div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><span>github.com / aulasUEG</span></div>
-                <div class="project-screen"><div class="preview-fallback" style="--project-accent:#619de3"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i><strong>UEG / Aulas</strong><small data-i18n="design.repositoryPreview">Projeto de estudo · Explore o código</small></div></div>
-            </a><div class="project-info">
-                <h3><a data-i18n="p2.title" href="https://github.com/plim7plim/aulasUEG" target="_blank" rel="noopener noreferrer">Aulas da UEG</a></h3>
+                <div class="project-actions">
+                  <a
+                    class="project-link"
+                    href="https://github.com/plim7plim/ueg2"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="fa-brands fa-github" aria-hidden="true"></i>
+                    <span data-i18n="update.repository">Ver repositório</span>
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square"
+                      aria-hidden="true"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+            <article class="project-card" id="project-aulasUEG">
+              <a
+                class="project-preview"
+                href="https://github.com/plim7plim/aulasUEG"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Abrir Aulas da UEG"
+                data-i18n-aria="audit.open.aulasUEG"
+              >
+                <div class="browser-bar" aria-hidden="true">
+                  <i></i><i></i><i></i><span>github.com / aulasUEG</span>
+                </div>
+                <div class="project-screen">
+                  <div
+                    class="preview-fallback"
+                    style="--project-accent: #619de3"
+                  >
+                    <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i
+                    ><strong>UEG / Aulas</strong
+                    ><small data-i18n="design.repositoryPreview"
+                      >Projeto de estudo · Explore o código</small
+                    >
+                  </div>
+                </div>
+              </a>
+              <div class="project-info">
+                <h3>
+                  <a
+                    data-i18n="p2.title"
+                    href="https://github.com/plim7plim/aulasUEG"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Aulas da UEG</a
+                  >
+                </h3>
 
                 <p data-i18n="p2.desc">
-                    Repositório com aulas práticas de programação da Faculdade.
+                  Repositório com aulas práticas de programação da Faculdade.
                 </p>
 
                 <div class="techs">
-                    <span>JavaScript</span>
-                    <span data-i18n="p2.tech2">Variáveis, Funções, Operadores, Vetores</span>
-                    <span data-i18n="p2.tech3">Lógica de programação, Pensamento Computacional. </span>
+                  <span>JavaScript</span>
+                  <span data-i18n="p2.tech2"
+                    >Variáveis, Funções, Operadores, Vetores</span
+                  >
+                  <span data-i18n="p2.tech3"
+                    >Lógica de programação, Pensamento Computacional.
+                  </span>
                 </div>
 
-                <div class="project-actions"><a class="project-link" href="https://github.com/plim7plim/aulasUEG" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> <span data-i18n="update.repository">Ver repositório</span> <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></div>
-</div>
-        </article><article class="project-card" id="project-botIA"><a class="project-preview" href="https://github.com/plim7plim/botIA" target="_blank" rel="noopener noreferrer" aria-label="Abrir Bot IA" data-i18n-aria="audit.open.botIA">
-                <div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><span>github.com / botIA</span></div>
-                <div class="project-screen"><div class="preview-fallback" style="--project-accent:#a58bfa"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i><strong>Bot IA</strong><small data-i18n="design.repositoryPreview">Projeto de estudo · Explore o código</small></div></div>
-            </a><div class="project-info">
-                <h3><a href="https://github.com/plim7plim/botIA" target="_blank" rel="noopener noreferrer">Bot IA</a></h3>
+                <div class="project-actions">
+                  <a
+                    class="project-link"
+                    href="https://github.com/plim7plim/aulasUEG"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="fa-brands fa-github" aria-hidden="true"></i>
+                    <span data-i18n="update.repository">Ver repositório</span>
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square"
+                      aria-hidden="true"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+            <article class="project-card" id="project-botIA">
+              <a
+                class="project-preview"
+                href="https://github.com/plim7plim/botIA"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Abrir Bot IA"
+                data-i18n-aria="audit.open.botIA"
+              >
+                <div class="browser-bar" aria-hidden="true">
+                  <i></i><i></i><i></i><span>github.com / botIA</span>
+                </div>
+                <div class="project-screen">
+                  <div
+                    class="preview-fallback"
+                    style="--project-accent: #a58bfa"
+                  >
+                    <i class="fa-solid fa-file-pdf" aria-hidden="true"></i
+                    ><strong>Bot IA</strong
+                    ><small data-i18n="design.repositoryPreview"
+                      >Projeto de estudo · Explore o código</small
+                    >
+                  </div>
+                </div>
+              </a>
+              <div class="project-info">
+                <h3>
+                  <a
+                    href="https://github.com/plim7plim/botIA"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Bot IA</a
+                  >
+                </h3>
 
                 <p data-i18n="p4.desc">
-                    Projeto desenvolvido durante a extensão de Algoritmos e Lógica de Programação.
-                    A aplicação permite que o usuário envie um arquivo PDF e faça perguntas sobre seu
-                    conteúdo. As respostas são geradas por um modelo de IA utilizando uma API REST,
-                    considerando apenas as informações presentes no documento enviado.
+                  Projeto desenvolvido durante a extensão de Algoritmos e Lógica
+                  de Programação. A aplicação permite que o usuário envie um
+                  arquivo PDF e faça perguntas sobre seu conteúdo. As respostas
+                  são geradas por um modelo de IA utilizando uma API REST,
+                  considerando apenas as informações presentes no documento
+                  enviado.
                 </p>
 
                 <div class="techs">
-                    <span>JavaScript</span>
-                    <span data-i18n="p4.tech2">API REST e JSON</span>
-                    <span data-i18n="p4.tech3">Integração com IA</span>
+                  <span>JavaScript</span>
+                  <span data-i18n="p4.tech2">API REST e JSON</span>
+                  <span data-i18n="p4.tech3">Integração com IA</span>
                 </div>
 
-                <div class="project-actions"><a class="project-link" href="https://github.com/plim7plim/botIA" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> <span data-i18n="update.repository">Ver repositório</span> <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></div>
-</div>
-        </article><article class="project-card" id="project-metasDiarias"><a class="project-preview" href="https://github.com/plim7plim/metasDiarias" target="_blank" rel="noopener noreferrer" aria-label="Abrir Metas" data-i18n-aria="audit.open.metasDiarias">
-                <div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><span>constancia.plinioportifolio.xyz</span></div>
-                <div class="project-screen"><div class="preview-fallback" style="--project-accent:#62bd9a"><i class="fa-solid fa-calendar-check" aria-hidden="true"></i><strong>Metas</strong><small data-i18n="design.unavailable">Demo público indisponível · Código disponível</small></div></div>
-            </a><div class="project-info">
-                <h3><a data-i18n="p8.title" href="https://github.com/plim7plim/metasDiarias" target="_blank" rel="noopener noreferrer">Metas</a></h3>
+                <div class="project-actions">
+                  <a
+                    class="project-link"
+                    href="https://github.com/plim7plim/botIA"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="fa-brands fa-github" aria-hidden="true"></i>
+                    <span data-i18n="update.repository">Ver repositório</span>
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square"
+                      aria-hidden="true"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+            <article class="project-card" id="project-metasDiarias">
+              <a
+                class="project-preview"
+                href="https://github.com/plim7plim/metasDiarias"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Abrir Metas"
+                data-i18n-aria="audit.open.metasDiarias"
+              >
+                <div class="browser-bar" aria-hidden="true">
+                  <i></i><i></i><i></i
+                  ><span>constancia.plinioportifolio.xyz</span>
+                </div>
+                <div class="project-screen">
+                  <div
+                    class="preview-fallback"
+                    style="--project-accent: #62bd9a"
+                  >
+                    <i class="fa-solid fa-calendar-check" aria-hidden="true"></i
+                    ><strong>Metas</strong
+                    ><small data-i18n="design.unavailable"
+                      >Demo público indisponível · Código disponível</small
+                    >
+                  </div>
+                </div>
+              </a>
+              <div class="project-info">
+                <h3>
+                  <a
+                    data-i18n="p8.title"
+                    href="https://github.com/plim7plim/metasDiarias"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Metas</a
+                  >
+                </h3>
 
-                <p data-i18n="p8.desc">Aplicação para acompanhar metas diárias, desenvolvida com TypeScript e React com auxílio de IA. O código está disponível para consulta; o demo exige autenticação.</p>
+                <p data-i18n="p8.desc">
+                  Aplicação para acompanhar metas diárias, desenvolvida com
+                  TypeScript e React com auxílio de IA. O código está disponível
+                  para consulta; o demo exige autenticação.
+                </p>
 
                 <div class="techs">
-                    <span>TypeScript &amp; React</span>
-                    <span data-i18n="p8.tech2">Desenvolvido com IA</span>
-                    <span data-i18n="p8.tech3">Controle de Metas Diárias</span>
+                  <span>TypeScript &amp; React</span>
+                  <span data-i18n="p8.tech2">Desenvolvido com IA</span>
+                  <span data-i18n="p8.tech3">Controle de Metas Diárias</span>
                 </div>
 
-                <div class="project-actions"><a class="project-link" href="https://github.com/plim7plim/metasDiarias" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> <span data-i18n="update.repository">Ver repositório</span> <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></div>
-</div>
-        </article></div></details></section>
+                <div class="project-actions">
+                  <a
+                    class="project-link"
+                    href="https://github.com/plim7plim/metasDiarias"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="fa-brands fa-github" aria-hidden="true"></i>
+                    <span data-i18n="update.repository">Ver repositório</span>
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square"
+                      aria-hidden="true"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </details>
+      </section>
 
-<section id="cursos" class="courses">
-    <h2 data-i18n="courses.title">Cursos e Formação</h2>
-
-    <div class="filter-buttons">
-        <button class="filter active" data-filter="all" data-i18n="filter.all">
-            Todos
-        </button>
-
-        <button class="filter" data-filter="escolaridade" data-i18n="filter.school">
-            Escolaridade
-        </button>
-
-        <button class="filter" data-filter="certificado" data-i18n="filter.certificates">
-            Certificados
-        </button>
-
-        <button class="filter" data-filter="curso" data-i18n="filter.courses">
-            Cursos
-        </button>
-    </div>
-
-    <div class="courses-grid">
+      <section id="cursos" class="courses">
+        <h2 data-i18n="courses.title">Formação</h2>
         <div class="education-grid">
-<article id="evidence-course-0" class="course-card education-card" data-category="escolaridade">
-            <div class="education-heading"><span class="education-icon" aria-hidden="true"><i class="fa-solid fa-laptop-code"></i></span><span class="education-status" data-i18n="education.status">Em andamento</span></div>
+          <article
+            id="evidence-course-0"
+            class="course-card education-card"
+            data-category="escolaridade"
+          >
+            <div class="education-heading">
+              <span class="education-icon" aria-hidden="true"
+                ><i class="fa-solid fa-laptop-code"></i></span
+              ><span class="education-status" data-i18n="education.status"
+                >Em andamento</span
+              >
+            </div>
             <h3 data-i18n="c1.title">Engenharia de Software</h3>
             <p class="education-institution">UniCesumar</p>
-            <p class="education-description" data-i18n="education.software.desc">Formação voltada à construção de software, da análise de requisitos à arquitetura, qualidade e manutenção de aplicações. Uma base para desenvolver soluções organizadas e sustentáveis.</p>
-            <div class="card-footer"><span data-i18n="c1.tag">Graduação</span><span class="education-period" data-i18n="education.software.period">6º período</span></div>
-        </article>
-        <article id="evidence-course-1" class="course-card education-card" data-category="escolaridade">
-            <div class="education-heading"><span class="education-icon" aria-hidden="true"><i class="fa-solid fa-globe"></i></span><span class="education-status" data-i18n="education.status">Em andamento</span></div>
+            <p
+              class="education-description"
+              data-i18n="education.software.desc"
+            >
+              Graduação em andamento na UniCesumar. Atualmente no 6º período.
+            </p>
+            <div class="card-footer">
+              <span data-i18n="c1.tag">Graduação</span
+              ><span
+                class="education-period"
+                data-i18n="education.software.period"
+                >6º período</span
+              >
+            </div>
+          </article>
+          <article
+            id="evidence-course-1"
+            class="course-card education-card"
+            data-category="escolaridade"
+          >
+            <div class="education-heading">
+              <span class="education-icon" aria-hidden="true"
+                ><i class="fa-solid fa-globe"></i></span
+              ><span class="education-status" data-i18n="education.status"
+                >Em andamento</span
+              >
+            </div>
             <h3 data-i18n="c2.title">Sistemas para Internet</h3>
-            <p class="education-institution" data-i18n="education.internet.institution">Universidade Estadual de Goiás · UEG</p>
-            <p class="education-description" data-i18n="education.internet.desc">Formação com foco no desenvolvimento de aplicações para a web, conectando programação, interfaces e dados. Os projetos acadêmicos ajudam a transformar os conceitos em experiências práticas.</p>
-            <div class="card-footer"><span data-i18n="c2.tag">Tecnólogo</span><span class="education-period" data-i18n="education.internet.period">2º período</span></div>
-        </article>
-        </div>
-
-        <div id="evidence-course-2" class="course-card has-certificate-preview dio-collection" data-category="certificado">
-            <h3 data-i18n="update.14">Certificados DIO</h3>
-            <p data-i18n="update.15">31 certificados de cursos, módulos, projetos e mentoria concluídos em 2024 e 2025, organizados em um único PDF.</p>
-            <a class="certificate-preview" href="assets/certificados/dio-certificados.pdf" target="_blank" rel="noopener noreferrer" aria-label="Abrir certificado completo" data-i18n-aria="certificate.previewOpen">
-                <img src="assets/certificados/previews/dio-certificados-1.webp" alt="Prévia do certificado" data-i18n-alt="certificate.previewAlt" width="800" height="566" loading="lazy" decoding="async">
-            </a>
-            <div class="card-footer"><span data-i18n="update.16">DIO • 31 certificados</span><a href="assets/certificados/dio-certificados.pdf" target="_blank" rel="noopener noreferrer" class="certificate-btn">Ver todos</a></div>
-        </div>
-        <div id="evidence-course-3" class="course-card has-certificate-preview" data-category="certificado">
-            <h3 data-i18n="update.19">Java: fundamentos e linguagem</h3><p data-i18n="update.20">Sintaxe, estruturas condicionais e de repetição, ambiente de desenvolvimento e tratamento de exceções.</p>
-            <a class="certificate-preview" href="assets/certificados/dio-certificados.pdf#page=24" target="_blank" rel="noopener noreferrer" aria-label="Abrir certificado completo" data-i18n-aria="certificate.previewOpen">
-                <img src="assets/certificados/previews/dio-certificados-24.webp" alt="Prévia do certificado" data-i18n-alt="certificate.previewAlt" width="800" height="567" loading="lazy" decoding="async">
-            </a>
-            <div class="card-footer"><span>DIO • 2024–2025</span><a href="assets/certificados/dio-certificados.pdf#page=24" target="_blank" rel="noopener noreferrer" class="certificate-btn">Ver certificados</a></div>
-        </div>
-        <div id="evidence-course-4" class="course-card has-certificate-preview" data-category="certificado">
-            <h3 data-i18n="update.21">Java: orientação a objetos e UML</h3><p data-i18n="update.22">Abstração, pilares da orientação a objetos, Collections, Stream API e modelagem de um iPhone com UML.</p>
-            <a class="certificate-preview" href="assets/certificados/dio-certificados.pdf#page=1" target="_blank" rel="noopener noreferrer" aria-label="Abrir certificado completo" data-i18n-aria="certificate.previewOpen">
-                <img src="assets/certificados/previews/dio-certificados-1.webp" alt="Prévia do certificado" data-i18n-alt="certificate.previewAlt" width="800" height="566" loading="lazy" decoding="async">
-            </a>
-            <div class="card-footer"><span>DIO • 2024</span><a href="assets/certificados/dio-certificados.pdf#page=1" target="_blank" rel="noopener noreferrer" class="certificate-btn">Ver certificados</a></div>
-        </div>
-        <div id="evidence-course-5" class="course-card has-certificate-preview" data-category="certificado">
-            <h3 data-i18n="update.23">Banco de dados: SQL e NoSQL</h3><p data-i18n="update.24">Introdução a bancos relacionais e não relacionais e módulo Primeiros Passos em SQL e NoSQL.</p>
-            <a class="certificate-preview" href="assets/certificados/dio-certificados.pdf#page=11" target="_blank" rel="noopener noreferrer" aria-label="Abrir certificado completo" data-i18n-aria="certificate.previewOpen">
-                <img src="assets/certificados/previews/dio-certificados-11.webp" alt="Prévia do certificado" data-i18n-alt="certificate.previewAlt" width="800" height="566" loading="lazy" decoding="async">
-            </a>
-            <div class="card-footer"><span>DIO • 2024</span><a href="assets/certificados/dio-certificados.pdf#page=11" target="_blank" rel="noopener noreferrer" class="certificate-btn">Ver certificados</a></div>
-        </div>
-        <div id="evidence-course-6" class="course-card has-certificate-preview" data-category="certificado">
-            <h3 data-i18n="update.25">Git, GitHub e desenvolvimento de software</h3><p data-i18n="update.26">Versionamento de código, contribuição em projeto open source e princípios de desenvolvimento de software.</p>
-            <a class="certificate-preview" href="assets/certificados/dio-certificados.pdf#page=14" target="_blank" rel="noopener noreferrer" aria-label="Abrir certificado completo" data-i18n-aria="certificate.previewOpen">
-                <img src="assets/certificados/previews/dio-certificados-14.webp" alt="Prévia do certificado" data-i18n-alt="certificate.previewAlt" width="800" height="566" loading="lazy" decoding="async">
-            </a>
-            <div class="card-footer"><span>DIO • 2024</span><a href="assets/certificados/dio-certificados.pdf#page=14" target="_blank" rel="noopener noreferrer" class="certificate-btn">Ver certificados</a></div>
-        </div>
-        <div id="evidence-course-7" class="course-card has-certificate-preview" data-category="certificado">
-            <h3 data-i18n="update.27">Lógica e desafios de programação</h3><p data-i18n="update.28">Desafios de código, simulação de conta bancária, validação de processo seletivo e abstração no domínio bancário.</p>
-            <a class="certificate-preview" href="assets/certificados/dio-certificados.pdf#page=2" target="_blank" rel="noopener noreferrer" aria-label="Abrir certificado completo" data-i18n-aria="certificate.previewOpen">
-                <img src="assets/certificados/previews/dio-certificados-2.webp" alt="Prévia do certificado" data-i18n-alt="certificate.previewAlt" width="800" height="566" loading="lazy" decoding="async">
-            </a>
-            <div class="card-footer"><span>DIO • 2024</span><a href="assets/certificados/dio-certificados.pdf#page=2" target="_blank" rel="noopener noreferrer" class="certificate-btn">Ver certificados</a></div>
-        </div>
-        <div id="evidence-course-8" class="course-card has-certificate-preview" data-category="certificado">
-            <h3 data-i18n="update.29">Carreira e organização dos estudos</h3><p data-i18n="update.30">Roadmaps com Notion, criação de portfólio, onboarding e introdução aos bootcamps da DIO.</p>
-            <a class="certificate-preview" href="assets/certificados/dio-certificados.pdf#page=17" target="_blank" rel="noopener noreferrer" aria-label="Abrir certificado completo" data-i18n-aria="certificate.previewOpen">
-                <img src="assets/certificados/previews/dio-certificados-17.webp" alt="Prévia do certificado" data-i18n-alt="certificate.previewAlt" width="800" height="566" loading="lazy" decoding="async">
-            </a>
-            <div class="card-footer"><span>DIO • 2024</span><a href="assets/certificados/dio-certificados.pdf#page=17" target="_blank" rel="noopener noreferrer" class="certificate-btn">Ver certificados</a></div>
-        </div>
-
-
-
-
-
-
-
-        <div id="evidence-course-9" class="course-card has-certificate-preview" data-category="curso">
-            <h3 data-i18n="c5.title">Fundamentos de Computação em Nuvem</h3>
-
-            <p data-i18n="c5.desc">
-                Conhecimentos em cloud, abordando conceitos e fundamentos de computação em nuvem.
+            <p
+              class="education-institution"
+              data-i18n="education.internet.institution"
+            >
+              Universidade Estadual de Goiás · UEG
             </p>
-
-            <a class="certificate-preview" href="assets/certificados/cloud.png" target="_blank" rel="noopener noreferrer" aria-label="Abrir certificado completo" data-i18n-aria="certificate.previewOpen">
-                <img src="assets/certificados/previews/cloud.webp" alt="Prévia do certificado" data-i18n-alt="certificate.previewAlt" width="800" height="565" loading="lazy" decoding="async">
-            </a>
-            <div class="card-footer">
-                <span data-i18n="c5.tag">FIAP • 80 horas</span>
-
-                <a href="assets/certificados/cloud.png" target="_blank" rel="noopener noreferrer" class="certificate-btn" data-i18n="course.cta">
-                    Confira aqui
-                </a>
-            </div>
-        </div>
-
-        <div id="evidence-course-10" class="course-card has-certificate-preview" data-category="curso">
-            <h3 data-i18n="c6.title">Imersão Digital - Trilha de Aprofundamento: DevOps</h3>
-
-            <p data-i18n="c6.desc">
-                Práticas de DevOps envolvendo Linux, automação, Git, CI/CD, Docker,
-                Kubernetes, monitoramento e infraestrutura em nuvem.
+            <p
+              class="education-description"
+              data-i18n="education.internet.desc"
+            >
+              Tecnólogo em andamento na UEG. Atualmente no 2º período.
             </p>
-
-            <a class="certificate-preview" href="assets/certificados/imersao.jpg" target="_blank" rel="noopener noreferrer" aria-label="Abrir certificado completo" data-i18n-aria="certificate.previewOpen">
-                <img src="assets/certificados/previews/imersao.webp" alt="Prévia do certificado" data-i18n-alt="certificate.previewAlt" width="800" height="565" loading="lazy" decoding="async">
-            </a>
             <div class="card-footer">
-                <span data-i18n="c6.tag">Alura • 126 horas</span>
-
-                <a href="assets/certificados/imersao.jpg" target="_blank" rel="noopener noreferrer" class="certificate-btn" data-i18n="course.cta">
-                    Confira aqui
-                </a>
+              <span data-i18n="c2.tag">Tecnólogo</span
+              ><span
+                class="education-period"
+                data-i18n="education.internet.period"
+                >2º período</span
+              >
             </div>
+          </article>
         </div>
-
-        <div id="evidence-course-11" class="course-card has-certificate-preview" data-category="curso">
-            <h3>DevOps</h3>
-
-            <p data-i18n="c7.desc">
-                DevOps, Linux, Rede de computadores, SLF4J, Docker,
-                Kubernetes e API REST.
-            </p>
-
-            <a class="certificate-preview" href="assets/certificados/devOps.jpg" target="_blank" rel="noopener noreferrer" aria-label="Abrir certificado completo" data-i18n-aria="certificate.previewOpen">
-                <img src="assets/certificados/previews/devops.webp" alt="Prévia do certificado" data-i18n-alt="certificate.previewAlt" width="800" height="565" loading="lazy" decoding="async">
-            </a>
-            <div class="card-footer">
-                <span data-i18n="c7.tag">Alura • 69 horas</span>
-
-                <a href="assets/certificados/devOps.jpg" target="_blank" rel="noopener noreferrer" class="certificate-btn" data-i18n="course.cta">
-                    Confira aqui
-                </a>
-            </div>
-        </div>
-
-        <div id="evidence-course-12" class="course-card has-certificate-preview" data-category="curso">
-            <h3 data-i18n="c8.title">Certificações Alura</h3>
-
-            <p data-i18n="c8.desc">
-                Conjunto de cursos concluídos na plataforma Alura, abrangendo formações em
-                DevOps, Linux, Git, Docker, Kubernetes, CI/CD, GitHub Actions e
-                Observabilidade.
-            </p>
-
-            <a class="certificate-preview" href="assets/certificados/CertificadoAlura.pdf" target="_blank" rel="noopener noreferrer" aria-label="Abrir certificado completo" data-i18n-aria="certificate.previewOpen">
-                <img src="assets/certificados/previews/certificadoalura-1.webp" alt="Prévia do certificado" data-i18n-alt="certificate.previewAlt" width="565" height="800" loading="lazy" decoding="async">
-            </a>
-            <div class="card-footer">
-                <span data-i18n="c8.tag">Alura • 200 horas</span>
-
-                <a href="assets/certificados/CertificadoAlura.pdf" target="_blank" rel="noopener noreferrer" class="certificate-btn" data-i18n="course.cta">
-                    Confira aqui
-                </a>
-            </div>
-        </div>
-
-        <div id="evidence-course-13" class="course-card has-certificate-preview" data-category="curso">
-            <h3 data-i18n="c9.title">BootCamp Back-end ADATECH</h3>
+        <h3 class="education-subtitle" data-i18n="education.selected">
+          Cursos selecionados · Java, backend e fundamentos
+        </h3>
+        <p class="section-note" data-i18n="education.note">
+          Comprovantes de cursos, separados da experiência prática. Os assuntos
+          da DIO pertencem ao mesmo conjunto de 31 certificados.
+        </p>
+        <div class="courses-grid selected-credentials">
+          <div
+            id="evidence-course-13"
+            class="course-card has-certificate-preview"
+            data-category="curso"
+          >
+            <h3 data-i18n="c9.title">Bootcamp backend · Ada Tech</h3>
 
             <p data-i18n="c9.desc">
-                Bootcamp de desenvolvimento Back-end, com foco em Java, Spring Boot pela Adatech.
+              Bootcamp de desenvolvimento Back-end, com foco em Java, Spring
+              Boot pela Adatech.
             </p>
 
-            <a class="certificate-preview" href="assets/certificados/adaTech.jpg" target="_blank" rel="noopener noreferrer" aria-label="Abrir certificado completo" data-i18n-aria="certificate.previewOpen">
-                <img src="assets/certificados/previews/adatech.webp" alt="Prévia do certificado" data-i18n-alt="certificate.previewAlt" width="800" height="458" loading="lazy" decoding="async">
+            <a
+              class="certificate-preview"
+              href="assets/certificados/adaTech.jpg"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Abrir certificado completo"
+              data-i18n-aria="certificate.previewOpen"
+            >
+              <img
+                src="assets/certificados/previews/adatech.webp"
+                alt="Prévia do certificado"
+                data-i18n-alt="certificate.previewAlt"
+                width="800"
+                height="458"
+                loading="lazy"
+                decoding="async"
+              />
             </a>
             <div class="card-footer">
-                <span data-i18n="c9.tag">Adatech • 19 horas</span>
+              <span data-i18n="c9.tag">Adatech • 19 horas</span>
 
-                <a href="assets/certificados/adaTech.jpg" target="_blank" rel="noopener noreferrer" class="certificate-btn" data-i18n="course.cta">
-                    Confira aqui
-                </a>
+              <a
+                href="assets/certificados/adaTech.jpg"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="certificate-btn"
+                data-i18n="course.cta"
+              >
+                Ver comprovante
+              </a>
             </div>
-        </div>
-
-        <div id="evidence-course-14" class="course-card has-certificate-preview" data-category="curso">
-            <h3 data-i18n="c10.title">Inglês Britânico</h3>
-
-            <p data-i18n="c10.desc">
-                Formação em inglês britânico com foco em comunicação, leitura, escrita e compreensão para o ambiente profissional.
-            </p>
-
-            <a class="certificate-preview" href="assets/certificados/inglesBritanico.pdf" target="_blank" rel="noopener noreferrer" aria-label="Abrir certificado completo" data-i18n-aria="certificate.previewOpen">
-                <img src="assets/certificados/previews/inglesbritanico-1.webp" alt="Prévia do certificado" data-i18n-alt="certificate.previewAlt" width="800" height="566" loading="lazy" decoding="async">
-            </a>
-            <div class="card-footer">
-                <span data-i18n="c10.tag">British Council • 216 horas</span>
-
-                <a href="assets/certificados/inglesBritanico.pdf" target="_blank" rel="noopener noreferrer" class="certificate-btn" data-i18n="course.cta">
-                    Confira aqui
-                </a>
-            </div>
-        </div>
-
-        <div id="evidence-course-15" class="course-card has-certificate-preview" data-category="curso">
-            <h3 data-i18n="c11.title">AWS Lambda Foundations (Português)</h3>
-
-            <p data-i18n="c11.desc">
-                Curso sobre fundamentos do AWS Lambda, cobrindo computação serverless,
-                criação e configuração de funções e integração com outros serviços da AWS.
-            </p>
-
-            <a class="certificate-preview" href="assets/certificados/awsLambda.jpg" target="_blank" rel="noopener noreferrer" aria-label="Abrir certificado completo" data-i18n-aria="certificate.previewOpen">
-                <img src="assets/certificados/previews/awslambda.webp" alt="Prévia do certificado" data-i18n-alt="certificate.previewAlt" width="800" height="618" loading="lazy" decoding="async">
-            </a>
-            <div class="card-footer">
-                <span>AWS Training &amp; Certification</span>
-
-                <a href="assets/certificados/awsLambda.jpg" target="_blank" rel="noopener noreferrer" class="certificate-btn" data-i18n="course.cta">
-                    Confira aqui
-                </a>
-            </div>
-        </div>
-
-        <div id="evidence-course-16" class="course-card has-certificate-preview" data-category="curso">
-            <h3>Claude Platform 101</h3>
-
-            <p data-i18n="c12.desc">
-                Introdução à plataforma Claude, abordando fundamentos de uso de modelos de IA
-                e boas práticas para integração em aplicações.
-            </p>
-
-            <a class="certificate-preview" href="assets/certificados/claude.png" target="_blank" rel="noopener noreferrer" aria-label="Abrir certificado completo" data-i18n-aria="certificate.previewOpen">
-                <img src="assets/certificados/previews/claude.webp" alt="Prévia do certificado" data-i18n-alt="certificate.previewAlt" width="800" height="618" loading="lazy" decoding="async">
-            </a>
-            <div class="card-footer">
-                <span>Anthropic</span>
-
-                <a href="assets/certificados/claude.png" target="_blank" rel="noopener noreferrer" class="certificate-btn" data-i18n="course.cta">
-                    Confira aqui
-                </a>
-            </div>
-        </div>
-
-        <div id="evidence-course-17" class="course-card has-certificate-preview" data-category="curso">
+          </div>
+          <div
+            id="evidence-course-17"
+            class="course-card has-certificate-preview"
+            data-category="curso"
+          >
             <h3 data-i18n="c13.title">Nano Course: Engenharia de Software</h3>
 
             <p data-i18n="c13.desc">
-                Curso rápido sobre fundamentos e práticas de Engenharia de Software.
+              Curso rápido sobre fundamentos e práticas de Engenharia de
+              Software.
             </p>
 
-            <a class="certificate-preview" href="assets/certificados/engDeSoftware.jpg" target="_blank" rel="noopener noreferrer" aria-label="Abrir certificado completo" data-i18n-aria="certificate.previewOpen">
-                <img src="assets/certificados/previews/engdesoftware.webp" alt="Prévia do certificado" data-i18n-alt="certificate.previewAlt" width="800" height="565" loading="lazy" decoding="async">
+            <a
+              class="certificate-preview"
+              href="assets/certificados/engDeSoftware.jpg"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Abrir certificado completo"
+              data-i18n-aria="certificate.previewOpen"
+            >
+              <img
+                src="assets/certificados/previews/engdesoftware.webp"
+                alt="Prévia do certificado"
+                data-i18n-alt="certificate.previewAlt"
+                width="800"
+                height="565"
+                loading="lazy"
+                decoding="async"
+              />
             </a>
             <div class="card-footer">
-                <span data-i18n="c13.tag">FIAP • 100 horas</span>
+              <span data-i18n="c13.tag">FIAP • 100 horas</span>
 
-                <a href="assets/certificados/engDeSoftware.jpg" target="_blank" rel="noopener noreferrer" class="certificate-btn" data-i18n="course.cta">
-                    Confira aqui
-                </a>
+              <a
+                href="assets/certificados/engDeSoftware.jpg"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="certificate-btn"
+                data-i18n="course.cta"
+              >
+                Ver comprovante
+              </a>
             </div>
-        </div>
-
-        <div id="evidence-course-18" class="course-card has-certificate-preview" data-category="curso">
-            <h3 data-i18n="c14.title">Sensibilização para a Segurança Digital</h3>
-
-            <p data-i18n="c14.desc">
-                Curso introdutório sobre conceitos e boas práticas de segurança digital.
+          </div>
+          <div
+            id="evidence-course-2"
+            class="course-card has-certificate-preview dio-collection"
+            data-category="certificado"
+          >
+            <h3 data-i18n="update.14">Certificados DIO</h3>
+            <p data-i18n="update.15">
+              31 certificados de cursos, módulos, projetos e mentoria concluídos
+              em 2024 e 2025, organizados em um único PDF.
             </p>
-
-            <a class="certificate-preview" href="assets/certificados/cisco.jpg" target="_blank" rel="noopener noreferrer" aria-label="Abrir certificado completo" data-i18n-aria="certificate.previewOpen">
-                <img src="assets/certificados/previews/cisco.webp" alt="Prévia do certificado" data-i18n-alt="certificate.previewAlt" width="800" height="542" loading="lazy" decoding="async">
+            <a
+              class="certificate-preview"
+              href="assets/certificados/dio-certificados.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Abrir certificado completo"
+              data-i18n-aria="certificate.previewOpen"
+            >
+              <img
+                src="assets/certificados/previews/dio-certificados-1.webp"
+                alt="Prévia do certificado"
+                data-i18n-alt="certificate.previewAlt"
+                width="800"
+                height="566"
+                loading="lazy"
+                decoding="async"
+              />
             </a>
             <div class="card-footer">
+              <span data-i18n="update.16">DIO • 31 certificados</span
+              ><a
+                href="assets/certificados/dio-certificados.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="certificate-btn"
+                data-i18n="credential.open"
+                >Ver comprovantes</a
+              >
+            </div>
+            <details class="credential-topics">
+              <summary data-i18n="credential.topics">
+                Explorar assuntos deste conjunto
+              </summary>
+              <div class="credential-topic" id="evidence-course-3">
+                <h3 data-i18n="update.19">Java: fundamentos e linguagem</h3>
+                <p data-i18n="update.20">
+                  Sintaxe, estruturas condicionais e de repetição, ambiente de
+                  desenvolvimento e tratamento de exceções.
+                </p>
+                <a
+                  href="assets/certificados/dio-certificados.pdf#page=24"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="certificate-btn"
+                  data-i18n="credential.open"
+                  >Ver comprovantes</a
+                >
+              </div>
+              <div class="credential-topic" id="evidence-course-4">
+                <h3 data-i18n="update.21">Java: orientação a objetos e UML</h3>
+                <p data-i18n="update.22">
+                  Abstração, pilares da orientação a objetos, Collections,
+                  Stream API e modelagem de um iPhone com UML.
+                </p>
+                <a
+                  href="assets/certificados/dio-certificados.pdf#page=1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="certificate-btn"
+                  data-i18n="credential.open"
+                  >Ver comprovantes</a
+                >
+              </div>
+              <div class="credential-topic" id="evidence-course-5">
+                <h3 data-i18n="update.23">Banco de dados: SQL e NoSQL</h3>
+                <p data-i18n="update.24">
+                  Introdução a bancos relacionais e não relacionais e módulo
+                  Primeiros Passos em SQL e NoSQL.
+                </p>
+                <a
+                  href="assets/certificados/dio-certificados.pdf#page=11"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="certificate-btn"
+                  data-i18n="credential.open"
+                  >Ver comprovantes</a
+                >
+              </div>
+              <div class="credential-topic" id="evidence-course-6">
+                <h3 data-i18n="update.25">
+                  Git, GitHub e desenvolvimento de software
+                </h3>
+                <p data-i18n="update.26">
+                  Versionamento de código, contribuição em projeto open source e
+                  princípios de desenvolvimento de software.
+                </p>
+                <a
+                  href="assets/certificados/dio-certificados.pdf#page=14"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="certificate-btn"
+                  data-i18n="credential.open"
+                  >Ver comprovantes</a
+                >
+              </div>
+              <div class="credential-topic" id="evidence-course-7">
+                <h3 data-i18n="update.27">Lógica e desafios de programação</h3>
+                <p data-i18n="update.28">
+                  Desafios de código, simulação de conta bancária, validação de
+                  processo seletivo e abstração no domínio bancário.
+                </p>
+                <a
+                  href="assets/certificados/dio-certificados.pdf#page=2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="certificate-btn"
+                  data-i18n="credential.open"
+                  >Ver comprovantes</a
+                >
+              </div>
+              <div class="credential-topic" id="evidence-course-8">
+                <h3 data-i18n="update.29">
+                  Carreira e organização dos estudos
+                </h3>
+                <p data-i18n="update.30">
+                  Roadmaps com Notion, criação de portfólio, onboarding e
+                  introdução aos bootcamps da DIO.
+                </p>
+                <a
+                  href="assets/certificados/dio-certificados.pdf#page=17"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="certificate-btn"
+                  data-i18n="credential.open"
+                  >Ver comprovantes</a
+                >
+              </div>
+            </details>
+          </div>
+        </div>
+        <details class="full-education">
+          <summary data-i18n="education.full">Ver formação completa</summary>
+          <div class="courses-grid">
+            <div
+              id="evidence-course-9"
+              class="course-card has-certificate-preview"
+              data-category="curso"
+            >
+              <h3 data-i18n="c5.title">Fundamentos de Computação em Nuvem</h3>
+
+              <p data-i18n="c5.desc">
+                Conhecimentos em cloud, abordando conceitos e fundamentos de
+                computação em nuvem.
+              </p>
+
+              <a
+                class="certificate-preview"
+                href="assets/certificados/cloud.png"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Abrir certificado completo"
+                data-i18n-aria="certificate.previewOpen"
+              >
+                <img
+                  src="assets/certificados/previews/cloud.webp"
+                  alt="Prévia do certificado"
+                  data-i18n-alt="certificate.previewAlt"
+                  width="800"
+                  height="565"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+              <div class="card-footer">
+                <span data-i18n="c5.tag">FIAP • 80 horas</span>
+
+                <a
+                  href="assets/certificados/cloud.png"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="certificate-btn"
+                  data-i18n="course.cta"
+                >
+                  Ver comprovante
+                </a>
+              </div>
+            </div>
+            <div
+              id="evidence-course-10"
+              class="course-card has-certificate-preview"
+              data-category="curso"
+            >
+              <h3 data-i18n="c6.title">
+                Imersão Digital - Trilha de Aprofundamento: DevOps
+              </h3>
+
+              <p data-i18n="c6.desc">
+                Práticas de DevOps envolvendo Linux, automação, Git, CI/CD,
+                Docker, Kubernetes, monitoramento e infraestrutura em nuvem.
+              </p>
+
+              <a
+                class="certificate-preview"
+                href="assets/certificados/imersao.jpg"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Abrir certificado completo"
+                data-i18n-aria="certificate.previewOpen"
+              >
+                <img
+                  src="assets/certificados/previews/imersao.webp"
+                  alt="Prévia do certificado"
+                  data-i18n-alt="certificate.previewAlt"
+                  width="800"
+                  height="565"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+              <div class="card-footer">
+                <span data-i18n="c6.tag">Alura • 126 horas</span>
+
+                <a
+                  href="assets/certificados/imersao.jpg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="certificate-btn"
+                  data-i18n="course.cta"
+                >
+                  Ver comprovante
+                </a>
+              </div>
+            </div>
+            <div
+              id="evidence-course-11"
+              class="course-card has-certificate-preview"
+              data-category="curso"
+            >
+              <h3>DevOps</h3>
+
+              <p data-i18n="c7.desc">
+                DevOps, Linux, Rede de computadores, SLF4J, Docker, Kubernetes e
+                API REST.
+              </p>
+
+              <a
+                class="certificate-preview"
+                href="assets/certificados/devOps.jpg"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Abrir certificado completo"
+                data-i18n-aria="certificate.previewOpen"
+              >
+                <img
+                  src="assets/certificados/previews/devops.webp"
+                  alt="Prévia do certificado"
+                  data-i18n-alt="certificate.previewAlt"
+                  width="800"
+                  height="565"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+              <div class="card-footer">
+                <span data-i18n="c7.tag">Alura • 69 horas</span>
+
+                <a
+                  href="assets/certificados/devOps.jpg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="certificate-btn"
+                  data-i18n="course.cta"
+                >
+                  Ver comprovante
+                </a>
+              </div>
+            </div>
+            <div
+              id="evidence-course-12"
+              class="course-card has-certificate-preview"
+              data-category="curso"
+            >
+              <h3 data-i18n="c8.title">
+                Cursos Alura · coleção de comprovantes
+              </h3>
+
+              <p data-i18n="c8.desc">
+                Conjunto de cursos concluídos na plataforma Alura, abrangendo
+                formações em DevOps, Linux, Git, Docker, Kubernetes, CI/CD,
+                GitHub Actions e Observabilidade.
+              </p>
+
+              <a
+                class="certificate-preview"
+                href="assets/certificados/CertificadoAlura.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Abrir certificado completo"
+                data-i18n-aria="certificate.previewOpen"
+              >
+                <img
+                  src="assets/certificados/previews/certificadoalura-1.webp"
+                  alt="Prévia do certificado"
+                  data-i18n-alt="certificate.previewAlt"
+                  width="565"
+                  height="800"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+              <div class="card-footer">
+                <span data-i18n="c8.tag">Alura • 200 horas</span>
+
+                <a
+                  href="assets/certificados/CertificadoAlura.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="certificate-btn"
+                  data-i18n="course.cta"
+                >
+                  Ver comprovante
+                </a>
+              </div>
+            </div>
+            <div
+              id="evidence-course-14"
+              class="course-card has-certificate-preview"
+              data-category="curso"
+            >
+              <h3 data-i18n="c10.title">Inglês Britânico</h3>
+
+              <p data-i18n="c10.desc">
+                Formação em inglês britânico com foco em comunicação, leitura,
+                escrita e compreensão para o ambiente profissional.
+              </p>
+
+              <a
+                class="certificate-preview"
+                href="assets/certificados/inglesBritanico.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Abrir certificado completo"
+                data-i18n-aria="certificate.previewOpen"
+              >
+                <img
+                  src="assets/certificados/previews/inglesbritanico-1.webp"
+                  alt="Prévia do certificado"
+                  data-i18n-alt="certificate.previewAlt"
+                  width="800"
+                  height="566"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+              <div class="card-footer">
+                <span data-i18n="c10.tag">British Council • 216 horas</span>
+
+                <a
+                  href="assets/certificados/inglesBritanico.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="certificate-btn"
+                  data-i18n="course.cta"
+                >
+                  Ver comprovante
+                </a>
+              </div>
+            </div>
+            <div
+              id="evidence-course-15"
+              class="course-card has-certificate-preview"
+              data-category="curso"
+            >
+              <h3 data-i18n="c11.title">AWS Lambda Foundations (Português)</h3>
+
+              <p data-i18n="c11.desc">
+                Curso sobre fundamentos do AWS Lambda, cobrindo computação
+                serverless, criação e configuração de funções e integração com
+                outros serviços da AWS.
+              </p>
+
+              <a
+                class="certificate-preview"
+                href="assets/certificados/awsLambda.jpg"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Abrir certificado completo"
+                data-i18n-aria="certificate.previewOpen"
+              >
+                <img
+                  src="assets/certificados/previews/awslambda.webp"
+                  alt="Prévia do certificado"
+                  data-i18n-alt="certificate.previewAlt"
+                  width="800"
+                  height="618"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+              <div class="card-footer">
+                <span>AWS Training &amp; Certification</span>
+
+                <a
+                  href="assets/certificados/awsLambda.jpg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="certificate-btn"
+                  data-i18n="course.cta"
+                >
+                  Ver comprovante
+                </a>
+              </div>
+            </div>
+            <div
+              id="evidence-course-16"
+              class="course-card has-certificate-preview"
+              data-category="curso"
+            >
+              <h3>Claude Platform 101</h3>
+
+              <p data-i18n="c12.desc">
+                Introdução à plataforma Claude, abordando fundamentos de uso de
+                modelos de IA e boas práticas para integração em aplicações.
+              </p>
+
+              <a
+                class="certificate-preview"
+                href="assets/certificados/claude.png"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Abrir certificado completo"
+                data-i18n-aria="certificate.previewOpen"
+              >
+                <img
+                  src="assets/certificados/previews/claude.webp"
+                  alt="Prévia do certificado"
+                  data-i18n-alt="certificate.previewAlt"
+                  width="800"
+                  height="618"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+              <div class="card-footer">
+                <span>Anthropic</span>
+
+                <a
+                  href="assets/certificados/claude.png"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="certificate-btn"
+                  data-i18n="course.cta"
+                >
+                  Ver comprovante
+                </a>
+              </div>
+            </div>
+            <div
+              id="evidence-course-18"
+              class="course-card has-certificate-preview"
+              data-category="curso"
+            >
+              <h3 data-i18n="c14.title">
+                Sensibilização para a Segurança Digital
+              </h3>
+
+              <p data-i18n="c14.desc">
+                Curso introdutório sobre conceitos e boas práticas de segurança
+                digital.
+              </p>
+
+              <a
+                class="certificate-preview"
+                href="assets/certificados/cisco.jpg"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Abrir certificado completo"
+                data-i18n-aria="certificate.previewOpen"
+              >
+                <img
+                  src="assets/certificados/previews/cisco.webp"
+                  alt="Prévia do certificado"
+                  data-i18n-alt="certificate.previewAlt"
+                  width="800"
+                  height="542"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+              <div class="card-footer">
                 <span>Cisco Networking Academy • IFG</span>
 
-                <a href="assets/certificados/cisco.jpg" target="_blank" rel="noopener noreferrer" class="certificate-btn" data-i18n="course.cta">
-                    Confira aqui
+                <a
+                  href="assets/certificados/cisco.jpg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="certificate-btn"
+                  data-i18n="course.cta"
+                >
+                  Ver comprovante
                 </a>
+              </div>
             </div>
-        </div>
-        <div id="evidence-course-19" class="course-card compact-certificate" data-category="certificado">
-            <h3>AWS Cloud Practitioner</h3><span class="credential-status" data-i18n="audit.credentialDone">Certificação concluída</span><p class="credential-proof" data-i18n="audit.credentialProof">Comprovante ainda não disponibilizado neste portfólio.</p>
+            <div
+              id="evidence-course-19"
+              class="course-card compact-certificate"
+              data-category="certificado"
+            >
+              <h3>AWS Cloud Practitioner</h3>
+              <span class="credential-status" data-i18n="audit.credentialDone"
+                >Certificação concluída</span
+              >
+              <p class="credential-proof" data-i18n="audit.credentialProof">
+                Comprovante ainda não disponibilizado neste portfólio.
+              </p>
 
-            <p data-i18n="c3.desc">
+              <p data-i18n="c3.desc">
                 Certificação AWS voltada para fundamentos de computação em nuvem
-            </p>
+              </p>
 
-            <div class="card-footer">
+              <div class="card-footer">
                 <span>AWS</span>
+              </div>
             </div>
-        </div>
-        <div id="evidence-course-20" class="course-card compact-certificate" data-category="certificado">
-            <h3>CPA-20</h3><span class="credential-status" data-i18n="audit.credentialDone">Certificação concluída</span><p class="credential-proof" data-i18n="audit.credentialProof">Comprovante ainda não disponibilizado neste portfólio.</p>
+          </div>
+          <h3 class="education-subtitle" data-i18n="education.complementary">
+            Formação complementar
+          </h3>
+          <div class="courses-grid">
+            <div
+              id="evidence-course-20"
+              class="course-card compact-certificate"
+              data-category="certificado"
+            >
+              <h3>CPA-20</h3>
+              <span class="credential-status" data-i18n="audit.credentialDone"
+                >Certificação concluída</span
+              >
+              <p class="credential-proof" data-i18n="audit.credentialProof">
+                Comprovante ainda não disponibilizado neste portfólio.
+              </p>
 
-            <p data-i18n="c4.desc">
-                Certificação financeira pela ANBIMA
-            </p>
+              <p data-i18n="c4.desc">Certificação financeira pela ANBIMA</p>
 
-            <div class="card-footer">
+              <div class="card-footer">
                 <span>ANBIMA</span>
+              </div>
             </div>
+          </div>
+        </details>
+      </section>
+
+      <section id="socials" class="socials">
+        <div class="social-title">
+          <h2 data-i18n="socials.title">Vamos nos conectar?</h2>
+
+          <p data-i18n="socials.subtitle">
+            Encontre meu código, acompanhe minha trajetória ou entre em contato
+            para conversar sobre oportunidades.
+          </p>
         </div>
-    </div>
-</section>
 
-<section id="socials" class="socials">
-    <div class="social-title">
-        <h2 data-i18n="socials.title">Vamos nos conectar?</h2>
-
-        <p data-i18n="socials.subtitle">Encontre meu código, acompanhe minha trajetória ou entre em contato para conversar sobre oportunidades.</p>
-    </div>
-
-    <div class="social-grid"><a href="https://github.com/plim7plim" target="_blank" rel="noopener noreferrer" class="social-card">
+        <div class="social-grid">
+          <a
+            href="https://github.com/plim7plim"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-card"
+          >
             <i class="fa-brands fa-github"></i>
 
             <h3>GitHub</h3>
 
-            <span data-i18n="socials.github">Projetos e Repositórios</span>
-        </a><a href="https://www.linkedin.com/in/plínio-peixoto" target="_blank" rel="noopener noreferrer" class="social-card">
+            <span data-i18n="socials.github">Projetos e Repositórios</span> </a
+          ><a
+            href="https://www.linkedin.com/in/plínio-peixoto"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-card"
+          >
             <i class="fa-brands fa-linkedin"></i>
 
             <h3>LinkedIn</h3>
 
-            <span data-i18n="socials.linkedin">Vamos nos conectar!</span>
-        </a><a href="mailto:pliniobr33@gmail.com" target="_blank" rel="noopener noreferrer" class="social-card">
+            <span data-i18n="socials.linkedin">Vamos nos conectar!</span> </a
+          ><a
+            href="mailto:pliniobr33@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-card"
+          >
             <i class="fa-solid fa-envelope"></i>
 
             <h3>Email</h3>
 
-            <span data-i18n="socials.email">Entre em contato</span>
-        </a><a href="https://wa.me/5562998406502" target="_blank" rel="noopener noreferrer" class="social-card">
+            <span data-i18n="socials.email">Entre em contato</span> </a
+          ><a
+            href="https://wa.me/5562998406502"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-card"
+          >
             <i class="fa-brands fa-whatsapp"></i>
 
             <h3>WhatsApp</h3>
 
             <span data-i18n="socials.whatsapp">Vamos conversar</span>
-        </a></div><details class="personal-links"><summary data-i18n="audit.personal">Além do código: interesses e redes pessoais</summary><div class="social-grid"><a href="https://open.spotify.com/playlist/3Eg3mjjpU07o9WBzjmnBxo?si=f82abf51100644a3"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="social-card">
+          </a>
+        </div>
+        <details class="personal-links">
+          <summary data-i18n="audit.personal">
+            Além do código: interesses e redes pessoais
+          </summary>
+          <div class="social-grid">
+            <a
+              href="https://open.spotify.com/playlist/3Eg3mjjpU07o9WBzjmnBxo?si=f82abf51100644a3"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-card"
+            >
+              <i class="fa-brands fa-spotify"></i>
 
-            <i class="fa-brands fa-spotify"></i>
+              <h3>Spotify</h3>
 
-            <h3>Spotify</h3>
+              <span data-i18n="socials.spotify"
+                >Minha playlist favorita para programar</span
+              > </a
+            ><a
+              href="https://boxd.it/fUPVb"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-card"
+            >
+              <i class="fa-solid fa-book-open"></i>
 
-            <span data-i18n="socials.spotify">Minha playlist favorita para programar</span>
-        </a><a href="https://boxd.it/fUPVb" target="_blank" rel="noopener noreferrer" class="social-card">
-            <i class="fa-solid fa-book-open"></i>
+              <h3>Letterboxd</h3>
 
-            <h3>Letterboxd</h3>
+              <span data-i18n="socials.letterboxd"
+                >Julgando tudo que eu vejo!</span
+              > </a
+            ><a
+              href="https://discord.gg/B4nHPq5v"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-card"
+            >
+              <i class="fa-brands fa-discord"></i>
 
-            <span data-i18n="socials.letterboxd">Julgando tudo que eu vejo!</span>
-        </a><a href="https://discord.gg/B4nHPq5v" target="_blank" rel="noopener noreferrer" class="social-card">
-            <i class="fa-brands fa-discord"></i>
+              <h3>Discord</h3>
 
-            <h3>Discord</h3>
+              <span data-i18n="socials.discord">Bora uma callzinha?</span> </a
+            ><a
+              href="https://tracker.gg/valorant/profile/riot/amo%20Laufey%23001/overview?platform=pc&playlist=competitive&season=4f0864e2-40af-28a4-de2c-0e9e64e75f23"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-card"
+            >
+              <i class="fa-solid fa-gamepad"></i>
 
-            <span data-i18n="socials.discord">Bora uma callzinha?</span>
-        </a><a href="https://tracker.gg/valorant/profile/riot/amo%20Laufey%23001/overview?platform=pc&playlist=competitive&season=4f0864e2-40af-28a4-de2c-0e9e64e75f23" target="_blank" rel="noopener noreferrer" class="social-card">
-            <i class="fa-solid fa-gamepad"></i>
+              <h3>Valorant</h3>
 
-            <h3>Valorant</h3>
+              <span data-i18n="socials.valorant"
+                >Confira o melhor platina do Vava</span
+              >
+            </a>
+          </div>
+        </details>
+      </section>
 
-            <span data-i18n="socials.valorant">Confira o melhor platina do Vava</span>
-        </a></div></details>
-</section>
+      <section id="guestbook" class="guestbook">
+        <details class="guestbook-disclosure">
+          <summary data-i18n="guestbook.disclosure">
+            Mural de visitantes · ver e deixar comentários
+          </summary>
+          <p data-i18n="guestbook.subtitle">
+            Espaço para opiniões pessoais sobre o portfólio.
+          </p>
+          <div class="comment-form">
+            <input
+              type="text"
+              id="nome"
+              maxlength="80"
+              autocomplete="name"
+              aria-label="Seu nome"
+              data-i18n-aria="guestbook.name"
+              placeholder="Seu nome"
+              data-i18n-placeholder="guestbook.name"
+            />
 
-<section id="guestbook" class="guestbook">
-    <h2 data-i18n="guestbook.title">Comentários</h2>
+            <textarea
+              id="mensagem"
+              maxlength="1200"
+              aria-label="Escreva um comentário"
+              data-i18n-aria="guestbook.message"
+              placeholder="Escreva um comentário"
+              data-i18n-placeholder="guestbook.message"
+            ></textarea>
 
-    <p data-i18n="guestbook.subtitle">Deixe sua opinião sobre meu portfólio !</p>
+            <button id="enviar" data-i18n="guestbook.send">
+              Enviar comentário
+            </button>
+          </div>
 
-    <div class="comment-form">
-        <input type="text" id="nome" autocomplete="name" aria-label="Seu nome" data-i18n-aria="guestbook.name" placeholder="Seu nome" data-i18n-placeholder="guestbook.name">
+          <p
+            id="commentStatus"
+            class="comment-status"
+            role="status"
+            aria-live="polite"
+          ></p>
+          <div
+            id="comentarios"
+            role="region"
+            tabindex="0"
+            aria-label="Comentários dos visitantes"
+            data-i18n-aria="audit.comments"
+            aria-live="polite"
+          ></div>
+          <button
+            id="loadMoreComments"
+            class="btn secondary"
+            hidden
+            data-i18n="guestbook.more"
+          >
+            Carregar mais comentários
+          </button>
+        </details>
+      </section>
+    </main>
 
-        <textarea id="mensagem" aria-label="Escreva um comentário" data-i18n-aria="guestbook.message" placeholder="Escreva um comentário" data-i18n-placeholder="guestbook.message"></textarea>
+    <footer data-i18n="footer.text">
+      Desenvolvido por Plínio Peixoto © 2026
+    </footer>
 
-        <button id="enviar" data-i18n="guestbook.send">
-            Enviar comentário
-        </button>
-    </div>
-
-    <p id="commentStatus" class="comment-status" role="status" aria-live="polite"></p>
-    <div id="comentarios" role="region" tabindex="0" aria-label="Comentários dos visitantes" data-i18n-aria="audit.comments" aria-live="polite"></div>
-</section>
-
-</main>
-
-<footer data-i18n="footer.text">
-    Desenvolvido por Plínio Peixoto © 2026
-</footer>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.5.1/chart.umd.min.js"></script>
-<script type="module" src="script.js"></script>
-
-</body>
+    <script type="module" src="script.js"></script>
+  </body>
 </html>

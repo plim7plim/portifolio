@@ -9,467 +9,702 @@
 const STORAGE_KEY = "idioma";
 
 const textos = {
-    // Textos em português que não estão no HTML (usados pelo script.js)
-    pt: {
-        "exp3.desc": "Desenvolvimento e manutenção de interfaces para a Blu Promotora.",
-        "audit.work3": "Manutenção e ajustes em telas específicas.",
-        "audit.work2": "Criação de páginas web para a empresa.",
-        "audit.work1": "Refatoração e documentação de código.",
-        "audit.comments": "Comentários dos visitantes",
-        "nav.socials": "Contato",
-        "skills.title": "Áreas em prática",
-        "p7.desc": "Aplicação para a comunidade acadêmica da UEG, com turmas, avisos, atividades e materiais por disciplina. HTML, CSS e JavaScript integram autenticação e dados no Supabase.",
-        "audit.experience": "Escopo de atuação: manutenção de interfaces, refatoração, documentação e páginas web para a empresa.",
-        "design.unavailable": "Demo público indisponível · Código disponível",
-        "p8.desc": "Aplicação para acompanhar metas diárias, desenvolvida com TypeScript e React com auxílio de IA. O código está disponível para consulta; o demo exige autenticação.",
-        "socials.subtitle": "Encontre meu código, acompanhe minha trajetória ou entre em contato para conversar sobre oportunidades.",
-        "audit.personal": "Além do código: interesses e redes pessoais",
-        "audit.credentialProof": "Comprovante ainda não disponibilizado neste portfólio.",
-        "audit.credentialDone": "Certificação concluída",
-        "audit.otherProjects": "Explorar os outros 10 projetos",
-        "update.2": "Três projetos em destaque para explorar aplicações web, APIs e observabilidade. Os demais trabalhos estão disponíveis abaixo.",
-        "audit.open.metasDiarias": "Abrir Metas",
-        "audit.preview.metasDiarias": "Prévia da interface de Metas",
-        "audit.open.botIA": "Abrir Bot IA",
-        "audit.preview.botIA": "Prévia da interface de Bot IA",
-        "audit.open.aulasUEG": "Abrir Aulas da UEG",
-        "audit.preview.aulasUEG": "Prévia da interface de Aulas da UEG",
-        "audit.java.2.body": "Examine pom.xml, logback.xml e CursoController.java. Há um teste de contexto; a presença dele não equivale a uma suíte completa de testes da API.",
-        "audit.java.2.label": "Como verificar",
-        "audit.java.1.body": "Spring Boot com camadas de controller, service e repository. O projeto reúne Logback/Loki, Actuator e integração de métricas com Prometheus.",
-        "audit.java.1.label": "Implementação",
-        "audit.java.0.body": "Explorar como investigar o comportamento de uma API de cursos além das respostas HTTP.",
-        "audit.java.0.label": "Problema",
-        "audit.badge.java": "Estudo de backend",
-        "audit.open.grafnaLoki": "Abrir Observabilidade com Java",
-        "audit.preview.grafnaLoki": "Prévia da interface de Observabilidade com Java",
-        "audit.go.2.body": "main_test.go contém testes de handlers com httptest e testify. O workflow go.yml configura PostgreSQL e executa os testes no GitHub Actions; o resultado da execução deve ser consultado no repositório.",
-        "audit.go.2.label": "Como verificar",
-        "audit.go.1.body": "Gin organiza as rotas HTTP e GORM conecta os modelos ao PostgreSQL. O código inclui operações de consulta, edição e exclusão.",
-        "audit.go.1.label": "Implementação",
-        "audit.go.0.body": "Praticar uma API de cadastro e consulta de alunos com persistência e testes de rotas.",
-        "audit.go.0.label": "Problema",
-        "audit.badge.go": "Estudo guiado · Alura",
-        "audit.open.projeto_go_alura": "Abrir API de alunos em Go",
-        "audit.preview.projeto_go_alura": "Prévia da interface de API de alunos em Go",
-        "audit.open.ueg2": "Abrir Práticas de programação UEG",
-        "audit.preview.ueg2": "Prévia da interface de Práticas de programação UEG",
-        "audit.codeEvidence": "Examinar código e documentação",
-        "audit.mural.2.body": "O demo público começa no login. O README descreve os fluxos; schema.sql e js/tarefas.js permitem examinar o modelo de dados e a implementação.",
-        "audit.mural.2.label": "Como verificar",
-        "audit.mural.1.body": "HTML, CSS e JavaScript com Supabase. O repositório inclui autenticação, turmas, tarefas, materiais e políticas de acesso no banco.",
-        "audit.mural.1.label": "Implementação",
-        "audit.mural.0.body": "Centralizar avisos, atividades e materiais das turmas em um único ambiente.",
-        "audit.mural.0.label": "Problema",
-        "audit.case": "Entenda a implementação",
-        "audit.badge.mural": "Aplicação web",
-        "audit.open.appUEG": "Abrir Mural UEG",
-        "audit.preview.appUEG": "Prévia da interface de Mural UEG",
-        "audit.open.landingPageBlu": "Abrir Site Blu",
-        "audit.preview.landingPageBlu": "Prévia da interface de Site Blu",
-        "audit.open.jogo.numero.secreto": "Abrir Jogo Do Número Secreto",
-        "audit.preview.jogo.numero.secreto": "Prévia da interface de Jogo Do Número Secreto",
-        "audit.open.brillare2": "Abrir Brillare Jóias",
-        "audit.preview.brillare2": "Prévia da interface de Brillare Jóias",
-        "audit.open.portalUEG": "Abrir Portal UEG",
-        "audit.preview.portalUEG": "Prévia da interface de Portal UEG",
-        "audit.open.lpTim": "Abrir TIM Ultrafibra",
-        "audit.preview.lpTim": "Prévia da interface de TIM Ultrafibra",
-        "audit.open.lpPulse": "Abrir Pulse",
-        "audit.preview.lpPulse": "Prévia da interface de Pulse",
-        "audit.sources": "Ver itens contabilizados",
-        "audit.chart": "Contagem de projetos e grupos de cursos selecionados por área. Um item pode aparecer em mais de uma área. Os números não representam nível de domínio, horas de estudo ou quantidade de certificados individuais.",
-        "hero.ctaCv": "Ver currículo",
-        "about.p3": "Atualmente também estudo francês, ampliando minha formação e comunicação.",
-        "hero.tagline": "Desenvolvo aplicações web e estudo APIs com Java, observabilidade e computação em nuvem.",
-        "audit.avatar": "Avatar de Plínio Peixoto",
-        "hero.photoAlt": "Retrato de Plínio Peixoto",
-        "design.more": "Ler mais",
-        "design.less": "Recolher",
-        "form.loading": "Carregando comentários…",
-        "form.loadError": "Os comentários estão temporariamente indisponíveis.",
-        "form.sending": "Enviando…",
-        "form.sent": "Comentário enviado. Obrigado!",
-        "form.sendError": "Não foi possível enviar o comentário. Tente novamente.",
-        "chart.labels": ["JavaScript / HTML & CSS", "Java & Spring Boot", "TypeScript & React", "Go & APIs", "AWS & Cloud", "DevOps & Observabilidade", "SQL / NoSQL", "Git & GitHub", "Inglês"],
-        "chart.datasetLabel": "Projetos e grupos de cursos selecionados",
-        "chart.evidence": "evidência",
-        "chart.evidences": "evidências",
-        "chart.legend": "Áreas e contagens",
-        "page.title": "Plínio Peixoto | Full Stack Developer",
-        "form.fillAll": "Preencha todos os campos."
-    },
-
-    fr: {
-        "audit.work3": "Maintenance et ajustements d’interfaces.",
-        "audit.work2": "Création de pages web pour l’entreprise.",
-        "audit.work1": "Refactorisation et documentation du code.",
-        "audit.comments": "Commentaires des visiteurs",
-        "audit.experience": "Périmètre : maintenance d’interfaces, refactorisation, documentation et pages web pour l’entreprise.",
-        "audit.personal": "Au-delà du code : centres d’intérêt et réseaux personnels",
-        "audit.credentialProof": "Justificatif non encore publié dans ce portfolio.",
-        "audit.credentialDone": "Certification obtenue",
-        "audit.otherProjects": "Explorer les 10 autres projets",
-        "audit.open.metasDiarias": "Ouvrir Metas",
-        "audit.preview.metasDiarias": "Aperçu de l’interface de Metas",
-        "audit.open.botIA": "Ouvrir Bot IA",
-        "audit.preview.botIA": "Aperçu de l’interface de Bot IA",
-        "audit.open.aulasUEG": "Ouvrir Aulas da UEG",
-        "audit.preview.aulasUEG": "Aperçu de l’interface de Aulas da UEG",
-        "audit.java.2.body": "Consultez pom.xml, logback.xml et CursoController.java. Un test de contexte existe, sans constituer une suite complète de tests de l’API.",
-        "audit.java.2.label": "Vérification",
-        "audit.java.1.body": "Spring Boot organisé en controller, service et repository, avec Logback/Loki, Actuator et métriques Prometheus.",
-        "audit.java.1.label": "Implémentation",
-        "audit.java.0.body": "Étudier le comportement d’une API de cours au-delà des réponses HTTP.",
-        "audit.java.0.label": "Besoin",
-        "audit.badge.java": "Étude backend",
-        "audit.open.grafnaLoki": "Ouvrir Observabilidade com Java",
-        "audit.preview.grafnaLoki": "Aperçu de l’interface de Observabilidade com Java",
-        "audit.go.2.body": "main_test.go contient des tests de handlers avec httptest et testify. go.yml configure PostgreSQL et lance les tests dans GitHub Actions ; consultez les résultats dans le dépôt.",
-        "audit.go.2.label": "Vérification",
-        "audit.go.1.body": "Gin organise les routes HTTP et GORM relie les modèles à PostgreSQL, avec consultation, modification et suppression.",
-        "audit.go.1.label": "Implémentation",
-        "audit.go.0.body": "Pratiquer une API de gestion d’étudiants avec persistance et tests de routes.",
-        "audit.go.0.label": "Besoin",
-        "audit.badge.go": "Étude guidée · Alura",
-        "audit.open.projeto_go_alura": "Ouvrir API de alunos em Go",
-        "audit.preview.projeto_go_alura": "Aperçu de l’interface de API de alunos em Go",
-        "audit.open.ueg2": "Ouvrir Práticas de programação UEG",
-        "audit.preview.ueg2": "Aperçu de l’interface de Práticas de programação UEG",
-        "audit.codeEvidence": "Examiner le code et la documentation",
-        "audit.mural.2.body": "La démo commence par la connexion. Le README, schema.sql et js/tarefas.js documentent les parcours et l’implémentation.",
-        "audit.mural.2.label": "Vérification",
-        "audit.mural.1.body": "HTML, CSS et JavaScript avec Supabase : authentification, classes, activités, ressources et politiques d’accès en base.",
-        "audit.mural.1.label": "Implémentation",
-        "audit.mural.0.body": "Centraliser les annonces, activités et ressources des classes.",
-        "audit.mural.0.label": "Besoin",
-        "audit.case": "Comprendre l’implémentation",
-        "audit.badge.mural": "Application web",
-        "audit.open.appUEG": "Ouvrir Mural UEG",
-        "audit.preview.appUEG": "Aperçu de l’interface de Mural UEG",
-        "audit.open.landingPageBlu": "Ouvrir Site Blu",
-        "audit.preview.landingPageBlu": "Aperçu de l’interface de Site Blu",
-        "audit.open.jogo.numero.secreto": "Ouvrir Jogo Do Número Secreto",
-        "audit.preview.jogo.numero.secreto": "Aperçu de l’interface de Jogo Do Número Secreto",
-        "audit.open.brillare2": "Ouvrir Brillare Jóias",
-        "audit.preview.brillare2": "Aperçu de l’interface de Brillare Jóias",
-        "audit.open.portalUEG": "Ouvrir Portal UEG",
-        "audit.preview.portalUEG": "Aperçu de l’interface de Portal UEG",
-        "audit.open.lpTim": "Ouvrir TIM Ultrafibra",
-        "audit.preview.lpTim": "Aperçu de l’interface de TIM Ultrafibra",
-        "audit.open.lpPulse": "Ouvrir Pulse",
-        "audit.preview.lpPulse": "Aperçu de l’interface de Pulse",
-        "audit.sources": "Voir les éléments comptabilisés",
-        "audit.chart": "Nombre de projets et de groupes de cours sélectionnés par domaine. Un élément peut figurer dans plusieurs domaines. Ces chiffres ne mesurent ni la maîtrise, ni les heures d’étude, ni le nombre de certificats individuels.",
-        "audit.avatar": "Avatar de Plínio Peixoto",
-        "design.skip": "Aller au contenu",
-        "design.live": "Voir le projet",
-        "design.unavailable": "Démo publique indisponible · Code disponible",
-        "design.repositoryPreview": "Projet d’étude · Explorez le code",
-        "design.more": "Lire la suite",
-        "design.less": "Réduire",
-        "form.loading": "Chargement des commentaires…",
-        "form.loadError": "Les commentaires sont temporairement indisponibles.",
-        "form.sending": "Envoi…",
-        "form.sent": "Commentaire envoyé. Merci !",
-        "form.sendError": "Impossible d’envoyer le commentaire. Veuillez réessayer.",
-        "chart.legend": "Domaines et chiffres",
-        "chart.a11y": "Projets et certificats par domaine.",
-        "chart.evidence": "référence",
-        "chart.evidences": "références",
-        "chart.labels": ["JavaScript / HTML & CSS", "Java & Spring Boot", "TypeScript & React", "Go & API", "AWS & Cloud", "DevOps & Observabilité", "SQL / NoSQL", "Git & GitHub", "Anglais"],
-        "chart.datasetLabel": "Projets et groupes de cours sélectionnés",
-        "carousel.prev": "Précédent",
-        "carousel.next": "Suivant",
-        "skills.title": "Domaines pratiqués",
-        "skills.pie": "Secteurs",
-        "skills.bar": "Barres",
-        "certificate.previewOpen": "Ouvrir le certificat complet",
-        "certificate.previewAlt": "Aperçu du certificat",
-        "education.status": "En cours",
-        "education.software.desc": "Formation axée sur la création de logiciels, de l'analyse des besoins à l'architecture, la qualité et la maintenance des applications. Une base pour développer des solutions structurées et durables.",
-        "education.internet.desc": "Formation centrée sur le développement d'applications web, associant programmation, interfaces et données. Les projets universitaires permettent de mettre les concepts en pratique.",
-        "education.internet.institution": "Université de l’État de Goiás · UEG",
-        "education.software.period": "6e semestre",
-        "education.internet.period": "2e semestre",
-        "update.2": "Trois projets à découvrir : applications web, API et observabilité. Les autres travaux sont disponibles ci-dessous.",
-        "update.5": "Exercices de programmation UEG",
-        "update.6": "API de gestion d’étudiants en Go",
-        "update.7": "Observabilité avec Java",
-        "update.8": "Page de présentation d’une entreprise de campagnes WhatsApp, avec contact direct et animation de fond sur canvas.",
-        "update.9": "Page de présentation d’offres Internet, avec onglets pour particuliers et entreprises, détails des offres dans des fenêtres modales et parcours de souscription.",
-        "update.10": "Exercices universitaires : calculatrice, calcul de l’IMC et modélisation de patients et d’employés avec des classes et des diagrammes UML.",
-        "update.11": "Projet d’étude Alura : API en Go avec Gin, persistance via GORM et PostgreSQL, tests et workflow GitHub Actions.",
-        "update.12": "Projet d’étude d’une API de cours avec Spring Boot, logs structurés pour Loki et métriques avec Actuator et Prometheus.",
-        "update.13": "Programmation orientée objet",
-        "update.14": "Certificats DIO",
-        "update.15": "31 certificats de cours, modules, projets et mentorat suivis en 2024 et 2025, regroupés dans un seul PDF.",
-        "update.16": "DIO • 31 certificats",
-        "update.19": "Java : bases et langage",
-        "update.20": "Syntaxe, conditions et boucles, environnement de développement et gestion des exceptions.",
-        "update.21": "Java : programmation orientée objet et UML",
-        "update.22": "Abstraction, principes de la programmation orientée objet, Collections, Stream API et modélisation d’un iPhone avec UML.",
-        "update.23": "Bases de données : SQL et NoSQL",
-        "update.24": "Introduction aux bases relationnelles et non relationnelles et module Premiers pas en SQL et NoSQL.",
-        "update.25": "Git, GitHub et développement logiciel",
-        "update.26": "Gestion de versions, contribution à un projet open source et principes du développement logiciel.",
-        "update.27": "Logique et défis de programmation",
-        "update.28": "Défis de code, simulation d’un compte bancaire, validation d’un processus de recrutement et abstraction du domaine bancaire.",
-        "update.29": "Carrière et organisation des études",
-        "update.30": "Parcours d’étude avec Notion, création de portfolio, intégration et introduction aux bootcamps DIO.",
-        "update.repository": "Voir le dépôt",
-        "page.title": "Plínio Peixoto | Développeur Full Stack",
-        "form.fillAll": "Veuillez remplir tous les champs.",
-
-        "a11y.menu": "Ouvrir le menu",
-        "a11y.language": "Choisir la langue",
-        "a11y.theme": "Changer de thème",
-
-        "nav.home": "Accueil",
-        "nav.about": "À propos",
-        "nav.experience": "Expérience",
-        "nav.projects": "Projets",
-        "nav.courses": "Formations",
-        "nav.socials": "Contact",
-        "nav.guestbook": "Commentaires",
-
-        "hero.greeting": "Bonjour !",
-        "hero.role": "Développeur Full Stack Jr.",
-        "hero.tagline": "Je développe des applications web et étudie les API Java, l’observabilité et le cloud.",
-        "hero.ctaProjects": "Voir mes projets",
-        "hero.ctaCv": "Voir mon CV",
-        "hero.photoAlt": "Portrait de Plínio Peixoto",
-        "about.title": "À propos de moi",
-        "about.p1": "Bonjour ! Je m'appelle <strong>Plínio Peixoto dos Santos</strong>, j'ai 20 ans et je suis passionné de technologie. J'étudie la programmation depuis l'âge de 17 ans et, depuis, je me consacre chaque jour au développement de logiciels.",
-        "about.p2": "J'étudie actuellement le <strong>Génie logiciel</strong> et les <strong>Systèmes pour Internet</strong>, et je travaille comme <strong>Développeur Full Stack Jr.</strong>",
-        "about.p3": "J’étudie également le français pour enrichir ma formation et ma communication.",
-        "summary.title": "Résumé",
-        "summary.status": "Ouvert aux propositions",
-        "summary.roleLabel": "Poste",
-        "summary.roleValue": "Développeur Full Stack Jr.",
-        "summary.eduLabel": "Formation",
-        "summary.edu1": "Génie logiciel",
-        "summary.edu2": "Systèmes pour Internet",
-        "summary.locLabel": "Localisation",
-        "summary.locValue": "Goiás, Brésil",
-        "summary.focusLabel": "Spécialités",
-        "summary.tagCloud": "Cloud Computing",
-
-        "experience.title": "Mon parcours",
-        "exp1.title": "Jeune apprenti",
-        "exp1.desc": "Premier contact avec le monde du travail, en développant l'organisation, l'accueil du public et les tâches administratives.",
-        "exp2.role": "Assistant administratif | Facturation",
-        "exp2.desc": "Émission de factures, SAP, contrôle des chargements et processus logistiques, administratifs et de facturation.",
-        "exp3.period": "2026 - Aujourd'hui",
-        "exp3.desc": "Développement et maintenance d’interfaces pour Blu Promotora.",
-        "projects.title": "Projets",
-        "tech.htmlCssJs": "HTML, CSS et JavaScript",
-        "tech.githubPages": "Hébergement sur GitHub Pages",
-        "tech.vercel": "Hébergement sur Vercel",
-
-        "p1.desc": "Projet développé lors du programme d'extension en Algorithmique et Logique de Programmation, dans le but de créer un portail présentant tous les projets d'extension du campus, afin d'acquérir des connaissances en développement web.",
-
-        "p2.title": "Cours de l'UEG",
-        "p2.desc": "Dépôt contenant les travaux pratiques de programmation de l'université.",
-        "p2.tech2": "Variables, fonctions, opérateurs, tableaux",
-        "p2.tech3": "Logique de programmation, pensée computationnelle.",
-
-        "p3.desc": "Projet développé pour mettre mes connaissances en pratique, en créant un catalogue en ligne pour une connaissance qui vend des bijoux et de la bijouterie fantaisie. Pendant le développement, j'ai appris des concepts comme la manipulation de tableaux (Arrays) et les événements en JavaScript, et j'ai hébergé l'application sur la plateforme Vercel.",
-        "p3.tech2": "Arrays et événements (OnClick)",
-
-        "p4.desc": "Projet développé lors du programme d'extension en Algorithmique et Logique de Programmation. L'application permet à l'utilisateur d'envoyer un fichier PDF et de poser des questions sur son contenu. Les réponses sont générées par un modèle d'IA via une API REST, en tenant compte uniquement des informations présentes dans le document envoyé.",
-        "p4.tech2": "API REST et JSON",
-        "p4.tech3": "Intégration avec l'IA",
-
-        "p5.title": "Jeu du Nombre Secret",
-        "p5.desc": "Le Jeu du Nombre Secret est un projet réalisé pendant le cours de JavaScript d'Alura : le système génère un nombre aléatoire et le joueur essaie de le deviner. À chaque tentative, le jeu indique si le nombre est plus grand ou plus petit, jusqu'à trouver la bonne réponse. Il utilise des fonctions, des listes, des comparaisons et des événements, et propose un système de narration pour l'accessibilité des personnes en situation de handicap.",
-        "p5.tech2": "Événements",
-
-        "p6.desc": "Projet développé pour Blu Promotora, comprenant la refactorisation et la documentation du code, la création de pages pour l'entreprise et des ajustements sur des écrans spécifiques.",
-        "p6.tech2": "Refactorisation et documentation",
-        "p7.desc": "Application pour la communauté universitaire de l’UEG : classes, annonces, activités et ressources par matière, avec authentification et données via Supabase.",
-        "p8.title": "Objectifs",
-        "p8.desc": "Application de suivi d’objectifs quotidiens en TypeScript et React, développée avec l’aide de l’IA. Le code est accessible ; la démo nécessite une authentification.",
-        "p8.tech2": "Développé avec l'IA",
-        "p8.tech3": "Suivi d'objectifs quotidiens",
-
-        "courses.title": "Cours et formation",
-        "filter.all": "Tous",
-        "filter.school": "Études",
-        "filter.certificates": "Certifications",
-        "filter.courses": "Cours",
-        "course.cta": "Voir ici",
-
-        "c1.title": "Génie logiciel",
-        "c1.desc": "UniCesumar - 6e semestre",
-        "c1.tag": "Licence",
-
-        "c2.title": "Systèmes pour Internet",
-        "c2.desc": "Université d'État de Goiás - UEG | 2e semestre",
-        "c2.tag": "Diplôme technologique",
-
-        "c3.desc": "Certification AWS axée sur les fondamentaux du cloud computing",
-        "c4.desc": "Certification financière délivrée par l'ANBIMA",
-
-        "c5.title": "Fondamentaux du Cloud Computing",
-        "c5.desc": "Connaissances en cloud, abordant les concepts et les fondamentaux du cloud computing.",
-        "c5.tag": "FIAP • 80 heures",
-
-        "c6.title": "Immersion Digitale - Parcours d'approfondissement : DevOps",
-        "c6.desc": "Pratiques DevOps incluant Linux, l'automatisation, Git, CI/CD, Docker, Kubernetes, la supervision et l'infrastructure cloud.",
-        "c6.tag": "Alura • 126 heures",
-
-        "c7.desc": "DevOps, Linux, réseaux informatiques, SLF4J, Docker, Kubernetes et API REST.",
-        "c7.tag": "Alura • 69 heures",
-
-        "c8.title": "Certifications Alura",
-        "c8.desc": "Ensemble de cours suivis sur la plateforme Alura, couvrant des formations en DevOps, Linux, Git, Docker, Kubernetes, CI/CD, GitHub Actions et Observabilité.",
-        "c8.tag": "Alura • 200 heures",
-
-        "c9.title": "Bootcamp Back-end ADATECH",
-        "c9.desc": "Bootcamp de développement Back-end axé sur Java et Spring Boot, proposé par Adatech.",
-        "c9.tag": "Adatech • 19 heures",
-
-        "c10.title": "Anglais britannique",
-        "c10.desc": "Formation en anglais britannique axée sur la communication, la lecture, l'écriture et la compréhension en milieu professionnel.",
-        "c10.tag": "British Council • 216 heures",
-
-        "c11.title": "AWS Lambda Foundations (Portugais)",
-        "c11.desc": "Cours sur les fondamentaux d'AWS Lambda, couvrant l'informatique serverless, la création et la configuration de fonctions et l'intégration avec d'autres services AWS.",
-
-        "c12.desc": "Introduction à la plateforme Claude, abordant les bases de l'utilisation des modèles d'IA et les bonnes pratiques d'intégration dans les applications.",
-
-        "c13.title": "Nano Course : Génie logiciel",
-        "c13.desc": "Cours rapide sur les fondamentaux et les pratiques du génie logiciel.",
-        "c13.tag": "FIAP • 100 heures",
-
-        "c14.title": "Sensibilisation à la sécurité numérique",
-        "c14.desc": "Cours d'introduction aux concepts et aux bonnes pratiques de la sécurité numérique.",
-
-        "socials.title": "On reste en contact ?",
-        "socials.subtitle": "Découvrez mon code, mon parcours ou contactez-moi pour discuter d’opportunités.",
-        "socials.github": "Projets et dépôts",
-        "socials.linkedin": "Connectons-nous !",
-        "socials.spotify": "Ma playlist préférée pour coder",
-        "socials.letterboxd": "Je juge tout ce que je regarde !",
-        "socials.email": "Contactez-moi",
-        "socials.whatsapp": "Discutons",
-        "socials.discord": "On se fait un appel ?",
-        "socials.valorant": "Découvrez le meilleur Platine de Valorant",
-
-        "guestbook.title": "Commentaires",
-        "guestbook.subtitle": "Laissez votre avis sur mon portfolio !",
-        "guestbook.name": "Votre nom",
-        "guestbook.message": "Écrivez un commentaire",
-        "guestbook.send": "Envoyer le commentaire",
-
-        "footer.text": "Développé par Plínio Peixoto © 2026"
-    }
+  pt: {
+    "about.p1":
+      "Sou <strong>Plínio Peixoto dos Santos</strong> e estudo programação desde os 17 anos. Desenvolvo interfaces web e mantenho projetos de aplicações e APIs disponíveis neste portfólio.",
+    "education.software.desc":
+      "Graduação em andamento na UniCesumar. Atualmente no 6º período.",
+    "education.internet.desc":
+      "Tecnólogo em andamento na UEG. Atualmente no 2º período.",
+    "summary.focusLabel": "Em estudo",
+    "exp2.desc":
+      "Emissão de notas fiscais, uso de SAP, controle de cargas e apoio às rotinas de faturamento e logística.",
+    "hero.ctaProjects": "Ver projetos",
+    "courses.title": "Formação",
+    "c8.title": "Cursos Alura · coleção de comprovantes",
+    "skills.heading": "Tecnologias em projetos",
+    "skills.note":
+      "Aplicações verificáveis no código. Cursos e assuntos em estudo estão na formação.",
+    "skills.tech.0": "HTML, CSS e JavaScript",
+    "skills.use.0": "Interfaces de turmas, tarefas e materiais.",
+    "skills.tech.1": "Java e Spring Boot",
+    "skills.use.1":
+      "API de cursos organizada em controller, service e repository.",
+    "skills.tech.2": "Logs e métricas",
+    "skills.use.2":
+      "Logback com saída JSON e Loki; integração de métricas com Prometheus.",
+    "skills.tech.3": "PHP e MySQL",
+    "skills.use.3":
+      "API com PDO, sessões, permissões por empresa e proteção CSRF.",
+    "skills.tech.4": "Dados e autenticação",
+    "skills.use.4":
+      "Supabase para autenticação, persistência e políticas RLS no schema.",
+    "skills.tech.5": "Importação de contatos",
+    "skills.use.5":
+      "Leitura CSV/XLSX, normalização de telefones e remoção de duplicados.",
+    "exp3.role": "Full Stack - Jr.",
+    "case.appUEG.0.label": "Problema",
+    "case.appUEG.0.body":
+      "Centralizar avisos, tarefas e materiais das turmas da UEG.",
+    "case.appUEG.1.label": "Escopo implementado",
+    "case.appUEG.1.body":
+      "Turmas, mural, tarefas com entrega pessoal e biblioteca por disciplina, com autenticação via Supabase.",
+    "case.appUEG.2.label": "Decisão técnica",
+    "case.appUEG.2.body":
+      "Frontend estático sem build; o schema SQL define políticas RLS para acesso aos dados, além das verificações da interface.",
+    "case.appUEG.3.label": "Como verificar",
+    "case.appUEG.3.body":
+      "Abra o projeto para acessar o login. No repositório, examine tarefas.html, js/tarefas.js e schema.sql para conferir telas, persistência e regras declaradas.",
+    "case.appUEG.4.label": "Limitações",
+    "case.appUEG.4.body":
+      "As telas internas exigem autenticação. As políticas do banco publicado e os fluxos com usuários reais não foram auditados nesta revisão.",
+    "preview.caption.appUEG": "Prévia do login · telas internas exigem acesso",
+    "case.grafnaLoki.0.label": "Problema",
+    "case.grafnaLoki.0.body":
+      "Investigar o comportamento de uma API de cursos por meio de logs e métricas.",
+    "case.grafnaLoki.1.label": "Escopo implementado",
+    "case.grafnaLoki.1.body":
+      "Projeto de estudo com Spring Boot, camadas controller/service/repository, tratamento de erros e dependências de Actuator e Prometheus.",
+    "case.grafnaLoki.2.label": "Decisão técnica",
+    "case.grafnaLoki.2.body":
+      "Logback separa saída JSON no console e envio ao Loki, com rótulos de aplicação, host e nível para organizar os registros.",
+    "case.grafnaLoki.3.label": "Como verificar",
+    "case.grafnaLoki.3.body":
+      "Consulte pom.xml, src/main/resources/logback.xml e CursoController.java. O arquivo de teste existente verifica o carregamento do contexto.",
+    "case.grafnaLoki.4.label": "Limitações",
+    "case.grafnaLoki.4.body":
+      "Sem demonstração pública ou captura de métricas verificada. PostgreSQL e Loki exigem ambiente configurado; o teste de contexto não cobre todos os endpoints.",
+    "preview.caption.grafnaLoki":
+      "Evidência disponível: código de logs e métricas",
+    "case.lpPulse.0.label": "Problema",
+    "case.lpPulse.0.body":
+      "Reunir acesso de clientes, contatos, solicitações e campanhas SMS por empresa.",
+    "case.lpPulse.1.label": "Escopo implementado",
+    "case.lpPulse.1.body":
+      "Landing page, painel de clientes e administração; API PHP/MySQL, importação CSV/XLSX e integração SMS com a chipeira.",
+    "case.lpPulse.2.label": "Decisão técnica",
+    "case.lpPulse.2.body":
+      "A API deriva a empresa da sessão e guarda a chave da integração no servidor. Mutações autenticadas exigem token CSRF.",
+    "case.lpPulse.3.label": "Como verificar",
+    "case.lpPulse.3.body":
+      "Examine backend/src/PanelApi.php, backend/src/SmsBilling.php e backend/tests. O teste de importação cobre normalização, duplicados e arquivos CSV/XLSX.",
+    "case.lpPulse.4.label": "Limitações",
+    "case.lpPulse.4.body":
+      "A execução completa exige PHP e MySQL configurados. Pagamentos reais dependem do provedor. Nenhum disparo SMS ou pagamento foi executado nesta revisão.",
+    "preview.caption.lpPulse":
+      "Prévia da landing page · painel documentado no código",
+    "p7.desc":
+      "Aplicação acadêmica com mural de turmas, tarefas e materiais. Frontend estático conectado à autenticação e aos dados do Supabase.",
+    "update.8":
+      "Landing page e painel com API PHP/MySQL para clientes, contatos e campanhas SMS. Inclui importação CSV/XLSX e administração.",
+    "credential.topics": "Explorar assuntos deste conjunto",
+    "education.selected": "Cursos selecionados · Java, backend e fundamentos",
+    "education.note":
+      "Comprovantes de cursos, separados da experiência prática. Os assuntos da DIO pertencem ao mesmo conjunto de 31 certificados.",
+    "education.full": "Ver formação completa",
+    "education.complementary": "Formação complementar",
+    "guestbook.disclosure": "Mural de visitantes · ver e deixar comentários",
+    "guestbook.subtitle": "Espaço para opiniões pessoais sobre o portfólio.",
+    "guestbook.more": "Carregar mais comentários",
+    "a11y.menuOpen": "Abrir menu",
+    "a11y.menuClose": "Fechar menu",
+    "form.tooLong": "Use até 80 caracteres no nome e 1.200 no comentário.",
+    "credential.open": "Ver comprovantes",
+    "audit.badge.pulse": "Aplicação web · Painel e API",
+    "audit.pulse.0.label": "Problema",
+    "audit.pulse.0.body":
+      "Reunir acesso de clientes, contatos, solicitações e campanhas SMS em um painel conectado aos dados de cada empresa.",
+    "audit.pulse.1.label": "Implementação",
+    "audit.pulse.1.body":
+      "Frontend em HTML, CSS e JavaScript; API PHP com PDO e MySQL, sessões, permissões por empresa e proteção CSRF. Inclui importação CSV/XLSX e integração de campanhas SMS com a chipeira.",
+    "audit.pulse.2.label": "Como verificar",
+    "audit.pulse.2.body":
+      "Examine backend/src/PanelApi.php, backend/src/SmsBilling.php e os testes em backend/tests. A execução completa exige PHP e banco configurados; pagamentos reais dependem de um provedor.",
+    "exp3.desc":
+      "Desenvolvimento e manutenção de interfaces para a Blu Promotora.",
+    "audit.work3": "Manutenção e ajustes em telas específicas.",
+    "audit.work2": "Criação de páginas web para a empresa.",
+    "audit.work1": "Refatoração e documentação de código.",
+    "audit.comments": "Comentários dos visitantes",
+    "nav.socials": "Contato",
+    "audit.experience":
+      "Escopo de atuação: manutenção de interfaces, refatoração, documentação e páginas web para a empresa.",
+    "design.unavailable": "Demo público indisponível · Código disponível",
+    "p8.desc":
+      "Aplicação para acompanhar metas diárias, desenvolvida com TypeScript e React com auxílio de IA. O código está disponível para consulta; o demo exige autenticação.",
+    "socials.subtitle":
+      "Encontre meu código, acompanhe minha trajetória ou entre em contato para conversar sobre oportunidades.",
+    "audit.personal": "Além do código: interesses e redes pessoais",
+    "audit.credentialProof":
+      "Comprovante ainda não disponibilizado neste portfólio.",
+    "audit.credentialDone": "Certificação concluída",
+    "audit.otherProjects": "Explorar os outros 10 projetos",
+    "update.2":
+      "Três projetos em destaque para explorar aplicações web, APIs e observabilidade. Os demais trabalhos estão disponíveis abaixo.",
+    "audit.open.metasDiarias": "Abrir Metas",
+    "audit.preview.metasDiarias": "Prévia da interface de Metas",
+    "audit.open.botIA": "Abrir Bot IA",
+    "audit.preview.botIA": "Prévia da interface de Bot IA",
+    "audit.open.aulasUEG": "Abrir Aulas da UEG",
+    "audit.preview.aulasUEG": "Prévia da interface de Aulas da UEG",
+    "audit.java.2.body":
+      "Examine pom.xml, logback.xml e CursoController.java. Há um teste de contexto; a presença dele não equivale a uma suíte completa de testes da API.",
+    "audit.java.2.label": "Como verificar",
+    "audit.java.1.body":
+      "Spring Boot com camadas de controller, service e repository. O projeto reúne Logback/Loki, Actuator e integração de métricas com Prometheus.",
+    "audit.java.1.label": "Implementação",
+    "audit.java.0.body":
+      "Explorar como investigar o comportamento de uma API de cursos além das respostas HTTP.",
+    "audit.java.0.label": "Problema",
+    "audit.badge.java": "Estudo de backend",
+    "audit.open.grafnaLoki": "Abrir Observabilidade com Java",
+    "audit.preview.grafnaLoki":
+      "Prévia da interface de Observabilidade com Java",
+    "audit.go.2.body":
+      "main_test.go contém testes de handlers com httptest e testify. O workflow go.yml configura PostgreSQL e executa os testes no GitHub Actions; o resultado da execução deve ser consultado no repositório.",
+    "audit.go.2.label": "Como verificar",
+    "audit.go.1.body":
+      "Gin organiza as rotas HTTP e GORM conecta os modelos ao PostgreSQL. O código inclui operações de consulta, edição e exclusão.",
+    "audit.go.1.label": "Implementação",
+    "audit.go.0.body":
+      "Praticar uma API de cadastro e consulta de alunos com persistência e testes de rotas.",
+    "audit.go.0.label": "Problema",
+    "audit.badge.go": "Estudo guiado · Alura",
+    "audit.open.projeto_go_alura": "Abrir API de alunos em Go",
+    "audit.preview.projeto_go_alura":
+      "Prévia da interface de API de alunos em Go",
+    "audit.open.ueg2": "Abrir Práticas de programação UEG",
+    "audit.preview.ueg2": "Prévia da interface de Práticas de programação UEG",
+    "audit.codeEvidence": "Examinar código e documentação",
+    "audit.mural.2.body":
+      "O demo público começa no login. O README descreve os fluxos; schema.sql e js/tarefas.js permitem examinar o modelo de dados e a implementação.",
+    "audit.mural.2.label": "Como verificar",
+    "audit.mural.1.body":
+      "HTML, CSS e JavaScript com Supabase. O repositório inclui autenticação, turmas, tarefas, materiais e políticas de acesso no banco.",
+    "audit.mural.1.label": "Implementação",
+    "audit.mural.0.body":
+      "Centralizar avisos, atividades e materiais das turmas em um único ambiente.",
+    "audit.mural.0.label": "Problema",
+    "audit.case": "Entenda a implementação",
+    "audit.badge.mural": "Aplicação acadêmica",
+    "audit.open.appUEG": "Abrir Mural UEG",
+    "audit.preview.appUEG": "Prévia da interface de Mural UEG",
+    "audit.open.landingPageBlu": "Abrir Site Blu",
+    "audit.preview.landingPageBlu": "Prévia da interface de Site Blu",
+    "audit.open.jogo.numero.secreto": "Abrir Jogo Do Número Secreto",
+    "audit.preview.jogo.numero.secreto":
+      "Prévia da interface de Jogo Do Número Secreto",
+    "audit.open.brillare2": "Abrir Brillare Jóias",
+    "audit.preview.brillare2": "Prévia da interface de Brillare Jóias",
+    "audit.open.portalUEG": "Abrir Portal UEG",
+    "audit.preview.portalUEG": "Prévia da interface de Portal UEG",
+    "audit.open.lpTim": "Abrir TIM Ultrafibra",
+    "audit.preview.lpTim": "Prévia da interface de TIM Ultrafibra",
+    "audit.open.lpPulse": "Abrir Pulse",
+    "audit.preview.lpPulse": "Prévia da interface de Pulse",
+    "hero.ctaCv": "Ver currículo",
+    "about.p3":
+      "Atualmente também estudo francês, ampliando minha formação e comunicação.",
+    "hero.tagline":
+      "Desenvolvo aplicações web e estudo APIs com Java, observabilidade e computação em nuvem.",
+    "audit.avatar": "Avatar de Plínio Peixoto",
+    "hero.photoAlt": "Retrato de Plínio Peixoto",
+    "design.more": "Ler mais",
+    "design.less": "Recolher",
+    "form.loading": "Carregando comentários…",
+    "form.loadError": "Os comentários estão temporariamente indisponíveis.",
+    "form.sending": "Enviando…",
+    "form.sent": "Comentário enviado. Obrigado!",
+    "form.sendError": "Não foi possível enviar o comentário. Tente novamente.",
+    "page.title": "Plínio Peixoto | Full Stack Developer",
+    "form.fillAll": "Preencha todos os campos.",
+    "c9.title": "Bootcamp backend · Ada Tech",
+  },
+  fr: {
+    "about.p1":
+      "Je suis <strong>Plínio Peixoto dos Santos</strong> et j’étudie la programmation depuis mes 17 ans. Je développe des interfaces web et présente ici mes projets d’applications et d’API.",
+    "education.software.desc":
+      "Cursus en cours à UniCesumar, actuellement au 6e semestre.",
+    "education.internet.desc":
+      "Cursus technologique en cours à l’UEG, actuellement au 2e semestre.",
+    "summary.focusLabel": "En cours d’étude",
+    "exp2.desc":
+      "Émission de factures, utilisation de SAP, suivi des chargements et soutien aux opérations de facturation et de logistique.",
+    "hero.ctaProjects": "Voir les projets",
+    "courses.title": "Formation",
+    "c8.title": "Cours Alura · recueil de justificatifs",
+    "skills.heading": "Technologies dans les projets",
+    "skills.note":
+      "Applications vérifiables dans le code. Les cours et sujets étudiés figurent dans la formation.",
+    "skills.tech.0": "HTML, CSS et JavaScript",
+    "skills.use.0": "Interfaces des classes, tâches et ressources.",
+    "skills.tech.1": "Java et Spring Boot",
+    "skills.use.1":
+      "API de cours organisée en controller, service et repository.",
+    "skills.tech.2": "Logs et métriques",
+    "skills.use.2":
+      "Logback avec sortie JSON et Loki ; intégration des métriques Prometheus.",
+    "skills.tech.3": "PHP et MySQL",
+    "skills.use.3":
+      "API avec PDO, sessions, droits par entreprise et protection CSRF.",
+    "skills.tech.4": "Données et authentification",
+    "skills.use.4":
+      "Supabase pour l’authentification, la persistance et les politiques RLS du schéma.",
+    "skills.tech.5": "Import de contacts",
+    "skills.use.5":
+      "Lecture CSV/XLSX, normalisation des téléphones et dédoublonnage.",
+    "exp3.role": "Full Stack - Jr.",
+    "case.appUEG.0.label": "Besoin",
+    "case.appUEG.0.body":
+      "Centraliser les annonces, tâches et ressources des classes de l’UEG.",
+    "case.appUEG.1.label": "Périmètre implémenté",
+    "case.appUEG.1.body":
+      "Classes, fil, tâches avec suivi individuel et bibliothèque par matière, avec authentification Supabase.",
+    "case.appUEG.2.label": "Choix technique",
+    "case.appUEG.2.body":
+      "Frontend statique sans build ; le schéma SQL définit les politiques RLS d’accès aux données, en complément des contrôles de l’interface.",
+    "case.appUEG.3.label": "Vérification",
+    "case.appUEG.3.body":
+      "Ouvrez le projet pour accéder à la connexion. Consultez tarefas.html, js/tarefas.js et schema.sql pour examiner les écrans, la persistance et les règles déclarées.",
+    "case.appUEG.4.label": "Limites",
+    "case.appUEG.4.body":
+      "Les écrans internes exigent une authentification. Les politiques de la base publiée et les parcours avec de vrais utilisateurs n’ont pas été audités ici.",
+    "preview.caption.appUEG":
+      "Aperçu de connexion · accès requis aux écrans internes",
+    "case.grafnaLoki.0.label": "Besoin",
+    "case.grafnaLoki.0.body":
+      "Analyser le comportement d’une API de cours à travers les logs et les métriques.",
+    "case.grafnaLoki.1.label": "Périmètre implémenté",
+    "case.grafnaLoki.1.body":
+      "Projet d’étude Spring Boot avec couches controller/service/repository, gestion des erreurs et dépendances Actuator et Prometheus.",
+    "case.grafnaLoki.2.label": "Choix technique",
+    "case.grafnaLoki.2.body":
+      "Logback sépare la sortie JSON console de l’envoi vers Loki, avec des labels d’application, d’hôte et de niveau.",
+    "case.grafnaLoki.3.label": "Vérification",
+    "case.grafnaLoki.3.body":
+      "Consultez pom.xml, src/main/resources/logback.xml et CursoController.java. Le test existant vérifie le chargement du contexte.",
+    "case.grafnaLoki.4.label": "Limites",
+    "case.grafnaLoki.4.body":
+      "Aucune démo publique ni capture de métriques vérifiée. PostgreSQL et Loki nécessitent un environnement configuré ; le test de contexte ne couvre pas tous les endpoints.",
+    "preview.caption.grafnaLoki":
+      "Preuve disponible : code des logs et métriques",
+    "case.lpPulse.0.label": "Besoin",
+    "case.lpPulse.0.body":
+      "Réunir accès client, contacts, demandes et campagnes SMS par entreprise.",
+    "case.lpPulse.1.label": "Périmètre implémenté",
+    "case.lpPulse.1.body":
+      "Page de présentation, espace client et administration ; API PHP/MySQL, import CSV/XLSX et intégration SMS avec la passerelle chipeira.",
+    "case.lpPulse.2.label": "Choix technique",
+    "case.lpPulse.2.body":
+      "L’API déduit l’entreprise de la session et conserve la clé d’intégration côté serveur. Les mutations authentifiées exigent un jeton CSRF.",
+    "case.lpPulse.3.label": "Vérification",
+    "case.lpPulse.3.body":
+      "Consultez backend/src/PanelApi.php, backend/src/SmsBilling.php et backend/tests. Le test d’import couvre la normalisation, les doublons et les fichiers CSV/XLSX.",
+    "case.lpPulse.4.label": "Limites",
+    "case.lpPulse.4.body":
+      "L’exécution complète exige PHP et MySQL configurés. Les paiements réels dépendent d’un prestataire. Aucun SMS ni paiement n’a été exécuté pendant cette révision.",
+    "preview.caption.lpPulse":
+      "Aperçu de la page de présentation · espace client documenté dans le code",
+    "p7.desc":
+      "Application universitaire avec fil des classes, tâches et ressources. Frontend statique relié à l’authentification et aux données Supabase.",
+    "update.8":
+      "Page de présentation et espace client avec API PHP/MySQL pour les clients, contacts et campagnes SMS. Import CSV/XLSX et administration inclus.",
+    "credential.topics": "Explorer les sujets de ce recueil",
+    "education.selected": "Cours sélectionnés · Java, backend et fondamentaux",
+    "education.note":
+      "Justificatifs de cours, distincts de l’expérience pratique. Les sujets DIO appartiennent au même recueil de 31 certificats.",
+    "education.full": "Voir la formation complète",
+    "education.complementary": "Formation complémentaire",
+    "guestbook.disclosure": "Livre d’or · voir et laisser des commentaires",
+    "guestbook.subtitle": "Espace d’avis personnels sur le portfolio.",
+    "guestbook.more": "Charger plus de commentaires",
+    "a11y.menuOpen": "Ouvrir le menu",
+    "a11y.menuClose": "Fermer le menu",
+    "form.tooLong": "Limitez le nom à 80 caractères et le commentaire à 1 200.",
+    "credential.open": "Voir les justificatifs",
+    "audit.badge.pulse": "Application web · Tableau de bord et API",
+    "audit.pulse.0.label": "Besoin",
+    "audit.pulse.0.body":
+      "Réunir accès client, contacts, demandes et campagnes SMS dans un tableau de bord relié aux données de chaque entreprise.",
+    "audit.pulse.1.label": "Implémentation",
+    "audit.pulse.1.body":
+      "Frontend HTML, CSS et JavaScript ; API PHP avec PDO et MySQL, sessions, droits par entreprise et protection CSRF. Import CSV/XLSX et intégration SMS avec la passerelle chipeira.",
+    "audit.pulse.2.label": "Vérification",
+    "audit.pulse.2.body":
+      "Consultez backend/src/PanelApi.php, backend/src/SmsBilling.php et backend/tests. L’exécution complète exige PHP et une base configurée ; les paiements réels dépendent d’un prestataire.",
+    "audit.work3": "Maintenance et ajustements d’interfaces.",
+    "audit.work2": "Création de pages web pour l’entreprise.",
+    "audit.work1": "Refactorisation et documentation du code.",
+    "audit.comments": "Commentaires des visiteurs",
+    "audit.experience":
+      "Périmètre : maintenance d’interfaces, refactorisation, documentation et pages web pour l’entreprise.",
+    "audit.personal":
+      "Au-delà du code : centres d’intérêt et réseaux personnels",
+    "audit.credentialProof":
+      "Justificatif non encore publié dans ce portfolio.",
+    "audit.credentialDone": "Certification obtenue",
+    "audit.otherProjects": "Explorer les 10 autres projets",
+    "audit.open.metasDiarias": "Ouvrir Metas",
+    "audit.preview.metasDiarias": "Aperçu de l’interface de Metas",
+    "audit.open.botIA": "Ouvrir Bot IA",
+    "audit.preview.botIA": "Aperçu de l’interface de Bot IA",
+    "audit.open.aulasUEG": "Ouvrir Aulas da UEG",
+    "audit.preview.aulasUEG": "Aperçu de l’interface de Aulas da UEG",
+    "audit.java.2.body":
+      "Consultez pom.xml, logback.xml et CursoController.java. Un test de contexte existe, sans constituer une suite complète de tests de l’API.",
+    "audit.java.2.label": "Vérification",
+    "audit.java.1.body":
+      "Spring Boot organisé en controller, service et repository, avec Logback/Loki, Actuator et métriques Prometheus.",
+    "audit.java.1.label": "Implémentation",
+    "audit.java.0.body":
+      "Étudier le comportement d’une API de cours au-delà des réponses HTTP.",
+    "audit.java.0.label": "Besoin",
+    "audit.badge.java": "Étude backend",
+    "audit.open.grafnaLoki": "Ouvrir Observabilidade com Java",
+    "audit.preview.grafnaLoki":
+      "Aperçu de l’interface de Observabilidade com Java",
+    "audit.go.2.body":
+      "main_test.go contient des tests de handlers avec httptest et testify. go.yml configure PostgreSQL et lance les tests dans GitHub Actions ; consultez les résultats dans le dépôt.",
+    "audit.go.2.label": "Vérification",
+    "audit.go.1.body":
+      "Gin organise les routes HTTP et GORM relie les modèles à PostgreSQL, avec consultation, modification et suppression.",
+    "audit.go.1.label": "Implémentation",
+    "audit.go.0.body":
+      "Pratiquer une API de gestion d’étudiants avec persistance et tests de routes.",
+    "audit.go.0.label": "Besoin",
+    "audit.badge.go": "Étude guidée · Alura",
+    "audit.open.projeto_go_alura": "Ouvrir API de alunos em Go",
+    "audit.preview.projeto_go_alura":
+      "Aperçu de l’interface de API de alunos em Go",
+    "audit.open.ueg2": "Ouvrir Práticas de programação UEG",
+    "audit.preview.ueg2":
+      "Aperçu de l’interface de Práticas de programação UEG",
+    "audit.codeEvidence": "Examiner le code et la documentation",
+    "audit.mural.2.body":
+      "La démo commence par la connexion. Le README, schema.sql et js/tarefas.js documentent les parcours et l’implémentation.",
+    "audit.mural.2.label": "Vérification",
+    "audit.mural.1.body":
+      "HTML, CSS et JavaScript avec Supabase : authentification, classes, activités, ressources et politiques d’accès en base.",
+    "audit.mural.1.label": "Implémentation",
+    "audit.mural.0.body":
+      "Centraliser les annonces, activités et ressources des classes.",
+    "audit.mural.0.label": "Besoin",
+    "audit.case": "Comprendre l’implémentation",
+    "audit.badge.mural": "Application universitaire",
+    "audit.open.appUEG": "Ouvrir Mural UEG",
+    "audit.preview.appUEG": "Aperçu de l’interface de Mural UEG",
+    "audit.open.landingPageBlu": "Ouvrir Site Blu",
+    "audit.preview.landingPageBlu": "Aperçu de l’interface de Site Blu",
+    "audit.open.jogo.numero.secreto": "Ouvrir Jogo Do Número Secreto",
+    "audit.preview.jogo.numero.secreto":
+      "Aperçu de l’interface de Jogo Do Número Secreto",
+    "audit.open.brillare2": "Ouvrir Brillare Jóias",
+    "audit.preview.brillare2": "Aperçu de l’interface de Brillare Jóias",
+    "audit.open.portalUEG": "Ouvrir Portal UEG",
+    "audit.preview.portalUEG": "Aperçu de l’interface de Portal UEG",
+    "audit.open.lpTim": "Ouvrir TIM Ultrafibra",
+    "audit.preview.lpTim": "Aperçu de l’interface de TIM Ultrafibra",
+    "audit.open.lpPulse": "Ouvrir Pulse",
+    "audit.preview.lpPulse": "Aperçu de l’interface de Pulse",
+    "audit.avatar": "Avatar de Plínio Peixoto",
+    "design.skip": "Aller au contenu",
+    "design.live": "Voir le projet",
+    "design.unavailable": "Démo publique indisponible · Code disponible",
+    "design.repositoryPreview": "Projet d’étude · Explorez le code",
+    "design.more": "Lire la suite",
+    "design.less": "Réduire",
+    "form.loading": "Chargement des commentaires…",
+    "form.loadError": "Les commentaires sont temporairement indisponibles.",
+    "form.sending": "Envoi…",
+    "form.sent": "Commentaire envoyé. Merci !",
+    "form.sendError":
+      "Impossible d’envoyer le commentaire. Veuillez réessayer.",
+    "certificate.previewOpen": "Ouvrir le certificat complet",
+    "certificate.previewAlt": "Aperçu du certificat",
+    "education.status": "En cours",
+    "education.internet.institution": "Université de l’État de Goiás · UEG",
+    "education.software.period": "6e semestre",
+    "education.internet.period": "2e semestre",
+    "update.2":
+      "Trois projets à découvrir : applications web, API et observabilité. Les autres travaux sont disponibles ci-dessous.",
+    "update.5": "Exercices de programmation UEG",
+    "update.6": "API de gestion d’étudiants en Go",
+    "update.7": "Observabilité avec Java",
+    "update.9":
+      "Page de présentation d’offres Internet, avec onglets pour particuliers et entreprises, détails des offres dans des fenêtres modales et parcours de souscription.",
+    "update.10":
+      "Exercices universitaires : calculatrice, calcul de l’IMC et modélisation de patients et d’employés avec des classes et des diagrammes UML.",
+    "update.11":
+      "Projet d’étude Alura : API en Go avec Gin, persistance via GORM et PostgreSQL, tests et workflow GitHub Actions.",
+    "update.12":
+      "Projet d’étude d’une API de cours avec Spring Boot, logs structurés pour Loki et métriques avec Actuator et Prometheus.",
+    "update.13": "Programmation orientée objet",
+    "update.14": "Certificats DIO",
+    "update.15":
+      "31 certificats de cours, modules, projets et mentorat suivis en 2024 et 2025, regroupés dans un seul PDF.",
+    "update.16": "DIO • 31 certificats",
+    "update.19": "Java : bases et langage",
+    "update.20":
+      "Syntaxe, conditions et boucles, environnement de développement et gestion des exceptions.",
+    "update.21": "Java : programmation orientée objet et UML",
+    "update.22":
+      "Abstraction, principes de la programmation orientée objet, Collections, Stream API et modélisation d’un iPhone avec UML.",
+    "update.23": "Bases de données : SQL et NoSQL",
+    "update.24":
+      "Introduction aux bases relationnelles et non relationnelles et module Premiers pas en SQL et NoSQL.",
+    "update.25": "Git, GitHub et développement logiciel",
+    "update.26":
+      "Gestion de versions, contribution à un projet open source et principes du développement logiciel.",
+    "update.27": "Logique et défis de programmation",
+    "update.28":
+      "Défis de code, simulation d’un compte bancaire, validation d’un processus de recrutement et abstraction du domaine bancaire.",
+    "update.29": "Carrière et organisation des études",
+    "update.30":
+      "Parcours d’étude avec Notion, création de portfolio, intégration et introduction aux bootcamps DIO.",
+    "update.repository": "Voir le dépôt",
+    "page.title": "Plínio Peixoto | Développeur Full Stack",
+    "form.fillAll": "Veuillez remplir tous les champs.",
+    "a11y.menu": "Ouvrir le menu",
+    "a11y.language": "Choisir la langue",
+    "a11y.theme": "Changer de thème",
+    "nav.home": "Accueil",
+    "nav.about": "À propos",
+    "nav.experience": "Expérience",
+    "nav.projects": "Projets",
+    "nav.courses": "Formations",
+    "nav.socials": "Contact",
+    "nav.guestbook": "Commentaires",
+    "hero.greeting": "Bonjour !",
+    "hero.role": "Développeur Full Stack Jr.",
+    "hero.tagline":
+      "Je développe des applications web et étudie les API Java, l’observabilité et le cloud.",
+    "hero.ctaCv": "Voir mon CV",
+    "hero.photoAlt": "Portrait de Plínio Peixoto",
+    "about.title": "À propos de moi",
+    "about.p2":
+      "J'étudie actuellement le <strong>Génie logiciel</strong> et les <strong>Systèmes pour Internet</strong>, et je travaille comme <strong>Développeur Full Stack Jr.</strong>",
+    "about.p3":
+      "J’étudie également le français pour enrichir ma formation et ma communication.",
+    "summary.title": "Résumé",
+    "summary.status": "Ouvert aux propositions",
+    "summary.roleLabel": "Poste",
+    "summary.roleValue": "Développeur Full Stack Jr.",
+    "summary.eduLabel": "Formation",
+    "summary.edu1": "Génie logiciel",
+    "summary.edu2": "Systèmes pour Internet",
+    "summary.locLabel": "Localisation",
+    "summary.locValue": "Goiás, Brésil",
+    "summary.tagCloud": "Cloud Computing",
+    "experience.title": "Mon parcours",
+    "exp1.title": "Jeune apprenti",
+    "exp1.desc":
+      "Premier contact avec le monde du travail, en développant l'organisation, l'accueil du public et les tâches administratives.",
+    "exp2.role": "Assistant administratif | Facturation",
+    "exp3.period": "2026 - Aujourd'hui",
+    "exp3.desc":
+      "Développement et maintenance d’interfaces pour Blu Promotora.",
+    "projects.title": "Projets",
+    "tech.htmlCssJs": "HTML, CSS et JavaScript",
+    "tech.githubPages": "Hébergement sur GitHub Pages",
+    "tech.vercel": "Hébergement sur Vercel",
+    "p1.desc":
+      "Projet développé lors du programme d'extension en Algorithmique et Logique de Programmation, dans le but de créer un portail présentant tous les projets d'extension du campus, afin d'acquérir des connaissances en développement web.",
+    "p2.title": "Cours de l'UEG",
+    "p2.desc":
+      "Dépôt contenant les travaux pratiques de programmation de l'université.",
+    "p2.tech2": "Variables, fonctions, opérateurs, tableaux",
+    "p2.tech3": "Logique de programmation, pensée computationnelle.",
+    "p3.desc":
+      "Projet développé pour mettre mes connaissances en pratique, en créant un catalogue en ligne pour une connaissance qui vend des bijoux et de la bijouterie fantaisie. Pendant le développement, j'ai appris des concepts comme la manipulation de tableaux (Arrays) et les événements en JavaScript, et j'ai hébergé l'application sur la plateforme Vercel.",
+    "p3.tech2": "Arrays et événements (OnClick)",
+    "p4.desc":
+      "Projet développé lors du programme d'extension en Algorithmique et Logique de Programmation. L'application permet à l'utilisateur d'envoyer un fichier PDF et de poser des questions sur son contenu. Les réponses sont générées par un modèle d'IA via une API REST, en tenant compte uniquement des informations présentes dans le document envoyé.",
+    "p4.tech2": "API REST et JSON",
+    "p4.tech3": "Intégration avec l'IA",
+    "p5.title": "Jeu du Nombre Secret",
+    "p5.desc":
+      "Le Jeu du Nombre Secret est un projet réalisé pendant le cours de JavaScript d'Alura : le système génère un nombre aléatoire et le joueur essaie de le deviner. À chaque tentative, le jeu indique si le nombre est plus grand ou plus petit, jusqu'à trouver la bonne réponse. Il utilise des fonctions, des listes, des comparaisons et des événements, et propose un système de narration pour l'accessibilité des personnes en situation de handicap.",
+    "p5.tech2": "Événements",
+    "p6.desc":
+      "Projet développé pour Blu Promotora, comprenant la refactorisation et la documentation du code, la création de pages pour l'entreprise et des ajustements sur des écrans spécifiques.",
+    "p6.tech2": "Refactorisation et documentation",
+    "p8.title": "Objectifs",
+    "p8.desc":
+      "Application de suivi d’objectifs quotidiens en TypeScript et React, développée avec l’aide de l’IA. Le code est accessible ; la démo nécessite une authentification.",
+    "p8.tech2": "Développé avec l'IA",
+    "p8.tech3": "Suivi d'objectifs quotidiens",
+    "filter.all": "Tous",
+    "filter.school": "Études",
+    "filter.certificates": "Certifications",
+    "filter.courses": "Cours",
+    "course.cta": "Voir le justificatif",
+    "c1.title": "Génie logiciel",
+    "c1.desc": "UniCesumar - 6e semestre",
+    "c1.tag": "Licence",
+    "c2.title": "Systèmes pour Internet",
+    "c2.desc": "Université d'État de Goiás - UEG | 2e semestre",
+    "c2.tag": "Diplôme technologique",
+    "c3.desc": "Certification AWS axée sur les fondamentaux du cloud computing",
+    "c4.desc": "Certification financière délivrée par l'ANBIMA",
+    "c5.title": "Fondamentaux du Cloud Computing",
+    "c5.desc":
+      "Connaissances en cloud, abordant les concepts et les fondamentaux du cloud computing.",
+    "c5.tag": "FIAP • 80 heures",
+    "c6.title": "Immersion Digitale - Parcours d'approfondissement : DevOps",
+    "c6.desc":
+      "Pratiques DevOps incluant Linux, l'automatisation, Git, CI/CD, Docker, Kubernetes, la supervision et l'infrastructure cloud.",
+    "c6.tag": "Alura • 126 heures",
+    "c7.desc":
+      "DevOps, Linux, réseaux informatiques, SLF4J, Docker, Kubernetes et API REST.",
+    "c7.tag": "Alura • 69 heures",
+    "c8.desc":
+      "Ensemble de cours suivis sur la plateforme Alura, couvrant des formations en DevOps, Linux, Git, Docker, Kubernetes, CI/CD, GitHub Actions et Observabilité.",
+    "c8.tag": "Alura • 200 heures",
+    "c9.title": "Bootcamp backend · Ada Tech",
+    "c9.desc":
+      "Bootcamp de développement Back-end axé sur Java et Spring Boot, proposé par Adatech.",
+    "c9.tag": "Adatech • 19 heures",
+    "c10.title": "Anglais britannique",
+    "c10.desc":
+      "Formation en anglais britannique axée sur la communication, la lecture, l'écriture et la compréhension en milieu professionnel.",
+    "c10.tag": "British Council • 216 heures",
+    "c11.title": "AWS Lambda Foundations (Portugais)",
+    "c11.desc":
+      "Cours sur les fondamentaux d'AWS Lambda, couvrant l'informatique serverless, la création et la configuration de fonctions et l'intégration avec d'autres services AWS.",
+    "c12.desc":
+      "Introduction à la plateforme Claude, abordant les bases de l'utilisation des modèles d'IA et les bonnes pratiques d'intégration dans les applications.",
+    "c13.title": "Nano Course : Génie logiciel",
+    "c13.desc":
+      "Cours rapide sur les fondamentaux et les pratiques du génie logiciel.",
+    "c13.tag": "FIAP • 100 heures",
+    "c14.title": "Sensibilisation à la sécurité numérique",
+    "c14.desc":
+      "Cours d'introduction aux concepts et aux bonnes pratiques de la sécurité numérique.",
+    "socials.title": "On reste en contact ?",
+    "socials.subtitle":
+      "Découvrez mon code, mon parcours ou contactez-moi pour discuter d’opportunités.",
+    "socials.github": "Projets et dépôts",
+    "socials.linkedin": "Connectons-nous !",
+    "socials.spotify": "Ma playlist préférée pour coder",
+    "socials.letterboxd": "Je juge tout ce que je regarde !",
+    "socials.email": "Contactez-moi",
+    "socials.whatsapp": "Discutons",
+    "socials.discord": "On se fait un appel ?",
+    "socials.valorant": "Découvrez le meilleur Platine de Valorant",
+    "guestbook.title": "Commentaires",
+    "guestbook.name": "Votre nom",
+    "guestbook.message": "Écrivez un commentaire",
+    "guestbook.send": "Envoyer le commentaire",
+    "footer.text": "Développé par Plínio Peixoto © 2026",
+  },
 };
 
 // Atributos traduzíveis: [atributo data-*, atributo real do elemento]
 
-
 const atributos = [
-    ["data-i18n-placeholder", "placeholder"],
-    ["data-i18n-aria", "aria-label"],
-    ["data-i18n-alt", "alt"]
+  ["data-i18n-placeholder", "placeholder"],
+  ["data-i18n-aria", "aria-label"],
+  ["data-i18n-alt", "alt"],
 ];
 
 let idiomaAtual = "pt";
 
 // Guarda os textos originais (português) direto do HTML
 function capturarPortugues() {
-    document.querySelectorAll("[data-i18n]").forEach(el => {
-        const chave = el.dataset.i18n;
-        if (!(chave in textos.pt)) {
-            textos.pt[chave] = el.innerHTML.trim();
-        }
-    });
+  document.querySelectorAll("[data-i18n]").forEach((el) => {
+    const chave = el.dataset.i18n;
+    if (!(chave in textos.pt)) {
+      textos.pt[chave] = el.innerHTML.trim();
+    }
+  });
 
-    atributos.forEach(([dataAttr, attr]) => {
-        document.querySelectorAll(`[${dataAttr}]`).forEach(el => {
-            const chave = el.getAttribute(dataAttr);
-            if (!(chave in textos.pt)) {
-                textos.pt[chave] = el.getAttribute(attr) || "";
-            }
-        });
+  atributos.forEach(([dataAttr, attr]) => {
+    document.querySelectorAll(`[${dataAttr}]`).forEach((el) => {
+      const chave = el.getAttribute(dataAttr);
+      if (!(chave in textos.pt)) {
+        textos.pt[chave] = el.getAttribute(attr) || "";
+      }
     });
+  });
 }
 
 export function t(chave) {
-    const valor = textos[idiomaAtual]?.[chave] ?? textos.pt[chave] ?? chave;
-    // Devolve uma cópia das listas para ninguém alterar o dicionário
-    return Array.isArray(valor) ? [...valor] : valor;
+  const valor = textos[idiomaAtual]?.[chave] ?? textos.pt[chave] ?? chave;
+  // Devolve uma cópia das listas para ninguém alterar o dicionário
+  return Array.isArray(valor) ? [...valor] : valor;
 }
 
 function atualizarTextos() {
-    document.querySelectorAll("[data-i18n]").forEach(el => {
-        el.innerHTML = t(el.dataset.i18n);
-    });
+  document.querySelectorAll("[data-i18n]").forEach((el) => {
+    el.innerHTML = t(el.dataset.i18n);
+  });
 
-    atributos.forEach(([dataAttr, attr]) => {
-        document.querySelectorAll(`[${dataAttr}]`).forEach(el => {
-            el.setAttribute(attr, t(el.getAttribute(dataAttr)));
-        });
+  atributos.forEach(([dataAttr, attr]) => {
+    document.querySelectorAll(`[${dataAttr}]`).forEach((el) => {
+      el.setAttribute(attr, t(el.getAttribute(dataAttr)));
     });
+  });
 
-    document.title = t("page.title");
-    document.documentElement.lang = idiomaAtual === "fr" ? "fr" : "pt-BR";
+  document.title = t("page.title");
+  document.documentElement.lang = idiomaAtual === "fr" ? "fr" : "pt-BR";
 
-    document.querySelectorAll(".lang-btn").forEach(btn => {
-        const ativo = btn.dataset.lang === idiomaAtual;
-        btn.classList.toggle("active", ativo);
-        btn.setAttribute("aria-pressed", ativo);
-    });
+  document.querySelectorAll(".lang-btn").forEach((btn) => {
+    const ativo = btn.dataset.lang === idiomaAtual;
+    btn.classList.toggle("active", ativo);
+    btn.setAttribute("aria-pressed", ativo);
+  });
 }
 
 function setIdioma(idioma, animar = true) {
-    if (!textos[idioma] || idioma === idiomaAtual) return;
+  if (!textos[idioma] || idioma === idiomaAtual) return;
 
-    idiomaAtual = idioma;
+  idiomaAtual = idioma;
 
-    try {
-        localStorage.setItem(STORAGE_KEY, idioma);
-    } catch (e) {
-        // Navegador sem acesso ao localStorage: apenas não salva a preferência
-    }
+  try {
+    localStorage.setItem(STORAGE_KEY, idioma);
+  } catch (e) {
+    // Navegador sem acesso ao localStorage: apenas não salva a preferência
+  }
 
-    const aplicar = () => {
-        atualizarTextos();
-        document.dispatchEvent(new CustomEvent("i18n:change", { detail: { idioma } }));
-    };
+  const aplicar = () => {
+    atualizarTextos();
+    document.dispatchEvent(
+      new CustomEvent("i18n:change", { detail: { idioma } }),
+    );
+  };
 
-    const reduzirMovimento = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const reduzirMovimento = window.matchMedia(
+    "(prefers-reduced-motion: reduce)",
+  ).matches;
 
-    if (!animar || reduzirMovimento) {
-        aplicar();
-        return;
-    }
+  if (!animar || reduzirMovimento) {
+    aplicar();
+    return;
+  }
 
-    // Pequeno fade para a troca não ser brusca
-    document.body.classList.add("lang-switching");
+  // Pequeno fade para a troca não ser brusca
+  document.body.classList.add("lang-switching");
 
-    setTimeout(() => {
-        aplicar();
-        document.body.classList.remove("lang-switching");
-    }, 200);
+  setTimeout(() => {
+    aplicar();
+    document.body.classList.remove("lang-switching");
+  }, 200);
 }
 
 export function initI18n() {
-    capturarPortugues();
+  capturarPortugues();
 
-    document.querySelectorAll(".lang-btn").forEach(btn => {
-        btn.addEventListener("click", () => setIdioma(btn.dataset.lang));
-    });
+  document.querySelectorAll(".lang-btn").forEach((btn) => {
+    btn.addEventListener("click", () => setIdioma(btn.dataset.lang));
+  });
 
-    let salvo = "pt";
-    try {
-        salvo = localStorage.getItem(STORAGE_KEY) || "pt";
-    } catch (e) {
-        salvo = "pt";
-    }
+  let salvo = "pt";
+  try {
+    salvo = localStorage.getItem(STORAGE_KEY) || "pt";
+  } catch (e) {
+    salvo = "pt";
+  }
 
-    // Aplica sem animação para o gráfico já nascer no idioma salvo
-    setIdioma(salvo, false);
+  // Aplica sem animação para o gráfico já nascer no idioma salvo
+  setIdioma(salvo, false);
 }
