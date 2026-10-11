@@ -963,7 +963,7 @@ footer {
   display: block;
 }
 .guestbook {
-  padding-block: 40px;
+  padding-block: 24px;
 }
 .comment-form {
   grid-column: 1;
@@ -1433,8 +1433,7 @@ summary:focus-visible {
 .education-subtitle {
   margin-top: 28px;
 }
-.full-education,
-.guestbook-disclosure {
+.full-education {
   border-top: 1px solid var(--card-border);
   margin-top: 24px;
   padding-top: 16px;
