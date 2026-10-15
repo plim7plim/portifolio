@@ -10,6 +10,13 @@ const STORAGE_KEY = "idioma";
 
 const textos = {
   pt: {
+    "lpBlu.open": "Abrir LP SOU + BLU",
+    "lpBlu.preview": "Prévia real da landing page SOU + BLU",
+    "lpBlu.kind": "Landing page · Site publicado",
+    "lpBlu.desc": "Landing page da SOU + BLU para apresentação das modalidades de crédito e captação de parceiros. Reúne soluções, dúvidas frequentes, canais de atendimento e formulário de cadastro em uma interface responsiva.",
+    "lpBlu.form": "Formulário de parceiros",
+    "lpBlu.responsive": "Design responsivo",
+
     "about.p1":
       "Sou <strong>Plínio Peixoto dos Santos</strong> e estudo programação desde os 17 anos. Desenvolvo interfaces web e mantenho projetos de aplicações e APIs disponíveis neste portfólio.",
     "education.software.desc":
@@ -138,9 +145,9 @@ const textos = {
     "audit.credentialProof":
       "Comprovante ainda não disponibilizado neste portfólio.",
     "audit.credentialDone": "Certificação concluída",
-    "audit.otherProjects": "Explorar os outros 10 projetos",
+    "audit.otherProjects": "Explorar os outros 11 projetos",
     "update.2":
-      "Três projetos em destaque para explorar aplicações web, APIs e observabilidade. Os demais trabalhos estão disponíveis abaixo.",
+      "Três projetos em destaque para explorar aplicações web e landing pages. Os demais trabalhos estão disponíveis abaixo.",
     "audit.open.metasDiarias": "Abrir Metas",
     "audit.preview.metasDiarias": "Prévia da interface de Metas",
     "audit.open.botIA": "Abrir Bot IA",
@@ -221,6 +228,13 @@ const textos = {
     "c9.title": "Bootcamp backend · Ada Tech",
   },
   fr: {
+    "lpBlu.open": "Ouvrir LP SOU + BLU",
+    "lpBlu.preview": "Aperçu réel de la landing page SOU + BLU",
+    "lpBlu.kind": "Landing page · Site en ligne",
+    "lpBlu.desc": "Landing page SOU + BLU présentant les offres de crédit et le recrutement de partenaires. Elle réunit les solutions, une FAQ, les canaux de contact et un formulaire d’inscription dans une interface responsive.",
+    "lpBlu.form": "Formulaire partenaires",
+    "lpBlu.responsive": "Design responsive",
+
     "about.p1":
       "Je suis <strong>Plínio Peixoto dos Santos</strong> et j’étudie la programmation depuis mes 17 ans. Je développe des interfaces web et présente ici mes projets d’applications et d’API.",
     "education.software.desc":
@@ -343,7 +357,7 @@ const textos = {
     "audit.credentialProof":
       "Justificatif non encore publié dans ce portfolio.",
     "audit.credentialDone": "Certification obtenue",
-    "audit.otherProjects": "Explorer les 10 autres projets",
+    "audit.otherProjects": "Explorer les 11 autres projets",
     "audit.open.metasDiarias": "Ouvrir Metas",
     "audit.preview.metasDiarias": "Aperçu de l’interface de Metas",
     "audit.open.botIA": "Ouvrir Bot IA",
@@ -426,7 +440,7 @@ const textos = {
     "education.software.period": "6e semestre",
     "education.internet.period": "2e semestre",
     "update.2":
-      "Trois projets à découvrir : applications web, API et observabilité. Les autres travaux sont disponibles ci-dessous.",
+      "Trois projets à découvrir : applications web et landing pages. Les autres travaux sont disponibles ci-dessous.",
     "update.5": "Exercices de programmation UEG",
     "update.6": "API de gestion d’étudiants en Go",
     "update.7": "Observabilité avec Java",

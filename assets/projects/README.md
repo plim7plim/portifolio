@@ -11,3 +11,5 @@ Real interface captures, optimized to WebP. Captured on 2026-10-09.
 - mural-ueg.webp: https://app-ueg.vercel.app/ (public login screen).
 
 Repository-only projects and unavailable public previews use labeled HTML fallbacks. No generated project imagery.
+
+- soumaisblu-cadastro.webp: https://soumaisblu.com.br/cadastro (captured 2026-10-15; essential cookies only).

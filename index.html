@@ -458,8 +458,7 @@
       <section id="projects" class="projects">
         <h2 data-i18n="projects.title">Projetos</h2>
         <p class="section-note" data-i18n="update.2">
-          Três projetos em destaque para explorar aplicações web, APIs e
-          observabilidade. Os demais trabalhos estão disponíveis abaixo.
+          Três projetos em destaque para explorar aplicações web e landing pages. Os demais trabalhos estão disponíveis abaixo.
         </p>
         <div class="projects-grid featured-projects">
           <article class="project-card" id="project-appUEG">
@@ -581,114 +580,23 @@
               </div>
             </div>
           </article>
-          <article class="project-card" id="project-grafnaLoki">
-            <a
-              class="project-preview"
-              href="https://github.com/plim7plim/grafnaLoki"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Abrir Observabilidade com Java"
-              data-i18n-aria="audit.open.grafnaLoki"
-            >
-              <div class="browser-bar" aria-hidden="true">
-                <i></i><i></i><i></i><span>github.com / grafnaLoki</span>
-              </div>
-              <div class="project-screen">
-                <div class="preview-fallback" style="--project-accent: #d6a56b">
-                  <i class="fa-solid fa-chart-line" aria-hidden="true"></i
-                  ><strong>Java / Observabilidade</strong
-                  ><small data-i18n="design.repositoryPreview"
-                    >Projeto de estudo · Explore o código</small
-                  >
+          <article class="project-card" id="project-soumaisblu-cadastro">
+              <a class="project-preview" href="https://soumaisblu.com.br/cadastro" target="_blank" rel="noopener noreferrer" aria-label="Abrir LP SOU + BLU" data-i18n-aria="lpBlu.open">
+                <div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><span>soumaisblu.com.br/cadastro</span></div>
+                <div class="project-screen">
+                  <img src="assets/projects/soumaisblu-cadastro.webp" alt="Prévia real da landing page SOU + BLU" data-i18n-alt="lpBlu.preview" width="1365" height="900" loading="lazy" decoding="async" />
+                </div>
+              </a>
+              <div class="project-info">
+                <span class="project-kind" data-i18n="lpBlu.kind">Landing page · Site publicado</span>
+                <h3><a href="https://soumaisblu.com.br/cadastro" target="_blank" rel="noopener noreferrer">LP SOU + BLU</a></h3>
+                <p data-i18n="lpBlu.desc">Landing page da SOU + BLU para apresentação das modalidades de crédito e captação de parceiros. Reúne soluções, dúvidas frequentes, canais de atendimento e formulário de cadastro em uma interface responsiva.</p>
+                <div class="techs"><span data-i18n="tech.htmlCssJs">HTML, CSS e JavaScript</span><span data-i18n="lpBlu.form">Formulário de parceiros</span><span data-i18n="lpBlu.responsive">Design responsivo</span></div>
+                <div class="project-actions">
+                  <a class="project-live" href="https://soumaisblu.com.br/cadastro" target="_blank" rel="noopener noreferrer"><span data-i18n="design.live">Ver projeto</span><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
                 </div>
               </div>
-            </a>
-            <p class="preview-caption" data-i18n="preview.caption.grafnaLoki">
-              Evidência disponível: código de logs e métricas
-            </p>
-            <div class="project-info">
-              <span class="project-kind" data-i18n="audit.badge.java"
-                >Estudo de backend</span
-              >
-              <h3>
-                <a
-                  data-i18n="update.7"
-                  href="https://github.com/plim7plim/grafnaLoki"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Observabilidade com Java</a
-                >
-              </h3>
-              <p data-i18n="update.12">
-                Projeto de estudo de uma API de cursos com Spring Boot, logs
-                estruturados para Loki e métricas com Actuator e Prometheus.
-              </p>
-              <div class="techs">
-                <span>Java & Spring Boot</span><span>Loki & Prometheus</span
-                ><span>Docker</span>
-              </div>
-
-              <details class="case-study">
-                <summary data-i18n="audit.case">
-                  Entenda a implementação
-                </summary>
-                <dl>
-                  <dt data-i18n="case.grafnaLoki.0.label">Problema</dt>
-                  <dd data-i18n="case.grafnaLoki.0.body">
-                    Investigar o comportamento de uma API de cursos por meio de
-                    logs e métricas.
-                  </dd>
-                  <dt data-i18n="case.grafnaLoki.1.label">
-                    Escopo implementado
-                  </dt>
-                  <dd data-i18n="case.grafnaLoki.1.body">
-                    Projeto de estudo com Spring Boot, camadas
-                    controller/service/repository, tratamento de erros e
-                    dependências de Actuator e Prometheus.
-                  </dd>
-                  <dt data-i18n="case.grafnaLoki.2.label">Decisão técnica</dt>
-                  <dd data-i18n="case.grafnaLoki.2.body">
-                    Logback separa saída JSON no console e envio ao Loki, com
-                    rótulos de aplicação, host e nível para organizar os
-                    registros.
-                  </dd>
-                  <dt data-i18n="case.grafnaLoki.3.label">Como verificar</dt>
-                  <dd data-i18n="case.grafnaLoki.3.body">
-                    Consulte pom.xml, src/main/resources/logback.xml e
-                    CursoController.java. O arquivo de teste existente verifica
-                    o carregamento do contexto.
-                  </dd>
-                  <dt data-i18n="case.grafnaLoki.4.label">Limitações</dt>
-                  <dd data-i18n="case.grafnaLoki.4.body">
-                    Sem demonstração pública ou captura de métricas verificada.
-                    PostgreSQL e Loki exigem ambiente configurado; o teste de
-                    contexto não cobre todos os endpoints.
-                  </dd>
-                </dl>
-                <a
-                  href="https://github.com/plim7plim/grafnaLoki/blob/main/src/main/resources/logback.xml"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  data-i18n="audit.codeEvidence"
-                  >Examinar código e documentação</a
-                >
-              </details>
-              <div class="project-actions">
-                <a
-                  class="project-link"
-                  href="https://github.com/plim7plim/grafnaLoki"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><i class="fa-brands fa-github" aria-hidden="true"></i>
-                  <span data-i18n="update.repository">Ver repositório</span>
-                  <i
-                    class="fa-solid fa-arrow-up-right-from-square"
-                    aria-hidden="true"
-                  ></i
-                ></a>
-              </div>
-            </div>
-          </article>
+            </article>
           <article class="project-card" id="project-lpPulse">
             <a
               class="project-preview"
@@ -799,9 +707,118 @@
         </div>
         <details class="other-projects">
           <summary data-i18n="audit.otherProjects">
-            Explorar os outros 10 projetos
+            Explorar os outros 11 projetos
           </summary>
           <div class="projects-grid">
+            <article class="project-card" id="project-grafnaLoki">
+            <a
+              class="project-preview"
+              href="https://github.com/plim7plim/grafnaLoki"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Abrir Observabilidade com Java"
+              data-i18n-aria="audit.open.grafnaLoki"
+            >
+              <div class="browser-bar" aria-hidden="true">
+                <i></i><i></i><i></i><span>github.com / grafnaLoki</span>
+              </div>
+              <div class="project-screen">
+                <div class="preview-fallback" style="--project-accent: #d6a56b">
+                  <i class="fa-solid fa-chart-line" aria-hidden="true"></i
+                  ><strong>Java / Observabilidade</strong
+                  ><small data-i18n="design.repositoryPreview"
+                    >Projeto de estudo · Explore o código</small
+                  >
+                </div>
+              </div>
+            </a>
+            <p class="preview-caption" data-i18n="preview.caption.grafnaLoki">
+              Evidência disponível: código de logs e métricas
+            </p>
+            <div class="project-info">
+              <span class="project-kind" data-i18n="audit.badge.java"
+                >Estudo de backend</span
+              >
+              <h3>
+                <a
+                  data-i18n="update.7"
+                  href="https://github.com/plim7plim/grafnaLoki"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Observabilidade com Java</a
+                >
+              </h3>
+              <p data-i18n="update.12">
+                Projeto de estudo de uma API de cursos com Spring Boot, logs
+                estruturados para Loki e métricas com Actuator e Prometheus.
+              </p>
+              <div class="techs">
+                <span>Java & Spring Boot</span><span>Loki & Prometheus</span
+                ><span>Docker</span>
+              </div>
+
+              <details class="case-study">
+                <summary data-i18n="audit.case">
+                  Entenda a implementação
+                </summary>
+                <dl>
+                  <dt data-i18n="case.grafnaLoki.0.label">Problema</dt>
+                  <dd data-i18n="case.grafnaLoki.0.body">
+                    Investigar o comportamento de uma API de cursos por meio de
+                    logs e métricas.
+                  </dd>
+                  <dt data-i18n="case.grafnaLoki.1.label">
+                    Escopo implementado
+                  </dt>
+                  <dd data-i18n="case.grafnaLoki.1.body">
+                    Projeto de estudo com Spring Boot, camadas
+                    controller/service/repository, tratamento de erros e
+                    dependências de Actuator e Prometheus.
+                  </dd>
+                  <dt data-i18n="case.grafnaLoki.2.label">Decisão técnica</dt>
+                  <dd data-i18n="case.grafnaLoki.2.body">
+                    Logback separa saída JSON no console e envio ao Loki, com
+                    rótulos de aplicação, host e nível para organizar os
+                    registros.
+                  </dd>
+                  <dt data-i18n="case.grafnaLoki.3.label">Como verificar</dt>
+                  <dd data-i18n="case.grafnaLoki.3.body">
+                    Consulte pom.xml, src/main/resources/logback.xml e
+                    CursoController.java. O arquivo de teste existente verifica
+                    o carregamento do contexto.
+                  </dd>
+                  <dt data-i18n="case.grafnaLoki.4.label">Limitações</dt>
+                  <dd data-i18n="case.grafnaLoki.4.body">
+                    Sem demonstração pública ou captura de métricas verificada.
+                    PostgreSQL e Loki exigem ambiente configurado; o teste de
+                    contexto não cobre todos os endpoints.
+                  </dd>
+                </dl>
+                <a
+                  href="https://github.com/plim7plim/grafnaLoki/blob/main/src/main/resources/logback.xml"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-i18n="audit.codeEvidence"
+                  >Examinar código e documentação</a
+                >
+              </details>
+              <div class="project-actions">
+                <a
+                  class="project-link"
+                  href="https://github.com/plim7plim/grafnaLoki"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-brands fa-github" aria-hidden="true"></i>
+                  <span data-i18n="update.repository">Ver repositório</span>
+                  <i
+                    class="fa-solid fa-arrow-up-right-from-square"
+                    aria-hidden="true"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </article>
+
             <article class="project-card" id="project-projeto_go_alura">
               <a
                 class="project-preview"
