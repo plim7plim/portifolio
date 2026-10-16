@@ -10,6 +10,11 @@ const STORAGE_KEY = "idioma";
 
 const textos = {
   pt: {
+    "lpBlu.case.problem": "Apresentar as modalidades de crédito e orientar visitantes e empresas até os canais de atendimento ou o cadastro de parceiros.",
+    "lpBlu.case.implementation": "Interface em HTML, CSS e JavaScript, organizada em seções responsivas. Inclui navegação por âncoras, carrossel com controle de pausa, dúvidas frequentes expansíveis, preferências de cookies e formulário de parceiros.",
+    "lpBlu.case.verification": "Na página publicada, explore as soluções, abra as perguntas frequentes e navegue até “Seja parceiro” para conhecer os campos do cadastro. O formulário faz parte do fluxo comercial; não é necessário enviá-lo para avaliar a interface.",
+    "lpBlu.case.visit": "Explorar página publicada",
+
     "lpBlu.open": "Abrir LP SOU + BLU",
     "lpBlu.preview": "Prévia real da landing page SOU + BLU",
     "lpBlu.kind": "Landing page · Site publicado",
@@ -228,6 +233,11 @@ const textos = {
     "c9.title": "Bootcamp backend · Ada Tech",
   },
   fr: {
+    "lpBlu.case.problem": "Présenter les offres de crédit et orienter les visiteurs et les entreprises vers les canaux de contact ou l’inscription des partenaires.",
+    "lpBlu.case.implementation": "Interface en HTML, CSS et JavaScript organisée en sections responsive, avec navigation par ancres, carrousel avec pause, FAQ dépliable, préférences de cookies et formulaire partenaires.",
+    "lpBlu.case.verification": "Sur le site publié, explorez les offres, ouvrez la FAQ et accédez à « Seja parceiro » pour examiner les champs. Le formulaire appartient au parcours commercial ; aucun envoi n’est nécessaire pour évaluer l’interface.",
+    "lpBlu.case.visit": "Explorer le site publié",
+
     "lpBlu.open": "Ouvrir LP SOU + BLU",
     "lpBlu.preview": "Aperçu réel de la landing page SOU + BLU",
     "lpBlu.kind": "Landing page · Site en ligne",
