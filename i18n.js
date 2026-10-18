@@ -10,15 +10,45 @@ const STORAGE_KEY = "idioma";
 
 const textos = {
   pt: {
-    "lpBlu.case.problem": "Apresentar as modalidades de crédito e orientar visitantes e empresas até os canais de atendimento ou o cadastro de parceiros.",
-    "lpBlu.case.implementation": "Interface em HTML, CSS e JavaScript, organizada em seções responsivas. Inclui navegação por âncoras, carrossel com controle de pausa, dúvidas frequentes expansíveis, preferências de cookies e formulário de parceiros.",
-    "lpBlu.case.verification": "Na página publicada, explore as soluções, abra as perguntas frequentes e navegue até “Seja parceiro” para conhecer os campos do cadastro. O formulário faz parte do fluxo comercial; não é necessário enviá-lo para avaliar a interface.",
+    "gallery.title": "Imagens do projeto",
+    "gallery.role": "carrossel",
+    "gallery.previous": "Imagem anterior",
+    "gallery.next": "Próxima imagem",
+    "gallery.show": "Ver imagem",
+    "gallery.appUEG.0": "Tela de acesso",
+    "gallery.appUEG.1": "Cadastro de aluno ou professor",
+    "gallery.soumaisblu-cadastro.0": "Apresentação da parceria",
+    "gallery.soumaisblu-cadastro.1": "Formulário de parceiros",
+    "gallery.lpTim.0": "Página de planos",
+    "gallery.lpTim.1": "Detalhes de uma oferta",
+    "gallery.portalUEG.0": "Lista de projetos acadêmicos",
+    "gallery.portalUEG.1": "Página de um projeto de pesquisa",
+    "gallery.brillare2.0": "Catálogo de produtos",
+    "gallery.brillare2.1": "Filtro de anéis",
+    "summary.roleValue": "Desenvolvedor Full Stack Júnior",
+    "p3.tech2": "Filtros e eventos",
+    "p3.desc":
+      "Catálogo de joias com filtros por categoria e seleção de produtos. Desenvolvido para uma vendedora com HTML, CSS e JavaScript, com hospedagem no Vercel.",
+    "p2.desc":
+      "Exercícios acadêmicos de JavaScript sobre variáveis, funções, operadores, vetores e lógica de programação.",
+    "p1.desc":
+      "Portal acadêmico com projetos de pesquisa e extensão da UEG, filtros por categoria e acesso a materiais. Desenvolvido na extensão de Algoritmos e Lógica de Programação.",
+    "nav.courses": "Formação",
+    "hero.ctaContact": "Entrar em contato",
+    "hero.role": "Desenvolvedor Full Stack Júnior",
+    "lpBlu.case.problem":
+      "Orientar empresas e profissionais interessados em uma parceria até o cadastro e explicar as próximas etapas do atendimento.",
+    "lpBlu.case.implementation":
+      "Interface em HTML, CSS e JavaScript com apresentação da parceria, formulário dividido em dados, contatos, perfil da operação e observações, além de preferências de cookies e links para as políticas.",
+    "lpBlu.case.verification":
+      "Explore a página e os campos do cadastro. O envio faz parte do atendimento comercial; não é necessário enviar dados para conhecer a interface.",
     "lpBlu.case.visit": "Explorar página publicada",
 
     "lpBlu.open": "Abrir LP SOU + BLU",
-    "lpBlu.preview": "Prévia real da landing page SOU + BLU",
+    "lpBlu.preview": "Página de cadastro de parceiros da SOU + BLU",
     "lpBlu.kind": "Landing page · Site publicado",
-    "lpBlu.desc": "Landing page da SOU + BLU para apresentação das modalidades de crédito e captação de parceiros. Reúne soluções, dúvidas frequentes, canais de atendimento e formulário de cadastro em uma interface responsiva.",
+    "lpBlu.desc":
+      "Página de cadastro de parceiros da SOU + BLU, com apresentação da parceria, formulário organizado por etapas de informação e preferências de cookies.",
     "lpBlu.form": "Formulário de parceiros",
     "lpBlu.responsive": "Design responsivo",
 
@@ -54,7 +84,7 @@ const textos = {
     "skills.tech.5": "Importação de contatos",
     "skills.use.5":
       "Leitura CSV/XLSX, normalização de telefones e remoção de duplicados.",
-    "exp3.role": "Full Stack - Jr.",
+    "exp3.role": "Desenvolvedor Full Stack Júnior",
     "case.appUEG.0.label": "Problema",
     "case.appUEG.0.body":
       "Centralizar avisos, tarefas e materiais das turmas da UEG.",
@@ -69,8 +99,9 @@ const textos = {
       "Abra o projeto para acessar o login. No repositório, examine tarefas.html, js/tarefas.js e schema.sql para conferir telas, persistência e regras declaradas.",
     "case.appUEG.4.label": "Limitações",
     "case.appUEG.4.body":
-      "As telas internas exigem autenticação. As políticas do banco publicado e os fluxos com usuários reais não foram auditados nesta revisão.",
-    "preview.caption.appUEG": "Prévia do login · telas internas exigem acesso",
+      "As telas internas exigem autenticação. Consulte o repositório para conhecer os fluxos e a implementação das regras de acesso.",
+    "preview.caption.appUEG":
+      "Telas públicas de acesso · área interna exige autenticação",
     "case.grafnaLoki.0.label": "Problema",
     "case.grafnaLoki.0.body":
       "Investigar o comportamento de uma API de cursos por meio de logs e métricas.",
@@ -85,7 +116,7 @@ const textos = {
       "Consulte pom.xml, src/main/resources/logback.xml e CursoController.java. O arquivo de teste existente verifica o carregamento do contexto.",
     "case.grafnaLoki.4.label": "Limitações",
     "case.grafnaLoki.4.body":
-      "Sem demonstração pública ou captura de métricas verificada. PostgreSQL e Loki exigem ambiente configurado; o teste de contexto não cobre todos os endpoints.",
+      "Projeto de estudo sem demonstração pública. PostgreSQL e Loki exigem ambiente configurado; o teste de contexto não cobre todos os endpoints.",
     "preview.caption.grafnaLoki":
       "Evidência disponível: código de logs e métricas",
     "case.lpPulse.0.label": "Problema",
@@ -102,7 +133,7 @@ const textos = {
       "Examine backend/src/PanelApi.php, backend/src/SmsBilling.php e backend/tests. O teste de importação cobre normalização, duplicados e arquivos CSV/XLSX.",
     "case.lpPulse.4.label": "Limitações",
     "case.lpPulse.4.body":
-      "A execução completa exige PHP e MySQL configurados. Pagamentos reais dependem do provedor. Nenhum disparo SMS ou pagamento foi executado nesta revisão.",
+      "A execução completa exige PHP e MySQL configurados. As integrações de SMS e pagamentos dependem de configuração própria e dos respectivos provedores.",
     "preview.caption.lpPulse":
       "Prévia da landing page · painel documentado no código",
     "p7.desc":
@@ -152,7 +183,7 @@ const textos = {
     "audit.credentialDone": "Certificação concluída",
     "audit.otherProjects": "Explorar os outros 11 projetos",
     "update.2":
-      "Três projetos em destaque para explorar aplicações web e landing pages. Os demais trabalhos estão disponíveis abaixo.",
+      "Projetos selecionados com contexto, decisões técnicas e links para demonstração ou código. Outros trabalhos estão disponíveis ao final da seleção.",
     "audit.open.metasDiarias": "Abrir Metas",
     "audit.preview.metasDiarias": "Prévia da interface de Metas",
     "audit.open.botIA": "Abrir Bot IA",
@@ -218,7 +249,7 @@ const textos = {
     "about.p3":
       "Atualmente também estudo francês, ampliando minha formação e comunicação.",
     "hero.tagline":
-      "Desenvolvo aplicações web e estudo APIs com Java, observabilidade e computação em nuvem.",
+      "Trabalho com desenvolvimento e manutenção de interfaces web na Blu Promotora. Desenvolvo projetos com JavaScript, PHP e bancos de dados e busco oportunidades júnior para contribuir com aplicações web e evoluir no desenvolvimento de APIs.",
     "audit.avatar": "Avatar de Plínio Peixoto",
     "hero.photoAlt": "Retrato de Plínio Peixoto",
     "design.more": "Ler mais",
@@ -228,20 +259,40 @@ const textos = {
     "form.sending": "Enviando…",
     "form.sent": "Comentário enviado. Obrigado!",
     "form.sendError": "Não foi possível enviar o comentário. Tente novamente.",
-    "page.title": "Plínio Peixoto | Full Stack Developer",
+    "page.title": "Plínio Peixoto | Desenvolvedor Full Stack Júnior",
     "form.fillAll": "Preencha todos os campos.",
     "c9.title": "Bootcamp backend · Ada Tech",
   },
   fr: {
-    "lpBlu.case.problem": "Présenter les offres de crédit et orienter les visiteurs et les entreprises vers les canaux de contact ou l’inscription des partenaires.",
-    "lpBlu.case.implementation": "Interface en HTML, CSS et JavaScript organisée en sections responsive, avec navigation par ancres, carrousel avec pause, FAQ dépliable, préférences de cookies et formulaire partenaires.",
-    "lpBlu.case.verification": "Sur le site publié, explorez les offres, ouvrez la FAQ et accédez à « Seja parceiro » pour examiner les champs. Le formulaire appartient au parcours commercial ; aucun envoi n’est nécessaire pour évaluer l’interface.",
+    "gallery.title": "Images du projet",
+    "gallery.role": "carrousel",
+    "gallery.previous": "Image précédente",
+    "gallery.next": "Image suivante",
+    "gallery.show": "Voir l’image",
+    "gallery.appUEG.0": "Écran de connexion",
+    "gallery.appUEG.1": "Inscription d’un étudiant ou d’un professeur",
+    "gallery.soumaisblu-cadastro.0": "Présentation du partenariat",
+    "gallery.soumaisblu-cadastro.1": "Formulaire partenaires",
+    "gallery.lpTim.0": "Page des offres",
+    "gallery.lpTim.1": "Détails d’une offre",
+    "gallery.portalUEG.0": "Liste des projets universitaires",
+    "gallery.portalUEG.1": "Page d’un projet de recherche",
+    "gallery.brillare2.0": "Catalogue de produits",
+    "gallery.brillare2.1": "Filtre des bagues",
+    "hero.ctaContact": "Me contacter",
+    "lpBlu.case.problem":
+      "Guider les entreprises et les professionnels intéressés vers l’inscription et expliquer les prochaines étapes du partenariat.",
+    "lpBlu.case.implementation":
+      "Interface HTML, CSS et JavaScript avec présentation du partenariat, formulaire regroupant identité, contacts, profil et observations, préférences de cookies et liens vers les politiques.",
+    "lpBlu.case.verification":
+      "Explorez la page et les champs du formulaire. L’envoi fait partie du parcours commercial ; aucune donnée ne doit être envoyée pour découvrir l’interface.",
     "lpBlu.case.visit": "Explorer le site publié",
 
     "lpBlu.open": "Ouvrir LP SOU + BLU",
-    "lpBlu.preview": "Aperçu réel de la landing page SOU + BLU",
+    "lpBlu.preview": "Page d’inscription des partenaires SOU + BLU",
     "lpBlu.kind": "Landing page · Site en ligne",
-    "lpBlu.desc": "Landing page SOU + BLU présentant les offres de crédit et le recrutement de partenaires. Elle réunit les solutions, une FAQ, les canaux de contact et un formulaire d’inscription dans une interface responsive.",
+    "lpBlu.desc":
+      "Page d’inscription des partenaires SOU + BLU, avec présentation du partenariat, formulaire organisé par groupes d’informations et préférences de cookies.",
     "lpBlu.form": "Formulaire partenaires",
     "lpBlu.responsive": "Design responsive",
 
@@ -277,7 +328,7 @@ const textos = {
     "skills.tech.5": "Import de contacts",
     "skills.use.5":
       "Lecture CSV/XLSX, normalisation des téléphones et dédoublonnage.",
-    "exp3.role": "Full Stack - Jr.",
+    "exp3.role": "Développeur Full Stack Junior",
     "case.appUEG.0.label": "Besoin",
     "case.appUEG.0.body":
       "Centraliser les annonces, tâches et ressources des classes de l’UEG.",
@@ -292,9 +343,9 @@ const textos = {
       "Ouvrez le projet pour accéder à la connexion. Consultez tarefas.html, js/tarefas.js et schema.sql pour examiner les écrans, la persistance et les règles déclarées.",
     "case.appUEG.4.label": "Limites",
     "case.appUEG.4.body":
-      "Les écrans internes exigent une authentification. Les politiques de la base publiée et les parcours avec de vrais utilisateurs n’ont pas été audités ici.",
+      "Les écrans internes nécessitent une authentification. Consultez le dépôt pour découvrir les parcours et l’implémentation des règles d’accès.",
     "preview.caption.appUEG":
-      "Aperçu de connexion · accès requis aux écrans internes",
+      "Écrans publics d’accès · authentification requise pour l’espace interne",
     "case.grafnaLoki.0.label": "Besoin",
     "case.grafnaLoki.0.body":
       "Analyser le comportement d’une API de cours à travers les logs et les métriques.",
@@ -309,7 +360,7 @@ const textos = {
       "Consultez pom.xml, src/main/resources/logback.xml et CursoController.java. Le test existant vérifie le chargement du contexte.",
     "case.grafnaLoki.4.label": "Limites",
     "case.grafnaLoki.4.body":
-      "Aucune démo publique ni capture de métriques vérifiée. PostgreSQL et Loki nécessitent un environnement configuré ; le test de contexte ne couvre pas tous les endpoints.",
+      "Projet d’étude sans démonstration publique. PostgreSQL et Loki nécessitent un environnement configuré ; le test de contexte ne couvre pas tous les endpoints.",
     "preview.caption.grafnaLoki":
       "Preuve disponible : code des logs et métriques",
     "case.lpPulse.0.label": "Besoin",
@@ -326,7 +377,7 @@ const textos = {
       "Consultez backend/src/PanelApi.php, backend/src/SmsBilling.php et backend/tests. Le test d’import couvre la normalisation, les doublons et les fichiers CSV/XLSX.",
     "case.lpPulse.4.label": "Limites",
     "case.lpPulse.4.body":
-      "L’exécution complète exige PHP et MySQL configurés. Les paiements réels dépendent d’un prestataire. Aucun SMS ni paiement n’a été exécuté pendant cette révision.",
+      "L’exécution complète nécessite PHP et MySQL configurés. Les intégrations SMS et paiements dépendent de leur configuration et des prestataires concernés.",
     "preview.caption.lpPulse":
       "Aperçu de la page de présentation · espace client documenté dans le code",
     "p7.desc":
@@ -450,7 +501,7 @@ const textos = {
     "education.software.period": "6e semestre",
     "education.internet.period": "2e semestre",
     "update.2":
-      "Trois projets à découvrir : applications web et landing pages. Les autres travaux sont disponibles ci-dessous.",
+      "Projets sélectionnés avec contexte, choix techniques et liens vers une démonstration ou le code. D’autres travaux sont disponibles après cette sélection.",
     "update.5": "Exercices de programmation UEG",
     "update.6": "API de gestion d’étudiants en Go",
     "update.7": "Observabilité avec Java",
@@ -486,7 +537,7 @@ const textos = {
     "update.30":
       "Parcours d’étude avec Notion, création de portfolio, intégration et introduction aux bootcamps DIO.",
     "update.repository": "Voir le dépôt",
-    "page.title": "Plínio Peixoto | Développeur Full Stack",
+    "page.title": "Plínio Peixoto | Développeur Full Stack Junior",
     "form.fillAll": "Veuillez remplir tous les champs.",
     "a11y.menu": "Ouvrir le menu",
     "a11y.language": "Choisir la langue",
@@ -499,20 +550,20 @@ const textos = {
     "nav.socials": "Contact",
     "nav.guestbook": "Commentaires",
     "hero.greeting": "Bonjour !",
-    "hero.role": "Développeur Full Stack Jr.",
+    "hero.role": "Développeur Full Stack Junior",
     "hero.tagline":
-      "Je développe des applications web et étudie les API Java, l’observabilité et le cloud.",
+      "Je développe et maintiens des interfaces web chez Blu Promotora. Je réalise des projets avec JavaScript, PHP et des bases de données et recherche un poste junior pour contribuer à des applications web et progresser dans le développement d’API.",
     "hero.ctaCv": "Voir mon CV",
     "hero.photoAlt": "Portrait de Plínio Peixoto",
     "about.title": "À propos de moi",
     "about.p2":
-      "J'étudie actuellement le <strong>Génie logiciel</strong> et les <strong>Systèmes pour Internet</strong>, et je travaille comme <strong>Développeur Full Stack Jr.</strong>",
+      "J'étudie actuellement le <strong>Génie logiciel</strong> et les <strong>Systèmes pour Internet</strong>, et je travaille comme <strong>Développeur Full Stack Junior</strong>",
     "about.p3":
       "J’étudie également le français pour enrichir ma formation et ma communication.",
     "summary.title": "Résumé",
     "summary.status": "Ouvert aux propositions",
     "summary.roleLabel": "Poste",
-    "summary.roleValue": "Développeur Full Stack Jr.",
+    "summary.roleValue": "Développeur Full Stack Junior",
     "summary.eduLabel": "Formation",
     "summary.edu1": "Génie logiciel",
     "summary.edu2": "Systèmes pour Internet",
@@ -532,15 +583,15 @@ const textos = {
     "tech.githubPages": "Hébergement sur GitHub Pages",
     "tech.vercel": "Hébergement sur Vercel",
     "p1.desc":
-      "Projet développé lors du programme d'extension en Algorithmique et Logique de Programmation, dans le but de créer un portail présentant tous les projets d'extension du campus, afin d'acquérir des connaissances en développement web.",
+      "Portail universitaire de projets de recherche et d’extension de l’UEG, avec filtres par catégorie et accès aux documents. Réalisé dans le cadre du programme d’algorithmique et de logique de programmation.",
     "p2.title": "Cours de l'UEG",
     "p2.desc":
-      "Dépôt contenant les travaux pratiques de programmation de l'université.",
+      "Exercices universitaires JavaScript sur les variables, fonctions, opérateurs, tableaux et la logique de programmation.",
     "p2.tech2": "Variables, fonctions, opérateurs, tableaux",
     "p2.tech3": "Logique de programmation, pensée computationnelle.",
     "p3.desc":
-      "Projet développé pour mettre mes connaissances en pratique, en créant un catalogue en ligne pour une connaissance qui vend des bijoux et de la bijouterie fantaisie. Pendant le développement, j'ai appris des concepts comme la manipulation de tableaux (Arrays) et les événements en JavaScript, et j'ai hébergé l'application sur la plateforme Vercel.",
-    "p3.tech2": "Arrays et événements (OnClick)",
+      "Catalogue de bijoux avec filtres par catégorie et sélection de produits. Réalisé pour une vendeuse avec HTML, CSS et JavaScript et hébergé sur Vercel.",
+    "p3.tech2": "Filtres et événements",
     "p4.desc":
       "Projet développé lors du programme d'extension en Algorithmique et Logique de Programmation. L'application permet à l'utilisateur d'envoyer un fichier PDF et de poser des questions sur son contenu. Les réponses sont générées par un modèle d'IA via une API REST, en tenant compte uniquement des informations présentes dans le document envoyé.",
     "p4.tech2": "API REST et JSON",

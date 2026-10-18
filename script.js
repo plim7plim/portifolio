@@ -1,6 +1,8 @@
+import { initProjectGalleries } from "./project-gallery.js";
 import { initI18n, t } from "./i18n.js";
 
 initI18n();
+initProjectGalleries(t);
 
 const button = document.getElementById("themeButton");
 const iconSun = document.getElementById("iconSun");
