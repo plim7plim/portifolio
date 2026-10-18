@@ -83,17 +83,6 @@
     <header>
       <div class="logo">PP</div>
 
-      <button
-        class="menu-toggle"
-        id="menuToggle"
-        aria-controls="menu"
-        aria-expanded="false"
-        aria-label="Abrir menu"
-        data-i18n-aria="a11y.menuOpen"
-      >
-        <i class="fa-solid fa-bars"></i>
-      </button>
-
       <nav id="menu">
         <a href="#home" data-i18n="nav.home">Home</a>
         <a href="#about" data-i18n="nav.about">Sobre</a>
@@ -2464,10 +2453,8 @@
         </details>
       </section>
       <section id="guestbook" class="guestbook">
-        <details class="guestbook-disclosure">
-          <summary data-i18n="guestbook.disclosure">
-            Mural de visitantes · ver e deixar comentários
-          </summary>
+        <div class="guestbook-panel">
+          <h2 data-i18n="guestbook.title">Mural de visitantes</h2>
           <p data-i18n="guestbook.subtitle">
             Espaço para opiniões pessoais sobre o portfólio.
           </p>
@@ -2519,7 +2506,7 @@
           >
             Carregar mais comentários
           </button>
-        </details>
+        </div>
       </section>
     </main>
 

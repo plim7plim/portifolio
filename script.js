@@ -30,63 +30,21 @@ button.addEventListener("click", () => {
   } catch {}
 });
 
-const menuToggle = document.getElementById("menuToggle");
-const menuIcon = menuToggle.querySelector("i");
-const menu = document.getElementById("menu");
-
-function setMenuOpen(isOpen) {
-  menu.classList.toggle("active", isOpen);
-  menuToggle.classList.toggle("active", isOpen);
-  menuIcon.classList.toggle("fa-bars", !isOpen);
-  menuIcon.classList.toggle("fa-xmark", isOpen);
-  menuToggle.setAttribute("aria-expanded", String(isOpen));
-  menuToggle.setAttribute(
-    "aria-label",
-    t(isOpen ? "a11y.menuClose" : "a11y.menuOpen"),
+// Keep anchor targets below the visible header, including wrapped translations.
+const header = document.querySelector("header");
+new ResizeObserver(() => {
+  document.documentElement.style.setProperty(
+    "--header-height",
+    header.getBoundingClientRect().height + "px",
   );
-}
+}).observe(header);
 
-document.addEventListener("i18n:change", () =>
-  setMenuOpen(menu.classList.contains("active")),
-);
-window.matchMedia("(min-width: 961px)").addEventListener("change", (event) => {
-  if (event.matches) setMenuOpen(false);
-});
-
-menuToggle.addEventListener("click", () => {
-  setMenuOpen(!menu.classList.contains("active"));
-});
-
-document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape" && menu.classList.contains("active")) {
-    setMenuOpen(false);
-    menuToggle.focus();
-  }
-});
-document.addEventListener("click", (event) => {
-  if (!event.target.closest("header")) setMenuOpen(false);
-});
-
-document.querySelectorAll("#menu a").forEach((link) => {
-  link.addEventListener("click", () => {
-    setMenuOpen(false);
+// The visitor wall is always visible and loads with the page.
+import("./guestbook.js")
+  .then(({ initGuestbook }) => initGuestbook(t))
+  .catch(() => {
+    document.getElementById("commentStatus").textContent = t("form.loadError");
   });
-});
-
-// Load comments only when the visitor opens the guestbook.
-const guestbook = document.querySelector(".guestbook-disclosure");
-let guestbookLoaded = false;
-guestbook.addEventListener("toggle", () => {
-  if (!guestbook.open || guestbookLoaded) return;
-  guestbookLoaded = true;
-  import("./guestbook.js")
-    .then(({ initGuestbook }) => initGuestbook(t))
-    .catch(() => {
-      guestbookLoaded = false;
-      document.getElementById("commentStatus").textContent =
-        t("form.loadError");
-    });
-});
 
 const revealGroups = [
   ".about-text",

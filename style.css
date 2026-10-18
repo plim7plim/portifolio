@@ -35,7 +35,7 @@ body.light {
 }
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 100px;
+  scroll-padding-top: calc(var(--header-height, 80px) + 20px);
   scrollbar-width: thin;
   scrollbar-color: var(--primary) var(--background);
 }
@@ -428,15 +428,7 @@ nav a[aria-current]::after {
 .light #iconSun {
   display: none;
 }
-.menu-toggle {
-  display: none;
-  border: 0;
-  background: transparent;
-  color: var(--text);
-  font-size: 20px;
-  width: 40px;
-  height: 40px;
-}
+
 main,
 footer {
   transition: opacity 0.18s;
@@ -1294,36 +1286,35 @@ footer {
   }
 }
 @media (max-width: 960px) {
-  .menu-toggle {
+  header {
     display: grid;
-    place-items: center;
-    order: 1;
+    grid-template-columns: 1fr auto;
+    gap: 6px 12px;
+    padding-bottom: 8px;
+  }
+  .logo {
+    margin-right: 0;
   }
   .header-actions {
-    order: 2;
+    justify-self: end;
   }
   nav {
-    display: none;
-    position: absolute;
-    top: calc(100% + 8px);
-    left: 20px;
-    right: 20px;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0;
-    padding: 12px;
-    border: 1px solid var(--card-border);
-    border-radius: 12px;
-    background: var(--surface);
-    box-shadow: 0 16px 40px #0003;
-  }
-  nav.active {
-    display: flex;
+    display: grid;
+    grid-column: 1 / -1;
+    order: 3;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 4px;
+    width: 100%;
   }
   nav a {
-    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    padding: 6px;
     font-size: 13px;
-    border-radius: 6px;
+    border-radius: 8px;
+    text-align: center;
   }
   nav a:hover {
     background: var(--raised);
@@ -1711,11 +1702,11 @@ summary:focus-visible {
   padding: 10px 0;
   font-size: 14px;
 }
-.guestbook-disclosure > p {
+.guestbook-panel > p {
   color: var(--text2);
   margin: 12px 0 24px;
 }
-.guestbook-disclosure .comment-form {
+.guestbook-panel .comment-form {
   max-width: 640px;
 }
 #loadMoreComments {
@@ -1738,11 +1729,7 @@ summary:focus-visible {
   header {
     padding-top: max(12px, env(safe-area-inset-top));
   }
-  nav {
-    max-height: calc(100dvh - 100px);
-    overflow-y: auto;
-    overscroll-behavior: contain;
-  }
+
   nav a {
     min-height: 48px;
     font-size: 15px;
@@ -1751,7 +1738,6 @@ summary:focus-visible {
     background: var(--raised);
     color: var(--primary);
   }
-  .menu-toggle,
   #themeButton,
   .lang-btn {
     min-width: 44px;
@@ -1774,7 +1760,7 @@ summary:focus-visible {
 }
 @media (max-width: 760px) {
   html {
-    scroll-padding-top: 105px;
+    scroll-padding-top: calc(var(--header-height, 80px) + 20px);
   }
   main {
     padding-inline: clamp(16px, 4vw, 28px);
@@ -2180,4 +2166,23 @@ summary:focus-visible {
   color: var(--text2);
   font-size: 12px;
   text-align: center;
+}
+
+@media (max-width: 960px) {
+  .hero {
+    padding-top: calc(var(--header-height, 120px) + 40px);
+  }
+}
+@media (max-width: 560px) {
+  header {
+    row-gap: 6px;
+    padding-bottom: 8px;
+  }
+  nav {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  nav a {
+    min-height: 44px;
+    font-size: 13px;
+  }
 }
