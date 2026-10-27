@@ -10,6 +10,14 @@ const STORAGE_KEY = "idioma";
 
 const textos = {
   pt: {
+    "dioCyber.heading": "Estudando agora",
+    "dioCyber.title": "Santander — Cibersegurança do Zero à Prática",
+    "dioCyber.desc": "Bootcamp introdutório sobre proteção de sistemas e dados, identificação de vulnerabilidades e resposta a incidentes. A trilha aborda fundamentos de IA, Linux, Kali Linux, Medusa e Python.",
+    "dioCyber.progress": "14 de 25 atividades · 56%",
+    "dioCyber.updated": "Progresso informado em 27/10/2026",
+    "dioCyber.hours": "DIO · Santander · 37 horas",
+    "dioCyber.started": "Iniciado em 19/10/2026",
+
     "gallery.title": "Imagens do projeto",
     "gallery.role": "carrossel",
     "gallery.previous": "Imagem anterior",
@@ -264,6 +272,14 @@ const textos = {
     "c9.title": "Bootcamp backend · Ada Tech",
   },
   fr: {
+    "dioCyber.heading": "Formation en cours",
+    "dioCyber.title": "Santander — Cybersécurité : de zéro à la pratique",
+    "dioCyber.desc": "Bootcamp d’introduction à la protection des systèmes et des données, à l’identification des vulnérabilités et à la réponse aux incidents. Le parcours aborde les bases de l’IA, Linux, Kali Linux, Medusa et Python.",
+    "dioCyber.progress": "14 activités sur 25 · 56 %",
+    "dioCyber.updated": "Progression communiquée le 27/10/2026",
+    "dioCyber.hours": "DIO · Santander · 37 heures",
+    "dioCyber.started": "Commencé le 19/10/2026",
+
     "gallery.title": "Images du projet",
     "gallery.role": "carrousel",
     "gallery.previous": "Image précédente",
