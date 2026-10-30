@@ -10,9 +10,94 @@ const STORAGE_KEY = "idioma";
 
 const textos = {
   pt: {
+    "photos.bot-contracheque":
+      "Tela real de revisão de PDFs, sem documento carregado.",
+    "photos.bot-posvenda":
+      "Tela real do simulador local, sem clientes ou conversas reais.",
+    "photos.ueg2":
+      "Calculadora acadêmica real, executada a partir do código do repositório.",
+    "photos.bot-bmg":
+      "Prévia do código real da interface Tkinter; não é captura da janela.",
+    "photos.grafnaLoki": "Código-fonte real do controller da API Java.",
+    "photos.projeto_go_alura": "Código-fonte real das rotas da API em Go.",
+    "photos.aulasUEG":
+      "Código-fonte real de um exercício de sequência Tribonacci.",
+    "photos.botIA":
+      "Manifesto real das dependências do Bot IA; não é prévia da aplicação.",
+    "photos.metasDiarias":
+      "Código-fonte real da lógica de progresso; demo público indisponível.",
+
+    "recent.whoiswho.caption":
+      "Prévia real do modo local, sem perfis ou votos.",
+    "recent.whoiswho.preview":
+      "Interface real do Who’s Who em modo local, sem participantes",
+    "recent.whoiswho.kind": "React · TypeScript · Supabase",
+    "recent.whoiswho.desc":
+      "Feed de enquetes sociais com perfis, confirmação de voto, Top 3 e destaques da rodada. Inclui visualização compacta para compartilhar resultados.",
+    "recent.whoiswho.label0": "Problema",
+    "recent.whoiswho.body0":
+      "Criar um espaço de perguntas e votação entre participantes, com resultados fáceis de acompanhar.",
+    "recent.whoiswho.label1": "Implementação",
+    "recent.whoiswho.body1":
+      "Interface em React e TypeScript com Supabase para perfis, fotos, votos e atualizações Realtime. O schema aplica voto único por identidade, impede votar em si mesmo e define políticas RLS.",
+    "recent.whoiswho.label2": "Como verificar",
+    "recent.whoiswho.body2":
+      "TypeScript, build e 15 testes locais passaram nesta revisão. A captura usa o modo local, sem dados de participantes; esse modo não compartilha votos entre dispositivos. O README explica a configuração do Supabase e os limites da identidade anônima.",
+    "recent.bot-bmg.fallback": "Automação · Consulte os detalhes abaixo",
+    "recent.bot-bmg.kind": "Automação desktop · Python",
+    "recent.bot-bmg.desc":
+      "Aplicativo Windows para consultas autorizadas no portal BMG a partir de CSV/XLSX, com retomada de progresso e exportação de relatórios Excel.",
+    "recent.bot-bmg.label0": "Problema",
+    "recent.bot-bmg.body0":
+      "Organizar consultas em lote e transformar os resultados em relatórios, mantendo pendências identificadas para revisão.",
+    "recent.bot-bmg.label1": "Implementação",
+    "recent.bot-bmg.body1":
+      "Python com interface Tkinter, automação do Chrome via Playwright e exportação Excel com OpenPyXL. O código normaliza a entrada, remove duplicatas e salva o progresso para retomada.",
+    "recent.bot-bmg.label2": "Como verificar",
+    "recent.bot-bmg.body2":
+      "O acesso ao portal exige conta autorizada, login e CAPTCHA manuais. O README e test_extracao.py documentam o fluxo e os testes locais; dados reais e sessões não fazem parte da demonstração pública.",
+    "recent.bot-contracheque.fallback":
+      "Automação · Consulte os detalhes abaixo",
+    "recent.bot-contracheque.kind":
+      "API e revisão documental · Em desenvolvimento",
+    "recent.bot-contracheque.desc":
+      "API para extrair informações e descontos de cartões em contracheques PDF, com OCR, fila persistente e interface de conferência humana.",
+    "recent.bot-contracheque.label0": "Problema",
+    "recent.bot-contracheque.body0":
+      "Apoiar a leitura de documentos com layouts diferentes, preservando a origem dos valores e os casos que precisam de conferência.",
+    "recent.bot-contracheque.label1": "Implementação",
+    "recent.bot-contracheque.body1":
+      "FastAPI recebe os PDFs; PyMuPDF e OCR leem texto e coordenadas. SQLite mantém a fila e um catálogo versionado de regras. Há modos local, híbrido e integração opcional com Gemini.",
+    "recent.bot-contracheque.label2": "Como verificar",
+    "recent.bot-contracheque.body2":
+      "Versão em desenvolvimento: os resultados exigem revisão. A integração Gemini e o fluxo real da Hyperflow ainda dependem de configuração e validação; não são apresentados como operação comprovada em produção.",
+    "recent.bot-contracheque.availability":
+      "Projeto local · Sem demonstração pública",
+    "recent.bot-posvenda.fallback": "Automação · Consulte os detalhes abaixo",
+    "recent.bot-posvenda.kind": "Piloto local · Chatwoot",
+    "recent.bot-posvenda.desc":
+      "Piloto de atendimento de pós-venda para crédito e compra de dívida, com simulador local e adaptador para eventos do Chatwoot.",
+    "recent.bot-posvenda.label0": "Problema",
+    "recent.bot-posvenda.body0":
+      "Explorar um atendimento automatizado que encaminha casos para humanos e evita respostas duplicadas.",
+    "recent.bot-posvenda.label1": "Implementação",
+    "recent.bot-posvenda.body1":
+      "O serviço recebe webhooks do Chatwoot, valida assinatura HMAC e timestamp, registra IDs de mensagens e trata o estado das conversas. O simulador responde por regras locais.",
+    "recent.bot-posvenda.label2": "Como verificar",
+    "recent.bot-posvenda.body2":
+      "Piloto local, sem consultas reais à Hyperflow. A configuração de IA, integrações externas e requisitos adicionais de produção permanecem como etapas futuras.",
+    "recent.bot-posvenda.availability":
+      "Projeto local · Sem demonstração pública",
+    "recent.heading": "Aplicações e automações recentes",
+    "recent.skills.react":
+      "Enquetes, componentes e resultados com Supabase Realtime.",
+    "recent.skills.python":
+      "Automação de navegador, leitura de documentos e APIs FastAPI.",
+
     "dioCyber.heading": "Estudando agora",
     "dioCyber.title": "Santander — Cibersegurança do Zero à Prática",
-    "dioCyber.desc": "Bootcamp introdutório sobre proteção de sistemas e dados, identificação de vulnerabilidades e resposta a incidentes. A trilha aborda fundamentos de IA, Linux, Kali Linux, Medusa e Python.",
+    "dioCyber.desc":
+      "Bootcamp introdutório sobre proteção de sistemas e dados, identificação de vulnerabilidades e resposta a incidentes. A trilha aborda fundamentos de IA, Linux, Kali Linux, Medusa e Python.",
     "dioCyber.progress": "14 de 25 atividades · 56%",
     "dioCyber.updated": "Progresso informado em 27/10/2026",
     "dioCyber.hours": "DIO · Santander · 37 horas",
@@ -272,9 +357,95 @@ const textos = {
     "c9.title": "Bootcamp backend · Ada Tech",
   },
   fr: {
+    "photos.bot-contracheque":
+      "Interface réelle de révision PDF, sans document chargé.",
+    "photos.bot-posvenda":
+      "Interface réelle du simulateur local, sans clients ni conversations réelles.",
+    "photos.ueg2":
+      "Calculatrice universitaire réelle, exécutée depuis le code du dépôt.",
+    "photos.bot-bmg":
+      "Aperçu du code réel de l’interface Tkinter ; ce n’est pas une capture de la fenêtre.",
+    "photos.grafnaLoki": "Code source réel du controller de l’API Java.",
+    "photos.projeto_go_alura": "Code source réel des routes de l’API Go.",
+    "photos.aulasUEG": "Code source réel d’un exercice de suite Tribonacci.",
+    "photos.botIA":
+      "Manifeste réel des dépendances de Bot IA ; ce n’est pas un aperçu de l’application.",
+    "photos.metasDiarias":
+      "Code source réel de la logique de progression ; démo publique indisponible.",
+
+    "recent.whoiswho.caption":
+      "Aperçu réel du mode local, sans profils ni votes.",
+    "recent.whoiswho.preview":
+      "Interface réelle Who’s Who en mode local, sans participants",
+    "recent.whoiswho.kind": "React · TypeScript · Supabase",
+    "recent.whoiswho.desc":
+      "Fil de sondages sociaux avec profils, confirmation du vote, Top 3 et faits marquants, avec une vue compacte pour partager les résultats.",
+    "recent.whoiswho.label0": "Besoin",
+    "recent.whoiswho.body0":
+      "Créer un espace de questions et de votes entre participants, avec des résultats lisibles.",
+    "recent.whoiswho.label1": "Implémentation",
+    "recent.whoiswho.body1":
+      "Interface React et TypeScript avec Supabase pour les profils, photos, votes et mises à jour Realtime. Le schéma impose un vote par identité, interdit de voter pour soi et définit des politiques RLS.",
+    "recent.whoiswho.label2": "Vérification",
+    "recent.whoiswho.body2":
+      "La vérification TypeScript, le build et 15 tests locaux ont réussi lors de cette révision. La capture utilise le mode local sans données de participants ; ce mode ne partage pas les votes entre appareils. Le README détaille la configuration Supabase et les limites de l’identité anonyme.",
+    "recent.bot-bmg.fallback":
+      "Automatisation · Consultez les détails ci-dessous",
+    "recent.bot-bmg.kind": "Automatisation desktop · Python",
+    "recent.bot-bmg.desc":
+      "Application Windows pour des consultations autorisées du portail BMG depuis CSV/XLSX, avec reprise de progression et export Excel.",
+    "recent.bot-bmg.label0": "Besoin",
+    "recent.bot-bmg.body0":
+      "Organiser les consultations par lots et produire des rapports en distinguant les éléments à vérifier.",
+    "recent.bot-bmg.label1": "Implémentation",
+    "recent.bot-bmg.body1":
+      "Python avec interface Tkinter, automatisation Chrome via Playwright et export Excel avec OpenPyXL. Le code normalise les entrées, supprime les doublons et conserve la progression.",
+    "recent.bot-bmg.label2": "Vérification",
+    "recent.bot-bmg.body2":
+      "Le portail nécessite un compte autorisé, une connexion et un CAPTCHA manuels. Le README et test_extracao.py documentent le parcours et les tests locaux ; les données réelles et sessions ne sont pas publiées.",
+    "recent.bot-contracheque.fallback":
+      "Automatisation · Consultez les détails ci-dessous",
+    "recent.bot-contracheque.kind":
+      "API et révision documentaire · En développement",
+    "recent.bot-contracheque.desc":
+      "API d’extraction d’informations et de retenues de cartes depuis des fiches de paie PDF, avec OCR, file persistante et interface de contrôle humain.",
+    "recent.bot-contracheque.label0": "Besoin",
+    "recent.bot-contracheque.body0":
+      "Faciliter la lecture de documents aux mises en page différentes, en conservant l’origine des valeurs et les cas à contrôler.",
+    "recent.bot-contracheque.label1": "Implémentation",
+    "recent.bot-contracheque.body1":
+      "FastAPI reçoit les PDF ; PyMuPDF et OCR lisent le texte et les coordonnées. SQLite conserve la file et un catalogue versionné de règles. Des modes local, hybride et une intégration Gemini optionnelle sont prévus.",
+    "recent.bot-contracheque.label2": "Vérification",
+    "recent.bot-contracheque.body2":
+      "Version en développement : les résultats exigent une vérification. L’intégration Gemini et le parcours Hyperflow réel nécessitent encore configuration et validation ; ils ne sont pas présentés comme une exploitation confirmée en production.",
+    "recent.bot-contracheque.availability":
+      "Projet local · Sans démonstration publique",
+    "recent.bot-posvenda.fallback":
+      "Automatisation · Consultez les détails ci-dessous",
+    "recent.bot-posvenda.kind": "Pilote local · Chatwoot",
+    "recent.bot-posvenda.desc":
+      "Pilote de service après-vente pour le crédit et le rachat de dette, avec simulateur local et adaptateur d’événements Chatwoot.",
+    "recent.bot-posvenda.label0": "Besoin",
+    "recent.bot-posvenda.body0":
+      "Explorer un service automatisé avec transfert vers des humains et prévention des réponses dupliquées.",
+    "recent.bot-posvenda.label1": "Implémentation",
+    "recent.bot-posvenda.body1":
+      "Le service reçoit les webhooks Chatwoot, vérifie la signature HMAC et l’horodatage, conserve les identifiants de messages et traite l’état des conversations. Le simulateur répond par règles locales.",
+    "recent.bot-posvenda.label2": "Vérification",
+    "recent.bot-posvenda.body2":
+      "Pilote local sans consultations réelles Hyperflow. La configuration IA, les intégrations externes et les exigences supplémentaires de production restent des étapes futures.",
+    "recent.bot-posvenda.availability":
+      "Projet local · Sans démonstration publique",
+    "recent.heading": "Applications et automatisations récentes",
+    "recent.skills.react":
+      "Sondages, composants et résultats avec Supabase Realtime.",
+    "recent.skills.python":
+      "Automatisation de navigateur, lecture documentaire et API FastAPI.",
+
     "dioCyber.heading": "Formation en cours",
     "dioCyber.title": "Santander — Cybersécurité : de zéro à la pratique",
-    "dioCyber.desc": "Bootcamp d’introduction à la protection des systèmes et des données, à l’identification des vulnérabilités et à la réponse aux incidents. Le parcours aborde les bases de l’IA, Linux, Kali Linux, Medusa et Python.",
+    "dioCyber.desc":
+      "Bootcamp d’introduction à la protection des systèmes et des données, à l’identification des vulnérabilités et à la réponse aux incidents. Le parcours aborde les bases de l’IA, Linux, Kali Linux, Medusa et Python.",
     "dioCyber.progress": "14 activités sur 25 · 56 %",
     "dioCyber.updated": "Progression communiquée le 27/10/2026",
     "dioCyber.hours": "DIO · Santander · 37 heures",

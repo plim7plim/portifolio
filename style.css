@@ -1496,6 +1496,8 @@ footer {
   }
 }
 /* Evidence and professional content hierarchy. */
+.recent-projects { margin-top:24px; margin-bottom:32px; }
+.project-availability { color:var(--text2); font-size:12px; line-height:1.7; padding-block:10px; }
 .ongoing-learning { margin-bottom:32px; }
 .course-progress { margin:8px 0 24px; }
 .course-progress p { margin-bottom:8px; color:var(--primary); }

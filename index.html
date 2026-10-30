@@ -384,6 +384,22 @@
                 duplicados.</span
               >
             </li>
+            <li>
+              <strong>React e TypeScript</strong
+              ><a href="#project-whoiswho">Who’s Who?</a
+              ><span data-i18n="recent.skills.react"
+                >Enquetes, componentes e resultados com Supabase Realtime.</span
+              >
+            </li>
+            <li>
+              <strong>Python · APIs · Automação</strong
+              ><a href="#project-bot-bmg">botBMG</a
+              ><a href="#project-bot-contracheque">Bot Contracheque</a
+              ><span data-i18n="recent.skills.python"
+                >Automação de navegador, leitura de documentos e APIs
+                FastAPI.</span
+              >
+            </li>
           </ul>
         </div>
       </section>
@@ -778,6 +794,314 @@
             </div>
           </article>
         </div>
+        <h3 class="education-subtitle" data-i18n="recent.heading">
+          Aplicações e automações recentes
+        </h3>
+        <div class="projects-grid recent-projects">
+          <article class="project-card" id="project-whoiswho">
+            <a
+              class="project-preview"
+              href="https://github.com/plim7plim/whoiswho"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><div class="browser-bar" aria-hidden="true">
+                <i></i><i></i><i></i><span>github.com / whoiswho</span>
+              </div>
+              <div class="project-screen">
+                <img
+                  src="assets/projects/whoiswho.webp"
+                  width="1365"
+                  height="900"
+                  alt="Interface real do Who’s Who em modo local, sem participantes"
+                  data-i18n-alt="recent.whoiswho.preview"
+                  loading="lazy"
+                  decoding="async"
+                /></div
+            ></a>
+            <p class="preview-caption" data-i18n="recent.whoiswho.caption">
+              Prévia real do modo local, sem perfis ou votos.
+            </p>
+            <div class="project-info">
+              <span class="project-kind" data-i18n="recent.whoiswho.kind"
+                >React · TypeScript · Supabase</span
+              >
+              <h3>Who’s Who?</h3>
+              <p data-i18n="recent.whoiswho.desc">
+                Feed de enquetes sociais com perfis, confirmação de voto, Top 3
+                e destaques da rodada. Inclui visualização compacta para
+                compartilhar resultados.
+              </p>
+              <div class="techs">
+                <span>React</span><span>TypeScript</span><span>Supabase</span
+                ><span>Tailwind CSS</span>
+              </div>
+              <details class="case-study">
+                <summary data-i18n="audit.case">
+                  Entenda a implementação
+                </summary>
+                <dl>
+                  <dt data-i18n="recent.whoiswho.label0">Problema</dt>
+                  <dd data-i18n="recent.whoiswho.body0">
+                    Criar um espaço de perguntas e votação entre participantes,
+                    com resultados fáceis de acompanhar.
+                  </dd>
+                  <dt data-i18n="recent.whoiswho.label1">Implementação</dt>
+                  <dd data-i18n="recent.whoiswho.body1">
+                    Interface em React e TypeScript com Supabase para perfis,
+                    fotos, votos e atualizações Realtime. O schema aplica voto
+                    único por identidade, impede votar em si mesmo e define
+                    políticas RLS.
+                  </dd>
+                  <dt data-i18n="recent.whoiswho.label2">Como verificar</dt>
+                  <dd data-i18n="recent.whoiswho.body2">
+                    TypeScript, build e 15 testes locais passaram nesta revisão.
+                    A captura usa o modo local, sem dados de participantes; esse
+                    modo não compartilha votos entre dispositivos. O README
+                    explica a configuração do Supabase e os limites da
+                    identidade anônima.
+                  </dd>
+                </dl>
+              </details>
+              <div class="project-actions">
+                <a
+                  class="project-link"
+                  href="https://github.com/plim7plim/whoiswho"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-brands fa-github" aria-hidden="true"></i
+                  ><span data-i18n="update.repository">Ver repositório</span
+                  ><i
+                    class="fa-solid fa-arrow-up-right-from-square"
+                    aria-hidden="true"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card" id="project-bot-bmg">
+            <a
+              class="project-preview"
+              href="https://github.com/plim7plim/botBMG-"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><div class="browser-bar" aria-hidden="true">
+                <i></i><i></i><i></i><span>github.com / botBMG-</span>
+              </div>
+              <div class="project-screen">
+                <img
+                  src="assets/projects/preview-bot-bmg.webp"
+                  alt="Prévia do código real da interface Tkinter; não é captura da janela."
+                  data-i18n-alt="photos.bot-bmg"
+                  width="1365"
+                  height="900"
+                  loading="lazy"
+                  decoding="async"
+                /></div
+            ></a>
+            <p class="preview-caption" data-i18n="photos.bot-bmg">
+              Prévia do código real da interface Tkinter; não é captura da
+              janela.
+            </p>
+            <div class="project-info">
+              <span class="project-kind" data-i18n="recent.bot-bmg.kind"
+                >Automação desktop · Python</span
+              >
+              <h3>botBMG</h3>
+              <p data-i18n="recent.bot-bmg.desc">
+                Aplicativo Windows para consultas autorizadas no portal BMG a
+                partir de CSV/XLSX, com retomada de progresso e exportação de
+                relatórios Excel.
+              </p>
+              <div class="techs">
+                <span>Python</span><span>Tkinter</span><span>Playwright</span
+                ><span>OpenPyXL</span>
+              </div>
+              <details class="case-study">
+                <summary data-i18n="audit.case">
+                  Entenda a implementação
+                </summary>
+                <dl>
+                  <dt data-i18n="recent.bot-bmg.label0">Problema</dt>
+                  <dd data-i18n="recent.bot-bmg.body0">
+                    Organizar consultas em lote e transformar os resultados em
+                    relatórios, mantendo pendências identificadas para revisão.
+                  </dd>
+                  <dt data-i18n="recent.bot-bmg.label1">Implementação</dt>
+                  <dd data-i18n="recent.bot-bmg.body1">
+                    Python com interface Tkinter, automação do Chrome via
+                    Playwright e exportação Excel com OpenPyXL. O código
+                    normaliza a entrada, remove duplicatas e salva o progresso
+                    para retomada.
+                  </dd>
+                  <dt data-i18n="recent.bot-bmg.label2">Como verificar</dt>
+                  <dd data-i18n="recent.bot-bmg.body2">
+                    O acesso ao portal exige conta autorizada, login e CAPTCHA
+                    manuais. O README e test_extracao.py documentam o fluxo e os
+                    testes locais; dados reais e sessões não fazem parte da
+                    demonstração pública.
+                  </dd>
+                </dl>
+              </details>
+              <div class="project-actions">
+                <a
+                  class="project-link"
+                  href="https://github.com/plim7plim/botBMG-"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-brands fa-github" aria-hidden="true"></i
+                  ><span data-i18n="update.repository">Ver repositório</span
+                  ><i
+                    class="fa-solid fa-arrow-up-right-from-square"
+                    aria-hidden="true"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card" id="project-bot-contracheque">
+            <div class="project-preview">
+              <div class="browser-bar" aria-hidden="true">
+                <i></i><i></i><i></i><span>Projeto local</span>
+              </div>
+              <div class="project-screen">
+                <img
+                  src="assets/projects/preview-bot-contracheque.webp"
+                  alt="Tela real de revisão de PDFs, sem documento carregado."
+                  data-i18n-alt="photos.bot-contracheque"
+                  width="1365"
+                  height="900"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </div>
+            <p class="preview-caption" data-i18n="photos.bot-contracheque">
+              Tela real de revisão de PDFs, sem documento carregado.
+            </p>
+            <div class="project-info">
+              <span
+                class="project-kind"
+                data-i18n="recent.bot-contracheque.kind"
+                >API e revisão documental · Em desenvolvimento</span
+              >
+              <h3>Bot Contracheque</h3>
+              <p data-i18n="recent.bot-contracheque.desc">
+                API para extrair informações e descontos de cartões em
+                contracheques PDF, com OCR, fila persistente e interface de
+                conferência humana.
+              </p>
+              <div class="techs">
+                <span>Python</span><span>FastAPI</span><span>PyMuPDF / OCR</span
+                ><span>SQLite</span>
+              </div>
+              <details class="case-study">
+                <summary data-i18n="audit.case">
+                  Entenda a implementação
+                </summary>
+                <dl>
+                  <dt data-i18n="recent.bot-contracheque.label0">Problema</dt>
+                  <dd data-i18n="recent.bot-contracheque.body0">
+                    Apoiar a leitura de documentos com layouts diferentes,
+                    preservando a origem dos valores e os casos que precisam de
+                    conferência.
+                  </dd>
+                  <dt data-i18n="recent.bot-contracheque.label1">
+                    Implementação
+                  </dt>
+                  <dd data-i18n="recent.bot-contracheque.body1">
+                    FastAPI recebe os PDFs; PyMuPDF e OCR leem texto e
+                    coordenadas. SQLite mantém a fila e um catálogo versionado
+                    de regras. Há modos local, híbrido e integração opcional com
+                    Gemini.
+                  </dd>
+                  <dt data-i18n="recent.bot-contracheque.label2">
+                    Como verificar
+                  </dt>
+                  <dd data-i18n="recent.bot-contracheque.body2">
+                    Versão em desenvolvimento: os resultados exigem revisão. A
+                    integração Gemini e o fluxo real da Hyperflow ainda dependem
+                    de configuração e validação; não são apresentados como
+                    operação comprovada em produção.
+                  </dd>
+                </dl>
+              </details>
+              <div class="project-actions">
+                <span
+                  class="project-availability"
+                  data-i18n="recent.bot-contracheque.availability"
+                  >Projeto local · Sem demonstração pública</span
+                >
+              </div>
+            </div>
+          </article>
+          <article class="project-card" id="project-bot-posvenda">
+            <div class="project-preview">
+              <div class="browser-bar" aria-hidden="true">
+                <i></i><i></i><i></i><span>Projeto local</span>
+              </div>
+              <div class="project-screen">
+                <img
+                  src="assets/projects/preview-bot-posvenda.webp"
+                  alt="Tela real do simulador local, sem clientes ou conversas reais."
+                  data-i18n-alt="photos.bot-posvenda"
+                  width="1365"
+                  height="900"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </div>
+            <p class="preview-caption" data-i18n="photos.bot-posvenda">
+              Tela real do simulador local, sem clientes ou conversas reais.
+            </p>
+            <div class="project-info">
+              <span class="project-kind" data-i18n="recent.bot-posvenda.kind"
+                >Piloto local · Chatwoot</span
+              >
+              <h3>Bot de Pós-venda</h3>
+              <p data-i18n="recent.bot-posvenda.desc">
+                Piloto de atendimento de pós-venda para crédito e compra de
+                dívida, com simulador local e adaptador para eventos do
+                Chatwoot.
+              </p>
+              <div class="techs">
+                <span>Python</span><span>FastAPI</span><span>Chatwoot</span
+                ><span>SQLite / Docker</span>
+              </div>
+              <details class="case-study">
+                <summary data-i18n="audit.case">
+                  Entenda a implementação
+                </summary>
+                <dl>
+                  <dt data-i18n="recent.bot-posvenda.label0">Problema</dt>
+                  <dd data-i18n="recent.bot-posvenda.body0">
+                    Explorar um atendimento automatizado que encaminha casos
+                    para humanos e evita respostas duplicadas.
+                  </dd>
+                  <dt data-i18n="recent.bot-posvenda.label1">Implementação</dt>
+                  <dd data-i18n="recent.bot-posvenda.body1">
+                    O serviço recebe webhooks do Chatwoot, valida assinatura
+                    HMAC e timestamp, registra IDs de mensagens e trata o estado
+                    das conversas. O simulador responde por regras locais.
+                  </dd>
+                  <dt data-i18n="recent.bot-posvenda.label2">Como verificar</dt>
+                  <dd data-i18n="recent.bot-posvenda.body2">
+                    Piloto local, sem consultas reais à Hyperflow. A
+                    configuração de IA, integrações externas e requisitos
+                    adicionais de produção permanecem como etapas futuras.
+                  </dd>
+                </dl>
+              </details>
+              <div class="project-actions">
+                <span
+                  class="project-availability"
+                  data-i18n="recent.bot-posvenda.availability"
+                  >Projeto local · Sem demonstração pública</span
+                >
+              </div>
+            </div>
+          </article>
+        </div>
         <details class="other-projects">
           <summary data-i18n="audit.otherProjects">
             Explorar os outros 11 projetos
@@ -796,20 +1120,19 @@
                   <i></i><i></i><i></i><span>github.com / grafnaLoki</span>
                 </div>
                 <div class="project-screen">
-                  <div
-                    class="preview-fallback"
-                    style="--project-accent: #d6a56b"
-                  >
-                    <i class="fa-solid fa-chart-line" aria-hidden="true"></i
-                    ><strong>Java / Observabilidade</strong
-                    ><small data-i18n="design.repositoryPreview"
-                      >Projeto de estudo · Explore o código</small
-                    >
-                  </div>
+                  <img
+                    src="assets/projects/preview-grafnaLoki.webp"
+                    alt="Código-fonte real do controller da API Java."
+                    data-i18n-alt="photos.grafnaLoki"
+                    width="1365"
+                    height="900"
+                    loading="lazy"
+                    decoding="async"
+                  />
                 </div>
               </a>
-              <p class="preview-caption" data-i18n="preview.caption.grafnaLoki">
-                Evidência disponível: código de logs e métricas
+              <p class="preview-caption" data-i18n="photos.grafnaLoki">
+                Código-fonte real do controller da API Java.
               </p>
               <div class="project-info">
                 <span class="project-kind" data-i18n="audit.badge.java"
@@ -909,18 +1232,20 @@
                   ><span>github.com / projeto_go_alura</span>
                 </div>
                 <div class="project-screen">
-                  <div
-                    class="preview-fallback"
-                    style="--project-accent: #75cbd6"
-                  >
-                    <i class="fa-solid fa-code" aria-hidden="true"></i
-                    ><strong>Go / API de alunos</strong
-                    ><small data-i18n="design.repositoryPreview"
-                      >Projeto de estudo · Explore o código</small
-                    >
-                  </div>
+                  <img
+                    src="assets/projects/preview-projeto_go_alura.webp"
+                    alt="Código-fonte real das rotas da API em Go."
+                    data-i18n-alt="photos.projeto_go_alura"
+                    width="1365"
+                    height="900"
+                    loading="lazy"
+                    decoding="async"
+                  />
                 </div>
               </a>
+              <p class="preview-caption" data-i18n="photos.projeto_go_alura">
+                Código-fonte real das rotas da API em Go.
+              </p>
               <div class="project-info">
                 <span class="project-kind" data-i18n="audit.badge.go"
                   >Estudo guiado · Alura</span
@@ -1370,18 +1695,21 @@
                   <i></i><i></i><i></i><span>github.com / ueg2</span>
                 </div>
                 <div class="project-screen">
-                  <div
-                    class="preview-fallback"
-                    style="--project-accent: #619de3"
-                  >
-                    <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i
-                    ><strong>UEG / Práticas</strong
-                    ><small data-i18n="design.repositoryPreview"
-                      >Projeto de estudo · Explore o código</small
-                    >
-                  </div>
+                  <img
+                    src="assets/projects/preview-ueg2.webp"
+                    alt="Calculadora acadêmica real, executada a partir do código do repositório."
+                    data-i18n-alt="photos.ueg2"
+                    width="1365"
+                    height="900"
+                    loading="lazy"
+                    decoding="async"
+                  />
                 </div>
               </a>
+              <p class="preview-caption" data-i18n="photos.ueg2">
+                Calculadora acadêmica real, executada a partir do código do
+                repositório.
+              </p>
               <div class="project-info">
                 <h3>
                   <a
@@ -1432,18 +1760,20 @@
                   <i></i><i></i><i></i><span>github.com / aulasUEG</span>
                 </div>
                 <div class="project-screen">
-                  <div
-                    class="preview-fallback"
-                    style="--project-accent: #619de3"
-                  >
-                    <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i
-                    ><strong>UEG / Aulas</strong
-                    ><small data-i18n="design.repositoryPreview"
-                      >Projeto de estudo · Explore o código</small
-                    >
-                  </div>
+                  <img
+                    src="assets/projects/preview-aulasUEG.webp"
+                    alt="Código-fonte real de um exercício de sequência Tribonacci."
+                    data-i18n-alt="photos.aulasUEG"
+                    width="1365"
+                    height="900"
+                    loading="lazy"
+                    decoding="async"
+                  />
                 </div>
               </a>
+              <p class="preview-caption" data-i18n="photos.aulasUEG">
+                Código-fonte real de um exercício de sequência Tribonacci.
+              </p>
               <div class="project-info">
                 <h3>
                   <a
@@ -1499,18 +1829,21 @@
                   <i></i><i></i><i></i><span>github.com / botIA</span>
                 </div>
                 <div class="project-screen">
-                  <div
-                    class="preview-fallback"
-                    style="--project-accent: #a58bfa"
-                  >
-                    <i class="fa-solid fa-file-pdf" aria-hidden="true"></i
-                    ><strong>Bot IA</strong
-                    ><small data-i18n="design.repositoryPreview"
-                      >Projeto de estudo · Explore o código</small
-                    >
-                  </div>
+                  <img
+                    src="assets/projects/preview-botIA.webp"
+                    alt="Manifesto real das dependências do Bot IA; não é prévia da aplicação."
+                    data-i18n-alt="photos.botIA"
+                    width="1365"
+                    height="900"
+                    loading="lazy"
+                    decoding="async"
+                  />
                 </div>
               </a>
+              <p class="preview-caption" data-i18n="photos.botIA">
+                Manifesto real das dependências do Bot IA; não é prévia da
+                aplicação.
+              </p>
               <div class="project-info">
                 <h3>
                   <a
@@ -1566,18 +1899,21 @@
                   ><span>constancia.plinioportifolio.xyz</span>
                 </div>
                 <div class="project-screen">
-                  <div
-                    class="preview-fallback"
-                    style="--project-accent: #62bd9a"
-                  >
-                    <i class="fa-solid fa-calendar-check" aria-hidden="true"></i
-                    ><strong>Metas</strong
-                    ><small data-i18n="design.unavailable"
-                      >Demo público indisponível · Código disponível</small
-                    >
-                  </div>
+                  <img
+                    src="assets/projects/preview-metasDiarias.webp"
+                    alt="Código-fonte real da lógica de progresso; demo público indisponível."
+                    data-i18n-alt="photos.metasDiarias"
+                    width="1365"
+                    height="900"
+                    loading="lazy"
+                    decoding="async"
+                  />
                 </div>
               </a>
+              <p class="preview-caption" data-i18n="photos.metasDiarias">
+                Código-fonte real da lógica de progresso; demo público
+                indisponível.
+              </p>
               <div class="project-info">
                 <h3>
                   <a
@@ -1688,18 +2024,51 @@
             </div>
           </article>
         </div>
-        <h3 class="education-subtitle" data-i18n="dioCyber.heading">Estudando agora</h3>
+        <h3 class="education-subtitle" data-i18n="dioCyber.heading">
+          Estudando agora
+        </h3>
         <div class="courses-grid ongoing-learning">
-          <article class="course-card" id="course-dio-cybersecurity" data-category="curso">
-            <div class="education-heading"><span class="education-icon" aria-hidden="true"><i class="fa-solid fa-shield-halved"></i></span><span class="education-status" data-i18n="education.status">Em andamento</span></div>
-            <h3 data-i18n="dioCyber.title">Santander — Cibersegurança do Zero à Prática</h3>
-            <p data-i18n="dioCyber.desc">Bootcamp introdutório sobre proteção de sistemas e dados, identificação de vulnerabilidades e resposta a incidentes. A trilha aborda fundamentos de IA, Linux, Kali Linux, Medusa e Python.</p>
-            <div class="course-progress">
-              <p id="dio-cyber-progress-label" data-i18n="dioCyber.progress">14 de 25 atividades · 56%</p>
-              <progress value="14" max="25" aria-labelledby="dio-cyber-progress-label" aria-describedby="dio-cyber-progress-date">56%</progress>
-              <small id="dio-cyber-progress-date" data-i18n="dioCyber.updated">Progresso informado em 27/10/2026</small>
+          <article
+            class="course-card"
+            id="course-dio-cybersecurity"
+            data-category="curso"
+          >
+            <div class="education-heading">
+              <span class="education-icon" aria-hidden="true"
+                ><i class="fa-solid fa-shield-halved"></i></span
+              ><span class="education-status" data-i18n="education.status"
+                >Em andamento</span
+              >
             </div>
-            <div class="card-footer"><span data-i18n="dioCyber.hours">DIO · Santander · 37 horas</span><span data-i18n="dioCyber.started">Iniciado em 19/10/2026</span></div>
+            <h3 data-i18n="dioCyber.title">
+              Santander — Cibersegurança do Zero à Prática
+            </h3>
+            <p data-i18n="dioCyber.desc">
+              Bootcamp introdutório sobre proteção de sistemas e dados,
+              identificação de vulnerabilidades e resposta a incidentes. A
+              trilha aborda fundamentos de IA, Linux, Kali Linux, Medusa e
+              Python.
+            </p>
+            <div class="course-progress">
+              <p id="dio-cyber-progress-label" data-i18n="dioCyber.progress">
+                14 de 25 atividades · 56%
+              </p>
+              <progress
+                value="14"
+                max="25"
+                aria-labelledby="dio-cyber-progress-label"
+                aria-describedby="dio-cyber-progress-date"
+              >
+                56%
+              </progress>
+              <small id="dio-cyber-progress-date" data-i18n="dioCyber.updated"
+                >Progresso informado em 27/10/2026</small
+              >
+            </div>
+            <div class="card-footer">
+              <span data-i18n="dioCyber.hours">DIO · Santander · 37 horas</span
+              ><span data-i18n="dioCyber.started">Iniciado em 19/10/2026</span>
+            </div>
           </article>
         </div>
         <h3 class="education-subtitle" data-i18n="education.selected">
