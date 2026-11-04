@@ -30,10 +30,7 @@ Galleries are configured in project-gallery.js. Projects with only one capture r
 
 ## Additional previews — 2026-10-30
 
-- preview-bot-contracheque.webp: Tela real de revisão de PDFs, sem documento carregado.
-- preview-bot-posvenda.webp: Tela real do simulador local, sem clientes ou conversas reais.
 - preview-ueg2.webp: Calculadora acadêmica real, executada a partir do código do repositório.
-- preview-bot-bmg.webp: Prévia do código real da interface Tkinter; não é captura da janela.
 - preview-grafnaLoki.webp: Código-fonte real do controller da API Java.
 - preview-projeto_go_alura.webp: Código-fonte real das rotas da API em Go.
 - preview-aulasUEG.webp: Código-fonte real de um exercício de sequência Tribonacci.
@@ -41,3 +38,10 @@ Galleries are configured in project-gallery.js. Projects with only one capture r
 - preview-metasDiarias.webp: Código-fonte real da lógica de progresso; demo público indisponível.
 
 UI previews use original frontend files with no uploaded documents, backend connection or customer data. Code previews render authentic source excerpts and are explicitly labeled as code, not application screenshots.
+
+## Mural UEG — 2026-11-04
+
+Authenticated browser captures of the current interface, using the user-provided open session:
+- mural-colegas-20261104.webp: https://app-ueg.vercel.app/colegas.html (by entry year).
+- mural-perfil-20261104.webp: the portfolio owner’s own profile, reached from the colleagues page.
+- mural-busca-20261104.webp: colleagues search filtered to the portfolio owner.

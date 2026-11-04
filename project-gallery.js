@@ -1,5 +1,9 @@
 const galleries = {
-  appUEG: ["mural-ueg.webp", "mural-cadastro.jpg"],
+  appUEG: [
+    "mural-colegas-20261104.webp",
+    "mural-perfil-20261104.webp",
+    "mural-busca-20261104.webp",
+  ],
   "soumaisblu-cadastro": [
     "soumaisblu-cadastro-atual.jpg",
     "soumaisblu-formulario.jpg",
