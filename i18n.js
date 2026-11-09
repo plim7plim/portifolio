@@ -51,12 +51,12 @@ const textos = {
     "recent.skills.react":
       "Enquetes, componentes e resultados com Supabase Realtime.",
 
-    "dioCyber.heading": "Estudando agora",
+    "dioCyber.heading": "Bootcamp concluído",
     "dioCyber.title": "Santander — Cibersegurança do Zero à Prática",
     "dioCyber.desc":
       "Bootcamp introdutório sobre proteção de sistemas e dados, identificação de vulnerabilidades e resposta a incidentes. A trilha aborda fundamentos de IA, Linux, Kali Linux, Medusa e Python.",
-    "dioCyber.progress": "88% concluído",
-    "dioCyber.updated": "Progresso informado em 04/11/2026",
+    "dioCyber.progress": "100% concluído",
+    "dioCyber.updated": "Conclusão informada em 09/11/2026",
     "dioCyber.hours": "DIO · Santander · 37 horas",
     "dioCyber.started": "Iniciado em 19/10/2026",
 
@@ -312,6 +312,8 @@ const textos = {
     "page.title": "Plínio Peixoto | Desenvolvedor Full Stack Júnior",
     "form.fillAll": "Preencha todos os campos.",
     "c9.title": "Bootcamp backend · Ada Tech",
+    "dioCyber.status": "Concluído",
+    "dioCyber.certificates": "Ver os 32 certificados",
   },
   fr: {
     "lab.title": "Laboratoire de cybersécurité · DIO",
@@ -354,12 +356,12 @@ const textos = {
     "recent.skills.react":
       "Sondages, composants et résultats avec Supabase Realtime.",
 
-    "dioCyber.heading": "Formation en cours",
+    "dioCyber.heading": "Bootcamp terminé",
     "dioCyber.title": "Santander — Cybersécurité : de zéro à la pratique",
     "dioCyber.desc":
       "Bootcamp d’introduction à la protection des systèmes et des données, à l’identification des vulnérabilités et à la réponse aux incidents. Le parcours aborde les bases de l’IA, Linux, Kali Linux, Medusa et Python.",
-    "dioCyber.progress": "88 % terminé",
-    "dioCyber.updated": "Progression communiquée le 04/11/2026",
+    "dioCyber.progress": "100 % terminé",
+    "dioCyber.updated": "Achèvement communiqué le 09/11/2026",
     "dioCyber.hours": "DIO · Santander · 37 heures",
     "dioCyber.started": "Commencé le 19/10/2026",
 
@@ -771,6 +773,8 @@ const textos = {
     "guestbook.message": "Écrivez un commentaire",
     "guestbook.send": "Envoyer le commentaire",
     "footer.text": "Développé par Plínio Peixoto © 2026",
+    "dioCyber.status": "Terminé",
+    "dioCyber.certificates": "Voir les 32 certificats",
   },
 };
 
