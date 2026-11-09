@@ -47,16 +47,13 @@ const textos = {
     "recent.whoiswho.body2":
       "TypeScript, build e 15 testes locais passaram nesta revisão. A captura usa o modo local, sem dados de participantes; esse modo não compartilha votos entre dispositivos. O README explica a configuração do Supabase e os limites da identidade anônima.",
 
-    "recent.heading": "Projetos recentes",
     "recent.skills.react":
       "Enquetes, componentes e resultados com Supabase Realtime.",
 
-    "dioCyber.heading": "Bootcamp concluído",
+    "dioCyber.heading": "Bootcamp",
     "dioCyber.title": "Santander — Cibersegurança do Zero à Prática",
     "dioCyber.desc":
       "Bootcamp introdutório sobre proteção de sistemas e dados, identificação de vulnerabilidades e resposta a incidentes. A trilha aborda fundamentos de IA, Linux, Kali Linux, Medusa e Python.",
-    "dioCyber.progress": "100% concluído",
-    "dioCyber.updated": "Conclusão informada em 09/11/2026",
     "dioCyber.hours": "DIO · Santander · 37 horas",
     "dioCyber.started": "Iniciado em 19/10/2026",
 
@@ -84,7 +81,6 @@ const textos = {
     "p1.desc":
       "Portal acadêmico com projetos de pesquisa e extensão da UEG, filtros por categoria e acesso a materiais. Desenvolvido na extensão de Algoritmos e Lógica de Programação.",
     "nav.courses": "Formação",
-    "hero.ctaContact": "Entrar em contato",
     "hero.role": "Desenvolvedor Full Stack Júnior",
     "lpBlu.case.problem":
       "Orientar empresas e profissionais interessados em uma parceria até o cadastro e explicar as próximas etapas do atendimento.",
@@ -313,7 +309,16 @@ const textos = {
     "form.fillAll": "Preencha todos os campos.",
     "c9.title": "Bootcamp backend · Ada Tech",
     "dioCyber.status": "Concluído",
-    "dioCyber.certificates": "Ver os 32 certificados",
+    "dioCyber.certificates": "Explorar os 31 certificados da trilha",
+    "certificate.catalog": "Ver catálogo de certificados",
+    "dioCyber.search": "Buscar por assunto",
+    "dioCyber.example": "Ex.: Linux, Python, pentest",
+    "dioCyber.results": "Certificados encontrados",
+    "dioCyber.empty": "Nenhum certificado encontrado.",
+    "dioCyber.mainCertificate": "Ver certificado de conclusão",
+    "dioCyber.groupSecurity": "Segurança e pentest · 14",
+    "dioCyber.groupLinux": "Fundamentos, redes e Linux · 10",
+    "dioCyber.groupAI": "IA e agentes · 7",
   },
   fr: {
     "lab.title": "Laboratoire de cybersécurité · DIO",
@@ -352,16 +357,13 @@ const textos = {
     "recent.whoiswho.body2":
       "La vérification TypeScript, le build et 15 tests locaux ont réussi lors de cette révision. La capture utilise le mode local sans données de participants ; ce mode ne partage pas les votes entre appareils. Le README détaille la configuration Supabase et les limites de l’identité anonyme.",
 
-    "recent.heading": "Projets récents",
     "recent.skills.react":
       "Sondages, composants et résultats avec Supabase Realtime.",
 
-    "dioCyber.heading": "Bootcamp terminé",
+    "dioCyber.heading": "Bootcamp",
     "dioCyber.title": "Santander — Cybersécurité : de zéro à la pratique",
     "dioCyber.desc":
       "Bootcamp d’introduction à la protection des systèmes et des données, à l’identification des vulnérabilités et à la réponse aux incidents. Le parcours aborde les bases de l’IA, Linux, Kali Linux, Medusa et Python.",
-    "dioCyber.progress": "100 % terminé",
-    "dioCyber.updated": "Achèvement communiqué le 09/11/2026",
     "dioCyber.hours": "DIO · Santander · 37 heures",
     "dioCyber.started": "Commencé le 19/10/2026",
 
@@ -380,7 +382,6 @@ const textos = {
     "gallery.portalUEG.1": "Page d’un projet de recherche",
     "gallery.brillare2.0": "Catalogue de produits",
     "gallery.brillare2.1": "Filtre des bagues",
-    "hero.ctaContact": "Me contacter",
     "lpBlu.case.problem":
       "Guider les entreprises et les professionnels intéressés vers l’inscription et expliquer les prochaines étapes du partenariat.",
     "lpBlu.case.implementation":
@@ -774,7 +775,16 @@ const textos = {
     "guestbook.send": "Envoyer le commentaire",
     "footer.text": "Développé par Plínio Peixoto © 2026",
     "dioCyber.status": "Terminé",
-    "dioCyber.certificates": "Voir les 32 certificats",
+    "dioCyber.certificates": "Explorer les 31 certificats du parcours",
+    "certificate.catalog": "Voir le catalogue des certificats",
+    "dioCyber.search": "Rechercher par sujet",
+    "dioCyber.example": "Ex. : Linux, Python, pentest",
+    "dioCyber.results": "Certificats trouvés",
+    "dioCyber.empty": "Aucun certificat trouvé.",
+    "dioCyber.mainCertificate": "Voir le certificat de fin",
+    "dioCyber.groupSecurity": "Sécurité et tests d’intrusion · 14",
+    "dioCyber.groupLinux": "Bases, réseaux et Linux · 10",
+    "dioCyber.groupAI": "IA et agents · 7",
   },
 };
 

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Catálogo de certificados e comprovantes de Plínio Peixoto." />
+    <title>Certificados | Plínio Peixoto</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="certificados.css" />
+    <script type="module" src="certificados.js"></script>
+  </head>
+  <body class="certificate-page">
+    <main class="certificate-catalog">
+      <a class="certificate-btn catalog-back" href="index.html#cursos">
+        <span aria-hidden="true">←</span> Voltar ao portfólio
+      </a>
+      <h1>Certificados</h1>
+      <p>Certificações profissionais, bootcamps, cursos e comprovantes de projetos.</p>
+      <form class="catalog-filters" id="catalog-filters" hidden>
+        <label>Buscar <input type="search" name="query" placeholder="Ex.: Java, Linux, AWS" /></label>
+        <label>Instituição <select name="issuer"><option value="">Todas</option></select></label>
+        <label>Área <select name="theme"><option value="">Todas</option></select></label>
+        <label>Tipo <select name="kind"><option value="">Todos</option></select></label>
+        <label>Ordenar por
+          <select name="sort">
+            <option value="weight">Peso da credencial</option>
+            <option value="date">Data mais recente</option>
+            <option value="hours">Maior carga horária</option>
+            <option value="title">Título de A a Z</option>
+          </select>
+        </label>
+        <button type="reset" class="certificate-btn">Limpar filtros</button>
+      </form>
+      <p class="catalog-note">O peso segue o tipo de credencial: certificações profissionais, bootcamps, formações, projetos, módulos, cursos, mentorias e outros comprovantes. Datas e cargas horárias indisponíveis ficam por último na ordenação correspondente.</p>
+      <p id="catalog-status" role="status">Carregando certificados…</p>
+      <ul id="catalog-results" class="catalog-results" aria-label="Certificados"></ul>
+      <noscript>Ative o JavaScript para usar o catálogo ou consulte a <a href="index.html#cursos">seção Formação</a>.</noscript>
+    </main>
+  </body>
+</html>

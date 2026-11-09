@@ -1,0 +1,750 @@
+[
+  {
+    "title": "Engenharia de Software",
+    "issuer": "FIAP",
+    "theme": "Desenvolvimento",
+    "kind": "Formação",
+    "url": "assets/certificados/engDeSoftware.jpg",
+    "date": "",
+    "hours": 100,
+    "preview": "assets/certificados/previews/engdesoftware.webp"
+  },
+  {
+    "title": "Fundamentos de Computação em Nuvem",
+    "issuer": "FIAP",
+    "theme": "Nuvem e DevOps",
+    "kind": "Formação",
+    "url": "assets/certificados/cloud.png",
+    "date": "",
+    "hours": 80,
+    "preview": "assets/certificados/previews/cloud.webp"
+  },
+  {
+    "title": "Imersão Digital — DevOps",
+    "issuer": "Alura",
+    "theme": "Nuvem e DevOps",
+    "kind": "Formação",
+    "url": "assets/certificados/imersao.jpg",
+    "date": "",
+    "hours": 126,
+    "preview": "assets/certificados/previews/imersao.webp"
+  },
+  {
+    "title": "DevOps",
+    "issuer": "Alura",
+    "theme": "Nuvem e DevOps",
+    "kind": "Formação",
+    "url": "assets/certificados/devOps.jpg",
+    "date": "",
+    "hours": 69,
+    "preview": "assets/certificados/previews/devops.webp"
+  },
+  {
+    "title": "Cursos e trilhas Alura",
+    "issuer": "Alura",
+    "theme": "Desenvolvimento",
+    "kind": "Formação",
+    "url": "assets/certificados/CertificadoAlura.pdf",
+    "date": "2026-04-06",
+    "hours": 200,
+    "preview": "assets/certificados/previews/certificadoalura-1.webp"
+  },
+  {
+    "title": "Inglês Britânico",
+    "issuer": "British Council",
+    "theme": "Idiomas",
+    "kind": "Formação",
+    "url": "assets/certificados/inglesBritanico.pdf",
+    "date": "",
+    "hours": 216,
+    "preview": "assets/certificados/previews/inglesbritanico-1.webp"
+  },
+  {
+    "title": "Bootcamp backend",
+    "issuer": "Ada Tech",
+    "theme": "Desenvolvimento",
+    "kind": "Bootcamp",
+    "url": "assets/certificados/adaTech.jpg",
+    "date": "",
+    "hours": 19,
+    "preview": "assets/certificados/previews/adatech.webp"
+  },
+  {
+    "title": "AWS Lambda Foundations",
+    "issuer": "AWS",
+    "theme": "Nuvem e DevOps",
+    "kind": "Curso",
+    "url": "assets/certificados/awsLambda.jpg",
+    "date": "",
+    "hours": null,
+    "preview": "assets/certificados/previews/awslambda.webp"
+  },
+  {
+    "title": "Claude Platform 101",
+    "issuer": "Anthropic",
+    "theme": "IA",
+    "kind": "Curso",
+    "url": "assets/certificados/claude.png",
+    "date": "",
+    "hours": null,
+    "preview": "assets/certificados/previews/claude.webp"
+  },
+  {
+    "title": "Sensibilização para a Segurança Digital",
+    "issuer": "Cisco / IFG",
+    "theme": "Cibersegurança",
+    "kind": "Curso",
+    "url": "assets/certificados/cisco.jpg",
+    "date": "",
+    "hours": null,
+    "preview": "assets/certificados/previews/cisco.webp"
+  },
+  {
+    "title": "AWS Cloud Practitioner",
+    "issuer": "AWS",
+    "theme": "Nuvem e DevOps",
+    "kind": "Certificação profissional",
+    "url": "",
+    "date": "",
+    "hours": null
+  },
+  {
+    "title": "CPA-20",
+    "issuer": "ANBIMA",
+    "theme": "Finanças",
+    "kind": "Certificação profissional",
+    "url": "",
+    "date": "",
+    "hours": null
+  },
+  {
+    "title": "Modelando o iPhone com UML: Funções de Músicas, Chamadas e Internet",
+    "issuer": "DIO",
+    "theme": "Desenvolvimento",
+    "kind": "Projeto",
+    "url": "assets/certificados/dio-certificados.pdf#page=1",
+    "date": "2024-08-06",
+    "hours": 2,
+    "preview": "assets/certificados/previews/dio-certificados-1.webp"
+  },
+  {
+    "title": "Criando Um Pequeno Sistema Para Validação de Processo Seletivo",
+    "issuer": "DIO",
+    "theme": "Desenvolvimento",
+    "kind": "Projeto",
+    "url": "assets/certificados/dio-certificados.pdf#page=2",
+    "date": "2024-07-21",
+    "hours": 1,
+    "preview": "assets/certificados/previews/dio-certificados-2.webp"
+  },
+  {
+    "title": "Simulando Uma Conta Bancária Através Do Terminal/Console",
+    "issuer": "DIO",
+    "theme": "Desenvolvimento",
+    "kind": "Projeto",
+    "url": "assets/certificados/dio-certificados.pdf#page=3",
+    "date": "2024-07-16",
+    "hours": 1,
+    "preview": "assets/certificados/previews/dio-certificados-3.webp"
+  },
+  {
+    "title": "Praticando Sua Abstração no Domínio Bancário",
+    "issuer": "DIO",
+    "theme": "Desenvolvimento",
+    "kind": "Módulo",
+    "url": "assets/certificados/dio-certificados.pdf#page=4",
+    "date": "2024-08-07",
+    "hours": 5,
+    "preview": "assets/certificados/previews/dio-certificados-4.webp"
+  },
+  {
+    "title": "Ganhando Produtividade com Stream API",
+    "issuer": "DIO",
+    "theme": "Desenvolvimento",
+    "kind": "Curso",
+    "url": "assets/certificados/dio-certificados.pdf#page=5",
+    "date": "2024-08-04",
+    "hours": 2,
+    "preview": "assets/certificados/previews/dio-certificados-5.webp"
+  },
+  {
+    "title": "Conhecendo Collections Java",
+    "issuer": "DIO",
+    "theme": "Desenvolvimento",
+    "kind": "Curso",
+    "url": "assets/certificados/dio-certificados.pdf#page=6",
+    "date": "2024-08-01",
+    "hours": 4,
+    "preview": "assets/certificados/previews/dio-certificados-6.webp"
+  },
+  {
+    "title": "Programação Orientada a Objetos com Java",
+    "issuer": "DIO",
+    "theme": "Desenvolvimento",
+    "kind": "Módulo",
+    "url": "assets/certificados/dio-certificados.pdf#page=7",
+    "date": "2024-08-06",
+    "hours": 13,
+    "preview": "assets/certificados/previews/dio-certificados-7.webp"
+  },
+  {
+    "title": "Pilares da Programação Orientada a Objetos em Java",
+    "issuer": "DIO",
+    "theme": "Desenvolvimento",
+    "kind": "Curso",
+    "url": "assets/certificados/dio-certificados.pdf#page=8",
+    "date": "2024-07-28",
+    "hours": 2,
+    "preview": "assets/certificados/previews/dio-certificados-8.webp"
+  },
+  {
+    "title": "Fundamentos da Programação Orientada a Objetos com Java",
+    "issuer": "DIO",
+    "theme": "Desenvolvimento",
+    "kind": "Curso",
+    "url": "assets/certificados/dio-certificados.pdf#page=9",
+    "date": "2024-07-26",
+    "hours": 3,
+    "preview": "assets/certificados/previews/dio-certificados-9.webp"
+  },
+  {
+    "title": "Java e Tratamento de Exceções",
+    "issuer": "DIO",
+    "theme": "Desenvolvimento",
+    "kind": "Curso",
+    "url": "assets/certificados/dio-certificados.pdf#page=10",
+    "date": "2024-07-19",
+    "hours": 1,
+    "preview": "assets/certificados/previews/dio-certificados-10.webp"
+  },
+  {
+    "title": "Introdução a Banco de Dados NoSQL",
+    "issuer": "DIO",
+    "theme": "Desenvolvimento",
+    "kind": "Curso",
+    "url": "assets/certificados/dio-certificados.pdf#page=11",
+    "date": "2024-08-12",
+    "hours": 3,
+    "preview": "assets/certificados/previews/dio-certificados-11.webp"
+  },
+  {
+    "title": "Introdução a Banco de Dados Relacionais (SQL)",
+    "issuer": "DIO",
+    "theme": "Desenvolvimento",
+    "kind": "Curso",
+    "url": "assets/certificados/dio-certificados.pdf#page=12",
+    "date": "2024-08-09",
+    "hours": 3,
+    "preview": "assets/certificados/previews/dio-certificados-12.webp"
+  },
+  {
+    "title": "Primeiros Passos em SQL e NoSQL",
+    "issuer": "DIO",
+    "theme": "Desenvolvimento",
+    "kind": "Módulo",
+    "url": "assets/certificados/dio-certificados.pdf#page=13",
+    "date": "2024-08-12",
+    "hours": 6,
+    "preview": "assets/certificados/previews/dio-certificados-13.webp"
+  },
+  {
+    "title": "Contribuindo em um Projeto Open Source no GitHub",
+    "issuer": "DIO",
+    "theme": "Desenvolvimento",
+    "kind": "Projeto",
+    "url": "assets/certificados/dio-certificados.pdf#page=14",
+    "date": "2024-07-30",
+    "hours": 1,
+    "preview": "assets/certificados/previews/dio-certificados-14.webp"
+  },
+  {
+    "title": "Versionamento de Código com Git e GitHub",
+    "issuer": "DIO",
+    "theme": "Desenvolvimento",
+    "kind": "Curso",
+    "url": "assets/certificados/dio-certificados.pdf#page=15",
+    "date": "2024-07-29",
+    "hours": 2,
+    "preview": "assets/certificados/previews/dio-certificados-15.webp"
+  },
+  {
+    "title": "Princípios de Desenvolvimento de Software",
+    "issuer": "DIO",
+    "theme": "Desenvolvimento",
+    "kind": "Módulo",
+    "url": "assets/certificados/dio-certificados.pdf#page=16",
+    "date": "2024-07-30",
+    "hours": 6,
+    "preview": "assets/certificados/previews/dio-certificados-16.webp"
+  },
+  {
+    "title": "Desafios de Projetos: Crie Um Portfólio Vencedor",
+    "issuer": "DIO",
+    "theme": "Desenvolvimento",
+    "kind": "Curso",
+    "url": "assets/certificados/dio-certificados.pdf#page=17",
+    "date": "2024-07-29",
+    "hours": 1,
+    "preview": "assets/certificados/previews/dio-certificados-17.webp"
+  },
+  {
+    "title": "Desafios de Código: Aperfeiçoe Sua Lógica e Pensamento Computacional",
+    "issuer": "DIO",
+    "theme": "Desenvolvimento",
+    "kind": "Curso",
+    "url": "assets/certificados/dio-certificados.pdf#page=18",
+    "date": "2024-07-21",
+    "hours": 1,
+    "preview": "assets/certificados/previews/dio-certificados-18.webp"
+  },
+  {
+    "title": "Resolvendo Seus Primeiros Desafios de Código",
+    "issuer": "DIO",
+    "theme": "Desenvolvimento",
+    "kind": "Módulo",
+    "url": "assets/certificados/dio-certificados.pdf#page=19",
+    "date": "2024-07-23",
+    "hours": 6,
+    "preview": "assets/certificados/previews/dio-certificados-19.webp"
+  },
+  {
+    "title": "Estruturas de Repetição em Java",
+    "issuer": "DIO",
+    "theme": "Desenvolvimento",
+    "kind": "Curso",
+    "url": "assets/certificados/dio-certificados.pdf#page=20",
+    "date": "2024-07-18",
+    "hours": 1,
+    "preview": "assets/certificados/previews/dio-certificados-20.webp"
+  },
+  {
+    "title": "Introdução e Estruturas Condicionais com Java",
+    "issuer": "DIO",
+    "theme": "Desenvolvimento",
+    "kind": "Curso",
+    "url": "assets/certificados/dio-certificados.pdf#page=21",
+    "date": "2024-07-17",
+    "hours": 1,
+    "preview": "assets/certificados/previews/dio-certificados-21.webp"
+  },
+  {
+    "title": "Aprendendo a Sintaxe Java",
+    "issuer": "DIO",
+    "theme": "Desenvolvimento",
+    "kind": "Curso",
+    "url": "assets/certificados/dio-certificados.pdf#page=22",
+    "date": "2024-07-14",
+    "hours": 5,
+    "preview": "assets/certificados/previews/dio-certificados-22.webp"
+  },
+  {
+    "title": "Conhecendo a Linguagem de Programação Java",
+    "issuer": "DIO",
+    "theme": "Desenvolvimento",
+    "kind": "Módulo",
+    "url": "assets/certificados/dio-certificados.pdf#page=23",
+    "date": "2024-07-21",
+    "hours": 12,
+    "preview": "assets/certificados/previews/dio-certificados-23.webp"
+  },
+  {
+    "title": "Comprovante DIO — página 24",
+    "issuer": "DIO",
+    "theme": "Desenvolvimento",
+    "kind": "Comprovante",
+    "url": "assets/certificados/dio-certificados.pdf#page=24",
+    "date": "",
+    "hours": null,
+    "preview": "assets/certificados/previews/dio-certificados-24.webp"
+  },
+  {
+    "title": "Ambiente de Desenvolvimento Java",
+    "issuer": "DIO",
+    "theme": "Desenvolvimento",
+    "kind": "Curso",
+    "url": "assets/certificados/dio-certificados.pdf#page=25",
+    "date": "2024-07-03",
+    "hours": 1,
+    "preview": "assets/certificados/previews/dio-certificados-25.webp"
+  },
+  {
+    "title": "Introdução à Plataforma Java",
+    "issuer": "DIO",
+    "theme": "Desenvolvimento",
+    "kind": "Curso",
+    "url": "assets/certificados/dio-certificados.pdf#page=26",
+    "date": "2024-07-02",
+    "hours": 1,
+    "preview": "assets/certificados/previews/dio-certificados-26.webp"
+  },
+  {
+    "title": "Comprovante DIO — página 27",
+    "issuer": "DIO",
+    "theme": "Desenvolvimento",
+    "kind": "Comprovante",
+    "url": "assets/certificados/dio-certificados.pdf#page=27",
+    "date": "",
+    "hours": null,
+    "preview": "assets/certificados/previews/dio-certificados-27.webp"
+  },
+  {
+    "title": "Organizando seus Estudos com os Roadmaps DIO e o Notion",
+    "issuer": "DIO",
+    "theme": "Desenvolvimento",
+    "kind": "Curso",
+    "url": "assets/certificados/dio-certificados.pdf#page=28",
+    "date": "2024-07-22",
+    "hours": 2,
+    "preview": "assets/certificados/previews/dio-certificados-28.webp"
+  },
+  {
+    "title": "Aula Inaugural - Santander Bootcamps 2023",
+    "issuer": "DIO",
+    "theme": "Desenvolvimento",
+    "kind": "Mentoria",
+    "url": "assets/certificados/dio-certificados.pdf#page=29",
+    "date": "2024-07-01",
+    "hours": 2,
+    "preview": "assets/certificados/previews/dio-certificados-29.webp"
+  },
+  {
+    "title": "Bootcamps DIO: Educação Gratuita e Empregabilidade Juntas!",
+    "issuer": "DIO",
+    "theme": "Desenvolvimento",
+    "kind": "Curso",
+    "url": "assets/certificados/dio-certificados.pdf#page=30",
+    "date": "2024-07-01",
+    "hours": 1,
+    "preview": "assets/certificados/previews/dio-certificados-30.webp"
+  },
+  {
+    "title": "Prepare-se Para a Jornada (Onboarding)",
+    "issuer": "DIO",
+    "theme": "Desenvolvimento",
+    "kind": "Módulo",
+    "url": "assets/certificados/dio-certificados.pdf#page=31",
+    "date": "2024-07-01",
+    "hours": 3,
+    "preview": "assets/certificados/previews/dio-certificados-31.webp"
+  },
+  {
+    "title": "Santander — Cibersegurança do Zero à Prática",
+    "issuer": "DIO / Santander",
+    "theme": "Cibersegurança",
+    "kind": "Bootcamp",
+    "url": "assets/cyber/01%20-%20Santander%20-%20Ciberseguranca%20do%20Zero%20a%20Pratica.pdf",
+    "date": "2026-11-09",
+    "hours": 37,
+    "preview": "assets/certificados/previews/santander-cyber.webp"
+  },
+  {
+    "title": "GuardAI - Agente de Ciberseguranca",
+    "issuer": "DIO / Santander",
+    "theme": "Cibersegurança",
+    "kind": "Projeto",
+    "url": "assets/cyber/02%20-%20GuardAI%20-%20Agente%20de%20Ciberseguranca.pdf",
+    "date": "",
+    "hours": null,
+    "preview": "assets/certificados/previews/cyber-02.webp"
+  },
+  {
+    "title": "Projeto Final - Solucao Inteligente com Agentes de IA",
+    "issuer": "DIO / Santander",
+    "theme": "IA",
+    "kind": "Projeto",
+    "url": "assets/cyber/03%20-%20Projeto%20Final%20-%20Solucao%20Inteligente%20com%20Agentes%20de%20IA.pdf",
+    "date": "",
+    "hours": null,
+    "preview": "assets/certificados/previews/cyber-03.webp"
+  },
+  {
+    "title": "Simulacao de Malware em Python",
+    "issuer": "DIO / Santander",
+    "theme": "Cibersegurança",
+    "kind": "Projeto",
+    "url": "assets/cyber/04%20-%20Simulacao%20de%20Malware%20em%20Python.pdf",
+    "date": "",
+    "hours": null,
+    "preview": "assets/certificados/previews/cyber-04.webp"
+  },
+  {
+    "title": "Analise e Protecao Contra Ataques Ciberneticos",
+    "issuer": "DIO / Santander",
+    "theme": "Cibersegurança",
+    "kind": "Comprovante",
+    "url": "assets/cyber/05%20-%20Analise%20e%20Protecao%20Contra%20Ataques%20Ciberneticos.pdf",
+    "date": "",
+    "hours": null,
+    "preview": "assets/certificados/previews/cyber-05.webp"
+  },
+  {
+    "title": "Man in the Middle",
+    "issuer": "DIO / Santander",
+    "theme": "Cibersegurança",
+    "kind": "Comprovante",
+    "url": "assets/cyber/06%20-%20Man%20in%20the%20Middle.pdf",
+    "date": "",
+    "hours": null,
+    "preview": "assets/certificados/previews/cyber-06.webp"
+  },
+  {
+    "title": "Pos-Exploracao em Sistemas Comprometidos",
+    "issuer": "DIO / Santander",
+    "theme": "Cibersegurança",
+    "kind": "Comprovante",
+    "url": "assets/cyber/07%20-%20Pos-Exploracao%20em%20Sistemas%20Comprometidos.pdf",
+    "date": "",
+    "hours": null,
+    "preview": "assets/certificados/previews/cyber-07.webp"
+  },
+  {
+    "title": "Tecnicas de Exploracao de Vulnerabilidades",
+    "issuer": "DIO / Santander",
+    "theme": "Cibersegurança",
+    "kind": "Comprovante",
+    "url": "assets/cyber/08%20-%20Tecnicas%20de%20Exploracao%20de%20Vulnerabilidades.pdf",
+    "date": "",
+    "hours": null,
+    "preview": "assets/certificados/previews/cyber-08.webp"
+  },
+  {
+    "title": "Brute Force com Medusa e Kali Linux",
+    "issuer": "DIO / Santander",
+    "theme": "Cibersegurança",
+    "kind": "Comprovante",
+    "url": "assets/cyber/09%20-%20Brute%20Force%20com%20Medusa%20e%20Kali%20Linux.pdf",
+    "date": "",
+    "hours": null,
+    "preview": "assets/certificados/previews/cyber-09.webp"
+  },
+  {
+    "title": "Pentest e Analise de Vulnerabilidades",
+    "issuer": "DIO / Santander",
+    "theme": "Cibersegurança",
+    "kind": "Comprovante",
+    "url": "assets/cyber/10%20-%20Pentest%20e%20Analise%20de%20Vulnerabilidades.pdf",
+    "date": "",
+    "hours": null,
+    "preview": "assets/certificados/previews/cyber-10.webp"
+  },
+  {
+    "title": "Enumeracao e Exploracao de Vulnerabilidades",
+    "issuer": "DIO / Santander",
+    "theme": "Cibersegurança",
+    "kind": "Comprovante",
+    "url": "assets/cyber/11%20-%20Enumeracao%20e%20Exploracao%20de%20Vulnerabilidades.pdf",
+    "date": "",
+    "hours": null,
+    "preview": "assets/certificados/previews/cyber-11.webp"
+  },
+  {
+    "title": "Varredura de Rede",
+    "issuer": "DIO / Santander",
+    "theme": "Cibersegurança",
+    "kind": "Comprovante",
+    "url": "assets/cyber/12%20-%20Varredura%20de%20Rede.pdf",
+    "date": "",
+    "hours": null,
+    "preview": "assets/certificados/previews/cyber-12.webp"
+  },
+  {
+    "title": "Engenharia Social",
+    "issuer": "DIO / Santander",
+    "theme": "Cibersegurança",
+    "kind": "Comprovante",
+    "url": "assets/cyber/13%20-%20Engenharia%20Social.pdf",
+    "date": "",
+    "hours": null,
+    "preview": "assets/certificados/previews/cyber-13.webp"
+  },
+  {
+    "title": "Coleta e Analise de Seguranca Cibernetica",
+    "issuer": "DIO / Santander",
+    "theme": "Cibersegurança",
+    "kind": "Comprovante",
+    "url": "assets/cyber/14%20-%20Coleta%20e%20Analise%20de%20Seguranca%20Cibernetica.pdf",
+    "date": "",
+    "hours": null,
+    "preview": "assets/certificados/previews/cyber-14.webp"
+  },
+  {
+    "title": "Fundamentos de Pentest",
+    "issuer": "DIO / Santander",
+    "theme": "Cibersegurança",
+    "kind": "Comprovante",
+    "url": "assets/cyber/15%20-%20Fundamentos%20de%20Pentest.pdf",
+    "date": "",
+    "hours": null,
+    "preview": "assets/certificados/previews/cyber-15.webp"
+  },
+  {
+    "title": "Fundamentos de Ciberseguranca",
+    "issuer": "DIO / Santander",
+    "theme": "Cibersegurança",
+    "kind": "Comprovante",
+    "url": "assets/cyber/16%20-%20Fundamentos%20de%20Ciberseguranca.pdf",
+    "date": "",
+    "hours": null,
+    "preview": "assets/certificados/previews/cyber-16.webp"
+  },
+  {
+    "title": "Deep Web e Anonimato",
+    "issuer": "DIO / Santander",
+    "theme": "Cibersegurança",
+    "kind": "Comprovante",
+    "url": "assets/cyber/17%20-%20Deep%20Web%20e%20Anonimato.pdf",
+    "date": "",
+    "hours": null,
+    "preview": "assets/certificados/previews/cyber-17.webp"
+  },
+  {
+    "title": "Fundamentos de Redes",
+    "issuer": "DIO / Santander",
+    "theme": "Linux e Redes",
+    "kind": "Comprovante",
+    "url": "assets/cyber/18%20-%20Fundamentos%20de%20Redes.pdf",
+    "date": "",
+    "hours": null,
+    "preview": "assets/certificados/previews/cyber-18.webp"
+  },
+  {
+    "title": "Sistemas Operacionais e Maquinas Virtuais",
+    "issuer": "DIO / Santander",
+    "theme": "Linux e Redes",
+    "kind": "Comprovante",
+    "url": "assets/cyber/19%20-%20Sistemas%20Operacionais%20e%20Maquinas%20Virtuais.pdf",
+    "date": "",
+    "hours": null,
+    "preview": "assets/certificados/previews/cyber-19.webp"
+  },
+  {
+    "title": "Principios da Ciberseguranca",
+    "issuer": "DIO / Santander",
+    "theme": "Cibersegurança",
+    "kind": "Comprovante",
+    "url": "assets/cyber/20%20-%20Principios%20da%20Ciberseguranca.pdf",
+    "date": "",
+    "hours": null,
+    "preview": "assets/certificados/previews/cyber-20.webp"
+  },
+  {
+    "title": "Linux e Maquinas Virtuais",
+    "issuer": "DIO / Santander",
+    "theme": "Linux e Redes",
+    "kind": "Comprovante",
+    "url": "assets/cyber/21%20-%20Linux%20e%20Maquinas%20Virtuais.pdf",
+    "date": "",
+    "hours": null,
+    "preview": "assets/certificados/previews/cyber-21.webp"
+  },
+  {
+    "title": "Gerenciando Usuarios no Linux",
+    "issuer": "DIO / Santander",
+    "theme": "Linux e Redes",
+    "kind": "Comprovante",
+    "url": "assets/cyber/22%20-%20Gerenciando%20Usuarios%20no%20Linux.pdf",
+    "date": "",
+    "hours": null,
+    "preview": "assets/certificados/previews/cyber-22.webp"
+  },
+  {
+    "title": "Manipulando Arquivos no Linux",
+    "issuer": "DIO / Santander",
+    "theme": "Linux e Redes",
+    "kind": "Comprovante",
+    "url": "assets/cyber/23%20-%20Manipulando%20Arquivos%20no%20Linux.pdf",
+    "date": "",
+    "hours": null,
+    "preview": "assets/certificados/previews/cyber-23.webp"
+  },
+  {
+    "title": "Acesso Remoto a Maquinas Linux",
+    "issuer": "DIO / Santander",
+    "theme": "Linux e Redes",
+    "kind": "Comprovante",
+    "url": "assets/cyber/24%20-%20Acesso%20Remoto%20a%20Maquinas%20Linux.pdf",
+    "date": "",
+    "hours": null,
+    "preview": "assets/certificados/previews/cyber-24.webp"
+  },
+  {
+    "title": "Instalando o Linux",
+    "issuer": "DIO / Santander",
+    "theme": "Linux e Redes",
+    "kind": "Comprovante",
+    "url": "assets/cyber/25%20-%20Instalando%20o%20Linux.pdf",
+    "date": "",
+    "hours": null,
+    "preview": "assets/certificados/previews/cyber-25.webp"
+  },
+  {
+    "title": "Introducao ao Linux",
+    "issuer": "DIO / Santander",
+    "theme": "Linux e Redes",
+    "kind": "Comprovante",
+    "url": "assets/cyber/26%20-%20Introducao%20ao%20Linux.pdf",
+    "date": "",
+    "hours": null,
+    "preview": "assets/certificados/previews/cyber-26.webp"
+  },
+  {
+    "title": "Jornada com IA e Agentes",
+    "issuer": "DIO / Santander",
+    "theme": "IA",
+    "kind": "Comprovante",
+    "url": "assets/cyber/27%20-%20Jornada%20com%20IA%20e%20Agentes.pdf",
+    "date": "",
+    "hours": null,
+    "preview": "assets/certificados/previews/cyber-27.webp"
+  },
+  {
+    "title": "DIO Agent",
+    "issuer": "DIO / Santander",
+    "theme": "IA",
+    "kind": "Comprovante",
+    "url": "assets/cyber/28%20-%20DIO%20Agent.pdf",
+    "date": "",
+    "hours": null,
+    "preview": "assets/certificados/previews/cyber-28.webp"
+  },
+  {
+    "title": "Engenharia de Prompts",
+    "issuer": "DIO / Santander",
+    "theme": "IA",
+    "kind": "Comprovante",
+    "url": "assets/cyber/29%20-%20Engenharia%20de%20Prompts.pdf",
+    "date": "",
+    "hours": null,
+    "preview": "assets/certificados/previews/cyber-29.webp"
+  },
+  {
+    "title": "Estudos e Carreira com IA",
+    "issuer": "DIO / Santander",
+    "theme": "IA",
+    "kind": "Comprovante",
+    "url": "assets/cyber/30%20-%20Estudos%20e%20Carreira%20com%20IA.pdf",
+    "date": "",
+    "hours": null,
+    "preview": "assets/certificados/previews/cyber-30.webp"
+  },
+  {
+    "title": "Fundamentos da IA Moderna",
+    "issuer": "DIO / Santander",
+    "theme": "IA",
+    "kind": "Comprovante",
+    "url": "assets/cyber/31%20-%20Fundamentos%20da%20IA%20Moderna.pdf",
+    "date": "",
+    "hours": null,
+    "preview": "assets/certificados/previews/cyber-31.webp"
+  },
+  {
+    "title": "Boas-vindas ao Bootcamp",
+    "issuer": "DIO / Santander",
+    "theme": "Cibersegurança",
+    "kind": "Comprovante",
+    "url": "assets/cyber/32%20-%20Boas-vindas%20ao%20Bootcamp.pdf",
+    "date": "",
+    "hours": null,
+    "preview": "assets/certificados/previews/cyber-32.webp"
+  }
+]

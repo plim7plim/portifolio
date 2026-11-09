@@ -4,6 +4,27 @@ import { initI18n, t } from "./i18n.js";
 initI18n();
 initProjectGalleries(t);
 
+const certificateSearch = document.getElementById("cyber-search");
+const certificateResults = document.getElementById("cyber-results");
+const certificateEmpty = document.getElementById("cyber-empty");
+const certificateGroups = document.querySelectorAll("#course-dio-cybersecurity .cyber-group");
+const certificateItems = [...document.querySelectorAll(".cyber-group .cyber-certificates > li")];
+const normalizeCertificateText = (text) =>
+  text.normalize("NFD").replace(/\p{M}/gu, "").toLowerCase();
+
+certificateSearch.parentElement.hidden = false;
+certificateSearch.addEventListener("input", () => {
+  const query = normalizeCertificateText(certificateSearch.value.trim());
+  const matches = query
+    ? certificateItems.filter((item) => normalizeCertificateText(item.textContent).includes(query))
+    : [];
+
+  certificateGroups.forEach((group) => { group.hidden = Boolean(query); });
+  certificateResults.replaceChildren(...matches.map((item) => item.cloneNode(true)));
+  certificateResults.hidden = matches.length === 0;
+  certificateEmpty.hidden = !query || matches.length > 0;
+});
+
 const button = document.getElementById("themeButton");
 const iconSun = document.getElementById("iconSun");
 const iconMoon = document.getElementById("iconMoon");

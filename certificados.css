@@ -1,0 +1,113 @@
+.certificate-catalog {
+  width: min(100% - 2rem, 72rem);
+  margin: 0 auto;
+  padding: clamp(2rem, 6vw, 5rem) 0;
+}
+.certificate-catalog h1 {
+  margin-top: 1rem;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+.certificate-catalog p,
+.catalog-card span {
+  color: var(--text2);
+}
+.certificate-catalog a {
+  color: var(--primary);
+}
+.catalog-filters,
+.catalog-results {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+}
+.catalog-filters {
+  margin-block: 1.5rem 0.75rem;
+  align-items: end;
+}
+.catalog-filters label {
+  display: grid;
+  gap: 0.375rem;
+  font-size: 0.875rem;
+}
+.catalog-filters :is(input, select, button) {
+  width: 100%;
+  min-height: 44px;
+  padding: 0.625rem;
+  color: var(--text);
+  background: var(--raised);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  font: inherit;
+}
+.catalog-note {
+  max-width: 75ch;
+  font-size: 0.875rem;
+}
+#catalog-status {
+  margin-block: 1.5rem 0.75rem;
+}
+.catalog-results {
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr));
+  list-style: none;
+  padding: 0;
+}
+.catalog-card {
+  gap: 0.625rem;
+}
+.catalog-card h2 {
+  margin: 0;
+  font-size: 1.125rem;
+}
+.catalog-card .catalog-proof,
+.catalog-card > span:last-child {
+  margin-top: auto;
+}
+
+.catalog-preview {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  padding: 4px;
+  background: #fff;
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+}
+
+.catalog-card .catalog-proof {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 44px;
+  padding-inline: 0.75rem;
+  color: var(--text);
+  border-color: var(--primary);
+  text-decoration: none;
+}
+.catalog-card .catalog-proof:hover,
+.catalog-card .catalog-proof:focus-visible {
+  background: color-mix(in srgb, var(--primary) 20%, var(--raised));
+}
+.catalog-proof span {
+  color: var(--primary);
+  font-size: 1rem;
+}
+
+.certificate-catalog .catalog-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 44px;
+  padding-inline: 0.875rem;
+  color: var(--text);
+  text-decoration: none;
+}
+.catalog-back span {
+  color: var(--primary);
+  font-size: 1rem;
+}
+.catalog-back:hover,
+.catalog-back:focus-visible {
+  border-color: var(--primary);
+}
