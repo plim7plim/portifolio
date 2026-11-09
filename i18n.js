@@ -10,6 +10,13 @@ const STORAGE_KEY = "idioma";
 
 const textos = {
   pt: {
+    "lab.title": "Laboratório de cibersegurança · DIO",
+    "lab.desc":
+      "Desafio guiado da DIO em laboratório local isolado: identificação de serviços, testes de credenciais com Medusa e enumeração SMB em uma VM Metasploitable 2. O relatório distingue os resultados confirmados dos testes HTTP inconclusivos.",
+    "lab.preview":
+      "Captura real da listagem de compartilhamentos SMB no Kali Linux.",
+    "lab.kind": "Estudo guiado · DIO",
+
     "gallery.appUEG.2": "Busca por nome",
     "photos.ueg2":
       "Calculadora acadêmica real, executada a partir do código do repositório.",
@@ -224,7 +231,7 @@ const textos = {
     "audit.credentialProof":
       "Comprovante ainda não disponibilizado neste portfólio.",
     "audit.credentialDone": "Certificação concluída",
-    "audit.otherProjects": "Explorar os outros 11 projetos",
+    "audit.otherProjects": "Explorar os outros 12 projetos",
     "update.2":
       "Projetos selecionados com contexto, decisões técnicas e links para demonstração ou código. Outros trabalhos estão disponíveis ao final da seleção.",
     "audit.open.metasDiarias": "Abrir Metas",
@@ -307,6 +314,13 @@ const textos = {
     "c9.title": "Bootcamp backend · Ada Tech",
   },
   fr: {
+    "lab.title": "Laboratoire de cybersécurité · DIO",
+    "lab.desc":
+      "Exercice guidé DIO en laboratoire local isolé : identification des services, tests d’authentification avec Medusa et énumération SMB sur une VM Metasploitable 2. Le rapport distingue les résultats confirmés des tests HTTP non concluants.",
+    "lab.preview":
+      "Capture réelle de la liste des partages SMB sous Kali Linux.",
+    "lab.kind": "Exercice guidé · DIO",
+
     "gallery.appUEG.2": "Recherche par nom",
     "photos.ueg2":
       "Calculatrice universitaire réelle, exécutée depuis le code du dépôt.",
@@ -503,7 +517,7 @@ const textos = {
     "audit.credentialProof":
       "Justificatif non encore publié dans ce portfolio.",
     "audit.credentialDone": "Certification obtenue",
-    "audit.otherProjects": "Explorer les 11 autres projets",
+    "audit.otherProjects": "Explorer les 12 autres projets",
     "audit.open.metasDiarias": "Ouvrir Metas",
     "audit.preview.metasDiarias": "Aperçu de l’interface de Metas",
     "audit.open.botIA": "Ouvrir Bot IA",

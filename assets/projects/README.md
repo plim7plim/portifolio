@@ -45,3 +45,8 @@ Authenticated browser captures of the current interface, using the user-provided
 - mural-colegas-20261104.webp: https://app-ueg.vercel.app/colegas.html (by entry year).
 - mural-perfil-20261104.webp: the portfolio owner’s own profile, reached from the colleagues page.
 - mural-busca-20261104.webp: colleagues search filtered to the portfolio owner.
+
+## Revisão de 2026-11-09
+
+- dio-medusa-smb.webp: evidência original do [laboratório DIO](https://github.com/plim7plim/desafio-medusa-kali/tree/cff7630), otimizada para o portfólio.
+- Revisados também programacaoWebueg (e6e10b8), ueg2 (f106657) e appUEG (e78cd1e). Exercícios complementares e atualização do Mural não exigiram novos cards.
