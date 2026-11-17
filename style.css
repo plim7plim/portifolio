@@ -772,10 +772,12 @@ footer {
 }
 
 /* Section bands extend beyond the content column. */
+main {
+  isolation: isolate;
+}
 .about,
 .projects {
   position: relative;
-  isolation: isolate;
 }
 .about::before,
 .projects::before {
@@ -2323,6 +2325,7 @@ main > section {
   display: none;
   position: absolute;
   inset: 0;
+  z-index: 2;
   pointer-events: none;
 }
 .oikawa-scattered .oikawa-scatter {
@@ -2338,13 +2341,20 @@ main > section {
   border: 3px solid var(--surface);
   box-shadow: 0 3px 10px #14262920;
   rotate: var(--photo-angle);
-  animation: page-enter 350ms var(--ease) backwards;
-  animation-delay: var(--photo-delay);
+  opacity: 0;
+  transform: translateX(var(--photo-enter, -20px)) translateY(8px) scale(0.94);
+  transition: opacity 650ms var(--ease), transform 750ms var(--ease);
+  transition-delay: var(--photo-delay);
 }
 .oikawa-scatter img[data-side="left"] {
   right: calc(100% + var(--photo-edge));
 }
+.oikawa-scatter img.photo-ready.photo-visible {
+  opacity: 1;
+  transform: none;
+}
 .oikawa-scatter img[data-side="right"] {
+  --photo-enter: 20px;
   left: calc(100% + var(--photo-edge));
 }
 .oikawa-scatter img[data-shape="soft"] { border-radius: 18px; }
@@ -2353,8 +2363,7 @@ main > section {
 .oikawa-close {
   position: absolute;
   bottom: max(1rem, env(safe-area-inset-bottom));
-  left: 50%;
-  translate: -50% 0;
+  right: 24px;
   white-space: nowrap;
   pointer-events: auto;
   box-shadow: 0 4px 24px #14262940;
@@ -2369,7 +2378,11 @@ main > section {
   pointer-events: auto;
 }
 @media (prefers-reduced-motion: reduce) {
-  .oikawa-scatter img { animation: none; }
+  .oikawa-scatter img {
+    animation: none;
+    transition: none;
+    transform: none;
+  }
 }
 /* The inward edge dissolves where illustrations cross into the reading column. */
 .oikawa-scatter img {
@@ -2441,4 +2454,10 @@ html:has(.oikawa-scattered) {
   color: var(--text2);
   font-size: 0.8125rem;
   letter-spacing: 0.01em;
+}
+
+@media (max-width: 760px) {
+  .oikawa-scatter img[data-animated] {
+    width: clamp(110px, calc(var(--photo-size) * 0.8), 160px);
+  }
 }
