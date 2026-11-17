@@ -98,6 +98,7 @@ const textos = {
     "lpBlu.form": "Formulário de parceiros",
     "lpBlu.responsive": "Design responsivo",
 
+    "hero.photoHint": "dá um cliquezinho aqui :)",
     "oikawa.show": "Mostrar Oikawa",
     "oikawa.more": "Ocultar fotos do Oikawa",
     "oikawa.gallery": "Fotos do Oikawa",
@@ -407,6 +408,7 @@ const textos = {
     "lpBlu.form": "Formulaire partenaires",
     "lpBlu.responsive": "Design responsive",
 
+    "hero.photoHint": "un petit clic ici :)",
     "oikawa.show": "Afficher Oikawa",
     "oikawa.more": "Masquer les photos d’Oikawa",
     "oikawa.gallery": "Photos d’Oikawa",

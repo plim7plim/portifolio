@@ -2433,3 +2433,12 @@ html:has(.oikawa-scattered) {
     mask-image: linear-gradient(to left, #000b 0, #0008 35%, #0003 72%, transparent);
   }
 }
+
+.portrait-hint {
+  display: block;
+  margin-top: 12px;
+  text-align: center;
+  color: var(--text2);
+  font-size: 0.8125rem;
+  letter-spacing: 0.01em;
+}
