@@ -1,3 +1,9 @@
+import { initPreviewMotion } from "./preview-motion.js";
+
+try {
+  document.body.classList.toggle("light", localStorage.getItem("portfolio-theme") !== "dark");
+} catch {}
+
 const filters = document.getElementById("catalog-filters");
 const results = document.getElementById("catalog-results");
 const status = document.getElementById("catalog-status");
@@ -72,12 +78,22 @@ try {
     );
     matching.sort(compare[values.get("sort")]);
     results.replaceChildren(...matching.map(createCard));
+    initPreviewMotion(results);
     status.textContent = matching.length
       ? matching.length + " de " + certificates.length + " credenciais"
       : "Nenhum certificado encontrado.";
   }
 
   filters.addEventListener("input", render);
+  filters.addEventListener("change", () => {
+    results.getAnimations().forEach((animation) => animation.cancel());
+    if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      results.animate(
+        [{ opacity: 0.65, transform: "translateY(5px)" }, { opacity: 1, transform: "translateY(0)" }],
+        { duration: 180, easing: "ease-out" },
+      );
+    }
+  });
   filters.addEventListener("reset", () => requestAnimationFrame(render));
   filters.addEventListener("submit", (event) => event.preventDefault());
   filters.hidden = false;

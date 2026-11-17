@@ -98,6 +98,15 @@ const textos = {
     "lpBlu.form": "Formulário de parceiros",
     "lpBlu.responsive": "Design responsivo",
 
+    "oikawa.show": "Mostrar Oikawa",
+    "oikawa.more": "Ocultar fotos do Oikawa",
+    "oikawa.gallery": "Fotos do Oikawa",
+    "oikawa.close": "Fechar fotos",
+    "oikawa.source": "Arte adicional · Haikyu!! Touch the Dream",
+    "route.label": "Explorar projetos por área",
+    "route.interface": "Interface",
+    "route.data": "Dados e APIs",
+    "route.observation": "Observabilidade",
     "about.p1":
       "Sou <strong>Plínio Peixoto dos Santos</strong> e estudo programação desde os 17 anos. Desenvolvo interfaces web e mantenho projetos de aplicações e APIs disponíveis neste portfólio.",
     "education.software.desc":
@@ -398,6 +407,15 @@ const textos = {
     "lpBlu.form": "Formulaire partenaires",
     "lpBlu.responsive": "Design responsive",
 
+    "oikawa.show": "Afficher Oikawa",
+    "oikawa.more": "Masquer les photos d’Oikawa",
+    "oikawa.gallery": "Photos d’Oikawa",
+    "oikawa.close": "Fermer les photos",
+    "oikawa.source": "Illustration supplémentaire · Haikyu!! Touch the Dream",
+    "route.label": "Explorer les projets par domaine",
+    "route.interface": "Interface",
+    "route.data": "Données et API",
+    "route.observation": "Observabilité",
     "about.p1":
       "Je suis <strong>Plínio Peixoto dos Santos</strong> et j’étudie la programmation depuis mes 17 ans. Je développe des interfaces web et présente ici mes projets d’applications et d’API.",
     "education.software.desc":

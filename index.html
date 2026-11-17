@@ -7,7 +7,7 @@
       name="description"
       content="Portfólio de Plínio Peixoto, Desenvolvedor Full Stack Júnior Projetos com Java, APIs e aplicações web, experiência profissional e formação."
     />
-    <meta name="theme-color" content="#10091b" />
+    <meta name="theme-color" content="#e5efe9" />
     <link rel="canonical" href="https://www.plinioportifolio.xyz/" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="pt_BR" />
@@ -46,7 +46,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
 
-    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon-oikawa.svg" />
 
     <script>
       window.va =
@@ -67,7 +67,7 @@
       }
     </script>
   </head>
-  <body>
+  <body class="light">
     <a href="#home" class="skip-link" data-i18n="design.skip"
       >Ir para o conteúdo</a
     >
@@ -77,7 +77,6 @@
       <span class="ambient-shape ambient-glow ambient-glow-two"></span>
       <span class="ambient-shape ambient-ring ambient-ring-one"></span>
       <span class="ambient-shape ambient-ring ambient-ring-two"></span>
-      <span class="ambient-shape ambient-orbit"></span>
     </div>
 
     <header>
@@ -179,7 +178,10 @@
     <main>
       <section id="home" class="hero">
         <div class="hero-text">
-          <span data-i18n="hero.greeting">Olá!</span>
+          <div class="hero-greeting">
+            <img src="assets/favicon-oikawa.svg" alt="" width="36" height="36" />
+            <span data-i18n="hero.greeting">Olá!</span>
+          </div>
 
           <h1>Plínio <span>Peixoto</span></h1>
 
@@ -207,27 +209,29 @@
           </div>
         </div>
 
-        <div class="hero-image">
-          <img
-            src="assets/eu-800.webp"
-            srcset="assets/eu-400.webp 400w, assets/eu-800.webp 800w"
-            sizes="(max-width:760px) 65vw, 430px"
-            width="800"
-            height="600"
-            fetchpriority="high"
-            alt="Retrato de Plínio Peixoto"
-            class="hero-image-default"
-            data-i18n-alt="hero.photoAlt"
-          />
-          <img
-            src="assets/avatar.jpg"
-            width="736"
-            height="736"
-            decoding="async"
-            alt="Avatar de Plínio Peixoto"
-            data-i18n-alt="audit.avatar"
-            class="hero-image-hover"
-          />
+        <div class="hero-portrait">
+          <button class="hero-image" type="button" aria-pressed="false" aria-label="Mostrar Oikawa" data-i18n-aria="oikawa.show">
+            <img
+              src="assets/eu-800.webp"
+              srcset="assets/eu-400.webp 400w, assets/eu-800.webp 800w"
+              sizes="(max-width:760px) 65vw, 430px"
+              width="800"
+              height="600"
+              fetchpriority="high"
+              alt="Retrato de Plínio Peixoto"
+              class="hero-image-default"
+              data-i18n-alt="hero.photoAlt"
+            />
+            <img
+              src="assets/oikawa/4.webp"
+              width="736"
+              height="736"
+              decoding="async"
+              alt="Avatar de Plínio Peixoto"
+              data-i18n-alt="audit.avatar"
+              class="hero-image-hover"
+            />
+          </button>
         </div>
       </section>
 
@@ -251,6 +255,7 @@
             Atualmente também estudo francês, ampliando minha formação e
             comunicação.
           </p>
+
         </div>
 
         <div class="about-card">
@@ -457,6 +462,29 @@
           demonstração ou código. Outros trabalhos estão disponíveis ao final da
           seleção.
         </p>
+        <nav class="project-route" aria-label="Explorar projetos por área" data-i18n-aria="route.label">
+          <svg class="project-route-line" viewBox="0 0 1000 150" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M0 120C200 120 200 25 500 25S800 120 1000 120" />
+          </svg>
+          <a href="#project-appUEG">
+            <span class="route-point" aria-hidden="true"></span>
+            <strong data-i18n="route.interface">Interface</strong>
+            <span>Mural UEG</span>
+            <small>JavaScript · Supabase</small>
+          </a>
+          <a href="#project-lpPulse">
+            <span class="route-point" aria-hidden="true"></span>
+            <strong data-i18n="route.data">Dados e APIs</strong>
+            <span>Pulse</span>
+            <small>PHP · MySQL</small>
+          </a>
+          <a href="#project-grafnaLoki">
+            <span class="route-point" aria-hidden="true"></span>
+            <strong data-i18n="route.observation">Observabilidade</strong>
+            <span data-i18n="update.7">Observabilidade com Java</span>
+            <small>Spring Boot · Loki</small>
+          </a>
+        </nav>
         <div class="projects-grid featured-projects">
           <article class="project-card" id="project-appUEG">
             <a
@@ -3005,6 +3033,10 @@
       Desenvolvido por Plínio Peixoto © 2026
     </footer>
 
+    <div class="oikawa-party" hidden role="region" aria-label="Fotos do Oikawa" data-i18n-aria="oikawa.gallery">
+      <button class="btn oikawa-close" type="button" data-i18n="oikawa.close">Fechar fotos</button>
+      <a class="oikawa-source" href="https://www.touchthedream.jp/aobajohsai" target="_blank" rel="noopener noreferrer" data-i18n="oikawa.source">Arte adicional · Haikyu!! Touch the Dream</a>
+    </div>
     <script type="module" src="script.js"></script>
   </body>
 </html>
