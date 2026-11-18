@@ -207,7 +207,7 @@ portrait.addEventListener('click', () => {
   updatePortraitLabel();
   document.body.classList.add('oikawa-scattered');
   if (!document.querySelector('.oikawa-scatter')) {
-    const available = [1, 2, 3, 4, 5, 7, 8, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 23, 24, 26, 27, 28, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43];
+    const available = [1, 2, 3, 4, 5, 7, 8, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 23, 24, 26, 27, 28, 30, 31, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52];
     const photoOrder = available.map((id) => ({ id, order: Math.random() }))
       .sort((a, b) => a.order - b.order).map(({ id }) => id);
     const sections = [...document.querySelectorAll('main > section')];
@@ -223,13 +223,14 @@ portrait.addEventListener('click', () => {
         const photo = photoOrder[photoIndex++];
         image.addEventListener('load', () => image.classList.add('photo-ready'), { once: true });
         const stillSource = 'assets/oikawa/' + photo + '.webp';
-        if (photo >= 41) {
+        const animatedPhoto = [41, 42, 43, 49, 50, 51, 52].includes(photo);
+        if (animatedPhoto) {
           image.dataset.still = stillSource;
           image.dataset.animated = 'assets/oikawa/' + photo + '-animated.webp';
         }
         image.src = image.dataset.animated && !oikawaReducedMotion.matches
           ? image.dataset.animated : stillSource;
-        const mangaPage = (photo >= 10 && photo <= 22) || photo === 26 || photo === 27 || (photo >= 36 && photo <= 40);
+        const mangaPage = (photo >= 10 && photo <= 22) || photo === 26 || photo === 27 || (photo >= 36 && photo <= 40) || photo === 46;
         image.dataset.format = mangaPage ? 'manga' : 'portrait';
         image.alt = '';
         image.decoding = 'async';
@@ -238,8 +239,9 @@ portrait.addEventListener('click', () => {
         image.dataset.side = index % 2 ? 'right' : 'left';
         image.style.setProperty('--photo-edge', Math.round(4 + Math.random() * 12) + 'px');
         image.style.setProperty('--photo-top', (8 + index * (78 / Math.max(1, pictureCount - 1)) + Math.random() * 5).toFixed(1) + '%');
-        image.style.setProperty('--photo-delay', index * 45 + 'ms');
-        image.style.setProperty('--photo-size', Math.round((photo >= 41 ? 165 : mangaPage ? 210 : 120) + Math.random() * 35) + 'px');
+        image.style.setProperty('--photo-delay', index % 3 * 65 + 'ms');
+        image.style.setProperty('--photo-duration', Math.round(700 + Math.random() * 180) + 'ms');
+        image.style.setProperty('--photo-size', Math.round((animatedPhoto ? 165 : mangaPage ? 210 : 120) + Math.random() * 35) + 'px');
         image.dataset.shape = ['soft', 'portrait', 'arch'][Math.floor(Math.random() * 3)];
         scatter.append(image);
       });

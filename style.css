@@ -2352,6 +2352,22 @@ main > section {
 .oikawa-scatter img.photo-ready.photo-visible {
   opacity: 1;
   transform: none;
+  animation: photo-settle var(--photo-duration, 800ms) var(--ease) both;
+  animation-delay: var(--photo-delay);
+}
+@keyframes photo-settle {
+  from {
+    opacity: 0;
+    transform: translateX(var(--photo-enter, -20px)) translateY(12px) scale(0.88) rotate(-3deg);
+  }
+  75% {
+    opacity: 1;
+    transform: translateX(calc(var(--photo-enter, -20px) * -0.06)) scale(1.015);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 .oikawa-scatter img[data-side="right"] {
   --photo-enter: 20px;
@@ -2471,4 +2487,34 @@ html:has(.oikawa-scattered) {
   color: var(--primary);
   font-size: 1.5rem;
   line-height: 1;
+}
+
+@media (max-width: 760px) and (prefers-reduced-motion: no-preference) {
+  .oikawa-scatter img.photo-ready.photo-visible {
+    animation-name: photo-settle-mobile;
+    animation-duration: 1150ms;
+    animation-timing-function: cubic-bezier(0.22, 0.7, 0.3, 1);
+    animation-delay: min(var(--photo-delay), 130ms);
+    transition: none;
+  }
+}
+@keyframes photo-settle-mobile {
+  0% {
+    opacity: 0;
+    transform: translateX(calc(var(--photo-enter, -20px) * 1.8)) translateY(24px) scale(0.78) rotate(-9deg);
+  }
+  48% {
+    opacity: 1;
+    transform: translateX(calc(var(--photo-enter, -20px) * -0.3)) translateY(-7px) scale(1.045) rotate(3deg);
+  }
+  72% {
+    transform: translateX(calc(var(--photo-enter, -20px) * 0.12)) translateY(3px) scale(0.985) rotate(-1.5deg);
+  }
+  88% {
+    transform: translateY(-1px) scale(1.008) rotate(0.5deg);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
 }
