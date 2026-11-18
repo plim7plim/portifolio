@@ -2448,7 +2448,11 @@ html:has(.oikawa-scattered) {
 }
 
 .portrait-hint {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
   margin-top: 12px;
   text-align: center;
   color: var(--text2);
@@ -2460,4 +2464,11 @@ html:has(.oikawa-scattered) {
   .oikawa-scatter img[data-animated] {
     width: clamp(110px, calc(var(--photo-size) * 0.8), 160px);
   }
+}
+
+.portrait-hint-arrow {
+  order: -1;
+  color: var(--primary);
+  font-size: 1.5rem;
+  line-height: 1;
 }
