@@ -237,7 +237,7 @@ const textos = {
     "audit.credentialProof":
       "Comprovante ainda não disponibilizado neste portfólio.",
     "audit.credentialDone": "Certificação concluída",
-    "audit.otherProjects": "Explorar os outros 12 projetos",
+    "audit.otherProjects": "Explorar os outros 14 projetos",
     "update.2":
       "Projetos selecionados com contexto, decisões técnicas e links para demonstração ou código. Outros trabalhos estão disponíveis ao final da seleção.",
     "audit.open.metasDiarias": "Abrir Metas",
@@ -331,6 +331,9 @@ const textos = {
     "dioCyber.groupAI": "IA e agentes · 7",
   },
   fr: {
+    "maintenance.blu.kind": "Tableau de bord web · Code public",
+    "maintenance.blu.title": "Tableau de bord BLU",
+    "maintenance.blu.desc": "Tableau de bord avec carte des propositions par État brésilien, filtres par statut et suivi des objectifs. Interface JavaScript et serveur Node.js avec stockage SQLite.",
     "lab.title": "Laboratoire de cybersécurité · DIO",
     "lab.desc":
       "Exercice guidé DIO en laboratoire local isolé : identification des services, tests d’authentification avec Medusa et énumération SMB sur une VM Metasploitable 2. Le rapport distingue les résultats confirmés des tests HTTP non concluants.",
@@ -540,7 +543,7 @@ const textos = {
     "audit.credentialProof":
       "Justificatif non encore publié dans ce portfolio.",
     "audit.credentialDone": "Certification obtenue",
-    "audit.otherProjects": "Explorer les 12 autres projets",
+    "audit.otherProjects": "Explorer les 14 autres projets",
     "audit.open.metasDiarias": "Ouvrir Metas",
     "audit.preview.metasDiarias": "Aperçu de l’interface de Metas",
     "audit.open.botIA": "Ouvrir Bot IA",
@@ -631,7 +634,7 @@ const textos = {
     "update.9":
       "Page de présentation d’offres Internet, avec onglets pour particuliers et entreprises, détails des offres dans des fenêtres modales et parcours de souscription.",
     "update.10":
-      "Exercices universitaires : calculatrice, calcul de l’IMC et modélisation de patients et d’employés avec des classes et des diagrammes UML.",
+      "Exercices universitaires en JavaScript : calculatrice, IMC, classes et UML, files, piles, palindromes et nombres capicuas. Les révisions récentes comprennent une assistance IA, indiquée dans les commits.",
     "update.11":
       "Projet d’étude Alura : API en Go avec Gin, persistance via GORM et PostgreSQL, tests et workflow GitHub Actions.",
     "update.12":
