@@ -1544,6 +1544,39 @@ summary:focus-visible {
 .bootcamp-section > h3 {
   margin-top: 0;
 }
+.catalog-action {
+  margin-top: 16px;
+}
+.certificate-btn.catalog-cta {
+  gap: 12px;
+  min-height: 52px;
+  max-width: 100%;
+  padding: 14px 22px;
+  background: var(--button-bg);
+  color: var(--button-text);
+  border-color: var(--button-bg);
+  font-size: 1rem;
+  line-height: 1.4;
+  box-shadow: 0 5px 16px #123b3d24;
+}
+.catalog-cta span {
+  min-width: 0;
+  text-wrap: balance;
+}
+.catalog-cta > i:last-child {
+  transition: transform 0.25s var(--ease);
+}
+@media (hover: hover) {
+  .catalog-cta:hover > i:last-child {
+    transform: translateX(3px);
+  }
+}
+@media (max-width: 560px) {
+  .certificate-btn.catalog-cta {
+    width: 100%;
+    padding-inline: 14px;
+  }
+}
 .bootcamp-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
