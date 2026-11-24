@@ -746,5 +746,25 @@
     "date": "",
     "hours": null,
     "preview": "assets/certificados/previews/cyber-32.webp"
+  },
+  {
+    "title": "Segurança, Governança e Conformidade na Nuvem AWS",
+    "issuer": "DIO",
+    "theme": "Nuvem e DevOps",
+    "kind": "Curso",
+    "url": "assets/certificados/dio-aws-governanca.pdf",
+    "date": "2026-11-23",
+    "hours": 1,
+    "preview": "assets/certificados/previews/dio-aws-governanca.webp"
+  },
+  {
+    "title": "Componentes e Recursos de Segurança na AWS",
+    "issuer": "DIO",
+    "theme": "Nuvem e DevOps",
+    "kind": "Curso",
+    "url": "assets/certificados/dio-aws-recursos-seguranca.pdf",
+    "date": "2026-11-24",
+    "hours": 1,
+    "preview": "assets/certificados/previews/dio-aws-recursos-seguranca.webp"
   }
 ]
